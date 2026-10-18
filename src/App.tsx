@@ -33,6 +33,7 @@ import {
 } from "lucide-react";
 import { api, setCsrf } from "./api";
 import { Illustration } from "./Illustration";
+import { RealPersonVideo, REAL_PERSON_EXAMPLE } from "./RealPersonVideo";
 import type {
   Exercise,
   Overview,
@@ -142,6 +143,7 @@ function App() {
     ),
     [coverage, setCoverage] = useState(false),
     [about, setAbout] = useState(false);
+  const deepLinkOpened = useRef(false);
   const loadSession = async () => {
     const s = await api<Session>("/session");
     setCsrf(s.csrf);
@@ -161,6 +163,16 @@ function App() {
   useEffect(() => {
     if (session?.user) load().catch((e) => setError(errorMessage(e)));
   }, [session?.user?.id, patient]);
+  useEffect(() => {
+    if (!data || deepLinkOpened.current) return;
+    const exerciseId = new URLSearchParams(location.search).get("uebung");
+    if (!exerciseId) return;
+    const exercise = data.exercises.find((e) => e.id === exerciseId);
+    if (exercise) {
+      deepLinkOpened.current = true;
+      setDetail(exercise);
+    }
+  }, [data]);
   useEffect(() => {
     if (toast) {
       const t = setTimeout(() => setToast(""), 5000);
@@ -248,7 +260,9 @@ function App() {
   ];
   return (
     <div className="app-shell">
-      <a className="skip-link" href="#main">Zum Inhalt springen</a>
+      <a className="skip-link" href="#main">
+        Zum Inhalt springen
+      </a>
       {mobile && (
         <div className="sidebar-scrim" onClick={() => setMobile(false)} />
       )}
@@ -365,7 +379,7 @@ function App() {
           {session.demo && (
             <div className="demo-strip">
               <span>
-                <Sparkles size={15} /> Vorschau mit erfundenen Personen und
+                <Sparkles size={15} /> Vorschau mit erfundenen Patientenprofilen und
                 ungeprüften Übungsbeispielen.
               </span>
               <select
@@ -747,7 +761,7 @@ function App() {
           </dl>
           <p className="notice">
             {session.demo
-              ? "Alle Personen sind erfunden. Die Übungen sind ungeprüfte Demonstrationsinhalte."
+              ? "Die Patientenprofile sind erfunden. Die Übungen sind ungeprüfte Demonstrationsinhalte."
               : "Die Übungen werden individuell durch die Praxis ausgewählt."}
           </p>
         </Modal>
@@ -1244,8 +1258,12 @@ function ExerciseDetail({
   onEdit: () => void;
   onStatus: (s: string) => void;
 }) {
+  const realExample = demo && e.demo && e.id === REAL_PERSON_EXAMPLE.exerciseId;
   const [phase, setPhase] = useState(0),
-    [video, setVideo] = useState(false),
+    [video, setVideo] = useState(
+      realExample &&
+        new URLSearchParams(location.search).get("video") === "menschen",
+    ),
     [mediaInfo, setMediaInfo] = useState<{ id: string; kind: string }[]>([]);
   useEffect(() => {
     if (e.media.length)
@@ -1266,11 +1284,23 @@ function ExerciseDetail({
   const actualVideo = mediaInfo.find((m) => m.kind === "video");
   return (
     <Modal title={e.title} onClose={onClose} wide>
-      <div className="detail-layout">
+      <div
+        className={
+          realExample && video
+            ? "detail-layout real-person-layout"
+            : "detail-layout"
+        }
+      >
         <div>
-          <div className="detail-art">
+          <div
+            className={
+              realExample && video ? "detail-art real-video-art" : "detail-art"
+            }
+          >
             {video ? (
-              e.demo && demo ? (
+              realExample ? (
+                <RealPersonVideo />
+              ) : e.demo && demo ? (
                 <video
                   autoPlay
                   controls
@@ -1346,14 +1376,28 @@ function ExerciseDetail({
           </div>
           {e.demo && (
             <p className="notice">
-              Schematische Demonstration. Das Video veranschaulicht
-              ausschließlich den technischen Ablauf und ist keine Anleitung
-              dieser Übung.
+              {realExample
+                ? "Externes Anschauungsbeispiel mit einer realen Person. Noch nicht als individuelles Praxisvideo freigegeben. Die Abbildungen bleiben schematische Beispiele."
+                : "Schematische Demonstration. Das Video veranschaulicht ausschließlich den technischen Ablauf und ist keine Anleitung dieser Übung."}
             </p>
           )}
           <details>
             <summary>Videotranskript</summary>
-            <p>{e.transcript || "Noch nicht hinterlegt."}</p>
+            {realExample ? (
+              <p>
+                Das englische Originaltranskript finden Sie auf der{" "}
+                <a
+                  href={REAL_PERSON_EXAMPLE.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Quellseite der Cambridge University Hospitals
+                </a>
+                , Abschnitt „Video transcript: phase 1“, ab 03:12.
+              </p>
+            ) : (
+              <p>{e.transcript || "Noch nicht hinterlegt."}</p>
+            )}
           </details>
           <div className="detail-tags">
             <span>{e.region}</span>

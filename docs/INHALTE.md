@@ -30,7 +30,15 @@ Die Abdeckung in der App unterscheidet Beispiele und tatsächlich freigegebene I
 - `server/assets/captions.vtt`: passende deutsche Beschriftung des Demovideos.
 - `scripts/generate-demo-video.py`: reproduzierbare Erstellung mit Pillow und imageio-ffmpeg; nur zur Medienentwicklung notwendig.
 
-Keine echte Person ist abgebildet. Medizinisch relevante Bewegungsdetails sind durch eine solche technische Darstellung nicht validiert. Für veröffentlichte Übungen sind geeignete fachlich geprüfte Aufnahmen erforderlich.
+In den selbst erstellten schematischen Medien ist keine echte Person abgebildet. Medizinisch relevante Bewegungsdetails sind durch eine solche technische Darstellung nicht validiert. Für veröffentlichte Übungen sind geeignete fachlich geprüfte Aufnahmen erforderlich.
+
+## Zusätzliches Beispiel mit einer realen Person
+
+Bei „Knie im Sitzen strecken“ ist im Demomodus ein externes Originalvideo der **Cambridge University Hospitals NHS Foundation Trust** eingebettet: „Early knee exercises – phase 1“, YouTube-ID `AmpUL3sOz5g`, Ausschnitt ab 03:12. Quelle: https://www.cuh.nhs.uk/our-services/physiotherapy-outpatients/outpatient-physio-resources/resources/knee/early-knee-exercises/
+
+Das Beispiel öffnet sich direkt unter `/?uebung=knie-strecken&video=menschen`, sobald ein berechtigter Demozugang aktiv ist. Der Originalplayer von youtube-nocookie.com wird erst nach „Beispielvideo laden“ angefordert. Es gibt vorher keine externen Vorschaubilder oder Videoabrufe. Das Beispiel übermittelt keine Patientenfelder an den Anbieter; beim Laden fallen die üblichen technischen Verbindungsdaten an. Schließen entfernt den Player wieder.
+
+Originalsprache ist Englisch; das veröffentlichte Transkript bleibt auf der Quellseite verlinkt. Die fremde Videodatei wurde nicht heruntergeladen oder in Git übernommen. Aus der Einbettung wird keine Lizenz zur eigenen Vervielfältigung oder zur Integration einer vollständigen Produktivbibliothek abgeleitet. Die übrigen Demoaufnahmen und der Freigabestatus sind unverändert; das Beispiel ist keine individuelle Therapieverordnung.
 
 ## Redaktionsweg
 

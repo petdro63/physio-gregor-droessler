@@ -535,10 +535,61 @@ test("practice mode has no demo identities or anonymous demo entry", async (t) =
     .expect(404);
 });
 
-test('training is rejected outside prescribed weekdays',async t=>{
-  const r=fixture(t),admin=await agent(r),patient=await agent(r,'patient');
-  const original=JSON.parse(r.db.prepare("SELECT payload FROM plan_versions WHERE plan_id='demo-plan' AND version=1").get().payload);
-  const today=new Date(new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Berlin'})+'T12:00:00').getDay();
-  await post(admin,'/patients/demo-patient/plans',{...original,days:[(today+1)%7]}).expect(200);
-  await post(patient,'/training',{planId:'demo-plan',planVersion:2,exerciseId:'schulterkreisen',outcome:'done',pain:null,note:''}).expect(409);
+test("training is rejected outside prescribed weekdays", async (t) => {
+  const r = fixture(t),
+    admin = await agent(r),
+    patient = await agent(r, "patient");
+  const original = JSON.parse(
+    r.db
+      .prepare(
+        "SELECT payload FROM plan_versions WHERE plan_id='demo-plan' AND version=1",
+      )
+      .get().payload,
+  );
+  const today = new Date(
+    new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Berlin" }) +
+      "T12:00:00",
+  ).getDay();
+  await post(admin, "/patients/demo-patient/plans", {
+    ...original,
+    days: [(today + 1) % 7],
+  }).expect(200);
+  await post(patient, "/training", {
+    planId: "demo-plan",
+    planVersion: 2,
+    exerciseId: "schulterkreisen",
+    outcome: "done",
+    pain: null,
+    note: "",
+  }).expect(409);
+});
+
+test("external video frame permission stays restricted and production cookies stay secure", async (t) => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "physio-production-"));
+  const prior = process.env.TOTP_ENCRYPTION_KEY;
+  let runtime;
+  try {
+    process.env.TOTP_ENCRYPTION_KEY = randomBytes(32).toString("hex");
+    runtime = createApp({ demo: false, production: true, dataDir: root });
+  } finally {
+    if (prior === undefined) delete process.env.TOTP_ENCRYPTION_KEY;
+    else process.env.TOTP_ENCRYPTION_KEY = prior;
+  }
+  t.after(() => {
+    runtime.close();
+    fs.rmSync(root, { recursive: true, force: true });
+  });
+  const response = await request(runtime.app)
+    .get("/api/session")
+    .set("X-Forwarded-Proto", "https")
+    .expect(200);
+  const frameSrc = response.headers["content-security-policy"]
+    .split(";")
+    .find((d) => d.startsWith("frame-src"));
+  assert.equal(frameSrc, "frame-src 'self' https://www.youtube-nocookie.com");
+  assert.match(response.headers["set-cookie"][0], /^__Host-physio=/);
+  assert.match(
+    response.headers["set-cookie"][0],
+    /HttpOnly; Secure; SameSite=Strict/,
+  );
 });

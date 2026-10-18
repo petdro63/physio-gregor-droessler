@@ -169,6 +169,7 @@ export function createApp(options = {}) {
               connectSrc: ["'self'"],
               objectSrc: ["'none'"],
               frameAncestors: ["'none'"],
+              frameSrc: ["'self'", "https://www.youtube-nocookie.com"],
             },
           }
         : false,

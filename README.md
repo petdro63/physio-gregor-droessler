@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.4-dev**, Versionsdatum **18.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.5-dev**, Versionsdatum **18.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -21,6 +21,7 @@ Die Vorschau nutzt ausschließlich erfundene Personen. Demo- und Praxisdatenbank
 
 - Responsive Patientenansicht mit persönlichem Trainingsplan und Übungskarten.
 - Bilder als eigene schematische SVG-Illustrationen, technisches MP4-Demovideo und beschriebene Übungsbeispiele.
+- Ein externes Originalvideo mit einer realen Person beim Kniebeispiel; datensparsame Einbettung erst nach bewusstem Laden, mit Quelle und direktem Originallink.
 - Geführtes Training mit Timer, erledigten/ausgelassenen Übungen, freiwilliger Rückmeldung und Verlauf.
 - Drei serverseitig durchgesetzte Rollen, Patientenzuordnungen, Freischaltung, Sperrung und Zugriffsablauf.
 - Einmalige Einladungen mit 48 Stunden Gültigkeit und QR-Code; keine offene Registrierung.
