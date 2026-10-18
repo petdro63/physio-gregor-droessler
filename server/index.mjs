@@ -1,7 +1,31 @@
 import fs from "node:fs";
 import path from "node:path";
 import express from "express";
-if (fs.existsSync(".env")) process.loadEnvFile(".env");
+
+const loadDotEnv = () => {
+  const envPath = path.resolve(".env");
+  if (!fs.existsSync(envPath)) return;
+
+  for (const rawLine of fs.readFileSync(envPath, "utf8").split(/\r?\n/)) {
+    const line = rawLine.trim();
+    if (!line || line.startsWith("#")) continue;
+
+    const equalsIndex = line.indexOf("=");
+    if (equalsIndex === -1) continue;
+
+    const key = line.slice(0, equalsIndex).trim();
+    let value = line.slice(equalsIndex + 1).trim();
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1);
+    }
+
+    if (!Object.prototype.hasOwnProperty.call(process.env, key)) {
+      process.env[key] = value;
+    }
+  }
+};
+
+loadDotEnv();
 if (process.argv.includes("--production")) process.env.NODE_ENV = "production";
 const { createApp } = await import("./app.mjs");
 const runtime = createApp();
