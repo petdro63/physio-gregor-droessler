@@ -891,7 +891,15 @@ export function createApp(options = {}) {
     try {
       if (!demo || !canExercise(req.user, req.params.id))
         throw fail(404, "Medium nicht gefunden.");
-      if (!["movement.mp4", "captions.vtt"].includes(req.params.file))
+      const allowedFiles = ["movement.mp4", "captions.vtt"];
+      if (req.params.id === "knie-strecken")
+        allowedFiles.push(
+          "knie-strecken-de-voice.wav",
+          "knie-avatar-de.mp4",
+          "knie-avatar-de.vtt",
+          "knie-avatar-de-poster.jpg",
+        );
+      if (!allowedFiles.includes(req.params.file))
         throw fail(404, "Medium nicht gefunden.");
       res.sendFile(path.resolve("server/assets", req.params.file));
     } catch (e) {

@@ -34,6 +34,7 @@ import {
 import { api, setCsrf } from "./api";
 import { Illustration } from "./Illustration";
 import { RealPersonVideo, REAL_PERSON_EXAMPLE } from "./RealPersonVideo";
+import { OwnExerciseVideo, OWN_KNEE_TRANSCRIPT } from "./OwnExerciseVideo";
 import type {
   Exercise,
   Overview,
@@ -379,8 +380,8 @@ function App() {
           {session.demo && (
             <div className="demo-strip">
               <span>
-                <Sparkles size={15} /> Vorschau mit erfundenen Patientenprofilen und
-                ungeprüften Übungsbeispielen.
+                <Sparkles size={15} /> Vorschau mit erfundenen Patientenprofilen
+                und ungeprüften Übungsbeispielen.
               </span>
               <select
                 aria-label="Demoansicht wechseln"
@@ -1258,11 +1259,14 @@ function ExerciseDetail({
   onEdit: () => void;
   onStatus: (s: string) => void;
 }) {
-  const realExample = demo && e.demo && e.id === REAL_PERSON_EXAMPLE.exerciseId;
+  const kneeExample = demo && e.demo && e.id === REAL_PERSON_EXAMPLE.exerciseId;
+  const requestedVideo = new URLSearchParams(location.search).get("video");
   const [phase, setPhase] = useState(0),
     [video, setVideo] = useState(
-      realExample &&
-        new URLSearchParams(location.search).get("video") === "menschen",
+      kneeExample && ["menschen", "eigenes"].includes(requestedVideo || ""),
+    ),
+    [videoSource, setVideoSource] = useState(
+      requestedVideo === "menschen" ? "external" : "own",
     ),
     [mediaInfo, setMediaInfo] = useState<{ id: string; kind: string }[]>([]);
   useEffect(() => {
@@ -1286,7 +1290,7 @@ function ExerciseDetail({
     <Modal title={e.title} onClose={onClose} wide>
       <div
         className={
-          realExample && video
+          kneeExample && video
             ? "detail-layout real-person-layout"
             : "detail-layout"
         }
@@ -1294,11 +1298,13 @@ function ExerciseDetail({
         <div>
           <div
             className={
-              realExample && video ? "detail-art real-video-art" : "detail-art"
+              kneeExample && video ? "detail-art real-video-art" : "detail-art"
             }
           >
             {video ? (
-              realExample ? (
+              kneeExample && videoSource === "own" ? (
+                <OwnExerciseVideo />
+              ) : kneeExample ? (
                 <RealPersonVideo />
               ) : e.demo && demo ? (
                 <video
@@ -1368,22 +1374,40 @@ function ExerciseDetail({
             </button>
             <button
               className={"button " + (video ? "primary" : "secondary")}
-              onClick={() => setVideo(true)}
+              onClick={() => {
+                setVideo(true);
+                if (kneeExample) setVideoSource("own");
+              }}
             >
               <Play size={16} />
-              Video ansehen
+              {kneeExample ? "Eigenes Video (Deutsch)" : "Video ansehen"}
             </button>
           </div>
+          {kneeExample && (
+            <button
+              className="text-button"
+              onClick={() => {
+                setVideo(true);
+                setVideoSource("external");
+              }}
+            >
+              Externes Originalbeispiel auf Englisch ansehen
+            </button>
+          )}
           {e.demo && (
             <p className="notice">
-              {realExample
-                ? "Externes Anschauungsbeispiel mit einer realen Person. Noch nicht als individuelles Praxisvideo freigegeben. Die Abbildungen bleiben schematische Beispiele."
+              {kneeExample
+                ? videoSource === "own"
+                  ? "Selbst erstellte 3D-Animation mit deutscher Tonspur. Die Darstellung ist ein Demonstrationsentwurf und noch nicht fachlich freigegeben."
+                  : "Externes Anschauungsbeispiel mit einer realen Person. Noch nicht als individuelles Praxisvideo freigegeben. Die Abbildungen bleiben schematische Beispiele."
                 : "Schematische Demonstration. Das Video veranschaulicht ausschließlich den technischen Ablauf und ist keine Anleitung dieser Übung."}
             </p>
           )}
           <details>
             <summary>Videotranskript</summary>
-            {realExample ? (
+            {kneeExample && videoSource === "own" ? (
+              <p>{OWN_KNEE_TRANSCRIPT}</p>
+            ) : kneeExample ? (
               <p>
                 Das englische Originaltranskript finden Sie auf der{" "}
                 <a

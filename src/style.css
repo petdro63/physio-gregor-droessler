@@ -2595,6 +2595,38 @@ details summary::marker {
 .real-person-layout {
   grid-template-columns: minmax(0, 1fr);
 }
+.own-exercise-video {
+  width: 100%;
+  padding: 16px;
+}
+.detail-art .own-exercise-video video {
+  display: block;
+  width: 100%;
+  max-height: none;
+  aspect-ratio: 16/9;
+  background: #edf2e9;
+  border-radius: 10px;
+}
+.own-video-caption {
+  padding-top: 15px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.own-video-caption > strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.own-video-caption > span {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  color: #5d7653;
+}
+.own-video-caption > p {
+  margin: 10px 0 0;
+  color: #607556;
+}
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;

@@ -593,3 +593,32 @@ test("external video frame permission stays restricted and production cookies st
     /HttpOnly; Secure; SameSite=Strict/,
   );
 });
+
+test("original German avatar video is protected, supports seeking and stays assigned to the knee example", async (t) => {
+  const r = fixture(t),
+    patient = await agent(r, "patient");
+  const url = "/api/demo-media/knie-strecken/knie-avatar-de.mp4";
+  await request(r.app).get(url).expect(401);
+  const head = await patient.a.head(url).expect(200);
+  assert.match(head.headers["content-type"], /video\/mp4/);
+  assert.match(head.headers["cache-control"], /no-store/);
+  const partial = await patient.a
+    .get(url)
+    .set("Range", "bytes=0-255")
+    .expect(206);
+  assert.equal(Number(partial.headers["content-length"]), 256);
+  const captions = await patient.a
+    .get("/api/demo-media/knie-strecken/knie-avatar-de.vtt")
+    .expect(200);
+  assert.match(captions.text, /Setzen Sie sich aufrecht hin/);
+  await patient.a
+    .get("/api/demo-media/schulterkreisen/knie-avatar-de.mp4")
+    .expect(404);
+  await patient.a
+    .get("/api/demo-media/knie-strecken/knie-avatar-de-poster.jpg")
+    .expect(200);
+  r.db
+    .prepare("UPDATE users SET status='blocked' WHERE id='demo-patient'")
+    .run();
+  await patient.a.get(url).expect(401);
+});

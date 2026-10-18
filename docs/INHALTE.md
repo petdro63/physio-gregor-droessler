@@ -32,7 +32,25 @@ Die Abdeckung in der App unterscheidet Beispiele und tatsächlich freigegebene I
 
 In den selbst erstellten schematischen Medien ist keine echte Person abgebildet. Medizinisch relevante Bewegungsdetails sind durch eine solche technische Darstellung nicht validiert. Für veröffentlichte Übungen sind geeignete fachlich geprüfte Aufnahmen erforderlich.
 
-## Zusätzliches Beispiel mit einer realen Person
+## Eigene 3D-Animation mit deutscher Tonspur
+
+Für „Knie im Sitzen strecken“ gibt es zusätzlich ein vollständig selbst erstelltes 16-Sekunden-Video mit einer stilisierten, gesichtsneutralen 3D-Figur. Das Video ist eine Animation und keine Filmaufnahme einer realen Person. Modell, Stuhl, Umgebung, Beleuchtung, Bewegungsablauf und Textgrafiken sind im Projekt erstellt. Es wurde kein fremder Videoclip oder Bildausschnitt übernommen.
+
+- `server/assets/knie-avatar-de.mp4`: 1280 × 720, H.264/AAC, kontinuierliche Animation.
+- `server/assets/knie-avatar-de.vtt`: deutscher Sprechertext als zeitcodierte Untertitel.
+- `server/assets/knie-avatar-de-poster.jpg`: Vorschaubild der eigenen Animation.
+- `server/assets/knie-strecken-de-voice.wav`: selbst formulierter deutscher Sprechertext, mit der lokal installierten Windows-Stimme Microsoft Katja synthetisiert; keine Stimmkopie einer fremden Person.
+- `scripts/knee-video-studio.html` und `.js`: ursprüngliche 3D-Szene und Videoaufnahme mit Three.js/Canvas. Three.js wird als Entwicklungsabhängigkeit verwendet; die Patientenansicht spielt die fertige MP4-Datei ab.
+- `scripts/create-knee-voice.ps1`: reproduzierbare Erstellung der Tonspur auf einem Windows-System mit dieser Stimme.
+- `scripts/finish-knee-video.py`: MP4-Export mit deutscher Tonspur, Poster und Untertiteln aus der eigenen WebM-Aufnahme.
+
+Der lokale Einstieg lautet `/?uebung=knie-strecken&video=eigenes`. In der Übung kann zwischen eigenem deutschem Video und dem externen englischen Originalbeispiel gewechselt werden. Die eigenen Medien werden ausschließlich über die geschützte API für diese Übung ausgeliefert; es gibt keine Verbindung zu einem externen Videoanbieter.
+
+Zur erneuten Produktion nach `npm ci` und `npm run dev` zuerst die Patientendemonstration öffnen und anschließend lokal `/scripts/knee-video-studio.html` aufrufen. Dort die Bewegung prüfen, „16-Sekunden-Video erstellen“ wählen und die eigene WebM-Datei herunterladen. Mit `python scripts/finish-knee-video.py PFAD_ZUR_WEBM_DATEI` werden die App-Medien erzeugt. Die benötigten Python-Pakete sind Pillow (für ältere Demonstrationen) und imageio-ffmpeg. Das Produktionswerkzeug ist kein Patientenmenü und wird nicht in die statische App-Ausgabe eingebaut.
+
+Die Animation bleibt ein Demonstrationsentwurf: Bewegungsführung, Darstellung und Dosierung sind vor therapeutischer Nutzung durch die Praxis fachlich zu prüfen. Die Existenz eines eigenen Videos bewirkt keine fachliche Freigabe der Demoübung.
+
+## Externes Beispiel mit einer realen Person
 
 Bei „Knie im Sitzen strecken“ ist im Demomodus ein externes Originalvideo der **Cambridge University Hospitals NHS Foundation Trust** eingebettet: „Early knee exercises – phase 1“, YouTube-ID `AmpUL3sOz5g`, Ausschnitt ab 03:12. Quelle: https://www.cuh.nhs.uk/our-services/physiotherapy-outpatients/outpatient-physio-resources/resources/knee/early-knee-exercises/
 
