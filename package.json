@@ -1,0 +1,41 @@
+{
+  "name": "physio-gregor-droessler",
+  "version": "0.1.3-dev",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/index.mjs",
+    "build": "tsc --noEmit && vite build",
+    "start": "node server/index.mjs --production",
+    "test": "node --test test/*.test.mjs",
+    "backup": "node scripts/backup.mjs",
+    "restore": "node scripts/backup.mjs --restore",
+    "setup": "node scripts/setup.mjs",
+    "release": "node scripts/release.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "express-session": "^1.18.2",
+    "file-type": "^21.0.0",
+    "helmet": "^8.1.0",
+    "lucide-react": "^0.539.0",
+    "multer": "^2.0.2",
+    "otpauth": "^9.4.1",
+    "pdf-lib": "^1.17.1",
+    "qrcode": "^1.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "sharp": "^0.35.5",
+    "zod": "^4.0.17"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.1",
+    "@vitejs/plugin-react": "^5.0.0",
+    "supertest": "^7.1.4",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.2"
+  }
+}

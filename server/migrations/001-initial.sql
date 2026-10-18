@@ -1,0 +1,16 @@
+PRAGMA foreign_keys = ON;
+CREATE TABLE IF NOT EXISTS schema_migrations (id INTEGER PRIMARY KEY, applied_at TEXT NOT NULL);
+CREATE TABLE users (id TEXT PRIMARY KEY, name TEXT NOT NULL, email TEXT NOT NULL UNIQUE, password_hash TEXT, role TEXT NOT NULL CHECK(role IN ('admin','therapist','patient')), status TEXT NOT NULL DEFAULT 'invited', access_until TEXT, mfa_secret TEXT, mfa_counter INTEGER, created_at TEXT NOT NULL);
+CREATE TABLE assignments (therapist_id TEXT NOT NULL REFERENCES users(id), patient_id TEXT NOT NULL REFERENCES users(id), PRIMARY KEY(therapist_id,patient_id));
+CREATE TABLE invitations (id TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES users(id), token_hash TEXT NOT NULL UNIQUE, expires_at TEXT NOT NULL, used_at TEXT, created_by TEXT NOT NULL REFERENCES users(id));
+CREATE TABLE exercises (id TEXT PRIMARY KEY, current_version INTEGER NOT NULL, status TEXT NOT NULL CHECK(status IN ('draft','review','published','archived','demo')), created_by TEXT NOT NULL REFERENCES users(id));
+CREATE TABLE exercise_versions (exercise_id TEXT NOT NULL REFERENCES exercises(id), version INTEGER NOT NULL, payload TEXT NOT NULL, created_at TEXT NOT NULL, PRIMARY KEY(exercise_id,version));
+CREATE TABLE media (id TEXT PRIMARY KEY, exercise_id TEXT NOT NULL REFERENCES exercises(id), kind TEXT NOT NULL CHECK(kind IN ('image','video')), filename TEXT NOT NULL, mime TEXT NOT NULL, size INTEGER NOT NULL, original_name TEXT NOT NULL, created_at TEXT NOT NULL);
+CREATE TABLE plans (id TEXT PRIMARY KEY, patient_id TEXT NOT NULL REFERENCES users(id), therapist_id TEXT NOT NULL REFERENCES users(id), current_version INTEGER NOT NULL, status TEXT NOT NULL DEFAULT 'active');
+CREATE TABLE plan_versions (plan_id TEXT NOT NULL REFERENCES plans(id), version INTEGER NOT NULL, payload TEXT NOT NULL, created_at TEXT NOT NULL, PRIMARY KEY(plan_id,version));
+CREATE TABLE training_sessions (id TEXT PRIMARY KEY, patient_id TEXT NOT NULL REFERENCES users(id), plan_id TEXT NOT NULL REFERENCES plans(id), plan_version INTEGER NOT NULL, exercise_id TEXT NOT NULL, exercise_version INTEGER NOT NULL, outcome TEXT NOT NULL CHECK(outcome IN ('done','skipped')), pain INTEGER CHECK(pain BETWEEN 0 AND 10), note TEXT NOT NULL, created_at TEXT NOT NULL, FOREIGN KEY(plan_id,plan_version) REFERENCES plan_versions(plan_id,version));
+CREATE TABLE audit_events (id TEXT PRIMARY KEY, actor_id TEXT NOT NULL, action TEXT NOT NULL, target_id TEXT NOT NULL, created_at TEXT NOT NULL);
+CREATE TABLE settings (id TEXT PRIMARY KEY, payload TEXT NOT NULL);
+CREATE TABLE http_sessions (sid TEXT PRIMARY KEY, data TEXT NOT NULL, expires INTEGER NOT NULL);
+CREATE INDEX training_patient ON training_sessions(patient_id, created_at);
+CREATE INDEX invitations_token ON invitations(token_hash);
