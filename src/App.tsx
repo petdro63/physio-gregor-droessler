@@ -90,6 +90,7 @@ function Modal({
   return (
     <dialog
       ref={ref}
+      aria-label={title}
       className={wide ? "modal wide" : "modal"}
       onCancel={onClose}
       onClick={(e) => {
@@ -247,6 +248,7 @@ function App() {
   ];
   return (
     <div className="app-shell">
+      <a className="skip-link" href="#main">Zum Inhalt springen</a>
       {mobile && (
         <div className="sidebar-scrim" onClick={() => setMobile(false)} />
       )}
