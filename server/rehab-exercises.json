@@ -1,0 +1,4964 @@
+[
+  {
+    "id": "birshof-01-arm-gefuehrt",
+    "title": "Arm geführt anheben",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [],
+    "position": "In Rückenlage",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Mobilisation · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Gesunde Hand unterstützt den betroffenen Arm beim Anheben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-01",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulter selbst bewegen",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-eigenmobilisationstechniken-für-die-schulter.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-01-ellbogen-oeffnen",
+    "title": "Ellenbogen seitlich öffnen",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [],
+    "position": "In Rückenlage",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Mobilisation · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Hände an der Stirn halten; Ellenbogen behutsam auseinanderführen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-01",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulter selbst bewegen",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-eigenmobilisationstechniken-für-die-schulter.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-01-haengen-gestuetzt",
+    "title": "Arm unterstützt hängen lassen",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Arm mit anderer Hand tragen; Oberkörper leicht vorbeugen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-01",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulter selbst bewegen",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-eigenmobilisationstechniken-für-die-schulter.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-01-haengen",
+    "title": "Arm locker hängen lassen",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Tisch",
+    "subtitle": "Mobilisation · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Sicher abstützen, Oberkörper vorbeugen; Arm entspannt lassen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-01",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulter selbst bewegen",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-eigenmobilisationstechniken-für-die-schulter.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-01-arm-vor-sitz",
+    "title": "Arm im Sitz führen",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Verschränkte Hände von der Stirn langsam nach vorn führen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-01",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulter selbst bewegen",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-eigenmobilisationstechniken-für-die-schulter.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-01-ellbogen-sitz",
+    "title": "Ellenbogen im Sitz öffnen",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Hände an der Stirn; Ellenbogen kontrolliert öffnen und schließen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-01",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulter selbst bewegen",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-eigenmobilisationstechniken-für-die-schulter.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-01-ball-tisch",
+    "title": "Ball auf Tisch rollen",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Kleiner Ball",
+    "subtitle": "Mobilisation · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Handauflage mit Ball nach vorn und seitlich verschieben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-01",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulter selbst bewegen",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-eigenmobilisationstechniken-für-die-schulter.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-01-stab-rotation",
+    "title": "Schulterrotation mit Stab",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Stab",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Ellenbogen am Rumpf; andere Hand unterstützt die Außenrotation.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-01",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulter selbst bewegen",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-eigenmobilisationstechniken-für-die-schulter.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-02-kiefer-ruhe",
+    "title": "Kiefer in Ruhe lösen",
+    "region": "Kiefer",
+    "goal": "Entspannung",
+    "trainingTypes": [
+      "Entspannung"
+    ],
+    "joints": [
+      "Kiefergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Entspannung · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Zähne auseinanderlassen; Unterkiefer und Zunge bewusst entspannen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-02",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Kiefergelenk und Kaumuskulatur",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-übungen-für-das-kiefergelenk.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-02-zunge",
+    "title": "Zunge locker bewegen",
+    "region": "Kiefer",
+    "goal": "Koordination",
+    "trainingTypes": [
+      "Koordination"
+    ],
+    "joints": [
+      "Kiefergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Koordination · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Zunge ohne Kraft bewegen; anschließend Wangen locker aufblasen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-02",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Kiefergelenk und Kaumuskulatur",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-übungen-für-das-kiefergelenk.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-02-masseter",
+    "title": "Wangen äußerlich ausstreichen",
+    "region": "Kiefer",
+    "goal": "Entspannung",
+    "trainingTypes": [
+      "Entspannung"
+    ],
+    "joints": [
+      "Kiefergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Entspannung · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Kaumuskel außen behutsam ausstreichen, Druck schmerzfrei halten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-02",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Kiefergelenk und Kaumuskulatur",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-übungen-für-das-kiefergelenk.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-02-intraoral",
+    "title": "Intraorale Muskelbehandlung",
+    "region": "Kiefer",
+    "goal": "Entspannung",
+    "trainingTypes": [
+      "Entspannung"
+    ],
+    "joints": [
+      "Kiefergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Therapeutische Anleitung",
+    "subtitle": "Entspannung · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Fachperson prüft und zeigt die geeignete intraorale Behandlung.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-02",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Kiefergelenk und Kaumuskulatur",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-übungen-für-das-kiefergelenk.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-02-temporalis",
+    "title": "Schläfen sanft massieren",
+    "region": "Kiefer",
+    "goal": "Entspannung",
+    "trainingTypes": [
+      "Entspannung"
+    ],
+    "joints": [
+      "Kiefergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Entspannung · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Schläfen mit leichtem Kontakt kreisend massieren.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-02",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Kiefergelenk und Kaumuskulatur",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-übungen-für-das-kiefergelenk.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-02-kiefer-oeffnen",
+    "title": "Mundöffnung vor Spiegel",
+    "region": "Kiefer",
+    "goal": "Koordination",
+    "trainingTypes": [
+      "Koordination"
+    ],
+    "joints": [
+      "Kiefergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Spiegel",
+    "subtitle": "Koordination · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Mund langsam gerade öffnen; Kopf dabei ruhig halten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-02",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Kiefergelenk und Kaumuskulatur",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-übungen-für-das-kiefergelenk.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-02-kiefer-seite",
+    "title": "Unterkiefer seitlich bewegen",
+    "region": "Kiefer",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Kiefergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Spiegel",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Unterkiefer klein nach links und rechts führen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-02",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Kiefergelenk und Kaumuskulatur",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-übungen-für-das-kiefergelenk.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-02-kiefer-vor",
+    "title": "Unterkiefer nach vorn führen",
+    "region": "Kiefer",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Kiefergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Spiegel",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Bei lockeren Zähnen Unterkiefer vorsichtig vorschieben und zurücknehmen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-02",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Kiefergelenk und Kaumuskulatur",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-übungen-für-das-kiefergelenk.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-02-kiefer-dehnen",
+    "title": "Mundöffnung sanft unterstützen",
+    "region": "Kiefer",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Kiefergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Therapeutische Anleitung",
+    "subtitle": "Dehnung · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur angeleitet: Öffnung minimal unterstützen, keinesfalls gewaltsam aufdehnen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-02",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Kiefergelenk und Kaumuskulatur",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-übungen-für-das-kiefergelenk.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-02-kiefer-isometrie",
+    "title": "Kiefer gegen Fingerkontakt stabilisieren",
+    "region": "Kiefer",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Kiefergelenk"
+    ],
+    "strengthMuscles": [
+      "Kieferöffner (suprahyoidale Muskulatur)"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Kraft · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Öffnen und Vorschieben gegen sehr leichten Fingerwiderstand andeuten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-02",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Kiefergelenk und Kaumuskulatur",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-übungen-für-das-kiefergelenk.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-02-kiefer-isoseite",
+    "title": "Kiefer seitlich stabilisieren",
+    "region": "Kiefer",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Kiefergelenk"
+    ],
+    "strengthMuscles": [
+      "Kaumuskulatur (M. masseter / temporalis)"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Kraft · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Seitwärtsdruck gegen Fingerkontakt andeuten; Kieferposition bleibt ruhig.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-02",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Kiefergelenk und Kaumuskulatur",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/birshof-physiotherapie-übungen-für-das-kiefergelenk.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-03-hantel-schulterblatt-sitz",
+    "title": "Schulterblatt mit Hantel stabilisieren",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Kapuzenmuskel (M. trapezius)",
+      "Rautenmuskeln (Mm. rhomboidei)"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Unterstützten Arm etwas abheben, Schulter dabei ruhig halten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-03",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Hanteln",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-hanteln.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-03-hantel-rotation-sitz",
+    "title": "Außenrotation mit aufgelegtem Ellenbogen",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [
+      "Schulteraußenrotatoren (M. infraspinatus / M. teres minor)"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Ellenbogen abstützen; leichte Hantel kontrolliert nach außen drehen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-03",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Hanteln",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-hanteln.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-03-hantel-arm-rueck",
+    "title": "Armheben in Bauchlage",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Deltamuskel (M. deltoideus)",
+      "Kapuzenmuskel (M. trapezius)",
+      "Rautenmuskeln (Mm. rhomboidei)"
+    ],
+    "position": "In Bauchlage",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · In Bauchlage",
+    "start": "In Bauchlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Arm seitlich am Körper mit geringer Last etwas anheben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-03",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Hanteln",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-hanteln.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-03-hantel-rotation-bauch",
+    "title": "Außenrotation in Bauchlage",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Schulteraußenrotatoren (M. infraspinatus / M. teres minor)",
+      "Kapuzenmuskel (M. trapezius)"
+    ],
+    "position": "In Bauchlage",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · In Bauchlage",
+    "start": "In Bauchlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Oberarm abstützen; Unterarm mit leichter Hantel außenwärts drehen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-03",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Hanteln",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-hanteln.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-03-hantel-armzug",
+    "title": "Arme in Bauchlage vorführen",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Deltamuskel (M. deltoideus)",
+      "Kapuzenmuskel (M. trapezius)"
+    ],
+    "position": "In Bauchlage",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · In Bauchlage",
+    "start": "In Bauchlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Arme kontrolliert nach vorn und zurück bewegen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-03",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Hanteln",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-hanteln.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-03-hantel-brust",
+    "title": "Brustführung mit Hanteln",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [
+      "Brustmuskel (M. pectoralis major)"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Leichte Hanteln über der Brust zusammenführen und langsam öffnen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-03",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Hanteln",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-hanteln.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-03-hantel-ueberzug",
+    "title": "Hantel hinter Kopf führen",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [
+      "Breiter Rückenmuskel (M. latissimus dorsi)",
+      "Brustmuskel (M. pectoralis major)"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Gewicht im freigegebenen Bereich kopfwärts führen und zurückholen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-03",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Hanteln",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-hanteln.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-03-hantel-druecken",
+    "title": "Hanteln über Kopf drücken",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Ellenbogengelenk"
+    ],
+    "strengthMuscles": [
+      "Trizeps (M. triceps brachii)",
+      "Deltamuskel (M. deltoideus)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Aus Schulterhöhe kontrolliert nach oben drücken und senken.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-03",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Hanteln",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-hanteln.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-04-band-ruder",
+    "title": "Rudern gegen Bandzug",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel",
+      "Ellenbogengelenk"
+    ],
+    "strengthMuscles": [
+      "Bizeps (M. biceps brachii)",
+      "Kapuzenmuskel (M. trapezius)",
+      "Rautenmuskeln (Mm. rhomboidei)",
+      "Breiter Rückenmuskel (M. latissimus dorsi)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Theraband",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Ellenbogen am Körper nach hinten ziehen, langsam nachgeben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-04",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Theraband",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-theraband.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-04-band-arm-rueck",
+    "title": "Arme gestreckt zurückziehen",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Deltamuskel (M. deltoideus)",
+      "Breiter Rückenmuskel (M. latissimus dorsi)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Theraband",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Gestreckte Arme gegen Bandzug nach hinten führen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-04",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Theraband",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-theraband.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-04-band-seitheben",
+    "title": "Band seitlich anheben",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [
+      "Deltamuskel (M. deltoideus)"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Theraband",
+    "subtitle": "Kraft · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Band sicher unter Füßen halten; Arme seitlich anheben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-04",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Theraband",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-theraband.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-04-band-frontheben",
+    "title": "Band nach vorn anheben",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [
+      "Deltamuskel (M. deltoideus)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Theraband",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Arme gegen Bandzug nach vorn oben führen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-04",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Theraband",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-theraband.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-04-band-beugen",
+    "title": "Ellenbogen mit Band beugen",
+    "region": "Hand",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Ellenbogengelenk"
+    ],
+    "strengthMuscles": [
+      "Bizeps (M. biceps brachii)",
+      "Armbeuger (M. brachialis)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Theraband",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Ellenbogen beugen; Oberarme bleiben nahe am Rumpf.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-04",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Theraband",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-theraband.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-04-band-aussen",
+    "title": "Außenrotation am Rumpf",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [
+      "Schulteraußenrotatoren (M. infraspinatus / M. teres minor)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Theraband",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Unterarm nach außen drehen, Ellenbogen am Rumpf halten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-04",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Theraband",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-theraband.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-04-band-innen",
+    "title": "Innenrotation am Rumpf",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [
+      "Schulterinnenrotatoren (M. subscapularis)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Theraband",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Unterarm gegen Bandzug nach innen drehen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-04",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Theraband",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-theraband.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-04-band-aussen-abgehoben",
+    "title": "Außenrotation mit abgehobenem Oberarm",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [
+      "Schulteraußenrotatoren (M. infraspinatus / M. teres minor)",
+      "Deltamuskel (M. deltoideus)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Theraband",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur freigegeben: abgehobenen Oberarm stabilisieren, Unterarm außenwärts drehen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-04",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Theraband",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-theraband.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-05-kapsel-quer",
+    "title": "Arm quer vor Brust führen",
+    "region": "Schulter",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Dehnung · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Arm behutsam querführen, Schulter unten lassen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-05",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterkapsel und Mobilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Birshof-PHYSIOTHERAPIE-ÜBUNGEN-ZUR-KAPSELDEHNUNG-UND-EIGENMOBILISATION-DER-SCHULTER.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-05-kapsel-seite",
+    "title": "Schulterdehnung in Seitenlage",
+    "region": "Schulter",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "In Seitenlage",
+    "equipment": "Matte",
+    "subtitle": "Dehnung · In Seitenlage",
+    "start": "In Seitenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur angeleitet: Unterarm bei abgestütztem Oberarm vorsichtig innenwärts führen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-05",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterkapsel und Mobilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Birshof-PHYSIOTHERAPIE-ÜBUNGEN-ZUR-KAPSELDEHNUNG-UND-EIGENMOBILISATION-DER-SCHULTER.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-05-kapsel-seite-rotation",
+    "title": "Schulterdehnung mit Körperdrehung",
+    "region": "Schulter",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "In Seitenlage",
+    "equipment": "Matte",
+    "subtitle": "Dehnung · In Seitenlage",
+    "start": "In Seitenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur angeleitet: Körper minimal vorwärts drehen, Schulterposition kontrollieren.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-05",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterkapsel und Mobilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Birshof-PHYSIOTHERAPIE-ÜBUNGEN-ZUR-KAPSELDEHNUNG-UND-EIGENMOBILISATION-DER-SCHULTER.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-05-kapsel-tuer-tief",
+    "title": "Schulter am Türrahmen öffnen",
+    "region": "Schulter",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Türrahmen",
+    "subtitle": "Dehnung · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Handkontakt halten und Körper leicht vom Arm wegdrehen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-05",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterkapsel und Mobilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Birshof-PHYSIOTHERAPIE-ÜBUNGEN-ZUR-KAPSELDEHNUNG-UND-EIGENMOBILISATION-DER-SCHULTER.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-05-kapsel-aussen",
+    "title": "Außenrotation unterstützt bewegen",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Stab",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Stab mit anderer Hand seitwärts führen; Ellenbogen bleiben angelegt.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-05",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterkapsel und Mobilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Birshof-PHYSIOTHERAPIE-ÜBUNGEN-ZUR-KAPSELDEHNUNG-UND-EIGENMOBILISATION-DER-SCHULTER.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-05-kapsel-innen",
+    "title": "Hand hinter Rücken führen",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur freigegeben: andere Hand unterstützt kleinen Schürzengriff.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-05",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterkapsel und Mobilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Birshof-PHYSIOTHERAPIE-ÜBUNGEN-ZUR-KAPSELDEHNUNG-UND-EIGENMOBILISATION-DER-SCHULTER.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-05-kapsel-tuer-hoch",
+    "title": "Brust am Türrahmen öffnen",
+    "region": "Schulter",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Türrahmen",
+    "subtitle": "Dehnung · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Unterarme anlegen; Körper gering nach vorn verlagern.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-05",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterkapsel und Mobilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Birshof-PHYSIOTHERAPIE-ÜBUNGEN-ZUR-KAPSELDEHNUNG-UND-EIGENMOBILISATION-DER-SCHULTER.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-05-kapsel-seitlich",
+    "title": "Seitliche Schulter sanft dehnen",
+    "region": "Schulter",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Türrahmen",
+    "subtitle": "Dehnung · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur angeleitet: Ellenbogen abstützen und Körper gering wegbewegen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-05",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterkapsel und Mobilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Birshof-PHYSIOTHERAPIE-ÜBUNGEN-ZUR-KAPSELDEHNUNG-UND-EIGENMOBILISATION-DER-SCHULTER.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-06-fingerkontakt",
+    "title": "Finger zum Daumen führen",
+    "region": "Hand",
+    "goal": "Koordination",
+    "trainingTypes": [
+      "Koordination"
+    ],
+    "joints": [
+      "Fingergelenke"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Koordination · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nacheinander jede Fingerkuppe mit dem Daumen berühren.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-06",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm obere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Heimprogramm-obere-Extremitäten.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-06-handgelenk",
+    "title": "Handgelenk locker bewegen",
+    "region": "Hand",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Handgelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Hand locker schließen; Handgelenk auf- und abbewegen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-06",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm obere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Heimprogramm-obere-Extremitäten.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-06-faust",
+    "title": "Hand schließen und öffnen",
+    "region": "Hand",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Fingergelenke"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Lockere Faust bilden und Finger wieder öffnen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-06",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm obere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Heimprogramm-obere-Extremitäten.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-06-ellbogen",
+    "title": "Arm vor Körper beugen",
+    "region": "Hand",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Ellenbogengelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Mobilisation · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Hand vom Oberschenkel über den Bauch zur Brust führen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-06",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm obere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Heimprogramm-obere-Extremitäten.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-06-bws",
+    "title": "Brustwirbelsäule im Sitz aufrichten",
+    "region": "Hand",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Brustwirbelsäule"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Aus kleiner Vorlage aufrichten; Rücken nicht überstrecken.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-06",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm obere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Heimprogramm-obere-Extremitäten.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-06-arm-gefuehrt",
+    "title": "Arm in Vorlage begleiten",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Gesunde Hand trägt den betroffenen Arm beim Vorneigen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-06",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm obere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Heimprogramm-obere-Extremitäten.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-06-nacken",
+    "title": "Nacken seitlich lösen",
+    "region": "Nacken",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "subtitle": "Dehnung · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Kopf behutsam neigen, Schultergürtel entspannt lassen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-06",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm obere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Heimprogramm-obere-Extremitäten.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-06-haengen",
+    "title": "Arm hängend entlasten",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Arm entspannen; Oberkörper langsam etwas vorverlagern.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-06",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm obere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Heimprogramm-obere-Extremitäten.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-06-haengen-gestuetzt",
+    "title": "Arm unterstützt entlasten",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Arm mit gesunder Hand sichern; Körper etwas vorbeugen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-06",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm obere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Heimprogramm-obere-Extremitäten.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-06-lagern",
+    "title": "Arm weich unterstützen",
+    "region": "Schulter",
+    "goal": "Entspannung",
+    "trainingTypes": [
+      "Entspannung"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Kissen",
+    "subtitle": "Entspannung · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Unterarm bequem auf Kissen lagern, Druckstellen vermeiden.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-06",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm obere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Heimprogramm-obere-Extremitäten.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-06-anziehen",
+    "title": "Anziehen und Körperpflege üben",
+    "region": "Schulter",
+    "goal": "Koordination",
+    "trainingTypes": [
+      "Koordination"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Therapeutische Anleitung",
+    "subtitle": "Koordination · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Operierten Arm schützen; Alltagshandgriffe im Behandlungsteam einüben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-06",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm obere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/Heimprogramm-obere-Extremitäten.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-07-hws-vorn",
+    "title": "Tiefe Halsbeuger aktivieren",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Tiefe Halsbeuger"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Kinnbewegung nur andeuten; Kopf liegen lassen, ruhig atmen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-07",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/übungen-für-die-halswirbelsäule.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-07-hws-vorn-heben",
+    "title": "Kopf minimal anheben",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Tiefe Halsbeuger"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nach Kinnkontrolle den Kopf nur gering abheben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-07",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/übungen-für-die-halswirbelsäule.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-07-hws-hinten",
+    "title": "Nackenstrecker sanft aktivieren",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Nackenstrecker"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Hintere Halsmuskeln ohne sichtbare Kopfbewegung anspannen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-07",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/übungen-für-die-halswirbelsäule.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-07-hws-bauch",
+    "title": "Kopf in Bauchlage abheben",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Nackenstrecker"
+    ],
+    "position": "In Bauchlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Bauchlage",
+    "start": "In Bauchlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Stirnauflage kurz verlassen; Halsposition neutral halten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-07",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/übungen-für-die-halswirbelsäule.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-07-hws-sitz",
+    "title": "Hals im Sitz stabilisieren",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Tiefe Halsbeuger",
+      "Nackenstrecker"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "subtitle": "Kraft · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Hals aufrichten und kleine Haltespannung aufbauen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-07",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/übungen-für-die-halswirbelsäule.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-07-hws-isometrie",
+    "title": "Hals gegen Handkontakt halten",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Tiefe Halsbeuger",
+      "Nackenstrecker"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Kraft · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Stirn und Kopfseite leicht gegen Handkontakt drücken.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-07",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/übungen-für-die-halswirbelsäule.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-07-hws-vorlage",
+    "title": "Hals bei Vorlage stabilisieren",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Tiefe Halsbeuger",
+      "Nackenstrecker"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "subtitle": "Kraft · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Oberkörper gering vorbeugen; Halsausrichtung dabei beibehalten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-07",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/übungen-für-die-halswirbelsäule.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-07-hws-bewegen",
+    "title": "Kopf kontrolliert bewegen",
+    "region": "Nacken",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Kopf klein vorführen, zurücknehmen, drehen und neigen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-07",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/übungen-für-die-halswirbelsäule.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-08-dehn-ham-liege",
+    "title": "Beinrückseite liegend dehnen",
+    "region": "Knie",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Dehnung · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Oberschenkel halten; Knie langsam bis zum leichten Zug strecken.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-08",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Stretching",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-stretchingübungen.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-08-dehn-ham-stand",
+    "title": "Beinrückseite im Stand dehnen",
+    "region": "Knie",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Stuhl",
+    "subtitle": "Dehnung · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Fuß sicher erhöht ablegen, mit geradem Rücken gering vorbeugen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-08",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Stretching",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-stretchingübungen.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-08-dehn-gesaess-sitz",
+    "title": "Gesäß im Sitz dehnen",
+    "region": "Hüfte",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "subtitle": "Dehnung · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Fuß auf Gegenschenkel ablegen, Oberkörper vorsichtig vorbeugen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-08",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Stretching",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-stretchingübungen.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-08-dehn-gesaess-liege",
+    "title": "Gesäß liegend dehnen",
+    "region": "Hüfte",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Dehnung · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Gekreuzte Beinposition sanft zum Körper führen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-08",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Stretching",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-stretchingübungen.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-08-dehn-quad",
+    "title": "Oberschenkelvorderseite dehnen",
+    "region": "Knie",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Stuhl",
+    "subtitle": "Dehnung · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Abstützen; Fuß vorsichtig Richtung Gesäß führen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-08",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Stretching",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-stretchingübungen.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-08-dehn-quad-stuhl",
+    "title": "Vorderseite mit Fußauflage dehnen",
+    "region": "Knie",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Stuhl",
+    "subtitle": "Dehnung · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Hinteren Fuß ablegen; vorderes Bein gering beugen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-08",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Stretching",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-stretchingübungen.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-08-dehn-hueftbeuger",
+    "title": "Hüftvorderseite sanft dehnen",
+    "region": "Hüfte",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Halbkniestand",
+    "equipment": "Matte",
+    "subtitle": "Dehnung · Im Halbkniestand",
+    "start": "Im Halbkniestand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Becken gering vorverlagern; Hohlkreuz vermeiden.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-08",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Stretching",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-stretchingübungen.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-08-dehn-adduktor-stand",
+    "title": "Beininnenseite im Stand dehnen",
+    "region": "Hüfte",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Dehnung · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Breiten Stand wählen, Gewicht sanft seitlich verschieben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-08",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Stretching",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-stretchingübungen.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-08-dehn-adduktor-liege",
+    "title": "Beininnenseite liegend dehnen",
+    "region": "Hüfte",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Dehnung · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Aufgestellte Knie langsam auseinanderfallen lassen, nicht nachdrücken.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-08",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Stretching",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-stretchingübungen.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-08-dehn-wade",
+    "title": "Wade in Schrittstellung dehnen",
+    "region": "Hand",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Wand",
+    "subtitle": "Dehnung · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Hintere Ferse belasten, Becken sanft vorverlagern.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-08",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Stretching",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-stretchingübungen.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-08-dehn-brust",
+    "title": "Brust im Vierfüßler lösen",
+    "region": "Schulter",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Vierfüßlerstand",
+    "equipment": "Matte",
+    "subtitle": "Dehnung · Im Vierfüßlerstand",
+    "start": "Im Vierfüßlerstand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Arm seitlich auflegen, Oberkörper vorsichtig absenken.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-08",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Stretching",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-stretchingübungen.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-08-dehn-nacken",
+    "title": "Nacken im Stand dehnen",
+    "region": "Nacken",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Dehnung · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Kopf leicht neigen, gegenüberliegende Hand bodenwärts führen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-08",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Stretching",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-stretchingübungen.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-09-squat",
+    "title": "Kontrollierte Kniebeuge",
+    "region": "Knie",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Becken nach hinten führen; Knie beugen und aufrichten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-09",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit belasteter Beugung",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-training-der-beinmuskulatur-belastete-beugung.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-09-squat-seitschritt",
+    "title": "Seitwärtsschritt in Kniebeuge",
+    "region": "Knie",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)",
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Kein Hilfsmittel",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "In kleiner Kniebeuge Gewicht verlagern und Bein seitlich führen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-09",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit belasteter Beugung",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-training-der-beinmuskulatur-belastete-beugung.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-09-squat-gewicht",
+    "title": "Kniebeuge mit Gewichtsführung",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [
+      "Deltamuskel (M. deltoideus)",
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur fortgeschritten: beim Aufrichten leichtes Gewicht kontrolliert anheben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-09",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit belasteter Beugung",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-training-der-beinmuskulatur-belastete-beugung.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Anspruchsvoll"
+  },
+  {
+    "id": "birshof-09-ausfallschritt",
+    "title": "Ausfallschritt kontrollieren",
+    "region": "Knie",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Stuhl",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Schrittstellung halten; beide Knie kontrolliert beugen und strecken.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-09",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit belasteter Beugung",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-training-der-beinmuskulatur-belastete-beugung.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-09-ausfall-rotation",
+    "title": "Schrittstellung mit Gewichtsrotation",
+    "region": "Knie",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Brustwirbelsäule",
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur fortgeschritten: Gewicht bei stabilen Beinen seitlich führen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-09",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit belasteter Beugung",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-training-der-beinmuskulatur-belastete-beugung.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Anspruchsvoll"
+  },
+  {
+    "id": "birshof-09-ausfall-kniehub",
+    "title": "Aus Schrittstellung aufrichten",
+    "region": "Knie",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)",
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Stuhl",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Vorderes Bein aufrichten und hinteres Knie langsam vorführen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-09",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit belasteter Beugung",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-training-der-beinmuskulatur-belastete-beugung.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-09-einbein-vorlage",
+    "title": "Einbeinige kleine Vorlage",
+    "region": "Knie",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)",
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Stuhl",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Mit Sicherung auf einem Bein kontrolliert etwas vorbeugen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-09",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit belasteter Beugung",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-training-der-beinmuskulatur-belastete-beugung.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-09-vorfuss-kniebeuge",
+    "title": "Kniebeuge auf Vorfüßen",
+    "region": "Knie",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Wadenmuskulatur (M. gastrocnemius / soleus)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Stuhl",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur fortgeschritten: mit Halt auf Vorfüßen kleine Kniebeuge ausführen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-09",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit belasteter Beugung",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-training-der-beinmuskulatur-belastete-beugung.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Anspruchsvoll"
+  },
+  {
+    "id": "birshof-10-stuetz",
+    "title": "Schultergürtel im Vierfüßler halten",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Kapuzenmuskel (M. trapezius)",
+      "Vorderer Sägemuskel (M. serratus anterior)",
+      "Bauchmuskulatur"
+    ],
+    "position": "Im Vierfüßlerstand",
+    "equipment": "Matte",
+    "subtitle": "Kraft · Im Vierfüßlerstand",
+    "start": "Im Vierfüßlerstand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Hände belasten, Schulterblätter am Brustkorb kontrollieren.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-10",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Stützaktivität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-stützaktivität.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-10-stuetz-lang",
+    "title": "Stützposition verlängern",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Vorderer Sägemuskel (M. serratus anterior)",
+      "Bauchmuskulatur"
+    ],
+    "position": "Im Vierfüßlerstand",
+    "equipment": "Matte",
+    "subtitle": "Kraft · Im Vierfüßlerstand",
+    "start": "Im Vierfüßlerstand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Knie etwas zurücksetzen; Rumpfposition stabil halten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-10",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Stützaktivität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-stützaktivität.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-10-stuetz-diagonal",
+    "title": "Diagonale im Stütz lösen",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Sägemuskel (M. serratus anterior)",
+      "Bauchmuskulatur",
+      "Tiefe Rückenstabilisatoren (Mm. multifidi)"
+    ],
+    "position": "Im Vierfüßlerstand",
+    "equipment": "Matte",
+    "subtitle": "Kraft · Im Vierfüßlerstand",
+    "start": "Im Vierfüßlerstand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Gegenüberliegende Hand und Fuß kontrolliert kurz entlasten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-10",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Stützaktivität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-stützaktivität.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-10-unterarm-vor",
+    "title": "Unterarmstütz mit Armführung",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Vorderer Sägemuskel (M. serratus anterior)",
+      "Bauchmuskulatur"
+    ],
+    "position": "Im Unterarmstütz",
+    "equipment": "Matte",
+    "subtitle": "Kraft · Im Unterarmstütz",
+    "start": "Im Unterarmstütz. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Mit Knieauflage einen Arm langsam nach vorn bewegen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-10",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Stützaktivität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-stützaktivität.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-10-unterarm-lang",
+    "title": "Langen Unterarmstütz halten",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Sägemuskel (M. serratus anterior)",
+      "Bauchmuskulatur"
+    ],
+    "position": "Im Unterarmstütz",
+    "equipment": "Matte",
+    "subtitle": "Kraft · Im Unterarmstütz",
+    "start": "Im Unterarmstütz. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur fortgeschritten: Knie lösen, Rumpf ohne Einsinken halten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-10",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Stützaktivität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-stützaktivität.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Anspruchsvoll"
+  },
+  {
+    "id": "birshof-10-stuetz-instabil",
+    "title": "Diagonaler Stütz auf weicher Auflage",
+    "region": "Schulter",
+    "goal": "Koordination",
+    "trainingTypes": [
+      "Koordination"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Vierfüßlerstand",
+    "equipment": "Balancekissen",
+    "subtitle": "Koordination · Im Vierfüßlerstand",
+    "start": "Im Vierfüßlerstand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur gesichert: Diagonale auf leicht nachgiebiger Unterlage entlasten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-10",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Stützaktivität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-stützaktivität.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-10-seitstuetz",
+    "title": "Seitstütz mit Knieauflage",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Sägemuskel (M. serratus anterior)",
+      "Bauchmuskulatur",
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"
+    ],
+    "position": "In Seitenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Seitenlage",
+    "start": "In Seitenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Auf Unterarm und gebeugte Knie stützen, Becken anheben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-10",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Stützaktivität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-stützaktivität.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-10-stuetz-reaktiv",
+    "title": "Reaktiven Handstütz üben",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel",
+      "Ellenbogengelenk"
+    ],
+    "strengthMuscles": [
+      "Trizeps (M. triceps brachii)",
+      "Vorderer Sägemuskel (M. serratus anterior)",
+      "Brustmuskel (M. pectoralis major)"
+    ],
+    "position": "Im Vierfüßlerstand",
+    "equipment": "Matte",
+    "subtitle": "Kraft · Im Vierfüßlerstand",
+    "start": "Im Vierfüßlerstand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur unter Anleitung: Hände kurz entlasten, kontrolliert auffangen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-10",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schultertraining mit Stützaktivität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-schultermuskeltraining-mit-stützaktivität.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-11-blatt-bauch",
+    "title": "Schulterblatt in Bauchlage führen",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Kapuzenmuskel (M. trapezius)",
+      "Rautenmuskeln (Mm. rhomboidei)"
+    ],
+    "position": "In Bauchlage",
+    "equipment": "Liege",
+    "subtitle": "Kraft · In Bauchlage",
+    "start": "In Bauchlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Aufgelegten Oberarm belassen, Schulterblatt behutsam abwärts führen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-11",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterblattstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-trainig-der-schulterblatt-stabilisierenden-muskulatur.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-11-blatt-sitz",
+    "title": "Arm bei ruhigem Schulterblatt heben",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Kapuzenmuskel (M. trapezius)",
+      "Rautenmuskeln (Mm. rhomboidei)"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Tisch",
+    "subtitle": "Kraft · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Arm aus Auflage etwas lösen, Schulterposition kontrollieren.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-11",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterblattstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-trainig-der-schulterblatt-stabilisierenden-muskulatur.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-11-blatt-decke",
+    "title": "Hand zur Decke schieben",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Vorderer Sägemuskel (M. serratus anterior)"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Aufgerichteten Arm weiter deckenwärts schieben, Schulterblatt mitführen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-11",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterblattstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-trainig-der-schulterblatt-stabilisierenden-muskulatur.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-11-blatt-arm-bauch",
+    "title": "Arm seitlich etwas abheben",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Deltamuskel (M. deltoideus)",
+      "Kapuzenmuskel (M. trapezius)",
+      "Rautenmuskeln (Mm. rhomboidei)"
+    ],
+    "position": "In Bauchlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Bauchlage",
+    "start": "In Bauchlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Schulterblatt ruhig halten; gestreckten Arm gering abheben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-11",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterblattstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-trainig-der-schulterblatt-stabilisierenden-muskulatur.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-11-blatt-seite",
+    "title": "Schulterblatt mit Außenrotation halten",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Schulteraußenrotatoren (M. infraspinatus / M. teres minor)",
+      "Kapuzenmuskel (M. trapezius)"
+    ],
+    "position": "In Seitenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Seitenlage",
+    "start": "In Seitenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Ellenbogen angelegt halten, Unterarm außenwärts führen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-11",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterblattstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-trainig-der-schulterblatt-stabilisierenden-muskulatur.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-11-blatt-rotation-bauch",
+    "title": "Außenrotation mit Oberarmauflage",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Schulteraußenrotatoren (M. infraspinatus / M. teres minor)",
+      "Kapuzenmuskel (M. trapezius)"
+    ],
+    "position": "In Bauchlage",
+    "equipment": "Liege",
+    "subtitle": "Kraft · In Bauchlage",
+    "start": "In Bauchlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Abgestützten Oberarm ruhig halten; Hand langsam nach oben drehen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-11",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterblattstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-trainig-der-schulterblatt-stabilisierenden-muskulatur.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-11-blatt-arm-ohr",
+    "title": "Arm neben Kopf abheben",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Deltamuskel (M. deltoideus)",
+      "Kapuzenmuskel (M. trapezius)"
+    ],
+    "position": "In Bauchlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Bauchlage",
+    "start": "In Bauchlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Arm neben dem Kopf gering abheben, Rumpf stabilisieren.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-11",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterblattstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-trainig-der-schulterblatt-stabilisierenden-muskulatur.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-11-blatt-stuetz",
+    "title": "Schulterblatt unter Stützlast halten",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [
+      "Kapuzenmuskel (M. trapezius)",
+      "Vorderer Sägemuskel (M. serratus anterior)"
+    ],
+    "position": "Im Vierfüßlerstand",
+    "equipment": "Matte",
+    "subtitle": "Kraft · Im Vierfüßlerstand",
+    "start": "Im Vierfüßlerstand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Hände gegen Matte drücken; Schulterblätter kontrolliert halten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-11",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Schulterblattstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-trainig-der-schulterblatt-stabilisierenden-muskulatur.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-12-bein-seite",
+    "title": "Oberes Bein seitlich heben",
+    "region": "Hüfte",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"
+    ],
+    "position": "In Seitenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Seitenlage",
+    "start": "In Seitenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Oberes Bein gestreckt abheben und kontrolliert zurückführen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-12",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit gestrecktem Knie",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-training-der-beinmuskulatur-kniestreckung.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-12-bein-innen",
+    "title": "Unteres Bein seitlich heben",
+    "region": "Hüfte",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Hüftadduktoren"
+    ],
+    "position": "In Seitenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Seitenlage",
+    "start": "In Seitenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Oberes Bein sicher abstellen; unteres Bein leicht anheben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-12",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit gestrecktem Knie",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-training-der-beinmuskulatur-kniestreckung.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-12-bein-bauch",
+    "title": "Bein in Bauchlage heben",
+    "region": "Hüfte",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Hinterer Oberschenkel (ischiocrurale Muskulatur)"
+    ],
+    "position": "In Bauchlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Bauchlage",
+    "start": "In Bauchlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Gestrecktes Bein klein anheben; Becken bleibt ruhig.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-12",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit gestrecktem Knie",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-training-der-beinmuskulatur-kniestreckung.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-12-stand-handtuch",
+    "title": "Einbeinstand mit Kniehub",
+    "region": "Knie",
+    "goal": "Koordination",
+    "trainingTypes": [
+      "Koordination"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Handtuchrolle",
+    "subtitle": "Koordination · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur gesichert: Stand auf Rolle halten und Gegenknie anheben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-12",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit gestrecktem Knie",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-training-der-beinmuskulatur-kniestreckung.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-12-stand-gewicht",
+    "title": "Einbeinstand mit Armführung",
+    "region": "Schulter",
+    "goal": "Koordination",
+    "trainingTypes": [
+      "Koordination"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Hanteln",
+    "subtitle": "Koordination · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nur fortgeschritten: Bein seitlich führen und leichte Gewichte anheben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-12",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit gestrecktem Knie",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-training-der-beinmuskulatur-kniestreckung.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Anspruchsvoll"
+  },
+  {
+    "id": "birshof-12-stand-rueck",
+    "title": "Standbein mit Rückführung stabilisieren",
+    "region": "Knie",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Anderes Bein rückwärts führen; Standachse kontrolliert beibehalten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-12",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit gestrecktem Knie",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-training-der-beinmuskulatur-kniestreckung.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-12-fersen",
+    "title": "Fersen im Stand anheben",
+    "region": "Hand",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [
+      "Wadenmuskulatur (M. gastrocnemius / soleus)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Stuhl",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Mit sicherem Halt auf Vorfüße heben und langsam senken.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-12",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit gestrecktem Knie",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-training-der-beinmuskulatur-kniestreckung.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-12-beckenstufe",
+    "title": "Becken auf Stufe kontrollieren",
+    "region": "Hüfte",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Stufe",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Gesichert stehen; freies Becken gering senken und anheben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-12",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Beintraining mit gestrecktem Knie",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zum-training-der-beinmuskulatur-kniestreckung.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-13-ferse-liege",
+    "title": "Ferse liegend heranziehen",
+    "region": "Knie",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Mobilisation · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Ferse zum Gesäß gleiten lassen, Bein wieder ausstrecken.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-13",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Knie und Hüfte mobilisieren",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-mobilisation-von-knie-und-hüfte.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-13-knie-bauch",
+    "title": "Knie in Bauchlage bewegen",
+    "region": "Knie",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "In Bauchlage",
+    "equipment": "Matte",
+    "subtitle": "Mobilisation · In Bauchlage",
+    "start": "In Bauchlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Knie langsam beugen und strecken; Becken liegen lassen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-13",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Knie und Hüfte mobilisieren",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-mobilisation-von-knie-und-hüfte.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-13-ferse-sitz",
+    "title": "Ferse im Sitz verschieben",
+    "region": "Knie",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Fuß am Boden langsam vor- und zurückgleiten lassen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-13",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Knie und Hüfte mobilisieren",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-mobilisation-von-knie-und-hüfte.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-13-quad-sitz",
+    "title": "Gestrecktes Bein im Sitz halten",
+    "region": "Knie",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "subtitle": "Kraft · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Oberschenkel anspannen, gestrecktes Bein kurz von Auflage lösen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-13",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Knie und Hüfte mobilisieren",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-mobilisation-von-knie-und-hüfte.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-13-bruecke",
+    "title": "Becken liegend anheben",
+    "region": "Rücken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Lendenwirbelsäule",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Hinterer Oberschenkel (ischiocrurale Muskulatur)"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Füße aufstellen; Becken kontrolliert heben und ablegen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-13",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Knie und Hüfte mobilisieren",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-mobilisation-von-knie-und-hüfte.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-13-knie-schritt",
+    "title": "Knie in Schrittstellung bewegen",
+    "region": "Knie",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Stuhl",
+    "subtitle": "Mobilisation · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Hinteres Knie bei stabiler Hüfte langsam beugen und strecken.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-13",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Knie und Hüfte mobilisieren",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-mobilisation-von-knie-und-hüfte.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-13-huefte-stufe",
+    "title": "Hüfte mit Stufenauflage bewegen",
+    "region": "Knie",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Stufe",
+    "subtitle": "Mobilisation · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Fuß niedrig aufsetzen, Hüfte nur freigegeben beugen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-13",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Knie und Hüfte mobilisieren",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-mobilisation-von-knie-und-hüfte.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-13-patella",
+    "title": "Kniescheibe vorsichtig mobilisieren",
+    "region": "Knie",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "In Rückenlage",
+    "equipment": "Therapeutische Anleitung",
+    "subtitle": "Mobilisation · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Nach Anleitung entspannte Kniescheibe behutsam verschieben; nicht auf Wunden drücken.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-13",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Knie und Hüfte mobilisieren",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-mobilisation-von-knie-und-hüfte.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-14-rumpf-basis",
+    "title": "Tiefe Rumpfspannung aufbauen",
+    "region": "Rücken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Lendenwirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Tiefe Rückenstabilisatoren (Mm. multifidi)",
+      "Beckenbodenmuskulatur"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Unterbauch sanft aktivieren; Wirbelsäule ruhig, Atmung frei lassen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-14",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Segmentale Rumpfstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-segmentalen-rumpfstabilisation.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-14-rumpf-bein",
+    "title": "Rumpf beim Beinheben halten",
+    "region": "Rücken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Lendenwirbelsäule",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Tiefe Rückenstabilisatoren (Mm. multifidi)"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Rumpfspannung halten; einen Fuß klein von Unterlage lösen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-14",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Segmentale Rumpfstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-segmentalen-rumpfstabilisation.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-14-rumpf-bruecke",
+    "title": "Brücke mit Fußentlastung",
+    "region": "Rücken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Lendenwirbelsäule",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Hinterer Oberschenkel (ischiocrurale Muskulatur)"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Becken anheben; einen Fuß nur bei stabiler Haltung entlasten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-14",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Segmentale Rumpfstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-segmentalen-rumpfstabilisation.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-14-rumpf-muschel",
+    "title": "Knie seitlich öffnen",
+    "region": "Rücken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Lendenwirbelsäule",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Tiefe Rückenstabilisatoren (Mm. multifidi)",
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"
+    ],
+    "position": "In Seitenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Seitenlage",
+    "start": "In Seitenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Fersen zusammenlassen, oberes Knie bei stabilem Becken anheben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-14",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Segmentale Rumpfstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-segmentalen-rumpfstabilisation.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-14-rumpf-hinten",
+    "title": "Tiefe Rückenmuskelspannung fühlen",
+    "region": "Rücken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Lendenwirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Tiefe Rückenstabilisatoren (Mm. multifidi)",
+      "Beckenbodenmuskulatur"
+    ],
+    "position": "In Bauchlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Bauchlage",
+    "start": "In Bauchlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Tiefe Rückenspannung ohne sichtbare Wirbelsäulenbewegung aufbauen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-14",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Segmentale Rumpfstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-segmentalen-rumpfstabilisation.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-14-rumpf-sitz",
+    "title": "Rumpf bei Sitzbewegung halten",
+    "region": "Rücken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Lendenwirbelsäule",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Tiefe Rückenstabilisatoren (Mm. multifidi)"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "subtitle": "Kraft · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Kleine Vorlage oder Fußentlastung bei ruhigem Rumpf üben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-14",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Segmentale Rumpfstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-segmentalen-rumpfstabilisation.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-14-rumpf-stand",
+    "title": "Rumpf beim Stufenlösen halten",
+    "region": "Rücken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Lendenwirbelsäule",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Tiefe Rückenstabilisatoren (Mm. multifidi)",
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Stufe",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Fuß von niedriger Stufe lösen, Becken waagrecht halten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-14",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Segmentale Rumpfstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-segmentalen-rumpfstabilisation.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-14-rumpf-ausfall",
+    "title": "Schrittbeuge mit stabilem Rumpf",
+    "region": "Rücken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Lendenwirbelsäule",
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Stuhl",
+    "subtitle": "Kraft · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Mit Halt in Schrittstellung klein beugen und aufrichten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-14",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Segmentale Rumpfstabilisation",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/centres/physiotherapie/birshof-physiotherapie-übungen-zur-segmentalen-rumpfstabilisation.PDF"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-15-wadenpumpe",
+    "title": "Fußpumpe in Rückenlage",
+    "region": "Hand",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Mobilisation · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Fußspitzen langsam abwechselnd zum Körper ziehen und wegführen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-15",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm untere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/Heimprogramm_unter_Extremitaeten_Klinik%20Birshof.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-15-kniebeuge-liege",
+    "title": "Knie liegend bewegen",
+    "region": "Knie",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Mobilisation · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Knie kontrolliert beugen, Bein wieder ausstrecken.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-15",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm untere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/Heimprogramm_unter_Extremitaeten_Klinik%20Birshof.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-15-treppe-auf",
+    "title": "Treppe mit Gehhilfen hinauf",
+    "region": "Knie",
+    "goal": "Koordination",
+    "trainingTypes": [
+      "Koordination"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Gehhilfen",
+    "subtitle": "Koordination · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Eingeübte Reihenfolge nutzen; Belastungsvorgabe und Geländer beachten.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-15",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm untere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/Heimprogramm_unter_Extremitaeten_Klinik%20Birshof.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-15-gesaess",
+    "title": "Gesäßmuskeln kurz anspannen",
+    "region": "Hüfte",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Gesäß beidseits sanft anspannen und wieder lösen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-15",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm untere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/Heimprogramm_unter_Extremitaeten_Klinik%20Birshof.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-15-gang",
+    "title": "Gehen mit zwei Gehhilfen",
+    "region": "Knie",
+    "goal": "Koordination",
+    "trainingTypes": [
+      "Koordination"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Gehhilfen",
+    "subtitle": "Koordination · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Verordnetes Gangmuster unter Beachtung der Teilbelastung einüben.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-15",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm untere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/Heimprogramm_unter_Extremitaeten_Klinik%20Birshof.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-15-lagern",
+    "title": "Bein zur Entlastung lagern",
+    "region": "Knie",
+    "goal": "Entspannung",
+    "trainingTypes": [
+      "Entspannung"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "In Rückenlage",
+    "equipment": "Kissen",
+    "subtitle": "Entspannung · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Bein nach Behandlungsvorgabe unterstützt lagern; Druckstellen vermeiden.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-15",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm untere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/Heimprogramm_unter_Extremitaeten_Klinik%20Birshof.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-15-quad",
+    "title": "Oberschenkel im Liegen aktivieren",
+    "region": "Knie",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "subtitle": "Kraft · In Rückenlage",
+    "start": "In Rückenlage. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Kniekehle sanft zur Unterlage führen, Spannung anschließend lösen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-15",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm untere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/Heimprogramm_unter_Extremitaeten_Klinik%20Birshof.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-15-kniebeuge-sitz",
+    "title": "Knie im Sitz bewegen",
+    "region": "Knie",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "subtitle": "Mobilisation · Im Sitzen",
+    "start": "Im Sitzen. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Fuß ohne Druck vor- und zurückgleiten lassen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-15",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm untere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/Heimprogramm_unter_Extremitaeten_Klinik%20Birshof.pdf"
+      }
+    ],
+    "requiresSupervision": false,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "birshof-15-treppe-ab",
+    "title": "Treppe mit Gehhilfen hinunter",
+    "region": "Knie",
+    "goal": "Koordination",
+    "trainingTypes": [
+      "Koordination"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Gehhilfen",
+    "subtitle": "Koordination · Im Stand",
+    "start": "Im Stand. Hilfsmittel und sicheren Halt vorbereiten.",
+    "steps": [
+      "Verordnete Schrittfolge mit Geländer und eingeübten Gehhilfen nutzen.",
+      "Langsam lösen und in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Kein Schwung, kein Pressen, Beschwerden nicht erzwingen.",
+    "brochureId": "birshof-15",
+    "sources": [
+      {
+        "title": "Hirslanden Birshof – Heimprogramm untere Extremität",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/Heimprogramm_unter_Extremitaeten_Klinik%20Birshof.pdf"
+      }
+    ],
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "methodTags": [],
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "kiefer-korken",
+    "title": "Korkenübung nach individueller Kieferanleitung",
+    "trainingTypes": [
+      "Koordination"
+    ],
+    "joints": [
+      "Kiefergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Korken",
+    "region": "Kiefer",
+    "steps": [
+      "Nur nach persönlicher Einweisung: sauberen, passend bemessenen Korken jederzeit sicher festhalten.",
+      "Ausschließlich die gezeigte kleine Kieferbewegung durchführen; kein kräftiges Zubeißen oder erzwungenes Knacken.",
+      "Korken herausnehmen und Kiefer locker lassen."
+    ],
+    "precautions": "Nur nach zahnärztlicher oder physiotherapeutischer Befundung und Anleitung. Nicht bei Schluckstörung, lockeren Zähnen, akuter Blockade, Luxation, frischer Zahn- oder Kieferoperation. Verschlucken verhindern: Korken festhalten, nicht unbeaufsichtigt üben. Passform und Bewegungsrichtung werden individuell vorgegeben; keine Selbstbehandlung einer Diskusverlagerung.",
+    "requiresSupervision": true,
+    "sources": [
+      {
+        "title": "Spital SRO – Kiefergelenk-Heimprogramm",
+        "url": "https://www.sro.ch/fileadmin/user_upload/09_Dokumente/Physiotherapie_Heimprogramme/SRO_AG_Physiotherapie_Kiefergelenk_Heimprogramm.pdf"
+      }
+    ],
+    "methodTags": [
+      "Kiefer"
+    ],
+    "conditionUses": [],
+    "goal": "Koordination",
+    "subtitle": "Koordination · Im Sitzen",
+    "start": "Im Sitzen. Bequeme, sichere Position wählen.",
+    "mistakes": "Keine Schmerzen, kein Pressen und keinen Bewegungsumfang erzwingen.",
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "pir-nacken",
+    "title": "Postisometrische Relaxation für den Nacken",
+    "trainingTypes": [
+      "Entspannung",
+      "Dehnung"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Therapeutische Anleitung",
+    "region": "Nacken",
+    "steps": [
+      "Nach Einweisung den Kopf bequem ausrichten; die Hand gibt nur geringen Gegenhalt.",
+      "Die gewünschte Bewegung sanft andeuten, ohne dass der Kopf sich bewegt; ruhig weiteratmen.",
+      "Spannung vollständig lösen. Eine neue Position nur im angeleiteten, angenehmen Bereich zulassen."
+    ],
+    "requiresSupervision": true,
+    "methodTags": [
+      "PIR"
+    ],
+    "sources": [
+      {
+        "title": "MET/PIR bei unspezifischem Nackenschmerz – systematische Übersicht 2023",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10687238/"
+      }
+    ],
+    "conditionUses": [],
+    "goal": "Entspannung",
+    "subtitle": "Entspannung · Im Sitzen",
+    "start": "Im Sitzen. Bequeme, sichere Position wählen.",
+    "mistakes": "Keine Schmerzen, kein Pressen und keinen Bewegungsumfang erzwingen.",
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "pir-beinrueckseite",
+    "title": "Postisometrisches Lösen der Beinrückseite",
+    "trainingTypes": [
+      "Entspannung",
+      "Dehnung"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "In Rückenlage",
+    "equipment": "Therapeutische Anleitung",
+    "region": "Hüfte",
+    "steps": [
+      "Fachperson unterstützt das Bein in einer angenehmen Position.",
+      "Die Beinrückseite gering gegen den gehaltenen Widerstand anspannen, ohne Bewegung.",
+      "Vollständig lösen; weitere Positionsänderung durch die Fachperson begleiten lassen."
+    ],
+    "requiresSupervision": true,
+    "methodTags": [
+      "PIR"
+    ],
+    "sources": [
+      {
+        "title": "PIR/Muscle Energy: Verfahren; keine spezifische Wirksamkeitsprüfung dieses Beinbeispiels",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10687238/"
+      }
+    ],
+    "conditionUses": [],
+    "goal": "Entspannung",
+    "subtitle": "Entspannung · In Rückenlage",
+    "start": "In Rückenlage. Bequeme, sichere Position wählen.",
+    "mistakes": "Keine Schmerzen, kein Pressen und keinen Bewegungsumfang erzwingen.",
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "pir-kiefer",
+    "title": "Kiefer nach sanfter Isometrie entspannen",
+    "trainingTypes": [
+      "Entspannung"
+    ],
+    "joints": [
+      "Kiefergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Therapeutische Anleitung",
+    "region": "Kiefer",
+    "steps": [
+      "Individuell angeleitete Kieferposition einnehmen, Zähne voneinander lösen.",
+      "Bewegung gegen sehr leichten Fingerkontakt nur andeuten; keine sichtbare Kieferbewegung.",
+      "Fingerkontakt und Muskelspannung lösen, ohne die Öffnung zu erzwingen."
+    ],
+    "requiresSupervision": true,
+    "methodTags": [
+      "PIR",
+      "Kiefer"
+    ],
+    "sources": [
+      {
+        "title": "PIR als Verfahrensprinzip – keine direkte Korken- oder Kiefer-PIR-Studie",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10687238/"
+      },
+      {
+        "title": "Kieferübungen – systematische Übersicht 2025",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12426462/"
+      }
+    ],
+    "conditionUses": [],
+    "goal": "Entspannung",
+    "subtitle": "Entspannung · Im Sitzen",
+    "start": "Im Sitzen. Bequeme, sichere Position wählen.",
+    "mistakes": "Keine Schmerzen, kein Pressen und keinen Bewegungsumfang erzwingen.",
+    "catalogMedia": [],
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "reha-aufstehen",
+    "title": "Kontrolliert vom Stuhl aufstehen",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "region": "Knie",
+    "steps": [
+      "Stabilen Stuhl gegen Verrutschen sichern; Füße passend aufstellen.",
+      "Oberkörper vorverlagern und mit individuell erlaubter Belastung aufstehen.",
+      "Langsam hinsetzen; erforderlichenfalls Armstützen oder Hilfestellung nutzen."
+    ],
+    "requiresSupervision": false,
+    "methodTags": [],
+    "catalogMedia": [
+      "cdc-squat"
+    ],
+    "sources": [
+      {
+        "title": "NHS – Strength exercises",
+        "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/"
+      }
+    ],
+    "conditionUses": [],
+    "goal": "Kraft",
+    "subtitle": "Kraft · Im Sitzen",
+    "start": "Im Sitzen. Bequeme, sichere Position wählen.",
+    "mistakes": "Keine Schmerzen, kein Pressen und keinen Bewegungsumfang erzwingen.",
+    "difficulty": "Leicht"
+  },
+  {
+    "id": "reha-knie-strecken",
+    "title": "Kniestreckung im Sitz aufbauen",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "region": "Knie",
+    "steps": [
+      "Auf stabilem Stuhl sitzen. Anfangs ohne Zusatzgewicht üben.",
+      "Unterschenkel im freigegebenen Winkelbereich kontrolliert strecken.",
+      "Langsam zurückführen; Widerstand nur nach therapeutischer Vorgabe ergänzen."
+    ],
+    "requiresSupervision": false,
+    "methodTags": [],
+    "catalogMedia": [
+      "cdc-knee-extension"
+    ],
+    "precautions": "Die CDC-Animation zeigt Fußgewichte. Diese sind keine Empfehlung für die Frührehabilitation. Nach Kreuzbandoperation gelten insbesondere Freigabe und Winkelvorgabe des Behandlungsteams.",
+    "sources": [
+      {
+        "title": "NHS – Strength exercises",
+        "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/"
+      }
+    ],
+    "conditionUses": [],
+    "goal": "Kraft",
+    "subtitle": "Kraft · Im Sitzen",
+    "start": "Im Sitzen. Bequeme, sichere Position wählen.",
+    "mistakes": "Keine Schmerzen, kein Pressen und keinen Bewegungsumfang erzwingen.",
+    "difficulty": "Leicht"
+  }
+]

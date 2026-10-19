@@ -1,0 +1,130 @@
+{
+  "schulterkreisen": {
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": []
+  },
+  "bruecke": {
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Lendenwirbelsäule",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Tiefe Rückenstabilisatoren (Mm. multifidi)",
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Hinterer Oberschenkel (ischiocrurale Muskulatur)"
+    ]
+  },
+  "knie-strecken": {
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ]
+  },
+  "nacken-drehen": {
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": []
+  },
+  "brust-oeffnen": {
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Brustwirbelsäule",
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": []
+  },
+  "hand-oeffnen": {
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Fingergelenke"
+    ],
+    "strengthMuscles": []
+  },
+  "fersen-heben": {
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [
+      "Wadenmuskulatur (M. gastrocnemius / soleus)"
+    ]
+  },
+  "huefte-seitlich": {
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"
+    ]
+  },
+  "balance": {
+    "trainingTypes": [
+      "Koordination"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": []
+  },
+  "atmung": {
+    "trainingTypes": [
+      "Entspannung"
+    ],
+    "joints": [],
+    "strengthMuscles": []
+  },
+  "ellenbogen": {
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Ellenbogengelenk"
+    ],
+    "strengthMuscles": []
+  },
+  "aufstehen": {
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ]
+  }
+}

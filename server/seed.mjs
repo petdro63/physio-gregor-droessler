@@ -1,3 +1,4 @@
+import { classifyExercise } from "./exercise-catalog.mjs";
 import { iso, transaction } from "./db.mjs";
 export const coverage = [
   ["Nacken", "Halswirbelsäule und Nacken"],
@@ -288,7 +289,7 @@ export function seed(db) {
       db.prepare("INSERT INTO exercise_versions VALUES (?,?,?,?)").run(
         id,
         1,
-        JSON.stringify(p),
+        JSON.stringify(classifyExercise(p)),
         iso(),
       );
     });

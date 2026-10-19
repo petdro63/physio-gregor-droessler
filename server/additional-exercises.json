@@ -1,0 +1,559 @@
+[
+  {
+    "id": "hantel-beugen-sitz",
+    "title": "Bizepscurl mit Hanteln im Sitz",
+    "region": "Ellenbogen",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Ellenbogengelenk"
+    ],
+    "strengthMuscles": [
+      "Bizeps (M. biceps brachii)",
+      "Armbeuger (M. brachialis)"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · Hanteln · Im Sitzen",
+    "start": "Auf stabilem Stuhl sitzen, leichte Hanteln seitlich halten.",
+    "steps": [
+      "Ellenbogen am Körper lassen.",
+      "Unterarme anheben und langsam wieder senken."
+    ],
+    "mistakes": "Nicht schwingen.",
+    "sources": [
+      {
+        "title": "NHS · Strength exercises",
+        "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/"
+      }
+    ]
+  },
+  {
+    "id": "hantel-beugen-stand",
+    "title": "Bizepscurl mit Hanteln im Stand",
+    "region": "Ellenbogen",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Ellenbogengelenk"
+    ],
+    "strengthMuscles": [
+      "Bizeps (M. biceps brachii)",
+      "Armbeuger (M. brachialis)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · Hanteln · Im Stand",
+    "start": "Hüftbreit stehen, Hanteln seitlich halten.",
+    "steps": [
+      "Ellenbogen beugen, Oberarme ruhig halten.",
+      "Gewichte kontrolliert absenken."
+    ],
+    "mistakes": "Rumpf nicht nach hinten lehnen.",
+    "sources": [
+      {
+        "title": "NHS · Strength exercises",
+        "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/"
+      }
+    ]
+  },
+  {
+    "id": "hantel-rudern",
+    "title": "Abgestütztes Rudern mit Hantel",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel",
+      "Ellenbogengelenk"
+    ],
+    "strengthMuscles": [
+      "Kapuzenmuskel (M. trapezius)",
+      "Rautenmuskeln (Mm. rhomboidei)",
+      "Breiter Rückenmuskel (M. latissimus dorsi)",
+      "Bizeps (M. biceps brachii)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Hanteln",
+    "subtitle": "Kraft · Hanteln · Im Stand",
+    "start": "Mit einer Hand stabil abstützen, andere Hand hält eine leichte Hantel.",
+    "steps": [
+      "Ellenbogen nach hinten führen.",
+      "Arm langsam zurückführen."
+    ],
+    "mistakes": "Schulter nicht hochziehen.",
+    "sources": [
+      {
+        "title": "Dynamic Health · Shoulder pain",
+        "url": "https://www.dynamichealth.nhs.uk/help-and-advice/shoulder-pain/"
+      }
+    ]
+  },
+  {
+    "id": "band-rudern-sitz",
+    "title": "Rudern mit Theraband im Sitz",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel",
+      "Ellenbogengelenk"
+    ],
+    "strengthMuscles": [
+      "Kapuzenmuskel (M. trapezius)",
+      "Rautenmuskeln (Mm. rhomboidei)",
+      "Breiter Rückenmuskel (M. latissimus dorsi)",
+      "Bizeps (M. biceps brachii)"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Theraband",
+    "subtitle": "Kraft · Theraband · Im Sitzen",
+    "start": "Aufrecht sitzen; Band vor dem Körper fachgerecht befestigen.",
+    "steps": [
+      "Bandenden zum Rumpf ziehen.",
+      "Spannung langsam lösen."
+    ],
+    "mistakes": "Befestigung und Band vorab kontrollieren.",
+    "sources": [
+      {
+        "title": "Royal National Orthopaedic Hospital · Looking after your shoulders",
+        "url": "https://www.rnoh.nhs.uk/patients-and-visitors/patient-information-guides/looking-after-your-shoulders-following-spinal-cord-injury-sci-patients-guide"
+      }
+    ]
+  },
+  {
+    "id": "band-rudern-stand",
+    "title": "Rudern mit Theraband im Stand",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel",
+      "Ellenbogengelenk"
+    ],
+    "strengthMuscles": [
+      "Kapuzenmuskel (M. trapezius)",
+      "Rautenmuskeln (Mm. rhomboidei)",
+      "Breiter Rückenmuskel (M. latissimus dorsi)",
+      "Bizeps (M. biceps brachii)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Theraband",
+    "subtitle": "Kraft · Theraband · Im Stand",
+    "start": "Sicher stehen; Band vor dem Körper fachgerecht befestigen.",
+    "steps": [
+      "Ellenbogen nach hinten ziehen.",
+      "Kontrolliert in die Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Band nicht zurückschnellen lassen.",
+    "sources": [
+      {
+        "title": "Royal National Orthopaedic Hospital · Looking after your shoulders",
+        "url": "https://www.rnoh.nhs.uk/patients-and-visitors/patient-information-guides/looking-after-your-shoulders-following-spinal-cord-injury-sci-patients-guide"
+      }
+    ]
+  },
+  {
+    "id": "band-aussenrotation",
+    "title": "Schulteraußenrotation mit Theraband",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [
+      "Schulteraußenrotatoren (M. infraspinatus / M. teres minor)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Theraband",
+    "subtitle": "Kraft · Theraband · Im Stand",
+    "start": "Band zwischen den Händen halten, Ellenbogen gebeugt am Rumpf.",
+    "steps": [
+      "Hände auseinanderführen, Ellenbogen seitlich halten.",
+      "Langsam zur Mitte zurückkehren."
+    ],
+    "mistakes": "Nicht im Rumpf mitdrehen; Band prüfen.",
+    "sources": [
+      {
+        "title": "Royal National Orthopaedic Hospital · Looking after your shoulders",
+        "url": "https://www.rnoh.nhs.uk/patients-and-visitors/patient-information-guides/looking-after-your-shoulders-following-spinal-cord-injury-sci-patients-guide"
+      }
+    ]
+  },
+  {
+    "id": "stab-aussenrotation",
+    "title": "Geführte Schulteraußenrotation mit Stab",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Stab",
+    "subtitle": "Mobilisation · Stab · Im Sitzen",
+    "start": "Stab beidhändig halten, Ellenbogen gebeugt am Körper.",
+    "steps": [
+      "Mit der anderen Hand den Stab sanft seitwärts führen.",
+      "Zur Ausgangsposition zurückkehren."
+    ],
+    "mistakes": "Nur im freigegebenen Bewegungsbereich.",
+    "sources": [
+      {
+        "title": "Dynamic Health · Shoulder pain",
+        "url": "https://www.dynamichealth.nhs.uk/help-and-advice/shoulder-pain/"
+      }
+    ]
+  },
+  {
+    "id": "stab-seitheben",
+    "title": "Geführtes seitliches Armheben mit Stab",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Stab",
+    "subtitle": "Mobilisation · Stab · Im Stand",
+    "start": "Aufrecht stehen und Stab beidhändig greifen.",
+    "steps": [
+      "Arm seitlich führen, andere Hand unterstützt über den Stab.",
+      "Langsam absenken."
+    ],
+    "mistakes": "Nicht gegen Widerstand erzwingen.",
+    "sources": [
+      {
+        "title": "Dynamic Health · Shoulder pain",
+        "url": "https://www.dynamichealth.nhs.uk/help-and-advice/shoulder-pain/"
+      }
+    ]
+  },
+  {
+    "id": "ball-beckenkippen",
+    "title": "Becken vor und zurück auf dem Pezziball",
+    "region": "Rücken",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Lendenwirbelsäule",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Pezziball",
+    "subtitle": "Mobilisation · Pezziball · Im Sitzen",
+    "start": "Auf passendem Ball sitzen, Füße breit und sicher aufstellen; Halt bereithalten.",
+    "steps": [
+      "Becken klein vor- und zurückkippen.",
+      "Oberkörper möglichst ruhig lassen."
+    ],
+    "mistakes": "Ball darf nicht wegrutschen.",
+    "sources": [
+      {
+        "title": "KMPT Physiotherapy · Using a gym ball",
+        "url": "https://www.kmpt.nhs.uk/media/2612/km1237-physiotherapy-gym-ball-exercise-guide.pdf"
+      }
+    ]
+  },
+  {
+    "id": "ball-seitverlagerung",
+    "title": "Becken seitlich auf dem Pezziball bewegen",
+    "region": "Rücken",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Lendenwirbelsäule",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Pezziball",
+    "subtitle": "Mobilisation · Pezziball · Im Sitzen",
+    "start": "Auf dem Ball sitzen, Füße sicher aufstellen; bei Bedarf sichern lassen.",
+    "steps": [
+      "Becken sanft seitlich verlagern.",
+      "über die Mitte zur anderen Seite bewegen."
+    ],
+    "mistakes": "Keine großen Ausschläge.",
+    "sources": [
+      {
+        "title": "KMPT Physiotherapy · Using a gym ball",
+        "url": "https://www.kmpt.nhs.uk/media/2612/km1237-physiotherapy-gym-ball-exercise-guide.pdf"
+      }
+    ]
+  },
+  {
+    "id": "ball-beckenkreisen",
+    "title": "Beckenkreisen auf dem Pezziball",
+    "region": "Rücken",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Lendenwirbelsäule",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Pezziball",
+    "subtitle": "Mobilisation · Pezziball · Im Sitzen",
+    "start": "Auf passendem Ball sitzen, beide Füße fest am Boden.",
+    "steps": [
+      "Mit dem Becken kleine Kreise beschreiben.",
+      "Richtung wechseln."
+    ],
+    "mistakes": "Sichere Umgebung und Halt gewährleisten.",
+    "sources": [
+      {
+        "title": "KMPT Physiotherapy · Using a gym ball",
+        "url": "https://www.kmpt.nhs.uk/media/2612/km1237-physiotherapy-gym-ball-exercise-guide.pdf"
+      }
+    ]
+  },
+  {
+    "id": "ball-wandkniebeuge",
+    "title": "Kleine Wandkniebeuge mit Pezziball",
+    "region": "Knie",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk",
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Pezziball",
+    "subtitle": "Kraft · Pezziball · Im Stand",
+    "start": "Ball zwischen Rücken und Wand halten, Füße etwas vor dem Körper aufstellen.",
+    "steps": [
+      "Knie im freigegebenen Umfang beugen.",
+      "Kontrolliert wieder aufrichten."
+    ],
+    "mistakes": "Ball gegen Abrutschen sichern; Knie nicht einknicken.",
+    "sources": [
+      {
+        "title": "KMPT Physiotherapy · Using a gym ball",
+        "url": "https://www.kmpt.nhs.uk/media/2612/km1237-physiotherapy-gym-ball-exercise-guide.pdf"
+      }
+    ]
+  },
+  {
+    "id": "vierfuessler-katze",
+    "title": "Rücken bewegen im Vierfüßlerstand",
+    "region": "Rücken",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Brustwirbelsäule",
+      "Lendenwirbelsäule"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Vierfüßlerstand",
+    "equipment": "Matte",
+    "subtitle": "Mobilisation · Matte · Im Vierfüßlerstand",
+    "start": "Hände unter Schultern und Knie unter Hüften auf einer Matte aufstellen.",
+    "steps": [
+      "Rücken sanft runden.",
+      "Zur Mitte und in eine kleine Gegenbewegung zurückkehren."
+    ],
+    "mistakes": "Nicht in die Endstellung drücken.",
+    "sources": [
+      {
+        "title": "Royal Free London · Musculoskeletal outpatient physiotherapy",
+        "url": "https://www.royalfree.nhs.uk/services/therapy-services/physiotherapy/musculoskeletal-outpatient-physiotherapy"
+      }
+    ]
+  },
+  {
+    "id": "vierfuessler-diagonal",
+    "title": "Diagonal strecken im Vierfüßlerstand",
+    "region": "Rücken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Lendenwirbelsäule",
+      "Schultergelenk",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Rückenstrecker (M. erector spinae)",
+      "Tiefe Rückenstabilisatoren (Mm. multifidi)",
+      "Großer Gesäßmuskel (M. gluteus maximus)"
+    ],
+    "position": "Im Vierfüßlerstand",
+    "equipment": "Matte",
+    "subtitle": "Kraft · Matte · Im Vierfüßlerstand",
+    "start": "Stabilen Vierfüßlerstand einnehmen, Blick zur Matte.",
+    "steps": [
+      "Gegenüberliegenden Arm und Bein langsam ausstrecken.",
+      "Zurücksetzen und Seite wechseln."
+    ],
+    "mistakes": "Becken nicht verdrehen oder ins Hohlkreuz sinken.",
+    "sources": [
+      {
+        "title": "Royal Free London · Musculoskeletal outpatient physiotherapy",
+        "url": "https://www.royalfree.nhs.uk/services/therapy-services/physiotherapy/musculoskeletal-outpatient-physiotherapy"
+      }
+    ]
+  },
+  {
+    "id": "wandliegestuetz",
+    "title": "Liegestütz an der Wand",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel",
+      "Ellenbogengelenk"
+    ],
+    "strengthMuscles": [
+      "Trizeps (M. triceps brachii)",
+      "Vorderer Sägemuskel (M. serratus anterior)",
+      "Brustmuskel (M. pectoralis major)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Wand",
+    "subtitle": "Kraft · Wand · Im Stand",
+    "start": "Mit Abstand vor einer Wand stehen, Hände etwa auf Schulterhöhe auflegen.",
+    "steps": [
+      "Ellenbogen beugen, Körper zur Wand führen.",
+      "Gleichmäßig wegdrücken."
+    ],
+    "mistakes": "Körperlinie halten.",
+    "sources": [
+      {
+        "title": "NHS · Strength exercises",
+        "url": "https://www.nhs.uk/live-well/exercise/strength-exercises/"
+      }
+    ]
+  },
+  {
+    "id": "brustdehnung-sitz",
+    "title": "Brust sanft dehnen im Sitz",
+    "region": "Schulter",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Schultergelenk",
+      "Schulterblatt / Schultergürtel"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "subtitle": "Dehnung · Stuhl · Im Sitzen",
+    "start": "Aufrecht auf stabilem Stuhl sitzen.",
+    "steps": [
+      "Arme seitlich öffnen und Brustkorb sanft aufrichten.",
+      "In angenehmer Dehnposition ruhig atmen, dann lösen."
+    ],
+    "mistakes": "Kein starkes Hohlkreuz.",
+    "sources": [
+      {
+        "title": "NHS · Sitting exercises",
+        "url": "https://www.nhs.uk/live-well/exercise/sitting-exercises/"
+      }
+    ]
+  },
+  {
+    "id": "wadendehnung-stand",
+    "title": "Wade dehnen im Stand",
+    "region": "Fuß",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "joints": [
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Wand",
+    "subtitle": "Dehnung · Wand · Im Stand",
+    "start": "Vor Wand in Schrittstellung stehen, Hände abstützen.",
+    "steps": [
+      "Hintere Ferse am Boden lassen, vorderes Knie leicht beugen.",
+      "Dehnung sanft lösen und Seite wechseln."
+    ],
+    "mistakes": "Nicht federn.",
+    "sources": [
+      {
+        "title": "NHS · Flexibility exercises",
+        "url": "https://www.nhs.uk/live-well/exercise/flexibility-exercises/"
+      }
+    ]
+  },
+  {
+    "id": "rumpfdrehung-sitz",
+    "title": "Brustwirbelsäule drehen im Sitz",
+    "region": "Brustwirbelsäule",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Brustwirbelsäule"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "subtitle": "Mobilisation · Stuhl · Im Sitzen",
+    "start": "Aufrecht sitzen, Füße ruhig aufstellen.",
+    "steps": [
+      "Oberkörper langsam zu einer Seite drehen.",
+      "Zur Mitte zurückkehren und Seite wechseln."
+    ],
+    "mistakes": "Becken möglichst ruhig lassen.",
+    "sources": [
+      {
+        "title": "NHS · Sitting exercises",
+        "url": "https://www.nhs.uk/live-well/exercise/sitting-exercises/"
+      }
+    ]
+  }
+]

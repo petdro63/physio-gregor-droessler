@@ -1192,6 +1192,61 @@ a svg {
   flex-direction: column;
   gap: 12px;
 }
+
+.training-type-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.catalog-placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: #476455; padding: 36px 12px 20px; text-align: center; }
+.exercise-art .catalog-placeholder svg { width: 42px; height: 42px; }
+.catalog-placeholder span, .catalog-placeholder small { font-size: 11px; }
+.library-toolbar .filter-row { flex-wrap: wrap; }
+.library-toolbar .filter-row select { max-width: 100%; }
+.exercise-copy .exercise-anatomy { font-size: 12px; color: var(--muted); line-height: 1.5; }
+.classification-editor { display: grid; gap: 16px; margin: 20px 0; }
+.classification-editor fieldset { min-width: 0; border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
+.classification-editor legend { font-weight: 600; padding: 0 5px; }
+.classification-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; max-height: 230px; overflow-y: auto; }
+.classification-options label { display: flex; align-items: flex-start; gap: 8px; margin: 0; font-size: 13px; }
+.classification-options input[type="checkbox"] { width: 17px; min-width: 17px; height: 17px; margin: 1px 0 0; }
+.clinical-selection p, .media-credit { color: #58695e; font-size: 12px; line-height: 1.7; }
+.clinical-selection .form-grid { grid-template-columns: repeat(auto-fit,minmax(min(100%,240px),1fr)); }
+.clinical-selection select { width: 100%; min-width: 0; }
+.evidence-card h3, .media-credit a { overflow-wrap: anywhere; }
+.clinical-section-title { margin-top: 32px; }
+.clinical-exercise-list { display: grid; gap: 10px; margin: 20px 0 30px; }
+.clinical-exercise { display: flex; align-items: center; gap: 15px; text-align: left; padding: 18px; border: 1px solid var(--border); border-radius: 12px; background: #fff; color: #294e40; cursor: pointer; }
+.clinical-exercise:hover { background: #eff4e9; }
+.clinical-exercise > svg { flex-shrink: 0; }
+.clinical-exercise > div { flex: 1; min-width: 0; }
+.clinical-exercise strong, .clinical-exercise span, .clinical-exercise small { display: block; }
+.clinical-exercise strong { font-size: 15px; margin-bottom: 6px; }
+.clinical-exercise span { font-size: 12px; line-height: 1.5; }
+.clinical-exercise small { font-size: 11px; color: #69705b; margin-top: 5px; }
+.evidence-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,310px),1fr)); gap: 16px; margin: 20px 0; }
+.evidence-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin: 12px 0; }
+.evidence-card .eyebrow { font-size: 10px; letter-spacing: .06em; }
+.evidence-card h3 { font-size: 15px; line-height: 1.5; margin: 10px 0; }
+.evidence-card p { font-size: 13px; line-height: 1.7; }
+.evidence-limit { background: #f1f4eb; border-radius: 8px; padding: 12px; }
+.clinical-use-details { margin-bottom: 24px; }
+.brochure-sources { margin-top: 30px; }
+.brochure-sources li { margin: 10px 0; line-height: 1.6; }
+.pir-sequence { display: grid; grid-template-columns: repeat(auto-fit,minmax(170px,1fr)); gap: 12px; list-style-position: inside; padding: 0; margin: 24px 0; }
+.pir-sequence li { background: #f0f5ea; border: 1px solid #dce6d7; padding: 16px; border-radius: 10px; font-size: 14px; }
+.pir-sequence li span { display: block; font-size: 12px; margin-top: 10px; line-height: 1.7; }
+.clinical-assignment-fields { border: 1px solid var(--border); padding: 16px; border-radius: 10px; margin: 20px 0; }
+.clinical-assignment-fields legend { font-weight: 600; }
+.clinical-assignment-fields p { font-size: 12px; line-height: 1.6; }
+.condition-use-editor { border-bottom: 1px solid var(--border); padding: 0 0 18px; margin-bottom: 18px; }
+.condition-use-editor .classification-options { margin-bottom: 15px; }
+.clinical-checkbox { display: flex; align-items: center; gap: 8px; }
+.clinical-checkbox input { width: 18px; height: 18px; }
+.licensed-media { margin: 0; }
+.licensed-media-stage { border-radius: 10px; border: 1px solid var(--border); background: #fff; overflow: hidden; margin: 18px 0; }
+.licensed-media-stage video { width: 100%; height: 340px; object-fit: contain; display: block; background: #fff; }
+.licensed-stills { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 12px; }
+.licensed-stills figure { min-width: 0; margin: 0; text-align: center; }
+.licensed-stills img { width: 100%; height: 260px; object-fit: contain; }
+.licensed-stills figcaption { color: #58695e; font-size: 11px; padding: 10px 0; }
+@media (max-width: 600px) { .licensed-stills img { height: 190px; } .licensed-media { padding: 16px; } .clinical-exercise { padding: 14px; } }
 .patient-row {
   background: #fff;
   border: 1px solid var(--border);

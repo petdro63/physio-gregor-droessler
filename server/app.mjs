@@ -26,6 +26,8 @@ import {
   transaction,
   audit,
 } from "./db.mjs";
+import { classifyExercise, seedResearchDrafts, taxonomy } from "./exercise-catalog.mjs";
+import { clinicalLibrary, catalogMedia } from "./clinical-content.mjs";
 import { seed, coverage } from "./seed.mjs";
 import { VERSION, VERSION_DATE, TIME_ZONE } from "./version.mjs";
 import { makePlanPdf } from "./pdf.mjs";
@@ -33,7 +35,33 @@ import { makePlanPdf } from "./pdf.mjs";
 const hash = (value) => createHash("sha256").update(value).digest("hex");
 const text = z.string().trim().max(5000);
 const date = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
+const birthDate = z.union([z.iso.date().refine(
+  (value) => value >= "0001-01-01" && value <= new Date().toLocaleDateString("sv-SE", { timeZone: TIME_ZONE }),
+  "Das Geburtsdatum darf nicht in der Zukunft liegen.",
+), z.literal(""), z.null()]);
+const conditionUseSchema = z.object({
+  conditionId: z.enum(clinicalLibrary.conditions.map(c => c.id)),
+  phases: z.array(text.min(1).max(80)).min(1).max(12),
+  variants: z.array(text.min(1).max(80)).max(8).default([]),
+  evidenceIds: z.array(z.enum(clinicalLibrary.evidence.map(e => e.id))).max(20).default([]),
+  note: text,
+}).refine(use => {
+  const condition = clinicalLibrary.conditions.find(c => c.id === use.conditionId);
+  return use.phases.every(p => condition.phases.some(phase => phase.id === p)) &&
+    use.variants.every(v => condition.variants.some(variant => variant.id === v)) &&
+    use.evidenceIds.every(id => condition.evidenceIds.includes(id)) &&
+    (!condition.variants.length || use.variants.length > 0);
+}, "Krankheitsbild, Phase und Behandlungsvariante müssen zusammenpassen.");
 const exerciseSchema = z.object({
+  conditionUses: z.array(conditionUseSchema).max(30).default([]),
+  methodTags: z.array(text.max(80)).max(12).default([]),
+  catalogMedia: z.array(z.enum(catalogMedia.map(m => m.id))).max(6).default([]),
+  requiresSupervision: z.boolean().default(false),
+  brochureId: text.max(80).default(""),
+  trainingTypes: z.array(z.enum(taxonomy.trainingTypes)).max(5).default([]),
+  joints: z.array(z.enum(taxonomy.joints)).max(20).default([]),
+  strengthMuscles: z.array(z.enum(taxonomy.muscles)).max(30).default([]),
+  sources: z.array(z.object({ title: text.min(1), url: z.url().refine(value => value.startsWith("https://"), "HTTPS-Quelle erforderlich.") })).max(10).default([]),
   title: text.min(2),
   region: text.min(1),
   goal: text.min(1),
@@ -111,7 +139,7 @@ export function createApp(options = {}) {
     process.env.DATA_DIR ||
     path.resolve(demo ? "data/demo" : "data/practice");
   const db = openDatabase(dir);
-  if (demo) seed(db);
+  if (demo) { seed(db); seedResearchDrafts(db); }
   else if (!db.prepare("SELECT id FROM settings WHERE id='practice'").get())
     db.prepare("INSERT INTO settings VALUES (?,?)").run(
       "practice",
@@ -231,6 +259,7 @@ export function createApp(options = {}) {
           role: u.role,
           status: u.status,
           accessUntil: u.access_until,
+          birthDate: u.birth_date ?? null,
           mfaEnabled: !!u.mfa_secret,
         }
       : null;
@@ -291,7 +320,7 @@ export function createApp(options = {}) {
       .get(id, v);
     return r
       ? {
-          ...JSON.parse(r.payload),
+          ...classifyExercise(JSON.parse(r.payload), id),
           id,
           version: v,
           status: row.status,
@@ -609,12 +638,12 @@ export function createApp(options = {}) {
   app.post("/api/patients", staff, async (req, res, next) => {
     try {
       const data = z
-        .object({ name: text.min(2).max(100), email: z.email().max(254) })
+        .object({ name: text.min(2).max(100), email: z.email().max(254), birthDate: birthDate.optional() })
         .parse(req.body);
       const id = uid();
       transaction(db, () => {
         db.prepare(
-          "INSERT INTO users (id,name,email,role,status,created_at) VALUES (?,?,?,?,?,?)",
+          "INSERT INTO users (id,name,email,role,status,created_at,birth_date) VALUES (?,?,?,?,?,?,?)",
         ).run(
           id,
           data.name,
@@ -622,6 +651,7 @@ export function createApp(options = {}) {
           "patient",
           "invited",
           iso(),
+          data.birthDate || null,
         );
         db.prepare("INSERT INTO assignments VALUES (?,?)").run(req.user.id, id);
         audit(db, req.user.id, "patient_created", id);
@@ -629,6 +659,19 @@ export function createApp(options = {}) {
       res.status(201).json({ id });
     } catch (e) {
       next(e);
+    }
+  });
+  app.patch("/api/patients/:id/profile", staff, (req, res, next) => {
+    try {
+      checkPatient(req.user, req.params.id);
+      const data = z.object({ birthDate }).parse(req.body);
+      transaction(db, () => {
+        db.prepare("UPDATE users SET birth_date=? WHERE id=?").run(data.birthDate || null, req.params.id);
+        audit(db, req.user.id, "patient_profile_updated", req.params.id);
+      });
+      res.json({ ok: true });
+    } catch (error) {
+      next(error);
     }
   });
   app.post("/api/patients/:id/invite", staff, async (req, res, next) => {
@@ -760,6 +803,8 @@ export function createApp(options = {}) {
               .get(id, e.id),
           )
           .filter(Boolean);
+        const licensedAssets = catalogMedia.filter(asset => e.catalogMedia.includes(asset.id));
+        const licensedImages = licensedAssets.reduce((count, asset) => count + asset.files.filter(file => file.endsWith(".png")).length, 0);
         if (
           e.demo ||
           !e.reviewer ||
@@ -767,9 +812,9 @@ export function createApp(options = {}) {
           !e.license ||
           !e.precautions ||
           !e.transcript ||
-          media.filter((m) => m.kind === "image").length < 2 ||
-          !media.some((m) => m.kind === "video") ||
-          !media.some((m) => m.kind === "captions")
+          media.filter((m) => m.kind === "image").length + licensedImages < 2 ||
+          (!media.some((m) => m.kind === "video") && !licensedAssets.some(asset => asset.files.includes("video.mp4"))) ||
+          (!media.some((m) => m.kind === "captions") && !licensedAssets.some(asset => asset.files.includes("captions.vtt")))
         )
           throw fail(
             422,
@@ -886,6 +931,17 @@ export function createApp(options = {}) {
     } catch (e) {
       next(e);
     }
+  });
+  app.get("/api/catalog-media/:id/:asset/:file", (req, res, next) => {
+    try {
+      const version = req.query.version ? Number(req.query.version) : undefined;
+      if (version !== undefined && (!Number.isInteger(version) || version < 1)) throw fail(404, "Medium nicht gefunden.");
+      if (!canExercise(req.user, req.params.id, version)) throw fail(404, "Medium nicht gefunden.");
+      const exercise = getExercise(req.params.id, version);
+      const asset = catalogMedia.find(m => m.id === req.params.asset);
+      if (!exercise || !asset || !exercise.catalogMedia.includes(asset.id) || !asset.files.includes(req.params.file)) throw fail(404, "Medium nicht gefunden.");
+      res.sendFile(path.resolve("server/assets/catalog", asset.id, req.params.file));
+    } catch (error) { next(error); }
   });
   app.get("/api/demo-media/:id/:file", (req, res, next) => {
     try {

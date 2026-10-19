@@ -622,3 +622,89 @@ test("original German avatar video is protected, supports seeking and stays assi
     .run();
   await patient.a.get(url).expect(401);
 });
+test("patient birth dates persist, validate and respect patient assignments", async (t) => {
+  const r = fixture(t), admin = await agent(r), therapist = await agent(r, "therapist");
+  const created = await post(admin, "/patients", { name: "Datum Test", email: "datum@example.invalid", birthDate: "1985-03-24" }).expect(201);
+  const id = created.body.id;
+  let overview = (await admin.a.get("/api/overview")).body;
+  assert.equal(overview.patients.find(p => p.id === id).birthDate, "1985-03-24");
+  for (const value of ["2025-02-30", "31.12.1980", "2999-01-01"]) {
+    await admin.a.patch(`/api/patients/${id}/profile`).set("X-CSRF-Token", admin.csrf).send({ birthDate: value }).expect(400);
+  }
+  await therapist.a.patch(`/api/patients/${id}/profile`).set("X-CSRF-Token", therapist.csrf).send({ birthDate: "1990-01-01" }).expect(404);
+  await admin.a.patch(`/api/patients/${id}/profile`).set("X-CSRF-Token", admin.csrf).send({ birthDate: "1990-01-01" }).expect(200);
+  assert.equal((await admin.a.get(`/api/patients/${id}/export`)).body.profile.birthDate, "1990-01-01");
+  await admin.a.patch(`/api/patients/${id}/profile`).set("X-CSRF-Token", admin.csrf).send({ birthDate: "" }).expect(200);
+  overview = (await admin.a.get("/api/overview")).body;
+  assert.equal(overview.patients.find(p => p.id === id).birthDate, null);
+});
+
+test("classification metadata is versioned and research drafts stay staff-only", async (t) => {
+  const r = fixture(t), admin = await agent(r), patient = await agent(r, "patient");
+  const overview = (await admin.a.get("/api/overview").expect(200)).body;
+  assert(overview.exercises.length >= 30);
+  const exercise = overview.exercises.find(e => e.id === "hantel-beugen-sitz");
+  assert.equal(exercise.status, "draft");
+  assert.deepEqual(exercise.trainingTypes, ["Kraft"]);
+  assert(exercise.strengthMuscles.includes("Bizeps (M. biceps brachii)"));
+  await patient.a.get(`/api/exercises/${exercise.id}`).expect(404);
+  const revised = { ...exercise, trainingTypes: ["Kraft", "Mobilisation"], joints: ["Ellenbogengelenk", "Schultergelenk"] };
+  const saved = await admin.a.put(`/api/exercises/${exercise.id}`).set("X-CSRF-Token", admin.csrf).send(revised);
+  assert.equal(saved.status, 200);
+  const current = (await admin.a.get(`/api/exercises/${exercise.id}`).expect(200)).body;
+  assert.deepEqual(current.joints, revised.joints);
+  assert.deepEqual(current.trainingTypes, revised.trainingTypes);
+  assert.equal((await admin.a.get(`/api/exercises/${exercise.id}?version=1`)).body.joints.length, 1);
+  await admin.a.put(`/api/exercises/${exercise.id}`).set("X-CSRF-Token", admin.csrf).send({ ...revised, joints: ["Erfundenes Gelenk"] }).expect(400);
+  await post(admin, `/exercises/${exercise.id}/status`, { status: "published" }).expect(422);
+});
+
+
+test("catalog media stays authenticated, exercise-bound and supports seeking", async (t) => {
+  const r=fixture(t), admin=await agent(r), patient=await agent(r,"patient");
+  const url="/api/catalog-media/hantel-beugen-sitz/cdc-biceps-curl/video.mp4?version=1";
+  await request(r.app).get(url).expect(401);
+  const head=await admin.a.head(url).expect(200);
+  assert.match(head.headers["content-type"],/^video\/mp4/);
+  assert.match(head.headers["cache-control"],/no-store/);
+  await admin.a.get(url).set("Range","bytes=0-63").expect(206);
+  await patient.a.get(url).expect(404);
+  await admin.a.get("/api/catalog-media/hantel-beugen-sitz/cdc-hip-abduction/start.png").expect(404);
+  await admin.a.get("/api/catalog-media/hantel-beugen-sitz/cdc-biceps-curl/source.gif").expect(404);
+  await admin.a.get("/api/catalog-media/hantel-beugen-sitz/cdc-biceps-curl/video.mp4?version=999").expect(404);
+  await admin.a.get("/api/catalog-media/hantel-beugen-sitz/cdc-biceps-curl/captions.vtt").expect(200);
+});
+
+test("clinical metadata saves with exercise versions and rejects impossible phases or fabricated evidence", async (t) => {
+  const r=fixture(t), admin=await agent(r);
+  const original=(await admin.a.get("/api/exercises/kiefer-korken").expect(200)).body;
+  assert(original.requiresSupervision);
+  assert.equal(original.conditionUses[0].evidenceIds.length,0);
+  const save=body=>admin.a.put("/api/exercises/kiefer-korken").set("X-CSRF-Token",admin.csrf).send(body);
+  await save({...original,conditionUses:[{...original.conditionUses[0],phases:["schutz"]}]}).expect(400);
+  await save({...original,conditionUses:[{...original.conditionUses[0],evidenceIds:["invented-study"]}]}).expect(400);
+  await save({...original,conditionUses:[{...original.conditionUses[0],evidenceIds:["tka-2026"]}]}).expect(400);
+  await save({...original,conditionUses:[{conditionId:"schulter-tep",phases:["schutz"],variants:[],evidenceIds:[],note:""}]}).expect(400);
+  await save({...original,title:"Korkenübung nach persönlicher Einweisung"}).expect(200);
+  const updated=(await admin.a.get("/api/exercises/kiefer-korken")).body;
+  assert.equal(updated.version,2);
+  assert.deepEqual(updated.conditionUses,original.conditionUses);
+  assert((await admin.a.get("/api/exercises/kiefer-korken?version=1")).body.title===original.title);
+});
+
+
+test("verified catalog assets count as media only after explicit clinical review and patient assignment", async (t) => {
+  const r=fixture(t), admin=await agent(r), patient=await agent(r,"patient");
+  const id="reha-aufstehen";
+  const original=(await admin.a.get(`/api/exercises/${id}`).expect(200)).body;
+  await post(admin,`/exercises/${id}/status`,{status:"published"}).expect(422);
+  const reviewed={...original,reviewer:"Testfachperson",reviewedAt:"2026-10-19",license:"Eigener Text; CDC-Katalogmedien mit Public-Domain-Nachweis",transcript:"Kontrolliertes Aufstehen vom Stuhl. Zusatzbelastung individuell festlegen."};
+  const saved=await admin.a.put(`/api/exercises/${id}`).set("X-CSRF-Token",admin.csrf).send(reviewed).expect(200);
+  await post(admin,`/exercises/${id}/status`,{status:"published"}).expect(200);
+  const url=`/api/catalog-media/${id}/cdc-squat/video.mp4?version=${saved.body.version}`;
+  await patient.a.get(url).expect(404);
+  await post(admin,"/patients/demo-patient/plans",{ title:"Geprüfter Testplan",focus:"Alltag",note:"",start:"2026-10-01",end:"2026-12-31",days:[0,1,2,3,4,5,6],items:[{exerciseId:id,exerciseVersion:saved.body.version,sets:1,reps:1,hold:0,pause:10,side:"Beidseits",resistance:"Ohne Zusatzgewicht",note:""}] }).expect(200);
+  await patient.a.get(url).expect(200);
+  await post(admin,`/exercises/${id}/status`,{status:"archived"}).expect(200);
+  await patient.a.get(url).expect(404);
+});

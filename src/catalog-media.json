@@ -1,0 +1,74 @@
+[
+  {
+    "id": "cdc-biceps-curl",
+    "title": "Bizepscurl im Sitz",
+    "creator": "Centers for Disease Control and Prevention (CDC)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Biceps%20curl-CDC%20strength%20training%20for%20older%20adults.gif",
+    "license": "Public Domain – US-Bundesbehörde CDC",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-HHS-CDC",
+    "changes": "GIF in MP4 konvertiert; zwei Standbilder und eigene deutsche Untertitel erstellt. Kein Ton. Keine Bewegungsinterpolation.",
+    "reviewedOn": "2026-10-19",
+    "sourceSha256": "2be22400da90e1ef3510f3f0fea99baa0bac83dfc42ac79f1029e923151f9e38",
+    "duration": 6.8,
+    "files": [
+      "start.png",
+      "movement.png",
+      "video.mp4",
+      "captions.vtt"
+    ]
+  },
+  {
+    "id": "cdc-hip-abduction",
+    "title": "Seitliches Beinheben mit Halt",
+    "creator": "Centers for Disease Control and Prevention (CDC)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hip%20abduction-CDC%20strength%20training%20for%20older%20adults.gif",
+    "license": "Public Domain – US-Bundesbehörde CDC",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-HHS-CDC",
+    "changes": "GIF in MP4 konvertiert; zwei Standbilder und eigene deutsche Untertitel erstellt. Kein Ton. Keine Bewegungsinterpolation.",
+    "reviewedOn": "2026-10-19",
+    "sourceSha256": "d8949d907d09dc238f94ca4944e6f62bcac04f373c6bdf772bd346e90081e118",
+    "duration": 5.0,
+    "files": [
+      "start.png",
+      "movement.png",
+      "video.mp4",
+      "captions.vtt"
+    ]
+  },
+  {
+    "id": "cdc-knee-extension",
+    "title": "Kniestreckung im Sitz",
+    "creator": "Centers for Disease Control and Prevention (CDC)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Knee%20extension-CDC%20strength%20training%20for%20older%20adults.gif",
+    "license": "Public Domain – US-Bundesbehörde CDC",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-HHS-CDC",
+    "changes": "GIF in MP4 konvertiert; zwei Standbilder und eigene deutsche Untertitel erstellt. Kein Ton. Keine Bewegungsinterpolation.",
+    "reviewedOn": "2026-10-19",
+    "sourceSha256": "82f73a3aa66fe1c87c93f0573134740ed4483f67d8981d0e6953cdcd8b44fdd1",
+    "duration": 9.2,
+    "files": [
+      "start.png",
+      "movement.png",
+      "video.mp4",
+      "captions.vtt"
+    ]
+  },
+  {
+    "id": "cdc-squat",
+    "title": "Aufstehen und Hinsetzen",
+    "creator": "Centers for Disease Control and Prevention (CDC)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Squat-CDC%20strength%20training%20for%20older%20adults.gif",
+    "license": "Public Domain – US-Bundesbehörde CDC",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-USGov-HHS-CDC",
+    "changes": "GIF in MP4 konvertiert; zwei Standbilder und eigene deutsche Untertitel erstellt. Kein Ton. Keine Bewegungsinterpolation.",
+    "reviewedOn": "2026-10-19",
+    "sourceSha256": "af6a182a4391cbf8badc132631b85846a14b6bf2903cd24e22006a55ffa5021b",
+    "duration": 6.0,
+    "files": [
+      "start.png",
+      "movement.png",
+      "video.mp4",
+      "captions.vtt"
+    ]
+  }
+]

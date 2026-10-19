@@ -31,6 +31,12 @@ import {
   Users,
   X,
 } from "lucide-react";
+import taxonomy from "./exercise-taxonomy.json";
+import rehabLibrary from "./rehab-evidence.json" with { type: "json" };
+import brochures from "./brochure-library.json";
+import { ConditionLibrary, RelaxationPage, ClinicalAssignmentFields, EvidenceCard } from "./ClinicalLibrary";
+import { LicensedMedia, catalogMediaUrl } from "./LicensedMedia";
+import { findExercises } from "./exercise-search";
 import { api, setCsrf } from "./api";
 import { Illustration } from "./Illustration";
 import { RealPersonVideo, REAL_PERSON_EXAMPLE } from "./RealPersonVideo";
@@ -253,6 +259,8 @@ function App() {
       label: staff ? "Trainingsverlauf" : "Mein Verlauf",
       icon: Activity,
     },
+    ...(staff ? [{ id: "rehab", label: "Krankheitsbilder & Evidenz", icon: BookOpen }] : []),
+    { id: "relaxation", label: "Entspannung", icon: Leaf },
     ...(staff ? [{ id: "patients", label: "Patienten", icon: Users }] : []),
     { id: "help", label: "Praxis & Hilfe", icon: HelpCircle },
     ...(session.user.role === "admin"
@@ -620,6 +628,8 @@ function App() {
                   onCoverage={() => setCoverage(true)}
                 />
               )}
+              {page === "rehab" && staff && <ConditionLibrary exercises={data.exercises} onSelect={setDetail} />}
+              {page === "relaxation" && <RelaxationPage exercises={data.exercises} staff={staff} onSelect={setDetail} />}
               {page === "history" && <History data={data} />}
               {page === "patients" && (
                 <Patients
@@ -1013,7 +1023,9 @@ function ExerciseCard({
   return (
     <button className="exercise-card" onClick={onClick}>
       <div className={"exercise-art art-" + ((index ?? 0) % 3)}>
-        {e.demo ? (
+        {e.catalogMedia.length ? (
+          <img src={catalogMediaUrl(e,e.catalogMedia[0],"start.png")} alt={`${e.title} – allgemeine CDC-Bewegungsdarstellung`} />
+        ) : e.demo ? (
           <Illustration kind={e.id} phase={(index ?? 0) % 2} />
         ) : e.mediaDetails?.some((m) => m.kind === "image") ? (
           <img
@@ -1023,7 +1035,7 @@ function ExerciseCard({
             alt={e.title}
           />
         ) : (
-          <BookOpen size={45} />
+          <div className="catalog-placeholder"><BookOpen size={42} /><strong>Übungsentwurf</strong><span>{e.equipment} · {e.position}</span><small>Bilder und Video noch offen</small></div>
         )}
         <span className="card-region">{e.region}</span>
         {done && (
@@ -1031,9 +1043,9 @@ function ExerciseCard({
             <Check size={13} /> Geschafft
           </span>
         )}
-        <span className="play-bubble">
+        {(e.demo || e.mediaDetails?.some(m => m.kind === "video")) && <span className="play-bubble">
           <Play size={18} fill="currentColor" />
-        </span>
+        </span>}
       </div>
       <div className="exercise-copy">
         <div className="exercise-goal">
@@ -1041,6 +1053,7 @@ function ExerciseCard({
         </div>
         <h3>{e.title}</h3>
         <p>{e.subtitle}</p>
+        <p className="exercise-anatomy">{e.trainingTypes.map(t => t === "Kraft" ? "Kräftigung" : t).join(" · ")}<br />{e.joints.join(" · ")}</p>
         <div className="exercise-bottom">
           <span>
             {item ? (
@@ -1117,19 +1130,19 @@ function Library({
     [goal, setGoal] = useState(""),
     [equipment, setEquipment] = useState(""),
     [difficulty, setDifficulty] = useState(""),
-    [position, setPosition] = useState("");
-  const filtered = exercises.filter(
-    (e) =>
-      (!region || e.region === region) &&
-      (!goal || e.goal === goal) &&
-      (!equipment || e.equipment === equipment) &&
-      (!difficulty || e.difficulty === difficulty) &&
-      (!position || e.position === position) &&
-      [e.title, e.subtitle, e.region, ...e.tags]
-        .join(" ")
-        .toLowerCase()
-        .includes(search.toLowerCase()),
-  );
+    [position, setPosition] = useState(""),
+    [trainingType, setTrainingType] = useState(""),
+    [joint, setJoint] = useState(""),
+    [muscle, setMuscle] = useState(""),
+    [sort, setSort] = useState("joint"),
+    [condition, setCondition] = useState(""),
+    [method, setMethod] = useState(""),
+    [brochure, setBrochure] = useState("");
+  const filtered = findExercises(exercises, { search, region, goal, equipment, difficulty, position, trainingType, joint, muscle, sort, condition, method, brochure });
+  const resetFilters = () => {
+    setSearch(""); setRegion(""); setGoal(""); setEquipment(""); setDifficulty("");
+    setPosition(""); setTrainingType(""); setJoint(""); setMuscle(""); setCondition(""); setMethod(""); setBrochure("");
+  };
   return (
     <>
       <div className="page-heading">
@@ -1157,12 +1170,37 @@ function Library({
           <Search size={19} />
           <input
             aria-label="Übungen durchsuchen"
-            placeholder="Übung, Körperregion oder Ziel suchen …"
+            placeholder="Übung, Gelenk oder Muskel suchen …"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
         </label>
+        <div className="training-type-tabs" role="group" aria-label="Trainingsart auswählen">
+          {["", "Mobilisation", "Kraft", "Dehnung"].map(type => (
+            <button key={type} type="button" className={trainingType === type ? "button primary" : "button secondary"} aria-pressed={trainingType === type} onClick={() => setTrainingType(type)}>
+              {type === "" ? "Alle Übungen" : type === "Kraft" ? "Kräftigung" : type}
+            </button>
+          ))}
+        </div>
         <div className="filter-row">
+          <select aria-label="Alle Krankheitsbilder" value={condition} onChange={e => setCondition(e.target.value)}><option value="">Alle Krankheitsbilder</option>{rehabLibrary.conditions.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}</select>
+          <select aria-label="Alle Methoden" value={method} onChange={e => setMethod(e.target.value)}><option value="">Alle Methoden</option><option value="PIR">Postisometrische Relaxation (PIR)</option><option value="Kieferentspannung">Kieferentspannung</option></select>
+          <select aria-label="Alle Broschüren" value={brochure} onChange={e => setBrochure(e.target.value)}><option value="">Alle Broschüren</option>{brochures.map(b => <option key={b.id} value={b.id}>{b.title}</option>)}</select>
+          {[
+            { label: "Alle Trainingsarten", value: trainingType, set: setTrainingType, options: taxonomy.trainingTypes },
+            { label: "Alle Gelenke", value: joint, set: setJoint, options: [...new Set(exercises.flatMap(e => e.joints))].sort((a,b) => a.localeCompare(b,"de")) },
+            { label: "Alle Zielmuskeln (Kräftigung)", value: muscle, set: setMuscle, options: [...new Set(exercises.filter(e => e.trainingTypes.includes("Kraft")).flatMap(e => e.strengthMuscles))].sort((a,b) => a.localeCompare(b,"de")) },
+          ].map(f => (
+            <select key={f.label} aria-label={f.label} value={f.value} onChange={e => f.set(e.target.value)}>
+              <option value="">{f.label}</option>
+              {f.options.map(option => <option key={option}>{option}</option>)}
+            </select>
+          ))}
+          <select aria-label="Übungen sortieren" value={sort} onChange={e => setSort(e.target.value)}>
+            <option value="joint">Nach Gelenk sortieren</option>
+            <option value="type">Nach Trainingsart sortieren</option>
+            <option value="title">Nach Name sortieren</option>
+          </select>
           {[
             {
               label: "Alle Körperregionen",
@@ -1212,6 +1250,7 @@ function Library({
             </select>
           ))}
         </div>
+        <button type="button" className="text-button" onClick={resetFilters}>Filter zurücksetzen</button>
       </div>
       <div className="section-heading">
         <p>
@@ -1296,6 +1335,7 @@ function ExerciseDetail({
         }
       >
         <div>
+          {e.catalogMedia.length ? <LicensedMedia exercise={e} /> : <>
           <div
             className={
               kneeExample && video ? "detail-art real-video-art" : "detail-art"
@@ -1383,6 +1423,7 @@ function ExerciseDetail({
               {kneeExample ? "Eigenes Video (Deutsch)" : "Video ansehen"}
             </button>
           </div>
+          </>}
           {kneeExample && (
             <button
               className="text-button"
@@ -1431,6 +1472,16 @@ function ExerciseDetail({
           </div>
         </div>
         <div className="detail-instructions">
+          {e.requiresSupervision && <div className="notice">Diese Technik nur nach persönlicher Anleitung durchführen.</div>}
+          {e.conditionUses.length > 0 && <details className="clinical-use-details"><summary>Krankheitsbezogene Einordnung</summary>{e.conditionUses.map((use,index) => {
+            const condition = rehabLibrary.conditions.find(c => c.id === use.conditionId);
+            return <section key={index}><h4>{condition?.name}</h4><p>{condition?.phases.filter(p => use.phases.includes(p.id)).map(p => p.name).join(" · ")}</p><p>{use.note}</p>{use.evidenceIds.length ? use.evidenceIds.map(id => <EvidenceCard id={id} key={id}/>) : <p>Kein spezifischer Wirksamkeitsnachweis für diese Übung hinterlegt.</p>}</section>;
+          })}</details>}
+          <h3>Trainingsart und Gelenke</h3>
+          <p>{e.trainingTypes.map(t => t === "Kraft" ? "Kräftigung" : t).join(", ") || "Noch nicht zugeordnet"}</p>
+          <p>{e.joints.join(", ") || "Keine Gelenkzuordnung"}</p>
+          {e.strengthMuscles.length > 0 && <><h3>Zielmuskeln der Kräftigung</h3><ul>{e.strengthMuscles.map(m => <li key={m}>{m}</li>)}</ul></>}
+          {e.sources.length > 0 && <details><summary>Quellen und Recherche</summary><ul>{e.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></li>)}</ul><p>Eigener Beschreibungsentwurf; Zuordnungen und Eignung sind vor Freigabe fachlich zu prüfen.</p></details>}
           <h3>Ausgangsstellung</h3>
           <p>{e.start}</p>
           <h3>So geht’s</h3>
@@ -1462,7 +1513,7 @@ function ExerciseDetail({
                 <dt>Fachliche Prüfung</dt>
                 <dd>{e.reviewer || "Ausstehend"}</dd>
                 <dt>Medienrechte</dt>
-                <dd>{e.license || "Offen"}</dd>
+                <dd>{e.catalogMedia.length ? "Katalogmedien: Herkunft, Nutzungsnachweis und Bearbeitungen stehen direkt bei der Animation. Rechteangaben der Übungsfassung vor Freigabe prüfen." : e.license || "Offen"}</dd>
               </dl>
               <div className="form-actions">
                 <button className="button secondary" onClick={onEdit}>
@@ -1754,6 +1805,7 @@ function Patients({
   const [newPatient, setNewPatient] = useState(false),
     [name, setName] = useState(""),
     [email, setEmail] = useState(""),
+    [birthDate, setBirthDate] = useState(""),
     [invite, setInvite] = useState<{
       url: string;
       expires: string;
@@ -1798,6 +1850,7 @@ function Patients({
               <div className="patient-name">
                 <strong>{p.name}</strong>
                 <small>{p.email}</small>
+                <small>Geburtsdatum: {p.birthDate ? p.birthDate.split("-").reverse().join(".") : "Nicht hinterlegt"}</small>
               </div>
               <span className={"status " + p.status}>
                 {statusLabel[p.status]}
@@ -1818,6 +1871,20 @@ function Patients({
               >
                 Einladung
               </button>
+              <details className="access-details">
+                <summary>Patientendaten</summary>
+                <form onSubmit={(e) => {
+                  e.preventDefault();
+                  const f = new FormData(e.currentTarget);
+                  run(() => api(`/patients/${p.id}/profile`, "PATCH", { birthDate: f.get("birthDate") }), "Patientendaten aktualisiert");
+                }}>
+                  <label>
+                    Geburtsdatum (optional)
+                    <input name="birthDate" type="date" min="0001-01-01" max={new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Berlin" })} defaultValue={p.birthDate || ""} />
+                  </label>
+                  <button className="button primary">Speichern</button>
+                </form>
+              </details>
               {role === "admin" && (
                 <details className="access-details">
                   <summary>Zugang</summary>
@@ -1865,10 +1932,11 @@ function Patients({
             onSubmit={(e) => {
               e.preventDefault();
               run(async () => {
-                await api("/patients", "POST", { name, email });
+                await api("/patients", "POST", { name, email, birthDate });
                 setNewPatient(false);
                 setName("");
                 setEmail("");
+                setBirthDate("");
               }, "Patient angelegt · Freischaltung steht noch aus");
             }}
           >
@@ -1889,6 +1957,10 @@ function Patients({
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
+            </label>
+            <label>
+              Geburtsdatum (optional)
+              <input type="date" min="0001-01-01" max={new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Berlin" })} value={birthDate} onChange={(e) => setBirthDate(e.target.value)} />
             </label>
             <p className="notice">
               Der Zugang wird erst nach Einladung und ausdrücklicher
@@ -2164,6 +2236,11 @@ function PlanEditor({
 }
 
 const emptyExercise: Omit<Exercise, "id" | "version" | "status"> = {
+  conditionUses: [], methodTags: [], catalogMedia: [], requiresSupervision: false, brochureId: "",
+  trainingTypes: ["Mobilisation"],
+  joints: ["Schultergelenk"],
+  strengthMuscles: [],
+  sources: [],
   title: "",
   region: "Schulter",
   goal: "Mobilisation",
@@ -2200,6 +2277,7 @@ function ExerciseEditor({
   const [form, setForm] = useState(
       initial === "new" ? emptyExercise : { ...initial, demo: false },
     ),
+    [sourcesText, setSourcesText] = useState(initial === "new" ? "" : initial.sources.map(source => `${source.title} | ${source.url}`).join("\n")),
     [uploading, setUploading] = useState(false),
     [error, setError] = useState("");
   const field = (key: string, value: unknown) =>
@@ -2217,7 +2295,11 @@ function ExerciseEditor({
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          onSave(form);
+          if (!form.trainingTypes.length) { setError("Bitte mindestens eine Trainingsart auswählen."); return; }
+          if (form.strengthMuscles.length && !form.trainingTypes.includes("Kraft")) { setError("Für Kräftigungs-Zielmuskeln bitte die Trainingsart Kraft auswählen."); return; }
+          if (form.conditionUses.some(use => !use.phases.length || (rehabLibrary.conditions.find(c => c.id === use.conditionId)?.variants.length && !use.variants.length))) { setError("Bitte bei jeder Krankheitszuordnung eine passende Phase und gegebenenfalls Behandlungsvariante auswählen."); return; }
+          const sources = sourcesText.split("\n").filter(line => line.trim()).map(line => { const [title, ...url] = line.split("|"); return { title: title.trim(), url: url.join("|").trim() }; });
+          onSave({ ...form, sources });
         }}
       >
         {error && <div className="alert error">{error}</div>}
@@ -2262,6 +2344,27 @@ function ExerciseEditor({
             />
           </label>
         </div>
+        <ClinicalAssignmentFields uses={form.conditionUses} onChange={uses => field("conditionUses",uses)} />
+        <label className="clinical-checkbox"><input type="checkbox" checked={form.requiresSupervision} onChange={e => field("requiresSupervision",e.target.checked)}/>Nur nach persönlicher Anleitung</label>
+        <label>Postisometrische Relaxation (PIR)<select value={form.methodTags.includes("PIR") ? "PIR" : ""} onChange={e => field("methodTags",e.target.value ? [...new Set([...form.methodTags,"PIR"])] : form.methodTags.filter(t => t!=="PIR"))}><option value="">Keine PIR-Technik</option><option value="PIR">PIR / angeleitete Verfahrensvariante</option></select></label>
+        <div className="classification-editor">
+          {[
+            { key: "trainingTypes" as const, title: "Trainingsarten (Mehrfachauswahl)", options: taxonomy.trainingTypes },
+            { key: "joints" as const, title: "Betroffene Gelenke (Mehrfachauswahl)", options: taxonomy.joints },
+            { key: "strengthMuscles" as const, title: "Muskeln, die gekräftigt werden", options: taxonomy.muscles },
+          ].map(group => (
+            <fieldset key={group.key}>
+              <legend>{group.title}</legend>
+              <div className="classification-options">
+                {group.options.map(value => <label key={value}><input type="checkbox" checked={form[group.key].includes(value)} onChange={e => field(group.key, e.target.checked ? [...form[group.key], value] : form[group.key].filter(item => item !== value))} />{value === "Kraft" ? "Kraft / Kräftigung" : value}</label>)}
+              </div>
+            </fieldset>
+          ))}
+        </div>
+        <label>
+          Recherchequellen (eine pro Zeile: Titel | https://…)
+          <textarea value={sourcesText} onChange={e => setSourcesText(e.target.value)} />
+        </label>
         <label>
           Ausgangsstellung beschreiben
           <textarea

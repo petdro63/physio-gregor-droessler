@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.6-dev**, Versionsdatum **18.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.7-dev**, Versionsdatum **19.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -29,7 +29,9 @@ Die Vorschau nutzt ausschließlich erfundene Personen. Demo- und Praxisdatenbank
 - Passwortanmeldung, verpflichtende TOTP-Zwei-Faktor-Anmeldung für Mitarbeiter, verschlüsselte TOTP-Geheimnisse.
 - Übungseditor, geschützte Bild-/Video-Uploads mit Inhaltsprüfung, Redaktionsstatus und Freigabeprüfung.
 - Übungs- und Trainingsplanversionen; alte Trainingseinträge verweisen auf ihre ursprünglichen Versionen.
-- Suchbare und filterbare Bibliothek, Abdeckungskatalog, individuelle Dosierung und Planreihenfolge.
+- Suchbare Bibliothek mit kombinierten Filtern für Trainingsart (Kraft/Mobilisation/Dehnung), Gelenke, Zielmuskeln, Hilfsmittel und Ausgangsstellung; Sortierung nach Gelenk, Trainingsart oder Name.
+- 18 zusätzliche recherchierte Textentwürfe mit Hanteln, Stab, Theraband, Pezziball sowie Übungen im Stand, Sitz und Vierfüßlerstand; einzeln verlinkte Quellen und editierbare anatomische Zuordnungen.
+- Abdeckungskatalog, individuelle Dosierung und Planreihenfolge.
 - PDF-Export mit Bildern, Datenauskunft als JSON, Praxisverwaltung, Teameinladungen und Auditprotokoll.
 - PWA-Manifest und datensparsame Offline-Seite; kein Offlinecache für Gesundheitsdaten.
 - Verschlüsselte Backups einschließlich Datenbank und Medien sowie getestete Wiederherstellung.
@@ -58,6 +60,17 @@ Die Integrationstests prüfen tatsächliche HTTP-Zugriffe auf isolierte temporä
 - [Praxisanleitung](docs/PRAXISANLEITUNG.md)
 - [Inhalte und Abdeckung](docs/INHALTE.md)
 - [Datenmodell und Entscheidungen](docs/ARCHITEKTUR.md)
+
+## Erweiterung Reha und Evidenz (19.10.2026)
+
+Die lokale Demo enthält jetzt 167 Einträge: 12 technische Beispiele und 155 redaktionelle Entwürfe. 131 neue Kurzfassungen decken alle 15 Hirslanden-Broschüren ab. Hinzu kommen Kieferübungen mit Korken, drei PIR-Beispiele und ergänzende Reha-Übungen. Original-PDFs und deren Fotos werden nicht kopiert.
+
+Unter **Krankheitsbilder & Evidenz** findet das Praxisteam ausdrücklich zugeordnete Vorschläge nach Diagnose, Phase und Behandlungsvariante für lumbalen Bandscheibenvorfall, vorderen Kreuzbandriss, Knie-/Hüft-/Schulter-TEP, Frozen Shoulder sowie CMD und unspezifische Nackenschmerzen. Studienkarten unterscheiden Programm-/Verfahrensnachweise von unbewiesenen Einzelübungen. Die Entspannungsseite erklärt PIR und zeigt zugängliche Entspannungsübungen.
+
+Vier gemeinfreie CDC-Animationen sind als lokale Bilder und MP4 mit deutschen Untertiteln eingebettet. Herkunft, Nutzung und Bearbeitungen sind dokumentiert. **Die neuen Einträge sind nicht automatisch fachlich freigegeben.**
+
+- [Quelleninventar, Zuordnungen und Evidenz](docs/REHA-EVIDENZ.md)
+- [Medienrechte und Bearbeitungen](docs/MEDIEN-LIZENZEN.md)
 
 ## Stand der Inhalte
 

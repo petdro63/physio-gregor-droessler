@@ -5,9 +5,26 @@ export type User = {
   role: "admin" | "therapist" | "patient";
   status: string;
   accessUntil: string | null;
+  birthDate: string | null;
   mfaEnabled: boolean;
 };
+export type ConditionUse = {
+  conditionId: string;
+  phases: string[];
+  variants: string[];
+  evidenceIds: string[];
+  note: string;
+};
 export type Exercise = {
+  conditionUses: ConditionUse[];
+  methodTags: string[];
+  catalogMedia: string[];
+  requiresSupervision: boolean;
+  brochureId: string;
+  trainingTypes: string[];
+  joints: string[];
+  strengthMuscles: string[];
+  sources: { title: string; url: string }[];
   id: string;
   title: string;
   region: string;

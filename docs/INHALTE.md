@@ -1,6 +1,6 @@
 # Inhaltsstand und Abdeckung
 
-Stand 18.10.2026: 12 technische Demonstrationsübungen, **0 fachlich freigegebene Übungen**. Es liegen keine lizenzierten Fremdinhalte oder echten Praxisvideos vor. Die 12 Beispiele sind ausdrücklich keine vollständige Sammlung aller gängigen Übungen.
+Stand 19.10.2026: 12 technische Demonstrationsübungen und 18 neue Rechercheentwürfe, **0 fachlich freigegebene Übungen**. Es liegen keine lizenzierten Fremdinhalte oder echten Praxisvideos vor. Die 12 Beispiele sind ausdrücklich keine vollständige Sammlung aller gängigen Übungen.
 
 | Bereich | Demonstration | Für den Produktivbestand noch erforderlich |
 | --- | --- | --- |
@@ -67,3 +67,27 @@ Für jede produktive Übung dokumentieren: Inhalt/Variante, Autor, Prüfer, Prü
 ## Spezialisierte Module
 
 Postoperative Rehabilitation, Neurologie, Beckenbodentraining und andere Spezialbereiche sind gesondert zu planen und durch entsprechend qualifizierte Fachpersonen freizugeben. Sie sind nicht als fertig enthalten ausgewiesen.
+
+
+## Katalogerweiterung vom 19.10.2026
+
+Die lokale Demo enthält zusätzlich 18 eigene deutsche Textentwürfe: drei Hantelübungen, drei Therabandübungen, zwei Stabübungen, vier Pezziballübungen, zwei Übungen im Vierfüßlerstand, Wandliegestütz, Brustdehnung im Sitz, Wadendehnung im Stand und Rumpfdrehung im Sitz. Sie werden einmalig als Entwürfe ergänzt; bestehende Bearbeitungen bleiben bei Neustarts erhalten. Im Praxisbetrieb werden keine Rechercheübungen automatisch eingespielt.
+
+Jede Übung besitzt strukturierte `trainingTypes`, `joints` und `strengthMuscles`. Mehrfachzuordnungen sind möglich. Die Typen Kraft, Mobilisation und Dehnung werden getrennt geführt. Koordination und Entspannung bleiben zusätzliche Kategorien für die bestehenden Gleichgewichts- und Atembeispiele. `strengthMuscles` beschreibt ausschließlich Kräftigungsziele, nicht bloß bei einer Bewegung beteiligte oder gedehnte Muskeln. Bei Mobilisation und Dehnung ist diese Liste leer. Die anatomischen Zuordnungen sind redaktionelle Vorschläge und vor Veröffentlichung fachlich zu prüfen.
+
+Die Bibliothek kombiniert Suche und Filter nach Typ, Gelenk, Zielmuskel, Hilfsmittel, Ausgangsstellung, Körperregion, Trainingsziel und Schwierigkeit. Standardmäßig wird nach Gelenk, dann nach Übungsname sortiert; bei Mehrgelenkübungen dient das alphabetisch erste Gelenk als Sortierschlüssel. Ein Gelenkfilter findet die Übung über jede ihrer Gelenkzuordnungen. Die Zuordnungen können im Übungseditor geändert werden und werden mit der nächsten Inhaltsversion gespeichert. Migration 004 ergänzt ausschließlich Klassifikationsmetadaten der zwölf ursprünglichen Beispiele; Anleitungen, Versionsnummern und Planreferenzen bleiben erhalten.
+
+### Recherche und Quellen
+
+Öffentliche Produktdokumentationen von [Rehab Guru](https://feedback.rehabguru.com/en/help/articles/10118487-searching-for-exercises-in-the-exercise-library) und [Physitrack](https://support.physitrack.com/article/372-lesson-1-assign-your-first-program) zeigen vergleichbare Suchmöglichkeiten nach Ziel, Muskel, Gelenk, Hilfsmittel und Position. Es wurde kein Zugriff auf private oder kostenpflichtige Kataloge vorgenommen.
+
+Die Entwürfe enthalten einzeln verlinkte Quellen aus den offiziellen Informationen von [NHS](https://www.nhs.uk/live-well/exercise/strength-exercises/), [Dynamic Health](https://www.dynamichealth.nhs.uk/help-and-advice/shoulder-pain/), [Royal National Orthopaedic Hospital](https://www.rnoh.nhs.uk/patients-and-visitors/patient-information-guides/looking-after-your-shoulders-following-spinal-cord-injury-sci-patients-guide), [Royal Free London](https://www.royalfree.nhs.uk/services/therapy-services/physiotherapy/musculoskeletal-outpatient-physiotherapy) und [KMPT](https://www.kmpt.nhs.uk/media/2612/km1237-physiotherapy-gym-ball-exercise-guide.pdf). Weitere Quellen sind die NHS-Seiten zu [Sitzübungen](https://www.nhs.uk/live-well/exercise/sitting-exercises/) und [Dehnung](https://www.nhs.uk/live-well/exercise/flexibility-exercises/). Rechercheabruf: 19.10.2026. Spezifische Erkrankungs- oder Operationsprotokolle werden dadurch nicht zu allgemeinen Behandlungsfreigaben.
+
+Die Beschreibungen sind eigenständig formuliert. Keine fremden Bilder, Videos, Dosierungsprogramme oder geschlossenen App-Inhalte wurden importiert. Zu den 18 neuen Entwürfen fehlen noch eigene oder lizenzierte Übungsmedien, die Prüfung der konkreten Eignung und die individuelle Dosierung. Die vorhandene Freigabeprüfung bleibt aktiv.
+
+
+## Weitere Erweiterung: Hirslanden, Reha und PIR
+
+Die Demo umfasst nun 167 Einträge. Zu allen 15 PDFs der Hirslanden-Broschürenseite wurden 131 eigene Kurzfassungen ergänzt, dazu sechs weitere Einträge für Korken, PIR und Reha. Wiederholte Varianten sind teilweise zusammengefasst. Die neuen Inhalte bleiben redaktionelle Entwürfe. Original-PDFs und deren Fotografien sind nicht Bestandteil der App.
+
+Die Übersicht [Reha-Katalog und Evidenz](REHA-EVIDENZ.md) dokumentiert die 15 Quellen, acht Krankheitsbild-/Verfahrensbereiche, 13 Studien-/Leitlinienkarten, Zuordnungsregeln und Grenzen. Vier freie CDC-Mediensätze liefern je zwei Standbilder und ein MP4 mit eigenen deutschen Untertiteln. [Herkunft und Nutzung](MEDIEN-LIZENZEN.md) sind dokumentiert.

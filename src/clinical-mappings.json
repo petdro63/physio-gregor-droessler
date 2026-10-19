@@ -1,0 +1,1419 @@
+{
+  "birshof-14-rumpf-basis": {
+    "conditionUses": [
+      {
+        "conditionId": "bandscheibe",
+        "phases": [
+          "konservativ",
+          "postop"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "ldh-2025",
+          "ldh-postop-2023"
+        ],
+        "note": "Rumpfkontrolle nach Befund; postoperativ ausschließlich gemäß persönlicher Freigabe. Die konkrete Übung wurde nicht als Einzelintervention geprüft."
+      }
+    ]
+  },
+  "birshof-14-rumpf-bein": {
+    "conditionUses": [
+      {
+        "conditionId": "bandscheibe",
+        "phases": [
+          "konservativ",
+          "postop"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "ldh-2025",
+          "ldh-postop-2023"
+        ],
+        "note": "Rumpfkontrolle nach Befund; postoperativ ausschließlich gemäß persönlicher Freigabe. Die konkrete Übung wurde nicht als Einzelintervention geprüft."
+      }
+    ]
+  },
+  "birshof-14-rumpf-muschel": {
+    "conditionUses": [
+      {
+        "conditionId": "bandscheibe",
+        "phases": [
+          "konservativ",
+          "postop"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "ldh-2025",
+          "ldh-postop-2023"
+        ],
+        "note": "Rumpfkontrolle nach Befund; postoperativ ausschließlich gemäß persönlicher Freigabe. Die konkrete Übung wurde nicht als Einzelintervention geprüft."
+      }
+    ]
+  },
+  "birshof-14-rumpf-sitz": {
+    "conditionUses": [
+      {
+        "conditionId": "bandscheibe",
+        "phases": [
+          "konservativ",
+          "postop"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "ldh-2025",
+          "ldh-postop-2023"
+        ],
+        "note": "Rumpfkontrolle nach Befund; postoperativ ausschließlich gemäß persönlicher Freigabe. Die konkrete Übung wurde nicht als Einzelintervention geprüft."
+      }
+    ]
+  },
+  "birshof-13-bruecke": {
+    "conditionUses": [
+      {
+        "conditionId": "bandscheibe",
+        "phases": [
+          "konservativ",
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "ldh-2025"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "aufbau"
+        ],
+        "variants": [
+          "rekonstruktion"
+        ],
+        "evidenceIds": [
+          "acl-aspetar-2023"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "aufbau"
+        ],
+        "variants": [
+          "konservativ"
+        ],
+        "evidenceIds": [
+          "acl-kanon-2013"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-14-rumpf-stand": {
+    "conditionUses": [
+      {
+        "conditionId": "bandscheibe",
+        "phases": [
+          "konservativ",
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "ldh-2025"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "vierfuessler-diagonal": {
+    "conditionUses": [
+      {
+        "conditionId": "bandscheibe",
+        "phases": [
+          "konservativ",
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "ldh-2025"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-14-rumpf-bruecke": {
+    "conditionUses": [
+      {
+        "conditionId": "bandscheibe",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "ldh-2025"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-14-rumpf-ausfall": {
+    "conditionUses": [
+      {
+        "conditionId": "bandscheibe",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "ldh-2025"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-15-quad": {
+    "conditionUses": [
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "frueh"
+        ],
+        "variants": [
+          "rekonstruktion"
+        ],
+        "evidenceIds": [
+          "acl-aspetar-2023"
+        ],
+        "note": "Bewegung und Aktivierung innerhalb der vorgegebenen Belastungs- und Winkelgrenzen; Begleitverletzungen berücksichtigen."
+      },
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "frueh"
+        ],
+        "variants": [
+          "konservativ"
+        ],
+        "evidenceIds": [
+          "acl-kanon-2013"
+        ],
+        "note": "Bewegung und Aktivierung innerhalb der vorgegebenen Belastungs- und Winkelgrenzen; Begleitverletzungen berücksichtigen."
+      },
+      {
+        "conditionId": "knie-tep",
+        "phases": [
+          "frueh",
+          "aufbau"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tka-2026"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "hueft-tep",
+        "phases": [
+          "frueh"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tha-2023",
+          "tha-gait-2023"
+        ],
+        "note": "Nur gemäß Belastungs-, Zugang- und Bewegungsvorgaben des operierenden Teams. Gehschulung persönlich einüben."
+      }
+    ]
+  },
+  "birshof-15-wadenpumpe": {
+    "conditionUses": [
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "frueh"
+        ],
+        "variants": [
+          "rekonstruktion"
+        ],
+        "evidenceIds": [
+          "acl-aspetar-2023"
+        ],
+        "note": "Bewegung und Aktivierung innerhalb der vorgegebenen Belastungs- und Winkelgrenzen; Begleitverletzungen berücksichtigen."
+      },
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "frueh"
+        ],
+        "variants": [
+          "konservativ"
+        ],
+        "evidenceIds": [
+          "acl-kanon-2013"
+        ],
+        "note": "Bewegung und Aktivierung innerhalb der vorgegebenen Belastungs- und Winkelgrenzen; Begleitverletzungen berücksichtigen."
+      },
+      {
+        "conditionId": "knie-tep",
+        "phases": [
+          "frueh",
+          "aufbau"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tka-2026"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "hueft-tep",
+        "phases": [
+          "frueh"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tha-2023",
+          "tha-gait-2023"
+        ],
+        "note": "Nur gemäß Belastungs-, Zugang- und Bewegungsvorgaben des operierenden Teams. Gehschulung persönlich einüben."
+      }
+    ]
+  },
+  "birshof-13-ferse-liege": {
+    "conditionUses": [
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "frueh"
+        ],
+        "variants": [
+          "rekonstruktion"
+        ],
+        "evidenceIds": [
+          "acl-aspetar-2023"
+        ],
+        "note": "Bewegung und Aktivierung innerhalb der vorgegebenen Belastungs- und Winkelgrenzen; Begleitverletzungen berücksichtigen."
+      },
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "frueh"
+        ],
+        "variants": [
+          "konservativ"
+        ],
+        "evidenceIds": [
+          "acl-kanon-2013"
+        ],
+        "note": "Bewegung und Aktivierung innerhalb der vorgegebenen Belastungs- und Winkelgrenzen; Begleitverletzungen berücksichtigen."
+      },
+      {
+        "conditionId": "knie-tep",
+        "phases": [
+          "frueh",
+          "aufbau"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tka-2026"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-13-ferse-sitz": {
+    "conditionUses": [
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "frueh"
+        ],
+        "variants": [
+          "rekonstruktion"
+        ],
+        "evidenceIds": [
+          "acl-aspetar-2023"
+        ],
+        "note": "Bewegung und Aktivierung innerhalb der vorgegebenen Belastungs- und Winkelgrenzen; Begleitverletzungen berücksichtigen."
+      },
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "frueh"
+        ],
+        "variants": [
+          "konservativ"
+        ],
+        "evidenceIds": [
+          "acl-kanon-2013"
+        ],
+        "note": "Bewegung und Aktivierung innerhalb der vorgegebenen Belastungs- und Winkelgrenzen; Begleitverletzungen berücksichtigen."
+      },
+      {
+        "conditionId": "knie-tep",
+        "phases": [
+          "frueh",
+          "aufbau"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tka-2026"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "reha-aufstehen": {
+    "conditionUses": [
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "aufbau"
+        ],
+        "variants": [
+          "rekonstruktion"
+        ],
+        "evidenceIds": [
+          "acl-aspetar-2023"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "aufbau"
+        ],
+        "variants": [
+          "konservativ"
+        ],
+        "evidenceIds": [
+          "acl-kanon-2013"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "knie-tep",
+        "phases": [
+          "aufbau",
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tka-2026"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "hueft-tep",
+        "phases": [
+          "aufbau",
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tha-2023",
+          "tha-gait-2023"
+        ],
+        "note": "Abduktorenbelastung und Bewegungsumfang müssen zum OP-Zugang und möglichen Sehnenrekonstruktionen passen."
+      }
+    ],
+    "catalogMedia": [
+      "cdc-squat"
+    ]
+  },
+  "birshof-09-squat": {
+    "conditionUses": [
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "aufbau"
+        ],
+        "variants": [
+          "rekonstruktion"
+        ],
+        "evidenceIds": [
+          "acl-aspetar-2023"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "aufbau"
+        ],
+        "variants": [
+          "konservativ"
+        ],
+        "evidenceIds": [
+          "acl-kanon-2013"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "knie-tep",
+        "phases": [
+          "aufbau",
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tka-2026"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-12-fersen": {
+    "conditionUses": [
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "aufbau"
+        ],
+        "variants": [
+          "rekonstruktion"
+        ],
+        "evidenceIds": [
+          "acl-aspetar-2023"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "vorbereitung",
+          "aufbau"
+        ],
+        "variants": [
+          "konservativ"
+        ],
+        "evidenceIds": [
+          "acl-kanon-2013"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "knie-tep",
+        "phases": [
+          "aufbau",
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tka-2026"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "hueft-tep",
+        "phases": [
+          "aufbau",
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tha-2023",
+          "tha-gait-2023"
+        ],
+        "note": "Abduktorenbelastung und Bewegungsumfang müssen zum OP-Zugang und möglichen Sehnenrekonstruktionen passen."
+      }
+    ]
+  },
+  "reha-knie-strecken": {
+    "conditionUses": [
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "aufbau"
+        ],
+        "variants": [
+          "rekonstruktion"
+        ],
+        "evidenceIds": [
+          "acl-aspetar-2023"
+        ],
+        "note": "Offene Kette: freigegebenen Winkelbereich, Last und Transplantat berücksichtigen. Animation zeigt Fußgewicht; dieses ist keine automatische Vorgabe."
+      },
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "aufbau"
+        ],
+        "variants": [
+          "konservativ"
+        ],
+        "evidenceIds": [
+          "acl-kanon-2013"
+        ],
+        "note": "Offene Kette: freigegebenen Winkelbereich, Last und Transplantat berücksichtigen. Animation zeigt Fußgewicht; dieses ist keine automatische Vorgabe."
+      },
+      {
+        "conditionId": "knie-tep",
+        "phases": [
+          "aufbau",
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tka-2026"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ],
+    "catalogMedia": [
+      "cdc-knee-extension"
+    ]
+  },
+  "birshof-09-ausfallschritt": {
+    "conditionUses": [
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [
+          "rekonstruktion"
+        ],
+        "evidenceIds": [
+          "acl-aspetar-2023"
+        ],
+        "note": "Erst bei ausreichender Beinachsenkontrolle und Freigabe. Keine Return-to-Sport-Entscheidung aus dieser Liste ableiten."
+      },
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [
+          "konservativ"
+        ],
+        "evidenceIds": [
+          "acl-kanon-2013"
+        ],
+        "note": "Erst bei ausreichender Beinachsenkontrolle und Freigabe. Keine Return-to-Sport-Entscheidung aus dieser Liste ableiten."
+      }
+    ]
+  },
+  "birshof-12-beckenstufe": {
+    "conditionUses": [
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [
+          "rekonstruktion"
+        ],
+        "evidenceIds": [
+          "acl-aspetar-2023"
+        ],
+        "note": "Erst bei ausreichender Beinachsenkontrolle und Freigabe. Keine Return-to-Sport-Entscheidung aus dieser Liste ableiten."
+      },
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [
+          "konservativ"
+        ],
+        "evidenceIds": [
+          "acl-kanon-2013"
+        ],
+        "note": "Erst bei ausreichender Beinachsenkontrolle und Freigabe. Keine Return-to-Sport-Entscheidung aus dieser Liste ableiten."
+      },
+      {
+        "conditionId": "knie-tep",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tka-2026"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "hueft-tep",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tha-gait-2023"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-09-squat-seitschritt": {
+    "conditionUses": [
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [
+          "rekonstruktion"
+        ],
+        "evidenceIds": [
+          "acl-aspetar-2023"
+        ],
+        "note": "Erst bei ausreichender Beinachsenkontrolle und Freigabe. Keine Return-to-Sport-Entscheidung aus dieser Liste ableiten."
+      },
+      {
+        "conditionId": "kreuzband",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [
+          "konservativ"
+        ],
+        "evidenceIds": [
+          "acl-kanon-2013"
+        ],
+        "note": "Erst bei ausreichender Beinachsenkontrolle und Freigabe. Keine Return-to-Sport-Entscheidung aus dieser Liste ableiten."
+      }
+    ]
+  },
+  "birshof-15-gesaess": {
+    "conditionUses": [
+      {
+        "conditionId": "knie-tep",
+        "phases": [
+          "frueh",
+          "aufbau"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tka-2026"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "hueft-tep",
+        "phases": [
+          "frueh"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tha-2023",
+          "tha-gait-2023"
+        ],
+        "note": "Nur gemäß Belastungs-, Zugang- und Bewegungsvorgaben des operierenden Teams. Gehschulung persönlich einüben."
+      }
+    ]
+  },
+  "birshof-15-treppe-auf": {
+    "conditionUses": [
+      {
+        "conditionId": "knie-tep",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tka-2026"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "hueft-tep",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tha-gait-2023"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-15-treppe-ab": {
+    "conditionUses": [
+      {
+        "conditionId": "knie-tep",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tka-2026"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      },
+      {
+        "conditionId": "hueft-tep",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tha-gait-2023"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-15-gang": {
+    "conditionUses": [
+      {
+        "conditionId": "hueft-tep",
+        "phases": [
+          "frueh"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tha-2023",
+          "tha-gait-2023"
+        ],
+        "note": "Nur gemäß Belastungs-, Zugang- und Bewegungsvorgaben des operierenden Teams. Gehschulung persönlich einüben."
+      }
+    ]
+  },
+  "huefte-seitlich": {
+    "conditionUses": [
+      {
+        "conditionId": "hueft-tep",
+        "phases": [
+          "aufbau",
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tha-2023",
+          "tha-gait-2023"
+        ],
+        "note": "Abduktorenbelastung und Bewegungsumfang müssen zum OP-Zugang und möglichen Sehnenrekonstruktionen passen."
+      }
+    ],
+    "catalogMedia": [
+      "cdc-hip-abduction"
+    ]
+  },
+  "birshof-06-handgelenk": {
+    "conditionUses": [
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "schutz"
+        ],
+        "variants": [
+          "anatomisch"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Nur Begleitbewegungen und Lagerung ohne Schulterbelastung, entsprechend OP-Anweisung. Die Studie prüft Reha-Zeitpunkte, nicht diese Einzelübung."
+      },
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "schutz"
+        ],
+        "variants": [
+          "invers"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Nur Begleitbewegungen und Lagerung ohne Schulterbelastung, entsprechend OP-Anweisung. Die Studie prüft Reha-Zeitpunkte, nicht diese Einzelübung."
+      }
+    ]
+  },
+  "birshof-06-faust": {
+    "conditionUses": [
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "schutz"
+        ],
+        "variants": [
+          "anatomisch"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Nur Begleitbewegungen und Lagerung ohne Schulterbelastung, entsprechend OP-Anweisung. Die Studie prüft Reha-Zeitpunkte, nicht diese Einzelübung."
+      },
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "schutz"
+        ],
+        "variants": [
+          "invers"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Nur Begleitbewegungen und Lagerung ohne Schulterbelastung, entsprechend OP-Anweisung. Die Studie prüft Reha-Zeitpunkte, nicht diese Einzelübung."
+      }
+    ]
+  },
+  "birshof-06-lagern": {
+    "conditionUses": [
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "schutz"
+        ],
+        "variants": [
+          "anatomisch"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Nur Begleitbewegungen und Lagerung ohne Schulterbelastung, entsprechend OP-Anweisung. Die Studie prüft Reha-Zeitpunkte, nicht diese Einzelübung."
+      },
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "schutz"
+        ],
+        "variants": [
+          "invers"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Nur Begleitbewegungen und Lagerung ohne Schulterbelastung, entsprechend OP-Anweisung. Die Studie prüft Reha-Zeitpunkte, nicht diese Einzelübung."
+      }
+    ]
+  },
+  "birshof-01-arm-gefuehrt": {
+    "conditionUses": [
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "mobilisation"
+        ],
+        "variants": [
+          "anatomisch"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Ausschließlich persönlich freigegebene geführte Bewegung. Bewegungsgrenzen, passive/aktive Anteile und Sehnenschutz aus dem OP-Protokoll übernehmen."
+      },
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "mobilisation"
+        ],
+        "variants": [
+          "invers"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Ausschließlich persönlich freigegebene geführte Bewegung. Bewegungsgrenzen, passive/aktive Anteile und Sehnenschutz aus dem OP-Protokoll übernehmen."
+      },
+      {
+        "conditionId": "frozen-shoulder",
+        "phases": [
+          "steifigkeit"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "frozen-2022"
+        ],
+        "note": "Nur bei passender Reizbarkeit und ohne anhaltende Schmerzverstärkung. Kein Kraftdruck in die Endstellung."
+      }
+    ]
+  },
+  "birshof-01-ball-tisch": {
+    "conditionUses": [
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "mobilisation"
+        ],
+        "variants": [
+          "anatomisch"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Ausschließlich persönlich freigegebene geführte Bewegung. Bewegungsgrenzen, passive/aktive Anteile und Sehnenschutz aus dem OP-Protokoll übernehmen."
+      },
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "mobilisation"
+        ],
+        "variants": [
+          "invers"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Ausschließlich persönlich freigegebene geführte Bewegung. Bewegungsgrenzen, passive/aktive Anteile und Sehnenschutz aus dem OP-Protokoll übernehmen."
+      },
+      {
+        "conditionId": "frozen-shoulder",
+        "phases": [
+          "schmerz",
+          "steifigkeit"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "frozen-2022"
+        ],
+        "note": "Klein und verträglich bewegen. Keine aggressive Dehnung; Reaktion am Folgetag und Nachtschmerz berücksichtigen."
+      }
+    ]
+  },
+  "birshof-01-haengen-gestuetzt": {
+    "conditionUses": [
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "mobilisation"
+        ],
+        "variants": [
+          "anatomisch"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Ausschließlich persönlich freigegebene geführte Bewegung. Bewegungsgrenzen, passive/aktive Anteile und Sehnenschutz aus dem OP-Protokoll übernehmen."
+      },
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "mobilisation"
+        ],
+        "variants": [
+          "invers"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Ausschließlich persönlich freigegebene geführte Bewegung. Bewegungsgrenzen, passive/aktive Anteile und Sehnenschutz aus dem OP-Protokoll übernehmen."
+      },
+      {
+        "conditionId": "frozen-shoulder",
+        "phases": [
+          "schmerz",
+          "steifigkeit"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "frozen-2022"
+        ],
+        "note": "Klein und verträglich bewegen. Keine aggressive Dehnung; Reaktion am Folgetag und Nachtschmerz berücksichtigen."
+      }
+    ]
+  },
+  "birshof-11-blatt-sitz": {
+    "conditionUses": [
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "aufbau"
+        ],
+        "variants": [
+          "anatomisch"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Aktive Bewegung erst nach expliziter Freigabe. Kein allgemeiner Wochenplan; Belastung und Prothesentyp individuell prüfen."
+      },
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "aufbau"
+        ],
+        "variants": [
+          "invers"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Aktive Bewegung erst nach expliziter Freigabe. Kein allgemeiner Wochenplan; Belastung und Prothesentyp individuell prüfen."
+      },
+      {
+        "conditionId": "frozen-shoulder",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "frozen-2022"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-11-blatt-decke": {
+    "conditionUses": [
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "aufbau"
+        ],
+        "variants": [
+          "anatomisch"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Aktive Bewegung erst nach expliziter Freigabe. Kein allgemeiner Wochenplan; Belastung und Prothesentyp individuell prüfen."
+      },
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "aufbau"
+        ],
+        "variants": [
+          "invers"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Aktive Bewegung erst nach expliziter Freigabe. Kein allgemeiner Wochenplan; Belastung und Prothesentyp individuell prüfen."
+      }
+    ]
+  },
+  "birshof-01-stab-rotation": {
+    "conditionUses": [
+      {
+        "conditionId": "frozen-shoulder",
+        "phases": [
+          "schmerz",
+          "steifigkeit"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "frozen-2022"
+        ],
+        "note": "Klein und verträglich bewegen. Keine aggressive Dehnung; Reaktion am Folgetag und Nachtschmerz berücksichtigen."
+      }
+    ]
+  },
+  "birshof-05-kapsel-quer": {
+    "conditionUses": [
+      {
+        "conditionId": "frozen-shoulder",
+        "phases": [
+          "steifigkeit"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "frozen-2022"
+        ],
+        "note": "Nur bei passender Reizbarkeit und ohne anhaltende Schmerzverstärkung. Kein Kraftdruck in die Endstellung."
+      }
+    ]
+  },
+  "birshof-05-kapsel-aussen": {
+    "conditionUses": [
+      {
+        "conditionId": "frozen-shoulder",
+        "phases": [
+          "steifigkeit"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "frozen-2022"
+        ],
+        "note": "Nur bei passender Reizbarkeit und ohne anhaltende Schmerzverstärkung. Kein Kraftdruck in die Endstellung."
+      }
+    ]
+  },
+  "band-aussenrotation": {
+    "conditionUses": [
+      {
+        "conditionId": "frozen-shoulder",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "frozen-2022"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-04-band-ruder": {
+    "conditionUses": [
+      {
+        "conditionId": "frozen-shoulder",
+        "phases": [
+          "funktion"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "frozen-2022"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-02-kiefer-ruhe": {
+    "conditionUses": [
+      {
+        "conditionId": "kiefer",
+        "phases": [
+          "entspannung"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tmd-2023",
+          "tmd-2025"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ],
+    "methodTags": [
+      "Kieferentspannung"
+    ]
+  },
+  "birshof-02-masseter": {
+    "conditionUses": [
+      {
+        "conditionId": "kiefer",
+        "phases": [
+          "entspannung"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tmd-2023",
+          "tmd-2025"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ],
+    "methodTags": [
+      "Kieferentspannung"
+    ]
+  },
+  "birshof-02-temporalis": {
+    "conditionUses": [
+      {
+        "conditionId": "kiefer",
+        "phases": [
+          "entspannung"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tmd-2023",
+          "tmd-2025"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ],
+    "methodTags": [
+      "Kieferentspannung"
+    ]
+  },
+  "birshof-02-kiefer-oeffnen": {
+    "conditionUses": [
+      {
+        "conditionId": "kiefer",
+        "phases": [
+          "bewegung"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tmd-2023"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-02-kiefer-seite": {
+    "conditionUses": [
+      {
+        "conditionId": "kiefer",
+        "phases": [
+          "bewegung"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tmd-2023"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-02-kiefer-vor": {
+    "conditionUses": [
+      {
+        "conditionId": "kiefer",
+        "phases": [
+          "bewegung"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tmd-2023"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-06-fingerkontakt": {
+    "conditionUses": [
+      {
+        "conditionId": "schulter-tep",
+        "phases": [
+          "schutz"
+        ],
+        "variants": [
+          "anatomisch",
+          "invers"
+        ],
+        "evidenceIds": [
+          "tsa-2022"
+        ],
+        "note": "Fingerkoordination ohne Schulterlast, nach OP-Vorgabe."
+      }
+    ]
+  },
+  "birshof-02-kiefer-isometrie": {
+    "conditionUses": [
+      {
+        "conditionId": "kiefer",
+        "phases": [
+          "angeleitet"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tmd-2023"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "birshof-02-kiefer-isoseite": {
+    "conditionUses": [
+      {
+        "conditionId": "kiefer",
+        "phases": [
+          "angeleitet"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "tmd-2023"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ]
+  },
+  "kiefer-korken": {
+    "conditionUses": [
+      {
+        "conditionId": "kiefer",
+        "phases": [
+          "angeleitet"
+        ],
+        "variants": [],
+        "evidenceIds": [],
+        "note": "Klinisches Heimprogramm als Technikquelle. Kein belastbarer spezifischer Wirksamkeitsbeleg für Korken oder Diskusreposition; nur nach persönlicher Einweisung."
+      }
+    ]
+  },
+  "pir-kiefer": {
+    "conditionUses": [
+      {
+        "conditionId": "kiefer",
+        "phases": [
+          "angeleitet"
+        ],
+        "variants": [],
+        "evidenceIds": [],
+        "note": "Angeleitete Verfahrensvariante; kein Wirksamkeitsnachweis für genau diesen Ablauf. Nicht mit dem Nachweis allgemeiner Kieferübungen gleichsetzen."
+      }
+    ],
+    "methodTags": [
+      "PIR"
+    ]
+  },
+  "pir-nacken": {
+    "conditionUses": [
+      {
+        "conditionId": "nacken",
+        "phases": [
+          "entspannung"
+        ],
+        "variants": [],
+        "evidenceIds": [
+          "pir-neck-2023",
+          "pir-rct-2022"
+        ],
+        "note": "Redaktioneller Vorschlag aus der Übungsfamilie; Eignung und Dosierung individuell prüfen."
+      }
+    ],
+    "methodTags": [
+      "PIR"
+    ]
+  },
+  "birshof-07-hws-sitz": {
+    "conditionUses": [
+      {
+        "conditionId": "nacken",
+        "phases": [
+          "aufbau"
+        ],
+        "variants": [],
+        "evidenceIds": [],
+        "note": "Allgemeine Halte- und Bewegungskontrolle. Die PIR-Studien belegen diese Einzelübungen nicht."
+      }
+    ]
+  },
+  "birshof-07-hws-vorn": {
+    "conditionUses": [
+      {
+        "conditionId": "nacken",
+        "phases": [
+          "aufbau"
+        ],
+        "variants": [],
+        "evidenceIds": [],
+        "note": "Allgemeine Halte- und Bewegungskontrolle. Die PIR-Studien belegen diese Einzelübungen nicht."
+      }
+    ]
+  },
+  "birshof-07-hws-bewegen": {
+    "conditionUses": [
+      {
+        "conditionId": "nacken",
+        "phases": [
+          "aufbau"
+        ],
+        "variants": [],
+        "evidenceIds": [],
+        "note": "Allgemeine Halte- und Bewegungskontrolle. Die PIR-Studien belegen diese Einzelübungen nicht."
+      }
+    ]
+  },
+  "hantel-beugen-sitz": {
+    "catalogMedia": [
+      "cdc-biceps-curl"
+    ]
+  },
+  "pir-beinrueckseite": {
+    "methodTags": [
+      "PIR"
+    ]
+  }
+}
