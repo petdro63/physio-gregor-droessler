@@ -37,6 +37,7 @@ import brochures from "./brochure-library.json";
 import { ConditionLibrary, RelaxationPage, ClinicalAssignmentFields, EvidenceCard } from "./ClinicalLibrary";
 import { LicensedMedia, catalogMediaUrl } from "./LicensedMedia";
 import { findExercises } from "./exercise-search";
+import { ReferencePose, ReferencePositions, referencePose } from './ReferencePositions';
 import { api, setCsrf } from "./api";
 import { Illustration } from "./Illustration";
 import { RealPersonVideo, REAL_PERSON_EXAMPLE } from "./RealPersonVideo";
@@ -669,7 +670,10 @@ function App() {
       )}
       {detail && (
         <ExerciseDetail
+          key={detail.id}
           exercise={detail}
+          familyVariants={(data?.exercises || []).filter(e => detail.familyId && e.familyId === detail.familyId)}
+          onSelectVariant={setDetail}
           demo={session.demo}
           staff={staff}
           onClose={() => setDetail(null)}
@@ -1023,7 +1027,7 @@ function ExerciseCard({
   return (
     <button className="exercise-card" onClick={onClick}>
       <div className={"exercise-art art-" + ((index ?? 0) % 3)}>
-        {e.catalogMedia.length ? (
+        {referencePose(e) ? <ReferencePose exercise={e}/> : e.catalogMedia.length ? (
           <img src={catalogMediaUrl(e,e.catalogMedia[0],"start.png")} alt={`${e.title} – allgemeine CDC-Bewegungsdarstellung`} />
         ) : e.demo ? (
           <Illustration kind={e.id} phase={(index ?? 0) % 2} />
@@ -1138,7 +1142,18 @@ function Library({
     [condition, setCondition] = useState(""),
     [method, setMethod] = useState(""),
     [brochure, setBrochure] = useState("");
+  const [page, setPage] = useState(1);
+  const [groupFamilies, setGroupFamilies] = useState(true);
   const filtered = findExercises(exercises, { search, region, goal, equipment, difficulty, position, trainingType, joint, muscle, sort, condition, method, brochure });
+  const representatives = new Map<string, string>();
+  for (const exercise of filtered) if (exercise.familyId) {
+    if (!representatives.has(exercise.familyId) || /-(aktiv|dynamisch|frei|schulterbreit|beidarm|beidhaendig)$/.test(exercise.id)) representatives.set(exercise.familyId, exercise.id);
+  }
+  const visible = groupFamilies ? filtered.filter(e => !e.familyId || representatives.get(e.familyId) === e.id) : filtered;
+  const pageSize = 24;
+  const pages = Math.max(1, Math.ceil(visible.length / pageSize));
+  const currentPage = Math.min(page, pages);
+  useEffect(() => { setPage(1); }, [search, region, goal, equipment, difficulty, position, trainingType, joint, muscle, sort, condition, method, brochure, groupFamilies]);
   const resetFilters = () => {
     setSearch(""); setRegion(""); setGoal(""); setEquipment(""); setDifficulty("");
     setPosition(""); setTrainingType(""); setJoint(""); setMuscle(""); setCondition(""); setMethod(""); setBrochure("");
@@ -1165,6 +1180,11 @@ function Library({
           </button>
         )}
       </div>
+      {staff && <section className="catalog-summary panel" aria-label="Gelenkabdeckung">
+        <h2>Nach Gelenk einsteigen</h2>
+        <p>Neue Bibliothek: 150 Grundmuster mit 1.200 Variantenentwürfen. Jede Variante hat eine eigene Anleitung; fachliche Freigaben stehen noch aus.</p>
+        <div className="joint-shortcuts">{["Schultergelenk", "Ellenbogengelenk", "Handgelenk", "Hüftgelenk", "Kniegelenk", "Sprunggelenk"].map(name => <button type="button" key={name} className={joint === name ? "button primary" : "button secondary"} onClick={() => { resetFilters(); setJoint(name); }}><strong>{name}</strong><span>{exercises.filter(e => e.joints.includes(name)).length} Einträge</span></button>)}</div>
+      </section>}
       <div className="library-toolbar">
         <label className="search-input">
           <Search size={19} />
@@ -1254,8 +1274,9 @@ function Library({
       </div>
       <div className="section-heading">
         <p>
-          {filtered.length} {filtered.length === 1 ? "Übung" : "Übungen"}
+          {filtered.length} passende Einträge{groupFamilies ? ` · ${visible.length} Grundmuster / Einzelübungen` : " einschließlich Varianten"}
         </p>
+        <label className="family-toggle"><input type="checkbox" checked={groupFamilies} onChange={e => setGroupFamilies(e.target.checked)} /> Varianten je Grundmuster zusammenfassen</label>
         {staff && (
           <button className="text-button" onClick={onCoverage}>
             Bibliotheksabdeckung ansehen <ArrowRight size={15} />
@@ -1264,7 +1285,7 @@ function Library({
       </div>
       {filtered.length ? (
         <div className="exercise-grid library-grid">
-          {filtered.map((e, i) => (
+          {visible.slice((currentPage - 1) * pageSize, currentPage * pageSize).map((e, i) => (
             <ExerciseCard
               key={e.id}
               exercise={e}
@@ -1279,12 +1300,15 @@ function Library({
           body="Passen Sie die Suche oder die Filter an."
         />
       )}
+      {visible.length > pageSize && <nav className="catalog-pagination" aria-label="Seiten der Übungsbibliothek"><button className="button secondary" disabled={currentPage === 1} onClick={() => setPage(currentPage - 1)}>Zurück</button><span>Seite {currentPage} von {pages} · {visible.length} Ergebnisse</span><button className="button secondary" disabled={currentPage === pages} onClick={() => setPage(currentPage + 1)}>Weiter</button></nav>}
     </>
   );
 }
 
 function ExerciseDetail({
   exercise: e,
+  familyVariants,
+  onSelectVariant,
   demo,
   staff,
   onClose,
@@ -1292,6 +1316,8 @@ function ExerciseDetail({
   onStatus,
 }: {
   exercise: Exercise;
+  familyVariants: Exercise[];
+  onSelectVariant: (exercise: Exercise) => void;
   demo: boolean;
   staff: boolean;
   onClose: () => void;
@@ -1335,7 +1361,7 @@ function ExerciseDetail({
         }
       >
         <div>
-          {e.catalogMedia.length ? <LicensedMedia exercise={e} /> : <>
+          {referencePose(e) ? <ReferencePositions exercise={e}/> : e.catalogMedia.length ? <LicensedMedia exercise={e} /> : <>
           <div
             className={
               kneeExample && video ? "detail-art real-video-art" : "detail-art"
@@ -1472,6 +1498,7 @@ function ExerciseDetail({
           </div>
         </div>
         <div className="detail-instructions">
+          {familyVariants.length > 1 && <label>Variante dieses Grundmusters<select aria-label="Variante dieses Grundmusters" value={e.id} onChange={event => { const next = familyVariants.find(v => v.id === event.target.value); if (next) onSelectVariant(next); }}>{familyVariants.map(v => <option value={v.id} key={v.id}>{v.variantLabel}</option>)}</select></label>}
           {e.requiresSupervision && <div className="notice">Diese Technik nur nach persönlicher Anleitung durchführen.</div>}
           {e.conditionUses.length > 0 && <details className="clinical-use-details"><summary>Krankheitsbezogene Einordnung</summary>{e.conditionUses.map((use,index) => {
             const condition = rehabLibrary.conditions.find(c => c.id === use.conditionId);
@@ -1484,6 +1511,8 @@ function ExerciseDetail({
           {e.sources.length > 0 && <details><summary>Quellen und Recherche</summary><ul>{e.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></li>)}</ul><p>Eigener Beschreibungsentwurf; Zuordnungen und Eignung sind vor Freigabe fachlich zu prüfen.</p></details>}
           <h3>Ausgangsstellung</h3>
           <p>{e.start}</p>
+          {e.end && <><h3>Endstellung dieser Variante</h3><p>{e.end}</p></>}
+          {e.familyId && <div className="notice"><strong>Grundmuster: {e.familyTitle}</strong><p>Variante: {e.variantLabel}</p><p>{e.sourceNote}</p></div>}
           <h3>So geht’s</h3>
           <ol className="steps">
             {e.steps.map((s, i) => (
@@ -2372,6 +2401,10 @@ function ExerciseEditor({
             value={form.start}
             onChange={(e) => field("start", e.target.value)}
           />
+        </label>
+        <label>
+          Endstellung beschreiben
+          <textarea value={form.end || ""} onChange={event => field("end", event.target.value)} />
         </label>
         <label>
           Durchführung (ein Schritt pro Zeile)

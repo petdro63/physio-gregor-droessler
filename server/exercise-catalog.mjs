@@ -5,17 +5,18 @@ import { clinicalMappings, rehabExercises } from "./clinical-content.mjs";
 export const taxonomy = JSON.parse(fs.readFileSync(new URL("../src/exercise-taxonomy.json", import.meta.url), "utf8"));
 const legacy = JSON.parse(fs.readFileSync(new URL("./legacy-exercise-classification.json", import.meta.url), "utf8"));
 export const additionalExercises = JSON.parse(fs.readFileSync(new URL("./additional-exercises.json", import.meta.url), "utf8"));
+export const expandedExercises = JSON.parse(fs.readFileSync(new URL("./expanded-exercises.json", import.meta.url), "utf8"));
 
 export function classifyExercise(exercise, id = exercise.id) {
   const defaults = legacy[id] || { trainingTypes: [], joints: [], strengthMuscles: [] };
-  return { ...defaults, sources: [], conditionUses: [], methodTags: [], catalogMedia: [], requiresSupervision: false, brochureId: "", ...clinicalMappings[id], ...exercise };
+  return { ...defaults, sources: [], conditionUses: [], methodTags: [], catalogMedia: [], requiresSupervision: false, brochureId: "", end: "", familyId: "", familyTitle: "", variantLabel: "", sourceNote: "", ...clinicalMappings[id], ...exercise };
 }
 
 // Only the demonstration database receives research drafts automatically.
 // INSERT OR IGNORE preserves edits and publication decisions across restarts.
 export function seedResearchDrafts(db) {
   transaction(db, () => {
-    for (const entry of [...additionalExercises, ...rehabExercises]) {
+    for (const entry of [...additionalExercises, ...rehabExercises, ...expandedExercises]) {
       if (db.prepare("SELECT 1 FROM exercises WHERE id=?").get(entry.id)) continue;
       const payload = {
         difficulty: "Leicht", duration: 3, breathing: "Ruhig weiteratmen; Bewegungen kontrolliert ausführen.",

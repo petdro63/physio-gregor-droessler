@@ -33,6 +33,11 @@ export type Exercise = {
   equipment: string;
   subtitle: string;
   start: string;
+  end?: string;
+  familyId?: string;
+  familyTitle?: string;
+  variantLabel?: string;
+  sourceNote?: string;
   steps: string[];
   breathing: string;
   mistakes: string;

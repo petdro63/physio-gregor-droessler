@@ -1,0 +1,15 @@
+[
+  {"familyId":"shoulder-flex-stand","atlas":"reference-joints","column":0,"row":0},
+  {"familyId":"elbow-beugen-sitz-sup","atlas":"reference-joints","column":1,"row":0},
+  {"familyId":"wrist-strecken-tisch","atlas":"reference-joints","column":0,"row":1},
+  {"familyId":"hip-abd-stand","atlas":"reference-joints","column":1,"row":1},
+  {"familyId":"knee-streck-sitz","atlas":"reference-joints","column":0,"row":2},
+  {"familyId":"ankle-ferse-stand","atlas":"reference-joints","column":1,"row":2},
+  {"familyId":"shoulder-ball-rollen-vor","atlas":"reference-ball","column":0,"row":0},
+  {"familyId":"shoulder-ball-rollen-seit","atlas":"reference-ball","column":1,"row":0},
+  {"familyId":"elbow-ball-tisch","atlas":"reference-ball","column":0,"row":1},
+  {"familyId":"knee-ball-beug","atlas":"reference-ball","column":1,"row":1},
+  {"familyId":"hip-ball-bruecke","atlas":"reference-ball","column":0,"row":2},
+  {"familyId":"hip-ball-wand","atlas":"reference-ball","column":1,"row":2},
+  {"familyId":"knee-ball-wandsquat","atlas":"reference-ball","column":1,"row":2}
+]

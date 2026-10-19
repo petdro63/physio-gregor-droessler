@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.7-dev**, Versionsdatum **19.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.8-dev**, Versionsdatum **19.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -18,6 +18,9 @@ npm run dev
 Die Vorschau nutzt ausschließlich erfundene Personen. Demo- und Praxisdatenbanken liegen getrennt in `data/demo` und `data/practice`. Weder Datenbanken, Sitzungsschlüssel, Backups noch lokale Umgebungsdateien werden in Git gespeichert. Die Demo läuft standardmäßig nur an der lokalen Loopbackadresse.
 
 ## Enthalten
+
+- Erweiterter Gelenkkatalog mit 1.200 zusätzlichen Variantenentwürfen: je 200 für Schulter, Ellenbogen, Handgelenk, Hüfte, Knie und Sprunggelenk. Insgesamt 150 Grundmuster mit acht Varianten; keine automatisch fachlich freigegebenen Behandlungen. [Umfang, Recherche und Bildabdeckung](docs/KATALOG-ERWEITERUNG.md).
+- Gruppierung nach Grundmuster, direkter Variantenwechsel und 24 Ergebnisse pro Seite. Zwölf KI-generierte Start-/End-Bildpaare anhand der Nutzerfigur; übrige Grundmuster haben zunächst textliche Start- und Endstellungen.
 
 - Responsive Patientenansicht mit persönlichem Trainingsplan und Übungskarten.
 - Bilder als eigene schematische SVG-Illustrationen, technisches MP4-Demovideo und beschriebene Übungsbeispiele.

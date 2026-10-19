@@ -1,0 +1,902 @@
+[
+  {
+    "id": "shoulder-flex-stand",
+    "title": "Armheben nach vorn im Stand",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-flex-sitz",
+    "title": "Armheben nach vorn im Sitz",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-flex-ruecken",
+    "title": "Armheben in Rückenlage",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-scaption-stand",
+    "title": "Armheben in der Schulterblattebene",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-scaption-sitz",
+    "title": "Schräges Armheben im Sitz",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-abduktion-stand",
+    "title": "Seitliches Armheben im Stand",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-abduktion-sitz",
+    "title": "Seitliches Armheben im Sitz",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-extension-stand",
+    "title": "Arm nach hinten führen",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-extension-bauch",
+    "title": "Armheben nach hinten in Bauchlage",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-aussen-stand",
+    "title": "Außenrotation am Körper im Stand",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-aussen-sitz",
+    "title": "Außenrotation am Körper im Sitz",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-aussen-seite",
+    "title": "Außenrotation in Seitenlage",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-innen-stand",
+    "title": "Innenrotation am Körper im Stand",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-innen-sitz",
+    "title": "Innenrotation am Körper im Sitz",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-innen-seite",
+    "title": "Innenrotation in Seitenlage",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-horizontal-ruecken",
+    "title": "Arm zur Körpermitte in Rückenlage",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-horizontal-sitz",
+    "title": "Horizontales Heranführen im Sitz",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-oeffnen-sitz",
+    "title": "Horizontales Öffnen im Sitz",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-oeffnen-bauch",
+    "title": "Seitliches Armheben in Bauchlage",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-rudern-stand",
+    "title": "Ruderbewegung im Stand",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-rudern-sitz",
+    "title": "Ruderbewegung im Sitz",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-serratus-ruecken",
+    "title": "Zur Decke reichen in Rückenlage",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-reich-sitz",
+    "title": "Nach vorn reichen im Sitz",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-ball-rollen-vor",
+    "title": "Pezziball nach vorn rollen",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "shoulder-ball-rollen-seit",
+    "title": "Pezziball seitlich rollen",
+    "joint": "Schultergelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-beugen-sitz-sup",
+    "title": "Ellenbogenbeugen im Sitz mit Handfläche oben",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-beugen-stand-sup",
+    "title": "Ellenbogenbeugen im Stand mit Handfläche oben",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-beugen-sitz-neutral",
+    "title": "Hammerbewegung im Sitz",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-beugen-stand-neutral",
+    "title": "Hammerbewegung im Stand",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-beugen-sitz-pron",
+    "title": "Ellenbogenbeugen im Sitz mit Handfläche unten",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-beugen-stand-pron",
+    "title": "Ellenbogenbeugen im Stand mit Handfläche unten",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-beugen-tisch-sup",
+    "title": "Ellenbogenbeugen auf dem Tisch, Handfläche oben",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-beugen-tisch-neutral",
+    "title": "Ellenbogenbeugen auf der Kleinfingerkante",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-beugen-ruecken",
+    "title": "Ellenbogenbeugen in Rückenlage",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-beugen-schulter-vor",
+    "title": "Ellenbogenbeugen mit vorgelagertem Oberarm",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-strecken-sitz",
+    "title": "Ellenbogenstrecken im Sitz",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-strecken-stand",
+    "title": "Ellenbogenstrecken im Stand",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-strecken-tisch",
+    "title": "Ellenbogenstrecken auf dem Tisch",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-strecken-ruecken",
+    "title": "Ellenbogenstrecken mit senkrechtem Oberarm",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-strecken-vorneige",
+    "title": "Ellenbogenstrecken in leichter Vorneige",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-strecken-seite",
+    "title": "Ellenbogenstrecken in Seitenlage",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-beugen-seite",
+    "title": "Ellenbogenbeugen in Seitenlage",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-beugen-oberarm-seit",
+    "title": "Ellenbogenbeugen mit seitlich gelagertem Oberarm",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-strecken-oberarm-seit",
+    "title": "Ellenbogenstrecken mit seitlich gelagertem Oberarm",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-beugen-oberarm-hoch",
+    "title": "Ellenbogenbeugen mit angehobenem Oberarm",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-strecken-ueberkopf",
+    "title": "Ellenbogenstrecken über Kopf",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-wanddruecken",
+    "title": "Ellenbogenstrecken an der Wand",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-tischdruecken",
+    "title": "Ellenbogenstrecken am hohen Tisch",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-kniewand",
+    "title": "Ellenbogenstrecken im Kniestütz an der Wand",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "elbow-ball-tisch",
+    "title": "Pezziball mit den Unterarmen wegrollen",
+    "joint": "Ellenbogengelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-beugen-tisch",
+    "title": "Handgelenkbeugen mit Handfläche oben",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-strecken-tisch",
+    "title": "Handgelenkstrecken mit Handfläche unten",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-radial-tisch",
+    "title": "Hand zur Daumenseite neigen",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-ulnar-tisch",
+    "title": "Hand zur Kleinfingerseite neigen",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-beugen-kante",
+    "title": "Handgelenkbeugen auf der Kleinfingerkante",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-strecken-kante",
+    "title": "Handgelenkstrecken auf der Kleinfingerkante",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-radial-kante",
+    "title": "Daumenseitiges Anheben auf der Handkante",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-ulnar-kante",
+    "title": "Kleinfingerseitiges Absenken auf der Handkante",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-beugen-oberschenkel",
+    "title": "Handgelenkbeugen auf dem Oberschenkel",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-strecken-oberschenkel",
+    "title": "Handgelenkstrecken auf dem Oberschenkel",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-radial-oberschenkel",
+    "title": "Daumenseitige Bewegung auf dem Oberschenkel",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-ulnar-oberschenkel",
+    "title": "Kleinfingerseitige Bewegung auf dem Oberschenkel",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-beugen-ellenbogen-lang",
+    "title": "Handgelenkbeugen mit lang gelagertem Ellenbogen",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-strecken-ellenbogen-lang",
+    "title": "Handgelenkstrecken mit lang gelagertem Ellenbogen",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-radial-ellenbogen-lang",
+    "title": "Daumenseitige Bewegung bei langem Ellenbogen",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-ulnar-ellenbogen-lang",
+    "title": "Kleinfingerseitige Bewegung bei langem Ellenbogen",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-beugen-stand",
+    "title": "Handgelenkbeugen im Stand am Tisch",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-strecken-stand",
+    "title": "Handgelenkstrecken im Stand am Tisch",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-radial-stand",
+    "title": "Daumenseitige Handbewegung im Stand",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-ulnar-stand",
+    "title": "Kleinfingerseitige Handbewegung im Stand",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-diagonal-ein",
+    "title": "Diagonal zur Daumenseite aufrichten",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-diagonal-aus",
+    "title": "Diagonal zur Kleinfingerseite absenken",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-beugen-faust",
+    "title": "Handgelenkbeugen mit lockerer Faust",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-strecken-faust",
+    "title": "Handgelenkstrecken mit lockerer Faust",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "wrist-radial-faust",
+    "title": "Daumenseitige Bewegung mit lockerer Faust",
+    "joint": "Handgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-flex-stand",
+    "title": "Hüftbeugen im gesicherten Stand",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-flex-sitz",
+    "title": "Hüftbeugen im Sitz",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-flex-ruecken",
+    "title": "Hüftbeugen mit langem Bein",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-flex-seite",
+    "title": "Hüftbeugen in Seitenlage",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-ext-stand",
+    "title": "Hüftstrecken im Stand",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-ext-bauch",
+    "title": "Hüftstrecken in Bauchlage",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-ext-bauch-gebeugt",
+    "title": "Hüftstrecken mit gebeugtem Knie",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-abd-stand",
+    "title": "Seitliches Beinheben im Stand",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-abd-seite",
+    "title": "Seitliches Beinheben in Seitenlage",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-abd-ruecken",
+    "title": "Bein seitlich gleiten lassen",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-add-stand",
+    "title": "Bein zur Mitte führen im Stand",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-add-seite",
+    "title": "Unteres Bein anheben in Seitenlage",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-add-ruecken",
+    "title": "Bein zur Mitte gleiten lassen",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-aussen-sitz",
+    "title": "Hüftaußenrotation im Sitz",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-innen-sitz",
+    "title": "Hüftinnenrotation im Sitz",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-muschel",
+    "title": "Muschelbewegung in Seitenlage",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-reverse-muschel",
+    "title": "Fußheben bei geschlossenen Knien",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-bruecke",
+    "title": "Beckenheben mit beiden Füßen",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-bruecke-versetzt",
+    "title": "Beckenheben mit versetzten Füßen",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-aufstehen",
+    "title": "Vom Stuhl aufstehen mit Hüftstreckung",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-kniebeuge",
+    "title": "Hüftbetonte Kniebeuge",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-schritt-hoch",
+    "title": "Niedrige Stufe hinaufsteigen",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-seit-schritt",
+    "title": "Seitliches Aufsteigen",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-ball-bruecke",
+    "title": "Beckenheben mit Unterschenkeln auf Pezziball",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "hip-ball-wand",
+    "title": "Hüftstreckung aus der Pezziball-Wandkniebeuge",
+    "joint": "Hüftgelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-streck-sitz",
+    "title": "Kniestrecken im Sitz",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-streck-rolle",
+    "title": "Kniestrecken über einer Rolle",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-streck-seite",
+    "title": "Kniestrecken in Seitenlage",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-beug-sitz",
+    "title": "Kniebeugen als Fersengleiten im Sitz",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-beug-ruecken",
+    "title": "Fersengleiten in Rückenlage",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-beug-stand",
+    "title": "Kniebeugen im gesicherten Stand",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-beug-bauch",
+    "title": "Kniebeugen in Bauchlage",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-beug-seite",
+    "title": "Kniebeugen in Seitenlage",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-aufstehen-hoch",
+    "title": "Aufstehen von hohem Stuhl",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-aufstehen-normal",
+    "title": "Aufstehen von normalem Stuhl",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-mini-squat",
+    "title": "Kleine Kniebeuge",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-squat-breit",
+    "title": "Kniebeuge in breiterer Fußstellung",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-split-squat",
+    "title": "Kniebeuge im Schrittstand",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-step-vor",
+    "title": "Vorwärts auf niedrige Stufe steigen",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-step-seit",
+    "title": "Seitwärts auf niedrige Stufe steigen",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-step-runter",
+    "title": "Vorwärts von niedriger Stufe absteigen",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-step-seit-runter",
+    "title": "Seitliches Absenken von niedriger Stufe",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-wand-squat",
+    "title": "Kleine Wandkniebeuge",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-bruecke-fersen",
+    "title": "Beckenheben mit Fersendruck",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-einbein-sitz",
+    "title": "Aufstehen mit versetzter Fußstellung",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-ball-wandsquat",
+    "title": "Kleine Kniebeuge mit Pezziball an der Wand",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-ball-beug",
+    "title": "Fersen zum Körper auf Pezziball rollen",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-ball-streck",
+    "title": "Pezziball mit Fersen wegrollen",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-gewicht-vor",
+    "title": "Gewichtsverlagerung im Schrittstand",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "knee-einbein",
+    "title": "Standbeinkontrolle auf festem Boden",
+    "joint": "Kniegelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-heben-sitz",
+    "title": "Fußheben im Sitz",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-senken-sitz",
+    "title": "Fußsenken im Sitz mit freier Ferse",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-heben-ruecken",
+    "title": "Fußheben in Rückenlage",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-senken-ruecken",
+    "title": "Fußsenken in Rückenlage",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-heben-lang",
+    "title": "Fußheben im Langsitz",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-senken-lang",
+    "title": "Fußsenken im Langsitz",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-innen-sitz",
+    "title": "Fuß nach innen führen im Sitz",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-aussen-sitz",
+    "title": "Fuß nach außen führen im Sitz",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-innen-lang",
+    "title": "Fußinnenführung im Langsitz",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-aussen-lang",
+    "title": "Fußaußenführung im Langsitz",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-innen-ruecken",
+    "title": "Fußinnenführung in Rückenlage",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-aussen-ruecken",
+    "title": "Fußaußenführung in Rückenlage",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-ferse-stand",
+    "title": "Fersenheben mit langen Knien",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-ferse-gebeugt",
+    "title": "Fersenheben mit gebeugten Knien",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-ferse-sitz",
+    "title": "Fersenheben im Sitz",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-vorfuss-stand",
+    "title": "Vorfußheben im gesicherten Stand",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-ferse-versetzt",
+    "title": "Fersenheben mit versetzter Fußstellung",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-ferse-einbein",
+    "title": "Fersenheben auf einem Bein",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-vorfuss-sitz-knie-lang",
+    "title": "Vorfußheben mit vorgestelltem Bein",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-kurzer-fuss",
+    "title": "Fußgewölbe im Sitz aufrichten",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-kurzer-fuss-stand",
+    "title": "Fußgewölbe im Stand aufrichten",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-gewicht-vor",
+    "title": "Gewicht vor und zurück verlagern",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-gewicht-seit",
+    "title": "Gewicht seitlich verlagern",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-tandem",
+    "title": "Fußkontrolle im Tandemstand",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  },
+  {
+    "id": "ankle-einbein",
+    "title": "Sprunggelenkkontrolle im Einbeinstand",
+    "joint": "Sprunggelenk",
+    "variants": 8
+  }
+]

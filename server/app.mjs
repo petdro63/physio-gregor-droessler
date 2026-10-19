@@ -31,6 +31,7 @@ import { clinicalLibrary, catalogMedia } from "./clinical-content.mjs";
 import { seed, coverage } from "./seed.mjs";
 import { VERSION, VERSION_DATE, TIME_ZONE } from "./version.mjs";
 import { makePlanPdf } from "./pdf.mjs";
+const referencePoses = JSON.parse(fs.readFileSync(new URL('../src/reference-poses.json', import.meta.url), 'utf8'));
 
 const hash = (value) => createHash("sha256").update(value).digest("hex");
 const text = z.string().trim().max(5000);
@@ -69,6 +70,11 @@ const exerciseSchema = z.object({
   equipment: text,
   subtitle: text,
   start: text.min(1),
+  end: text.default(""),
+  familyId: text.max(150).default(""),
+  familyTitle: text.default(""),
+  variantLabel: text.default(""),
+  sourceNote: text.default(""),
   steps: z.array(text.min(1)).min(1).max(30),
   breathing: text,
   mistakes: text,
@@ -931,6 +937,17 @@ export function createApp(options = {}) {
     } catch (e) {
       next(e);
     }
+  });
+  app.get('/api/reference-poses/:id/:atlas', (req, res, next) => {
+    try {
+      const version = req.query.version ? Number(req.query.version) : undefined;
+      if (version !== undefined && (!Number.isInteger(version) || version < 1)) throw fail(404, 'Bild nicht gefunden.');
+      if (!canExercise(req.user, req.params.id, version)) throw fail(404, 'Bild nicht gefunden.');
+      const exercise = getExercise(req.params.id, version);
+      const pose = referencePoses.find(p => p.familyId === exercise?.familyId && p.atlas === req.params.atlas);
+      if (!pose) throw fail(404, 'Bild nicht gefunden.');
+      res.sendFile(path.resolve('server/assets/reference', pose.atlas + '.png'));
+    } catch (error) { next(error); }
   });
   app.get("/api/catalog-media/:id/:asset/:file", (req, res, next) => {
     try {
