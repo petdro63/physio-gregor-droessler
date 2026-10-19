@@ -12,6 +12,7 @@ RUN npm ci --omit=dev --no-fund --no-audit && mkdir -p /app/data && chown node:n
 COPY --from=build /app/dist ./dist
 COPY --from=build /app/server ./server
 COPY --from=build /app/src/*.json ./src/
+COPY --from=build /app/src/reference-lookup.ts ./src/reference-lookup.ts
 COPY --from=build /app/scripts ./scripts
 USER node
 EXPOSE 3180

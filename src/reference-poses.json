@@ -1,15 +1,326 @@
 [
-  {"familyId":"shoulder-flex-stand","atlas":"reference-joints","column":0,"row":0},
-  {"familyId":"elbow-beugen-sitz-sup","atlas":"reference-joints","column":1,"row":0},
-  {"familyId":"wrist-strecken-tisch","atlas":"reference-joints","column":0,"row":1},
-  {"familyId":"hip-abd-stand","atlas":"reference-joints","column":1,"row":1},
-  {"familyId":"knee-streck-sitz","atlas":"reference-joints","column":0,"row":2},
-  {"familyId":"ankle-ferse-stand","atlas":"reference-joints","column":1,"row":2},
-  {"familyId":"shoulder-ball-rollen-vor","atlas":"reference-ball","column":0,"row":0},
-  {"familyId":"shoulder-ball-rollen-seit","atlas":"reference-ball","column":1,"row":0},
-  {"familyId":"elbow-ball-tisch","atlas":"reference-ball","column":0,"row":1},
-  {"familyId":"knee-ball-beug","atlas":"reference-ball","column":1,"row":1},
-  {"familyId":"hip-ball-bruecke","atlas":"reference-ball","column":0,"row":2},
-  {"familyId":"hip-ball-wand","atlas":"reference-ball","column":1,"row":2},
-  {"familyId":"knee-ball-wandsquat","atlas":"reference-ball","column":1,"row":2}
+  {
+    "familyId": "shoulder-flex-stand",
+    "atlas": "reference-joints",
+    "column": 0,
+    "row": 0
+  },
+  {
+    "familyId": "elbow-beugen-sitz-sup",
+    "atlas": "reference-joints",
+    "column": 1,
+    "row": 0
+  },
+  {
+    "familyId": "wrist-strecken-tisch",
+    "atlas": "reference-joints",
+    "column": 0,
+    "row": 1
+  },
+  {
+    "familyId": "hip-abd-stand",
+    "atlas": "reference-joints",
+    "column": 1,
+    "row": 1
+  },
+  {
+    "familyId": "knee-streck-sitz",
+    "atlas": "reference-joints",
+    "column": 0,
+    "row": 2
+  },
+  {
+    "familyId": "ankle-ferse-stand",
+    "atlas": "reference-joints",
+    "column": 1,
+    "row": 2
+  },
+  {
+    "familyId": "shoulder-ball-rollen-vor",
+    "atlas": "reference-ball",
+    "column": 0,
+    "row": 0
+  },
+  {
+    "familyId": "shoulder-ball-rollen-seit",
+    "atlas": "reference-ball",
+    "column": 1,
+    "row": 0
+  },
+  {
+    "familyId": "elbow-ball-tisch",
+    "atlas": "reference-ball",
+    "column": 0,
+    "row": 1
+  },
+  {
+    "familyId": "knee-ball-beug",
+    "atlas": "reference-ball",
+    "column": 1,
+    "row": 1
+  },
+  {
+    "familyId": "hip-ball-bruecke",
+    "atlas": "reference-ball",
+    "column": 0,
+    "row": 2
+  },
+  {
+    "familyId": "hip-ball-wand",
+    "atlas": "reference-ball",
+    "column": 1,
+    "row": 2
+  },
+  {
+    "familyId": "knee-ball-wandsquat",
+    "atlas": "reference-ball",
+    "column": 1,
+    "row": 2
+  },
+  {
+    "exerciseIds": [
+      "hantel-beugen-stand"
+    ],
+    "atlas": "reference-equipment",
+    "column": 0,
+    "row": 0,
+    "scope": "variant",
+    "equipment": [
+      "Hanteln"
+    ]
+  },
+  {
+    "exerciseIds": [
+      "hantel-beugen-sitz"
+    ],
+    "atlas": "reference-equipment",
+    "column": 1,
+    "row": 0,
+    "scope": "variant",
+    "equipment": [
+      "Hanteln"
+    ]
+  },
+  {
+    "exerciseIds": [
+      "band-rudern-stand"
+    ],
+    "atlas": "reference-equipment",
+    "column": 0,
+    "row": 2,
+    "scope": "variant",
+    "equipment": [
+      "Theraband"
+    ]
+  },
+  {
+    "familyId": "shoulder-rudern-stand",
+    "equipment": [
+      "Theraband"
+    ],
+    "suffixes": [
+      "band"
+    ],
+    "atlas": "reference-equipment",
+    "column": 0,
+    "row": 2,
+    "scope": "variant"
+  },
+  {
+    "familyId": "shoulder-rudern-stand",
+    "equipment": [
+      "Theraband"
+    ],
+    "suffixes": [
+      "band-exzentrisch"
+    ],
+    "atlas": "reference-equipment",
+    "column": 0,
+    "row": 2,
+    "scope": "variant",
+    "reverse": true
+  },
+  {
+    "familyId": "shoulder-rudern-stand",
+    "equipment": [
+      "Theraband"
+    ],
+    "suffixes": [
+      "band-isometrisch"
+    ],
+    "atlas": "reference-equipment",
+    "column": 0,
+    "row": 2,
+    "scope": "base",
+    "fixedFrame": 1
+  },
+  {
+    "familyId": "knee-streck-sitz",
+    "equipment": [
+      "Gewichtsmanschette"
+    ],
+    "suffixes": [
+      "manschette"
+    ],
+    "atlas": "reference-lower-equipment",
+    "column": 0,
+    "row": 0,
+    "scope": "variant"
+  },
+  {
+    "familyId": "knee-streck-sitz",
+    "equipment": [
+      "Gewichtsmanschette"
+    ],
+    "suffixes": [
+      "manschette-exzentrisch"
+    ],
+    "atlas": "reference-lower-equipment",
+    "column": 0,
+    "row": 0,
+    "scope": "variant",
+    "reverse": true
+  },
+  {
+    "familyId": "ankle-heben-lang",
+    "equipment": [
+      "Theraband"
+    ],
+    "suffixes": [
+      "band"
+    ],
+    "atlas": "reference-lower-equipment",
+    "column": 0,
+    "row": 1,
+    "scope": "variant"
+  },
+  {
+    "familyId": "ankle-heben-lang",
+    "equipment": [
+      "Theraband"
+    ],
+    "suffixes": [
+      "band-exzentrisch"
+    ],
+    "atlas": "reference-lower-equipment",
+    "column": 0,
+    "row": 1,
+    "scope": "variant",
+    "reverse": true
+  },
+  {
+    "familyId": "ankle-heben-lang",
+    "equipment": [
+      "Theraband"
+    ],
+    "suffixes": [
+      "band-isometrisch"
+    ],
+    "atlas": "reference-lower-equipment",
+    "column": 0,
+    "row": 1,
+    "scope": "base",
+    "fixedFrame": 1
+  },
+  {
+    "familyId": "ankle-senken-lang",
+    "equipment": [
+      "Theraband"
+    ],
+    "suffixes": [
+      "band"
+    ],
+    "atlas": "reference-lower-equipment",
+    "column": 1,
+    "row": 1,
+    "scope": "variant"
+  },
+  {
+    "familyId": "ankle-senken-lang",
+    "equipment": [
+      "Theraband"
+    ],
+    "suffixes": [
+      "band-exzentrisch"
+    ],
+    "atlas": "reference-lower-equipment",
+    "column": 1,
+    "row": 1,
+    "scope": "variant",
+    "reverse": true
+  },
+  {
+    "familyId": "ankle-senken-lang",
+    "equipment": [
+      "Theraband"
+    ],
+    "suffixes": [
+      "band-isometrisch"
+    ],
+    "atlas": "reference-lower-equipment",
+    "column": 1,
+    "row": 1,
+    "scope": "base",
+    "fixedFrame": 1
+  },
+  {
+    "exerciseIds": [
+      "illustration-handgelenk-hantel"
+    ],
+    "atlas": "reference-equipment",
+    "column": 0,
+    "row": 1,
+    "scope": "variant",
+    "equipment": [
+      "Hanteln"
+    ]
+  },
+  {
+    "exerciseIds": [
+      "illustration-scaption-hantel"
+    ],
+    "atlas": "reference-equipment",
+    "column": 1,
+    "row": 1,
+    "scope": "variant",
+    "equipment": [
+      "Hanteln"
+    ]
+  },
+  {
+    "exerciseIds": [
+      "illustration-huefte-manschette"
+    ],
+    "atlas": "reference-lower-equipment",
+    "column": 1,
+    "row": 0,
+    "scope": "variant",
+    "equipment": [
+      "Gewichtsmanschette"
+    ]
+  },
+  {
+    "exerciseIds": [
+      "illustration-stab-frontheben"
+    ],
+    "atlas": "reference-lower-equipment",
+    "column": 0,
+    "row": 2,
+    "scope": "variant",
+    "equipment": [
+      "Stab"
+    ]
+  },
+  {
+    "exerciseIds": [
+      "stab-aussenrotation"
+    ],
+    "atlas": "reference-lower-equipment",
+    "column": 1,
+    "row": 2,
+    "scope": "variant",
+    "equipment": [
+      "Stab"
+    ]
+  }
 ]

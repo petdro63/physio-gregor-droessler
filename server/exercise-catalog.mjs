@@ -6,6 +6,7 @@ export const taxonomy = JSON.parse(fs.readFileSync(new URL("../src/exercise-taxo
 const legacy = JSON.parse(fs.readFileSync(new URL("./legacy-exercise-classification.json", import.meta.url), "utf8"));
 export const additionalExercises = JSON.parse(fs.readFileSync(new URL("./additional-exercises.json", import.meta.url), "utf8"));
 export const expandedExercises = JSON.parse(fs.readFileSync(new URL("./expanded-exercises.json", import.meta.url), "utf8"));
+export const illustratedExercises = JSON.parse(fs.readFileSync(new URL("./illustrated-exercises.json", import.meta.url), "utf8"));
 
 export function classifyExercise(exercise, id = exercise.id) {
   const defaults = legacy[id] || { trainingTypes: [], joints: [], strengthMuscles: [] };
@@ -16,7 +17,7 @@ export function classifyExercise(exercise, id = exercise.id) {
 // INSERT OR IGNORE preserves edits and publication decisions across restarts.
 export function seedResearchDrafts(db) {
   transaction(db, () => {
-    for (const entry of [...additionalExercises, ...rehabExercises, ...expandedExercises]) {
+    for (const entry of [...additionalExercises, ...rehabExercises, ...expandedExercises, ...illustratedExercises]) {
       if (db.prepare("SELECT 1 FROM exercises WHERE id=?").get(entry.id)) continue;
       const payload = {
         difficulty: "Leicht", duration: 3, breathing: "Ruhig weiteratmen; Bewegungen kontrolliert ausführen.",

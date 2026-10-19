@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ArrowRight, BookOpen, Leaf } from "lucide-react";
 import library from "./rehab-evidence.json" with { type: "json" };
-import brochures from "./brochure-library.json";
 import { suggestExercises } from "./condition-search";
 import type { ConditionUse, Exercise } from "./types";
 
@@ -43,7 +42,6 @@ export function ConditionLibrary({ exercises, onSelect }: { exercises: Exercise[
       </> : <p className="notice">Für diese Auswahl sind derzeit keine geeigneten Einträge in Ihrer zugänglichen Bibliothek hinterlegt.</p>}
       <h2 className="clinical-section-title">Studien und Leitlinien</h2><div className="evidence-grid">{condition.evidenceIds.map(id => <EvidenceCard id={id} key={id}/>)}</div>
     </>}
-    <details className="panel brochure-sources"><summary>Hirslanden: alle 15 ausgewerteten Broschüren</summary><p>Eigene Kurzbeschreibungen mit Originalverweisen; Originalfotos und vollständige PDF-Texte wurden nicht übernommen.</p><ul>{brochures.map(b => <li key={b.id}><a href={b.url} target="_blank" rel="noopener noreferrer">{b.title}</a> · {exercises.filter(e => e.brochureId === b.id).length} zugängliche Einträge</li>)}</ul></details>
     <p className="media-credit">Recherche-Stand: {library.reviewedOn.split("-").reverse().join(".")}. Die Übersicht ist keine vollständige Leitlinienrecherche.</p>
   </>;
 }

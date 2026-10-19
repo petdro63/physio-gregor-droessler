@@ -5,7 +5,8 @@ import os from 'node:os';
 import path from 'node:path';
 import request from 'supertest';
 import { createApp } from '../server/app.mjs';
-import { expandedExercises, taxonomy } from '../server/exercise-catalog.mjs';
+import { expandedExercises, additionalExercises, illustratedExercises, taxonomy } from '../server/exercise-catalog.mjs';
+import { resolveReferencePose } from '../src/reference-lookup.ts';
 import { findExercises } from '../src/exercise-search.ts';
 import { suggestExercises } from '../src/condition-search.ts';
 const poses = JSON.parse(fs.readFileSync(new URL('../src/reference-poses.json',import.meta.url),'utf8'));
@@ -44,9 +45,10 @@ test('every variant has usable end instructions, valid classification and no fab
 
 test('reference art is explicitly mapped to real families and protected from patients and path injection', async t => {
   for (const pose of poses) {
-    assert(expandedExercises.some(e=>e.familyId===pose.familyId));
+    if (pose.familyId) assert(expandedExercises.some(e=>e.familyId===pose.familyId));
+    if (pose.exerciseIds) assert(pose.exerciseIds.every(id=>[...additionalExercises,...illustratedExercises].some(e=>e.id===id)));
     assert(pose.column>=0 && pose.column<=1 && pose.row>=0 && pose.row<=2);
-    assert(['reference-joints','reference-ball'].includes(pose.atlas));
+    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment'].includes(pose.atlas));
     const image = fs.readFileSync(new URL(`../server/assets/reference/${pose.atlas}.png`,import.meta.url));
     assert.equal(image.subarray(1,4).toString(),'PNG');
   }
@@ -78,4 +80,23 @@ test('reference art is explicitly mapped to real families and protected from pat
   assert.equal(stored.end,'Individuell geprüfte Endstellung');
   assert.equal(stored.familyId,exercise.familyId);
   assert.equal(stored.variantLabel,exercise.variantLabel);
+});
+
+test('illustrations match equipment and direction instead of reusing bare-arm art for resistance variants', () => {
+  const get=id=>expandedExercises.find(e=>e.id===id);
+  assert.equal(resolveReferencePose(get('katalog-shoulder-flex-stand-aktiv')).atlas,'reference-joints');
+  assert.equal(resolveReferencePose(get('katalog-shoulder-flex-stand-band')),undefined);
+  assert.equal(resolveReferencePose(get('katalog-shoulder-flex-stand-isometrisch')),undefined);
+  const dynamic=resolveReferencePose(get('katalog-knee-streck-sitz-manschette'));
+  const eccentric=resolveReferencePose(get('katalog-knee-streck-sitz-manschette-exzentrisch'));
+  assert.equal(dynamic.atlas,'reference-lower-equipment');
+  assert(!dynamic.reverse);
+  assert(eccentric.reverse);
+  assert.equal(resolveReferencePose(additionalExercises.find(e=>e.id==='hantel-beugen-sitz')).atlas,'reference-equipment');
+  assert.equal(resolveReferencePose({...additionalExercises.find(e=>e.id==='hantel-beugen-sitz'),equipment:'Theraband'}),undefined);
+  for(const e of illustratedExercises) {
+    assert(resolveReferencePose(e),e.id);
+    assert(e.start && e.end && e.steps.length && e.requiresSupervision);
+    assert(e.strengthMuscles.every(m=>taxonomy.muscles.includes(m)));
+  }
 });

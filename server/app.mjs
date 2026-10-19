@@ -31,7 +31,7 @@ import { clinicalLibrary, catalogMedia } from "./clinical-content.mjs";
 import { seed, coverage } from "./seed.mjs";
 import { VERSION, VERSION_DATE, TIME_ZONE } from "./version.mjs";
 import { makePlanPdf } from "./pdf.mjs";
-const referencePoses = JSON.parse(fs.readFileSync(new URL('../src/reference-poses.json', import.meta.url), 'utf8'));
+import { resolveReferencePose } from '../src/reference-lookup.ts';
 
 const hash = (value) => createHash("sha256").update(value).digest("hex");
 const text = z.string().trim().max(5000);
@@ -944,8 +944,8 @@ export function createApp(options = {}) {
       if (version !== undefined && (!Number.isInteger(version) || version < 1)) throw fail(404, 'Bild nicht gefunden.');
       if (!canExercise(req.user, req.params.id, version)) throw fail(404, 'Bild nicht gefunden.');
       const exercise = getExercise(req.params.id, version);
-      const pose = referencePoses.find(p => p.familyId === exercise?.familyId && p.atlas === req.params.atlas);
-      if (!pose) throw fail(404, 'Bild nicht gefunden.');
+      const pose = exercise && resolveReferencePose(exercise);
+      if (!pose || pose.atlas !== req.params.atlas) throw fail(404, 'Bild nicht gefunden.');
       res.sendFile(path.resolve('server/assets/reference', pose.atlas + '.png'));
     } catch (error) { next(error); }
   });

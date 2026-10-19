@@ -33,7 +33,6 @@ import {
 } from "lucide-react";
 import taxonomy from "./exercise-taxonomy.json";
 import rehabLibrary from "./rehab-evidence.json" with { type: "json" };
-import brochures from "./brochure-library.json";
 import { ConditionLibrary, RelaxationPage, ClinicalAssignmentFields, EvidenceCard } from "./ClinicalLibrary";
 import { LicensedMedia, catalogMediaUrl } from "./LicensedMedia";
 import { findExercises } from "./exercise-search";
@@ -301,13 +300,13 @@ function App() {
         <div className="sidebar-bottom">
           <div className="sidebar-tip">
             <span className="mini-leaf">
-              <Leaf size={21} />
+              <Activity size={21} />
             </span>
-            <strong>Jeder Schritt zählt.</strong>
+            <strong>In Bewegung bleiben.</strong>
             <p>
-              Ein bisschen Bewegung.
+              Ihr Training. Ihr Tempo.
               <br />
-              Ein gutes Gefühl.
+              Jeden Tag ein Stück weiter.
             </p>
           </div>
           <button className="about-button" onClick={() => setAbout(true)}>
@@ -502,7 +501,7 @@ function App() {
                           </div>
                           <div className="hero-art">
                             <div className="hero-circle" />
-                            <Illustration kind="schulterkreisen" phase={1} />
+                            <div className="brand-training-art" role="img" aria-label="Illustration: Armheben im Stand" />
                             <div className="hero-art-label">
                               <span>
                                 <Check size={14} />
@@ -861,7 +860,7 @@ function Auth({
           </p>
         </div>
         <div className="auth-illustration">
-          <Illustration phase={1} />
+          <div className="brand-training-art" role="img" aria-label="Illustration: Armheben im Stand" />
         </div>
         <div className="auth-story-bottom">
           <ShieldCheck size={18} /> Persönlich ausgewählt. Verständlich
@@ -1140,11 +1139,10 @@ function Library({
     [muscle, setMuscle] = useState(""),
     [sort, setSort] = useState("joint"),
     [condition, setCondition] = useState(""),
-    [method, setMethod] = useState(""),
-    [brochure, setBrochure] = useState("");
+    [method, setMethod] = useState("");
   const [page, setPage] = useState(1);
   const [groupFamilies, setGroupFamilies] = useState(true);
-  const filtered = findExercises(exercises, { search, region, goal, equipment, difficulty, position, trainingType, joint, muscle, sort, condition, method, brochure });
+  const filtered = findExercises(exercises, { search, region, goal, equipment, difficulty, position, trainingType, joint, muscle, sort, condition, method });
   const representatives = new Map<string, string>();
   for (const exercise of filtered) if (exercise.familyId) {
     if (!representatives.has(exercise.familyId) || /-(aktiv|dynamisch|frei|schulterbreit|beidarm|beidhaendig)$/.test(exercise.id)) representatives.set(exercise.familyId, exercise.id);
@@ -1153,24 +1151,24 @@ function Library({
   const pageSize = 24;
   const pages = Math.max(1, Math.ceil(visible.length / pageSize));
   const currentPage = Math.min(page, pages);
-  useEffect(() => { setPage(1); }, [search, region, goal, equipment, difficulty, position, trainingType, joint, muscle, sort, condition, method, brochure, groupFamilies]);
+  useEffect(() => { setPage(1); }, [search, region, goal, equipment, difficulty, position, trainingType, joint, muscle, sort, condition, method, groupFamilies]);
   const resetFilters = () => {
     setSearch(""); setRegion(""); setGoal(""); setEquipment(""); setDifficulty("");
-    setPosition(""); setTrainingType(""); setJoint(""); setMuscle(""); setCondition(""); setMethod(""); setBrochure("");
+    setPosition(""); setTrainingType(""); setJoint(""); setMuscle(""); setCondition(""); setMethod("");
   };
   return (
     <>
       <div className="page-heading">
         <div>
-          <div className="eyebrow">VERSTÄNDLICH ANGELEITET</div>
+          <div className="eyebrow">BEWEGUNG BEGINNT HIER</div>
           <h1>
             {staff
-              ? "Die passende Bewegung finden."
-              : "Ihre Übungen, einfach erklärt."}
+              ? <>Die nächste Bewegung.<br /><em>Für jeden Fortschritt.</em></>
+              : <>Ihr Training.<br /><em>Ihr nächster Schritt.</em></>}
           </h1>
           <p>
             {staff
-              ? "Übungen auswählen, Inhalte pflegen und individuell einsetzen."
+              ? "Das passende Training beginnt mit einer guten Auswahl."
               : "Hier finden Sie alle Übungen aus Ihrem persönlichen Plan."}
           </p>
         </div>
@@ -1181,9 +1179,10 @@ function Library({
         )}
       </div>
       {staff && <section className="catalog-summary panel" aria-label="Gelenkabdeckung">
-        <h2>Nach Gelenk einsteigen</h2>
-        <p>Neue Bibliothek: 150 Grundmuster mit 1.200 Variantenentwürfen. Jede Variante hat eine eigene Anleitung; fachliche Freigaben stehen noch aus.</p>
-        <div className="joint-shortcuts">{["Schultergelenk", "Ellenbogengelenk", "Handgelenk", "Hüftgelenk", "Kniegelenk", "Sprunggelenk"].map(name => <button type="button" key={name} className={joint === name ? "button primary" : "button secondary"} onClick={() => { resetFilters(); setJoint(name); }}><strong>{name}</strong><span>{exercises.filter(e => e.joints.includes(name)).length} Einträge</span></button>)}</div>
+        <div className="catalog-section-label"><span>01 / FOKUS WÄHLEN</span><span>{exercises.length.toLocaleString('de-DE')} ÜBUNGEN & VARIANTEN</span></div>
+        <h2>Wo setzen wir an?</h2>
+        <div className="joint-shortcuts">{["Schultergelenk", "Ellenbogengelenk", "Handgelenk", "Hüftgelenk", "Kniegelenk", "Sprunggelenk"].map((name,index) => <button type="button" key={name} aria-label={name} aria-pressed={joint === name} className={joint === name ? "button primary" : "button secondary"} onClick={() => { resetFilters(); setJoint(name); }}><span className="joint-number">0{index+1}</span><div className="joint-miniature" aria-hidden="true" style={{backgroundPosition:`${(index % 2 * 2 + 1) * 100 / 3}% ${Math.floor(index / 2) * 50}%`}}/><strong>{['Schulter','Ellenbogen','Handgelenk','Hüfte','Knie','Sprunggelenk'][index]}</strong><span>{exercises.filter(e => e.joints.includes(name)).length} Einträge <ArrowRight size={15}/></span></button>)}</div>
+        <details className="catalog-editorial-note"><summary>Über diese Bibliothek</summary><p>150 neue Grundmuster mit 1.200 Variantenentwürfen sowie bestehende Übungen. Fachliche Freigaben stehen noch aus.</p></details>
       </section>}
       <div className="library-toolbar">
         <label className="search-input">
@@ -1205,7 +1204,6 @@ function Library({
         <div className="filter-row">
           <select aria-label="Alle Krankheitsbilder" value={condition} onChange={e => setCondition(e.target.value)}><option value="">Alle Krankheitsbilder</option>{rehabLibrary.conditions.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}</select>
           <select aria-label="Alle Methoden" value={method} onChange={e => setMethod(e.target.value)}><option value="">Alle Methoden</option><option value="PIR">Postisometrische Relaxation (PIR)</option><option value="Kieferentspannung">Kieferentspannung</option></select>
-          <select aria-label="Alle Broschüren" value={brochure} onChange={e => setBrochure(e.target.value)}><option value="">Alle Broschüren</option>{brochures.map(b => <option key={b.id} value={b.id}>{b.title}</option>)}</select>
           {[
             { label: "Alle Trainingsarten", value: trainingType, set: setTrainingType, options: taxonomy.trainingTypes },
             { label: "Alle Gelenke", value: joint, set: setJoint, options: [...new Set(exercises.flatMap(e => e.joints))].sort((a,b) => a.localeCompare(b,"de")) },
@@ -1361,7 +1359,7 @@ function ExerciseDetail({
         }
       >
         <div>
-          {referencePose(e) ? <ReferencePositions exercise={e}/> : e.catalogMedia.length ? <LicensedMedia exercise={e} /> : <>
+          {referencePose(e) ? <><ReferencePositions exercise={e}/>{e.catalogMedia.length > 0 && <LicensedMedia exercise={e}/>}</> : e.catalogMedia.length ? <LicensedMedia exercise={e} /> : <>
           <div
             className={
               kneeExample && video ? "detail-art real-video-art" : "detail-art"
@@ -1470,7 +1468,7 @@ function ExerciseDetail({
                 : "Schematische Demonstration. Das Video veranschaulicht ausschließlich den technischen Ablauf und ist keine Anleitung dieser Übung."}
             </p>
           )}
-          <details>
+          {(e.transcript || e.demo || e.catalogMedia.length > 0 || actualVideo) && <details>
             <summary>Videotranskript</summary>
             {kneeExample && videoSource === "own" ? (
               <p>{OWN_KNEE_TRANSCRIPT}</p>
@@ -1489,7 +1487,7 @@ function ExerciseDetail({
             ) : (
               <p>{e.transcript || "Noch nicht hinterlegt."}</p>
             )}
-          </details>
+          </details>}
           <div className="detail-tags">
             <span>{e.region}</span>
             <span>{e.goal}</span>
@@ -1655,7 +1653,7 @@ function Training({
           </div>
           <div className="training-layout">
             <div className="training-art">
-              <Illustration kind={item.exerciseId} phase={running ? 1 : 0} />
+              {referencePose(item.exercise) ? <ReferencePositions exercise={item.exercise}/> : item.exercise.demo ? <Illustration kind={item.exerciseId} phase={running ? 1 : 0} /> : item.exercise.catalogMedia.length ? <LicensedMedia exercise={item.exercise}/> : <p>Für diese Übung liegt noch keine passende Bildanleitung vor. Bitte die persönliche Anleitung beachten.</p>}
               {demo && <span className="pill">Ungeprüftes Übungsbeispiel</span>}
             </div>
             <div>

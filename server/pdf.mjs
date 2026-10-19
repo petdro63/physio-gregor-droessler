@@ -50,7 +50,7 @@ export async function makePlanPdf(plan, patient, practice, demo, db, mediaDir) {
       .find((m) => m?.kind === "image");
     const imageBuffer = first
       ? fs.readFileSync(path.join(mediaDir, first.filename))
-      : demo
+      : demo && e.demo
         ? await sharp(
             Buffer.from(
               '<svg xmlns="http://www.w3.org/2000/svg" width="480" height="180"><rect width="480" height="180" fill="#edf4ee"/><circle cx="240" cy="40" r="16" fill="#215e50"/><path d="M240 60v50m0-40-55 30m55-30 55 30m-55 10-30 55m30-55 30 55" stroke="#215e50" stroke-width="10" stroke-linecap="round" fill="none"/></svg>',
