@@ -1187,5 +1187,50 @@
         "url": "https://www.kentcht.nhs.uk/leaflet/lower-limb-strengthening-activities/"
       }
     ]
+  },
+  {
+    "id": "oberkoerperrotation-sitz",
+    "familyId": "oberkoerperrotation-sitz",
+    "familyTitle": "Oberkörperrotation im Sitz",
+    "variantLabel": "Arme geöffnet · Becken bleibt fest",
+    "title": "Oberkörperrotation im Sitz",
+    "subtitle": "Oberkörper drehen · Becken und Füße bleiben nach vorn",
+    "region": "Rücken",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Brustwirbelsäule"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl / Hocker",
+    "difficulty": "Leicht",
+    "duration": 3,
+    "dosageMode": "repetitions",
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "start": "Auf einem stabilen Hocker oder Stuhl ohne Rollen und ohne störende Armlehnen aufrecht sitzen. Beide Füße hüftbreit vollständig aufstellen, Knie etwa 90° beugen. Becken, Knie und Füße zeigen nach vorn. Arme seitlich auf einer angenehmen Höhe öffnen, Schultern entspannt lassen. Das erste Bild zeigt die ruhige Ausgangsstellung von vorn.",
+    "end": "Der Oberkörper ist innerhalb des freigegebenen Bewegungswegs zu einer Seite gedreht; Schultern und Arme bewegen sich gemeinsam. Das Becken bleibt unverändert auf der Sitzfläche nach vorn ausgerichtet. Knie und Füße bewegen sich nicht mit. Der Kopf darf dem Arm zur Drehseite folgen, soweit dies angenehm ist. Der Pfeil zeigt die Drehrichtung des Oberkörpers.",
+    "steps": [
+      "Sitz und Fußkontakt sichern. Becken mittig auf beiden Sitzbeinhöckern lassen und den Rücken aufrichten.",
+      "Die Arme locker seitlich öffnen. Mit dem Ausatmen Brustkorb, Schultern und Arme langsam zu einer Seite drehen. Nicht mit den Armen allein schwenken.",
+      "Becken, Knie und Füße bleiben fest nach vorn ausgerichtet. Der Blick kann dem Arm auf der Drehseite folgen; Kopf und Nacken nicht in die Endstellung zwingen.",
+      "Kontrolliert zur frontalen Ausgangsstellung zurückkehren und anschließend zur anderen Seite drehen. Bewegungsumfang und Wiederholungen nach persönlicher Vorgabe."
+    ],
+    "breathing": "Beim Drehen ruhig ausatmen, beim Zurückkehren einatmen. Ohne Pressen oder Anhalten des Atems arbeiten.",
+    "mistakes": "Becken und Knie nicht mitdrehen, Füße nicht versetzen und nicht seitlich einknicken. Schultern nicht hochziehen, Arme nicht als Schwunghebel verwenden und den Kopf nicht über die angenehme Bewegung hinaus drehen.",
+    "precautions": "Bewegungsweg und Eignung persönlich mit dem Praxisteam abstimmen. Bei akuten Rücken- oder Nackenbeschwerden, nach Operationen oder bei eingeschränkter Sitzbalance nur nach Freigabe. Bei zunehmenden Schmerzen, ausstrahlenden Beschwerden oder Schwindel abbrechen.",
+    "easier": "Arme tiefer halten oder nach persönlicher Anleitung vor der Brust verschränken. Mit kleiner Drehung beginnen und den Kopf bei Bedarf eher nach vorn ausgerichtet lassen.",
+    "harder": "Den Drehweg nur bei unverändert ruhigem Becken und nach persönlicher Freigabe vergrößern. Keine Zusatzlast oder ruckartige Bewegung verwenden.",
+    "sourceNote": "Eigene Variante der sitzenden Oberkörperrotation mit geöffneten Armen nach Nutzerreferenz. Die NHS-Quelle beschreibt das verwandte Grundmuster mit ruhigem Becken; keine automatische Diagnosezuordnung und kein Wirksamkeitsnachweis dieser konkreten Variante.",
+    "license": "Neue statische Illustration mit integrierter Bildgenerierung im vorhandenen App-Stil; eigene deutsche Anleitung. Die eingereichte Fotografie wird nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "sources": [
+      {
+        "title": "NHS · Sitting exercises: Upper-body twist",
+        "url": "https://www.nhs.uk/live-well/exercise/sitting-exercises/"
+      }
+    ]
   }
 ]

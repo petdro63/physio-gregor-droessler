@@ -19,6 +19,7 @@ export const collectionExerciseIds = [
   'seitlicher-ausfallschritt-ohne-gewicht', 'seitlicher-ausfallschritt-kurzhantel',
   'seitlicher-ausfallschritt-langhantel', 'quadrizeps-exzentrisch-step-down',
   'katze-kuh-mobilisation', 'piriformisdehnung-rueckenlage',
+  'oberkoerperrotation-sitz',
 ];
 
 export function correctSingleLegBridgeSide(db) {

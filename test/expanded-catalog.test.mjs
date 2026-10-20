@@ -48,7 +48,7 @@ test('reference art is explicitly mapped to real families and protected from pat
     if (pose.familyId) assert(expandedExercises.some(e=>e.familyId===pose.familyId));
     if (pose.exerciseIds) assert(pose.exerciseIds.every(id=>[...additionalExercises,...illustratedExercises].some(e=>e.id===id)));
     assert(pose.column>=0 && pose.column<=1 && pose.row>=0 && pose.row<=2);
-    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl','reference-squats','reference-sumo-upright','reference-calf-raises','reference-wall-sit','reference-bridges','reference-single-leg-bridge-right','reference-lunges','reference-side-hip-lift','reference-lateral-lunges','reference-eccentric-step-down','reference-cat-cow','reference-piriformis-stretch'].includes(pose.atlas));
+    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl','reference-squats','reference-sumo-upright','reference-calf-raises','reference-wall-sit','reference-bridges','reference-single-leg-bridge-right','reference-lunges','reference-side-hip-lift','reference-lateral-lunges','reference-eccentric-step-down','reference-cat-cow','reference-piriformis-stretch','reference-seated-trunk-rotation'].includes(pose.atlas));
     assert(pose.column * 2 + 1 < (pose.frameColumns ?? 4));
     assert(pose.row < (pose.frameRows ?? 3));
     const image = fs.readFileSync(new URL(`../server/assets/reference/${pose.atlas}.png`,import.meta.url));
@@ -70,7 +70,7 @@ test('reference art is explicitly mapped to real families and protected from pat
   await staff.get(route.replace('version=1','version=2')).expect(404);
   await staff.get(route.replace('reference-joints','..%2f..%2f.env')).expect(404);
   const overview=(await staff.get('/api/overview')).body;
-  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage'].sort());
+  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage','oberkoerperrotation-sitz'].sort());
   assert(overview.exercises.every(e=>e.status==='draft' && e.reviewer===''));
   const patient=request.agent(runtime.app);
   const ps=(await patient.get('/api/session')).body;
@@ -108,6 +108,24 @@ test('single-leg deadlift variants use separate equipment-specific frames and st
   }
   const entryList=variants.map(e=>({...e,tags:[]}));
   assert.equal(findExercises(entryList,{joint:'Hüftgelenk',equipment:'Langhantel',trainingType:'Kraft'}).length,1);
+});
+
+test('seated trunk rotation uses static frontal start and end frames with fixed pelvis and optional head following',()=>{
+  const e=illustratedExercises.find(e=>e.id==='oberkoerperrotation-sitz');
+  assert.deepEqual(e.trainingTypes,['Mobilisation']);
+  assert.deepEqual(e.strengthMuscles,[]);
+  assert.deepEqual(e.conditionUses,[]);
+  assert.equal(e.position,'Im Sitzen');
+  assert(e.start.includes('von vorn'));
+  assert(e.end.includes('Das Becken bleibt unverändert'));
+  assert(e.end.includes('Knie und Füße bewegen sich nicht mit'));
+  assert(e.end.includes('Der Kopf darf dem Arm'));
+  const pose=resolveReferencePose(e);
+  assert.equal(pose.atlas,'reference-seated-trunk-rotation');
+  assert.equal(pose.frameColumns,2); assert.equal(pose.frameRows,1);
+  assert.equal(pose.fixedFrame,undefined);
+  assert.equal(resolveReferencePose({...e,equipment:'Langhantel'}),undefined);
+  assert.equal(findExercises([{...e,tags:[]}],{position:'Im Sitzen',trainingType:'Mobilisation'}).length,1);
 });
 
 test('cat-cow is mobilisation and the right-on-left piriformis stretch uses timed stretching instead of strength repetitions',()=>{

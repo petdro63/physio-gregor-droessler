@@ -637,5 +637,20 @@
     "frameRows": 1,
     "frameAspectRatio": 1,
     "scope": "variant"
+  },
+  {
+    "exerciseIds": [
+      "oberkoerperrotation-sitz"
+    ],
+    "equipment": [
+      "Stuhl / Hocker"
+    ],
+    "atlas": "reference-seated-trunk-rotation",
+    "column": 0,
+    "row": 0,
+    "frameColumns": 2,
+    "frameRows": 1,
+    "frameAspectRatio": 1,
+    "scope": "variant"
   }
 ]
