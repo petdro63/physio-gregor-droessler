@@ -872,5 +872,210 @@
         "url": "https://www.acefitness.org/resources/everyone/exercise-library/100/side-plank-modified/"
       }
     ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "dosageMode": "repetitions",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Absenken ruhig einatmen, beim Aufrichten ausatmen. Ohne Pressatmung arbeiten.",
+    "precautions": "Eignung, Bewegungsweg und Dosierung persönlich mit dem Praxisteam festlegen. Nach Operationen oder bei akuten Beschwerden nur nach Freigabe. Bei zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "easier": "Ohne Zusatzgewicht beginnen und die Schrittweite beziehungsweise Bewegungstiefe nach persönlicher Vorgabe verkleinern.",
+    "harder": "Last oder Wiederholungszahl erst bei sicherer Knie- und Beckenkontrolle nach persönlicher Freigabe steigern.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Illustration nach Nutzer-Bewegungsreferenz. Die Quelle erläutert das Grundmuster; kein krankheitsbezogener Wirksamkeitsnachweis dieser konkreten Variante hinterlegt.",
+    "license": "Neu mit integrierter Bildgenerierung im vorhandenen App-Stil erstellte Illustration; eigene deutsche Anleitung. Die eingereichten Originalbilder werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "seitlicher-ausfallschritt-ohne-gewicht",
+    "familyId": "seitliche-ausfallschritte",
+    "familyTitle": "Seitliche Ausfallschritte",
+    "variantLabel": "Ohne Gewicht",
+    "title": "Seitliche Ausfallschritte ohne Gewicht",
+    "region": "Knie",
+    "joints": [
+      "Kniegelenk",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Hüftadduktoren"
+    ],
+    "position": "Im Stand",
+    "equipment": "Ohne Zusatzgerät",
+    "difficulty": "Mittel",
+    "subtitle": "Seitlich aussteigen · ein Knie beugen · anderes Bein lang lassen",
+    "start": "Aufrecht und etwa hüftbreit auf rutschfestem Boden stehen. Vor beiden Seiten ausreichend Platz lassen, Fußspitzen nach vorn ausrichten und den Rumpf sanft stabilisieren. Arme ohne Zusatzgewicht nach vorn zum Ausbalancieren halten.",
+    "end": "Nach einem Schritt zur Seite ist das belastete Knie gebeugt, das Becken nach hinten über dieses Bein geführt. Das andere Bein bleibt lang, ohne das Knie starr durchzudrücken. Beide Füße liegen vollständig auf, das gebeugte Knie folgt der Fußrichtung. Rücken bleibt natürlich gerade und Brustkorb geöffnet. Arme ohne Zusatzgewicht nach vorn zum Ausbalancieren halten.",
+    "steps": [
+      "Gleichgewicht herstellen, Rumpf stabilisieren und die gewählte Hand- beziehungsweise Hantelposition sichern.",
+      "Einen ausreichend breiten Schritt zur Seite machen und den ganzen Fuß aufsetzen. Beide Fußspitzen bleiben möglichst nach vorn ausgerichtet.",
+      "Das Knie des seitlich aufgesetzten Beins beugen und das Becken nach hinten über dieses Bein verlagern. Das andere Bein bleibt lang und der ganze Fuß am Boden. Nur bis zur persönlich freigegebenen Tiefe absenken.",
+      "Über das gebeugte Bein kontrolliert in den hüftbreiten Stand zurückdrücken. Nach den vereinbarten Wiederholungen zur anderen Seite wechseln."
+    ],
+    "mistakes": "Nicht beide Knie wie bei einer breiten Kniebeuge gleich stark beugen, das belastete Knie nicht nach innen fallen lassen und die Füße nicht verdrehen. Rücken nicht runden oder Hanteln zum Schwungholen nutzen.",
+    "sources": [
+      {
+        "title": "ACE · Side Lunge: seitlicher Ausfallschritt",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/50/side-lunge/"
+      }
+    ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "dosageMode": "repetitions",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Absenken ruhig einatmen, beim Aufrichten ausatmen. Ohne Pressatmung arbeiten.",
+    "precautions": "Eignung, Bewegungsweg und Dosierung persönlich mit dem Praxisteam festlegen. Nach Operationen oder bei akuten Beschwerden nur nach Freigabe. Bei zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "easier": "Ohne Zusatzgewicht beginnen und die Schrittweite beziehungsweise Bewegungstiefe nach persönlicher Vorgabe verkleinern.",
+    "harder": "Last oder Wiederholungszahl erst bei sicherer Knie- und Beckenkontrolle nach persönlicher Freigabe steigern.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Illustration nach Nutzer-Bewegungsreferenz. Die Quelle erläutert das Grundmuster; kein krankheitsbezogener Wirksamkeitsnachweis dieser konkreten Variante hinterlegt.",
+    "license": "Neu mit integrierter Bildgenerierung im vorhandenen App-Stil erstellte Illustration; eigene deutsche Anleitung. Die eingereichten Originalbilder werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "seitlicher-ausfallschritt-kurzhantel",
+    "familyId": "seitliche-ausfallschritte",
+    "familyTitle": "Seitliche Ausfallschritte",
+    "variantLabel": "Mit Kurzhantel vor der Brust",
+    "title": "Seitliche Ausfallschritte mit Kurzhantel",
+    "region": "Knie",
+    "joints": [
+      "Kniegelenk",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Hüftadduktoren"
+    ],
+    "position": "Im Stand",
+    "equipment": "Hanteln",
+    "difficulty": "Mittel",
+    "subtitle": "Seitlich aussteigen · ein Knie beugen · anderes Bein lang lassen",
+    "start": "Aufrecht und etwa hüftbreit auf rutschfestem Boden stehen. Vor beiden Seiten ausreichend Platz lassen, Fußspitzen nach vorn ausrichten und den Rumpf sanft stabilisieren. Eine leichte Kurzhantel senkrecht mit beiden Händen nah vor der Brust halten.",
+    "end": "Nach einem Schritt zur Seite ist das belastete Knie gebeugt, das Becken nach hinten über dieses Bein geführt. Das andere Bein bleibt lang, ohne das Knie starr durchzudrücken. Beide Füße liegen vollständig auf, das gebeugte Knie folgt der Fußrichtung. Rücken bleibt natürlich gerade und Brustkorb geöffnet. Eine leichte Kurzhantel senkrecht mit beiden Händen nah vor der Brust halten.",
+    "steps": [
+      "Gleichgewicht herstellen, Rumpf stabilisieren und die gewählte Hand- beziehungsweise Hantelposition sichern.",
+      "Einen ausreichend breiten Schritt zur Seite machen und den ganzen Fuß aufsetzen. Beide Fußspitzen bleiben möglichst nach vorn ausgerichtet.",
+      "Das Knie des seitlich aufgesetzten Beins beugen und das Becken nach hinten über dieses Bein verlagern. Das andere Bein bleibt lang und der ganze Fuß am Boden. Nur bis zur persönlich freigegebenen Tiefe absenken.",
+      "Über das gebeugte Bein kontrolliert in den hüftbreiten Stand zurückdrücken. Nach den vereinbarten Wiederholungen zur anderen Seite wechseln."
+    ],
+    "mistakes": "Nicht beide Knie wie bei einer breiten Kniebeuge gleich stark beugen, das belastete Knie nicht nach innen fallen lassen und die Füße nicht verdrehen. Rücken nicht runden oder Hanteln zum Schwungholen nutzen.",
+    "sources": [
+      {
+        "title": "ACE · Side Lunge: seitlicher Ausfallschritt",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/50/side-lunge/"
+      }
+    ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "dosageMode": "repetitions",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Absenken ruhig einatmen, beim Aufrichten ausatmen. Ohne Pressatmung arbeiten.",
+    "precautions": "Eignung, Bewegungsweg und Dosierung persönlich mit dem Praxisteam festlegen. Nach Operationen oder bei akuten Beschwerden nur nach Freigabe. Bei zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen. Die Langhantelvariante benötigt besonders sichere Balance und persönliche Anleitung; keine freie Hand zum Festhalten.",
+    "easier": "Ohne Zusatzgewicht beginnen und die Schrittweite beziehungsweise Bewegungstiefe nach persönlicher Vorgabe verkleinern.",
+    "harder": "Last oder Wiederholungszahl erst bei sicherer Knie- und Beckenkontrolle nach persönlicher Freigabe steigern.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Illustration nach Nutzer-Bewegungsreferenz. Die Quelle erläutert das Grundmuster; kein krankheitsbezogener Wirksamkeitsnachweis dieser konkreten Variante hinterlegt.",
+    "license": "Neu mit integrierter Bildgenerierung im vorhandenen App-Stil erstellte Illustration; eigene deutsche Anleitung. Die eingereichten Originalbilder werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "seitlicher-ausfallschritt-langhantel",
+    "familyId": "seitliche-ausfallschritte",
+    "familyTitle": "Seitliche Ausfallschritte",
+    "variantLabel": "Mit Langhantel",
+    "title": "Seitliche Ausfallschritte mit Langhantel",
+    "region": "Knie",
+    "joints": [
+      "Kniegelenk",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Hüftadduktoren"
+    ],
+    "position": "Im Stand",
+    "equipment": "Langhantel",
+    "difficulty": "Anspruchsvoll",
+    "subtitle": "Seitlich aussteigen · ein Knie beugen · anderes Bein lang lassen",
+    "start": "Aufrecht und etwa hüftbreit auf rutschfestem Boden stehen. Vor beiden Seiten ausreichend Platz lassen, Fußspitzen nach vorn ausrichten und den Rumpf sanft stabilisieren. Eine leichte freigegebene Langhantel auf dem oberen Rücken unterhalb des Nackens mit beiden Händen sichern; Aufnehmen und Ablegen vorab sicher organisieren.",
+    "end": "Nach einem Schritt zur Seite ist das belastete Knie gebeugt, das Becken nach hinten über dieses Bein geführt. Das andere Bein bleibt lang, ohne das Knie starr durchzudrücken. Beide Füße liegen vollständig auf, das gebeugte Knie folgt der Fußrichtung. Rücken bleibt natürlich gerade und Brustkorb geöffnet. Eine leichte freigegebene Langhantel auf dem oberen Rücken unterhalb des Nackens mit beiden Händen sichern; Aufnehmen und Ablegen vorab sicher organisieren.",
+    "steps": [
+      "Gleichgewicht herstellen, Rumpf stabilisieren und die gewählte Hand- beziehungsweise Hantelposition sichern.",
+      "Einen ausreichend breiten Schritt zur Seite machen und den ganzen Fuß aufsetzen. Beide Fußspitzen bleiben möglichst nach vorn ausgerichtet.",
+      "Das Knie des seitlich aufgesetzten Beins beugen und das Becken nach hinten über dieses Bein verlagern. Das andere Bein bleibt lang und der ganze Fuß am Boden. Nur bis zur persönlich freigegebenen Tiefe absenken.",
+      "Über das gebeugte Bein kontrolliert in den hüftbreiten Stand zurückdrücken. Nach den vereinbarten Wiederholungen zur anderen Seite wechseln."
+    ],
+    "mistakes": "Nicht beide Knie wie bei einer breiten Kniebeuge gleich stark beugen, das belastete Knie nicht nach innen fallen lassen und die Füße nicht verdrehen. Rücken nicht runden oder Hanteln zum Schwungholen nutzen.",
+    "sources": [
+      {
+        "title": "ACE · Side Lunge: seitlicher Ausfallschritt",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/50/side-lunge/"
+      }
+    ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "dosageMode": "repetitions",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Während der langsamen Abwärtsphase ruhig weiteratmen. Bei der unterstützten Rückkehr ausatmen; nicht pressen.",
+    "precautions": "Eignung, Bewegungsweg und Dosierung persönlich mit dem Praxisteam festlegen. Nach Operationen oder bei akuten Beschwerden nur nach Freigabe. Bei zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen. Diese anspruchsvolle Einbeinübung nur bei sicherem Stand und mit geeigneter Stufe einsetzen. Die dargestellte Kniebeugung und Stufenhöhe sind Beispiele und keine verbindliche individuelle Vorgabe.",
+    "easier": "Niedrigere Stufe oder kleineren Absenkweg wählen und eine feste Haltemöglichkeit nach persönlicher Anleitung nutzen.",
+    "harder": "Erst nach persönlicher Freigabe die Stufenhöhe oder Wiederholungszahl steigern; kontrolliertes langsames Absenken hat Vorrang vor größerer Tiefe.",
+    "sourceNote": "Eigene Step-down-Variante mit Schwerpunkt auf langsamer exzentrischer Quadrizepsarbeit und unterstützter Rückkehr. NHS-Quellen beschreiben Step-down beziehungsweise exzentrisches Absenken; keine automatische Zuordnung zu Knie-TEP oder anderen Diagnosen und keine Übernahme einer postoperativen Freigabe.",
+    "license": "Neu mit integrierter Bildgenerierung im vorhandenen App-Stil erstellte Illustration; eigene deutsche Anleitung. Die eingereichten Originalbilder werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "quadrizeps-exzentrisch-step-down",
+    "familyId": "quadrizeps-step-down",
+    "familyTitle": "Quadrizeps exzentrisch – Step-down",
+    "variantLabel": "Langsames Absenken von niedriger Stufe",
+    "title": "Quadrizeps exzentrisch: Step-down",
+    "region": "Knie",
+    "joints": [
+      "Kniegelenk",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Stufe",
+    "difficulty": "Anspruchsvoll",
+    "methodTags": [
+      "Exzentrisch"
+    ],
+    "subtitle": "Einbeinig auf niedriger Stufe · langsam gegen die Schwerkraft absenken",
+    "start": "Auf einer niedrigen, breiten und rutschfest gesicherten Stufe stehen. Einen Fuß vollständig nahe der vorderen Kante aufsetzen und dieses Bein belasten. Das andere Bein locker nach vorn über die Kante führen; der freie Fuß bleibt in der Luft. Das Standknie ist nahezu gestreckt und nicht verriegelt. Arme nach vorn zum Ausbalancieren halten oder nach persönlicher Anleitung eine feste Haltemöglichkeit nutzen.",
+    "end": "Das Standknie ist kontrolliert gebeugt, der ganze Standfuß bleibt auf der Stufe. Die Ferse des freien Beins ist vor der Stufe knapp über dem Boden oder berührt ihn ohne Lastübernahme. Das Becken bleibt waagerecht und das Standknie folgt der Fußrichtung. Der vordere Oberschenkel bremst die Abwärtsbewegung exzentrisch.",
+    "steps": [
+      "Stufenhöhe und sichere Haltemöglichkeit vorher mit dem Praxisteam festlegen; zunächst eine niedrige Stufe ohne Zusatzgewicht wählen. Standfuß vollständig aufsetzen.",
+      "Das Standknie langsam beugen und das Becken kontrolliert absenken. Für die Abwärtsphase nach persönlicher Vorgabe etwa 3–5 Sekunden einplanen. Der Quadrizeps bremst unter Spannung, während das Knie nachgibt.",
+      "Den freien Fuß vor der Stufe Richtung Boden führen, ohne sich darüber abzustoßen oder darauf abzufangen. Nur so weit absenken, wie Knie und Becken sicher kontrolliert bleiben.",
+      "Zur Rückkehr den freien Fuß bewusst als Unterstützung aufsetzen und sich mit beiden Beinen beziehungsweise an der gesicherten Haltemöglichkeit wieder aufrichten. Anschließend erneut einbeinig langsam absenken. Seitenwechsel und Wiederholungen nach persönlichem Plan."
+    ],
+    "mistakes": "Nicht von der Stufe fallen lassen, das Standknie nach innen kippen oder die Standferse anheben. Nicht mit dem freien Bein federn. Die Rückkehr darf unterstützt sein; der Schwerpunkt liegt auf dem langsamen Absenken.",
+    "sources": [
+      {
+        "title": "RNOH NHS · Exercise Pack: Eccentric step down",
+        "url": "https://www.rnoh.nhs.uk/patients-and-visitors/patient-information-guides/total-knee-replacement-exercise-pack"
+      },
+      {
+        "title": "North Tees NHS · Lower Limb Exercise: Step down",
+        "url": "https://www.nth.nhs.uk/resources/lower-limb-exercise-and-education/"
+      }
+    ]
   }
 ]

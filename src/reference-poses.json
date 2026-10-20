@@ -547,5 +547,65 @@
     "frameRows": 1,
     "frameAspectRatio": 1,
     "scope": "variant"
+  },
+  {
+    "exerciseIds": [
+      "seitlicher-ausfallschritt-ohne-gewicht"
+    ],
+    "equipment": [
+      "Ohne Zusatzgerät"
+    ],
+    "atlas": "reference-lateral-lunges",
+    "column": 0,
+    "row": 0,
+    "frameColumns": 2,
+    "frameRows": 3,
+    "frameAspectRatio": 1.5,
+    "scope": "variant"
+  },
+  {
+    "exerciseIds": [
+      "seitlicher-ausfallschritt-kurzhantel"
+    ],
+    "equipment": [
+      "Hanteln"
+    ],
+    "atlas": "reference-lateral-lunges",
+    "column": 0,
+    "row": 1,
+    "frameColumns": 2,
+    "frameRows": 3,
+    "frameAspectRatio": 1.5,
+    "scope": "variant"
+  },
+  {
+    "exerciseIds": [
+      "seitlicher-ausfallschritt-langhantel"
+    ],
+    "equipment": [
+      "Langhantel"
+    ],
+    "atlas": "reference-lateral-lunges",
+    "column": 0,
+    "row": 2,
+    "frameColumns": 2,
+    "frameRows": 3,
+    "frameAspectRatio": 1.5,
+    "scope": "variant"
+  },
+  {
+    "exerciseIds": [
+      "quadrizeps-exzentrisch-step-down"
+    ],
+    "equipment": [
+      "Stufe"
+    ],
+    "atlas": "reference-eccentric-step-down",
+    "column": 0,
+    "row": 0,
+    "frameColumns": 2,
+    "frameRows": 1,
+    "frameAspectRatio": 1,
+    "scope": "variant"
   }
 ]

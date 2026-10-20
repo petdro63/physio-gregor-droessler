@@ -16,6 +16,8 @@ export const collectionExerciseIds = [
   'wandsitz', 'bruecke-rueckenlage', 'bruecke-einbeinig',
   'ausfallschritt-ohne-gewicht', 'ausfallschritt-kurzhanteln',
   'ausfallschritt-langhantel', 'seitliches-hueftheben',
+  'seitlicher-ausfallschritt-ohne-gewicht', 'seitlicher-ausfallschritt-kurzhantel',
+  'seitlicher-ausfallschritt-langhantel', 'quadrizeps-exzentrisch-step-down',
 ];
 
 export function correctSingleLegBridgeSide(db) {

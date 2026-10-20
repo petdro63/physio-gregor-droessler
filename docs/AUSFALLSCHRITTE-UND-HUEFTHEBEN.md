@@ -1,5 +1,7 @@
 # Ausfallschritte, seitliches Hüftheben und rechte Beinseite · 20.10.2026
 
+Nachtrag: Mit drei seitlichen Ausfallschritten und dem exzentrischen Step-down umfasst die aktuelle Sammlung 19 Einträge. [Aktuelle Erweiterung](SEITLICHE-AUSFALLSCHRITTE-STEPDOWN.md).
+
 Die Sammlung enthält jetzt 15 Einträge. Ergänzt wurden:
 
 | Übung | ID | Hilfsmittel |

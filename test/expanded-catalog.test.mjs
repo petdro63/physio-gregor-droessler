@@ -48,7 +48,7 @@ test('reference art is explicitly mapped to real families and protected from pat
     if (pose.familyId) assert(expandedExercises.some(e=>e.familyId===pose.familyId));
     if (pose.exerciseIds) assert(pose.exerciseIds.every(id=>[...additionalExercises,...illustratedExercises].some(e=>e.id===id)));
     assert(pose.column>=0 && pose.column<=1 && pose.row>=0 && pose.row<=2);
-    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl','reference-squats','reference-sumo-upright','reference-calf-raises','reference-wall-sit','reference-bridges','reference-single-leg-bridge-right','reference-lunges','reference-side-hip-lift'].includes(pose.atlas));
+    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl','reference-squats','reference-sumo-upright','reference-calf-raises','reference-wall-sit','reference-bridges','reference-single-leg-bridge-right','reference-lunges','reference-side-hip-lift','reference-lateral-lunges','reference-eccentric-step-down'].includes(pose.atlas));
     assert(pose.column * 2 + 1 < (pose.frameColumns ?? 4));
     assert(pose.row < (pose.frameRows ?? 3));
     const image = fs.readFileSync(new URL(`../server/assets/reference/${pose.atlas}.png`,import.meta.url));
@@ -70,7 +70,7 @@ test('reference art is explicitly mapped to real families and protected from pat
   await staff.get(route.replace('version=1','version=2')).expect(404);
   await staff.get(route.replace('reference-joints','..%2f..%2f.env')).expect(404);
   const overview=(await staff.get('/api/overview')).body;
-  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben'].sort());
+  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down'].sort());
   assert(overview.exercises.every(e=>e.status==='draft' && e.reviewer===''));
   const patient=request.agent(runtime.app);
   const ps=(await patient.get('/api/session')).body;
@@ -108,6 +108,25 @@ test('single-leg deadlift variants use separate equipment-specific frames and st
   }
   const entryList=variants.map(e=>({...e,tags:[]}));
   assert.equal(findExercises(entryList,{joint:'Hüftgelenk',equipment:'Langhantel',trainingType:'Kraft'}).length,1);
+});
+
+test('lateral lunges map each load separately and eccentric quadriceps work specifies slow lowering with supported return',()=>{
+  const variants=illustratedExercises.filter(e=>e.familyId==='seitliche-ausfallschritte');
+  assert.equal(variants.length,3);
+  for(const [equipment,row] of [['Ohne Zusatzgerät',0],['Hanteln',1],['Langhantel',2]]) {
+    const entry=variants.find(e=>e.equipment===equipment),pose=resolveReferencePose(entry);
+    assert.equal(pose.atlas,'reference-lateral-lunges'); assert.equal(pose.row,row);
+    assert.equal(pose.frameRows,3); assert.equal(pose.frameColumns,2);
+    assert.equal(resolveReferencePose({...entry,equipment:'Theraband'}),undefined);
+    assert.equal(findExercises(variants.map(e=>({...e,tags:[]})),{equipment,joint:'Kniegelenk',trainingType:'Kraft'}).length,1);
+  }
+  const step=illustratedExercises.find(e=>e.id==='quadrizeps-exzentrisch-step-down');
+  assert.equal(step.equipment,'Stufe'); assert.equal(step.dosageMode,'repetitions');
+  assert.deepEqual(step.strengthMuscles,['Vorderer Oberschenkel (M. quadriceps femoris)']);
+  assert(step.steps.some(s=>s.includes('3–5 Sekunden')));
+  assert(step.steps.some(s=>s.includes('mit beiden Beinen')));
+  assert.equal(step.conditionUses.length,0);
+  assert.equal(resolveReferencePose(step).atlas,'reference-eccentric-step-down');
 });
 
 test('standing strength additions are filterable by joint and muscle and have distinct unloaded and weighted image rows', () => {
