@@ -1,72 +1,516 @@
 [
   {
-    "id":"illustration-handgelenk-hantel","title":"Handgelenkstrecken mit kleiner Hantel","region":"Hand / Handgelenk","goal":"Kräftigung","trainingTypes":["Kraft"],"joints":["Handgelenk"],"strengthMuscles":["Handgelenkstrecker"],"position":"Im Sitzen","equipment":"Hanteln","subtitle":"Unterarm auflegen · Handrücken anheben","start":"Auf einem stabilen Stuhl am Tisch sitzen. Unterarm mit Handfläche nach unten auflegen, Hand frei über der Tischkante. Eine therapeutisch festgelegte kleine Hantel locker und sicher halten.","end":"Handrücken ist angehoben, der Unterarm liegt unverändert auf dem Tisch.","steps":["Handrücken aus dem Handgelenk nach oben führen. Unterarm und Ellenbogen bleiben auf der Unterlage.","Die Hantel kontrolliert wieder absenken; das Handgelenk nicht fallen lassen."],"mistakes":"Nicht die Schulter anheben, den Unterarm drehen oder die Hantel mit verkrampften Fingern halten.","requiresSupervision":true,"sources":[{"title":"NHS Kent · Wrist strength","url":"https://www.kentcht.nhs.uk/leaflet/wrist-strength/"}]
+    "id": "illustration-handgelenk-hantel",
+    "title": "Handgelenkstrecken mit kleiner Hantel",
+    "region": "Hand / Handgelenk",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Handgelenk"
+    ],
+    "strengthMuscles": [
+      "Handgelenkstrecker"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Hanteln",
+    "subtitle": "Unterarm auflegen · Handrücken anheben",
+    "start": "Auf einem stabilen Stuhl am Tisch sitzen. Unterarm mit Handfläche nach unten auflegen, Hand frei über der Tischkante. Eine therapeutisch festgelegte kleine Hantel locker und sicher halten.",
+    "end": "Handrücken ist angehoben, der Unterarm liegt unverändert auf dem Tisch.",
+    "steps": [
+      "Handrücken aus dem Handgelenk nach oben führen. Unterarm und Ellenbogen bleiben auf der Unterlage.",
+      "Die Hantel kontrolliert wieder absenken; das Handgelenk nicht fallen lassen."
+    ],
+    "mistakes": "Nicht die Schulter anheben, den Unterarm drehen oder die Hantel mit verkrampften Fingern halten.",
+    "requiresSupervision": true,
+    "sources": [
+      {
+        "title": "NHS Kent · Wrist strength",
+        "url": "https://www.kentcht.nhs.uk/leaflet/wrist-strength/"
+      }
+    ]
   },
   {
-    "id":"illustration-scaption-hantel","title":"Schräges Armheben mit leichten Hanteln","region":"Schulter","goal":"Kräftigung","trainingTypes":["Kraft"],"joints":["Schultergelenk"],"strengthMuscles":["Deltamuskel (M. deltoideus)"],"position":"Im Stand","equipment":"Hanteln","subtitle":"Daumen nach oben · Rumpf stabil","start":"Hüftbreit stehen, kleine freigegebene Hanteln seitlich halten, Daumen nach vorn ausrichten.","end":"Arme sind etwas vor der Körperseite bis zur individuell freigegebenen Höhe angehoben; Daumen zeigen nach oben, Schultern bleiben entspannt.","steps":["Arme schräg nach vorn außen führen. Nur bis zur vereinbarten, beschwerdearmen Höhe anheben.","Beide Hanteln gleichmäßig und ohne Schwung wieder absenken."],"mistakes":"Nicht ins Hohlkreuz gehen, Schultern hochziehen oder die Bewegungsgrenze erzwingen.","requiresSupervision":true,"sources":[{"title":"AAOS · Shoulder conditioning","url":"https://www.orthoinfo.org/recovery/rotator-cuff-and-shoulder-conditioning-program/"}]
+    "id": "illustration-scaption-hantel",
+    "title": "Schräges Armheben mit leichten Hanteln",
+    "region": "Schulter",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [
+      "Deltamuskel (M. deltoideus)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Hanteln",
+    "subtitle": "Daumen nach oben · Rumpf stabil",
+    "start": "Hüftbreit stehen, kleine freigegebene Hanteln seitlich halten, Daumen nach vorn ausrichten.",
+    "end": "Arme sind etwas vor der Körperseite bis zur individuell freigegebenen Höhe angehoben; Daumen zeigen nach oben, Schultern bleiben entspannt.",
+    "steps": [
+      "Arme schräg nach vorn außen führen. Nur bis zur vereinbarten, beschwerdearmen Höhe anheben.",
+      "Beide Hanteln gleichmäßig und ohne Schwung wieder absenken."
+    ],
+    "mistakes": "Nicht ins Hohlkreuz gehen, Schultern hochziehen oder die Bewegungsgrenze erzwingen.",
+    "requiresSupervision": true,
+    "sources": [
+      {
+        "title": "AAOS · Shoulder conditioning",
+        "url": "https://www.orthoinfo.org/recovery/rotator-cuff-and-shoulder-conditioning-program/"
+      }
+    ]
   },
   {
-    "id":"illustration-huefte-manschette","title":"Seitliches Beinheben mit Gewichtsmanschette","region":"Hüfte","goal":"Kräftigung","trainingTypes":["Kraft"],"joints":["Hüftgelenk"],"strengthMuscles":["Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"],"position":"Im Stand","equipment":"Gewichtsmanschette","subtitle":"Festhalten · Becken waagerecht","start":"Aufrecht neben einer stabilen Haltemöglichkeit stehen und festhalten. Eine leichte freigegebene Gewichtsmanschette sicher oberhalb des Knöchels am Übungsbein anlegen.","end":"Das Übungsbein ist etwas zur Seite angehoben; Fußspitze und Kniescheibe zeigen nach vorn, Becken bleibt waagerecht.","steps":["Das lange Übungsbein seitlich vom Standbein wegführen, ohne den Rumpf zu neigen.","Bein kontrolliert zur Ausgangsstellung zurückführen und den Fuß sicher absetzen."],"mistakes":"Becken nicht hochziehen, Fuß nicht nach außen drehen und nicht aus der Hüfte schwingen.","requiresSupervision":true,"sources":[{"title":"AAOS · Hip conditioning","url":"https://www.orthoinfo.org/recovery/hip-conditioning-program/"}]
+    "id": "illustration-huefte-manschette",
+    "title": "Seitliches Beinheben mit Gewichtsmanschette",
+    "region": "Hüfte",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Gewichtsmanschette",
+    "subtitle": "Festhalten · Becken waagerecht",
+    "start": "Aufrecht neben einer stabilen Haltemöglichkeit stehen und festhalten. Eine leichte freigegebene Gewichtsmanschette sicher oberhalb des Knöchels am Übungsbein anlegen.",
+    "end": "Das Übungsbein ist etwas zur Seite angehoben; Fußspitze und Kniescheibe zeigen nach vorn, Becken bleibt waagerecht.",
+    "steps": [
+      "Das lange Übungsbein seitlich vom Standbein wegführen, ohne den Rumpf zu neigen.",
+      "Bein kontrolliert zur Ausgangsstellung zurückführen und den Fuß sicher absetzen."
+    ],
+    "mistakes": "Becken nicht hochziehen, Fuß nicht nach außen drehen und nicht aus der Hüfte schwingen.",
+    "requiresSupervision": true,
+    "sources": [
+      {
+        "title": "AAOS · Hip conditioning",
+        "url": "https://www.orthoinfo.org/recovery/hip-conditioning-program/"
+      }
+    ]
   },
   {
-    "id":"illustration-stab-frontheben","title":"Geführtes Armheben nach vorn mit Stab","region":"Schulter","goal":"Mobilisation","trainingTypes":["Mobilisation"],"joints":["Schultergelenk"],"strengthMuscles":[],"position":"Im Stand","equipment":"Stab","subtitle":"Beidseitig führen · Bewegungsgrenze beachten","start":"Hüftbreit stehen und einen leichten glatten Stab mit beiden Händen etwa schulterbreit vor den Oberschenkeln halten.","end":"Stab steht vor dem Körper auf der freigegebenen Höhe; Ellenbogen sind locker gestreckt, Rumpf bleibt aufrecht.","steps":["Den Stab mit beiden Händen langsam nach vorn anheben. Die beweglichere Seite darf die andere sanft führen.","Nur bis zur persönlichen Freigabe bewegen und kontrolliert wieder zu den Oberschenkeln absenken."],"mistakes":"Nicht mit dem Rücken ausweichen und nicht über den Stab in einen schmerzhaften Endbereich drücken.","requiresSupervision":true,"sources":[{"title":"NHS · Shoulder pain","url":"https://www.dynamichealth.nhs.uk/help-and-advice/shoulder-pain/"}]
+    "id": "illustration-stab-frontheben",
+    "title": "Geführtes Armheben nach vorn mit Stab",
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Stand",
+    "equipment": "Stab",
+    "subtitle": "Beidseitig führen · Bewegungsgrenze beachten",
+    "start": "Hüftbreit stehen und einen leichten glatten Stab mit beiden Händen etwa schulterbreit vor den Oberschenkeln halten.",
+    "end": "Stab steht vor dem Körper auf der freigegebenen Höhe; Ellenbogen sind locker gestreckt, Rumpf bleibt aufrecht.",
+    "steps": [
+      "Den Stab mit beiden Händen langsam nach vorn anheben. Die beweglichere Seite darf die andere sanft führen.",
+      "Nur bis zur persönlichen Freigabe bewegen und kontrolliert wieder zu den Oberschenkeln absenken."
+    ],
+    "mistakes": "Nicht mit dem Rücken ausweichen und nicht über den Stab in einen schmerzhaften Endbereich drücken.",
+    "requiresSupervision": true,
+    "sources": [
+      {
+        "title": "NHS · Shoulder pain",
+        "url": "https://www.dynamichealth.nhs.uk/help-and-advice/shoulder-pain/"
+      }
+    ]
   },
   {
-    "id":"einbein-kreuzheben-kurzhanteln",
-    "familyId":"einbein-kreuzheben",
-    "familyTitle":"Einbeiniges rumänisches Kreuzheben",
-    "variantLabel":"Mit zwei Kurzhanteln",
-    "title":"Einbeiniges Kreuzheben mit Kurzhanteln",
-    "region":"Hüfte",
-    "goal":"Kräftigung",
-    "trainingTypes":["Kraft","Koordination"],
-    "joints":["Hüftgelenk"],
-    "strengthMuscles":["Großer Gesäßmuskel (M. gluteus maximus)","Hinterer Oberschenkel (ischiocrurale Muskulatur)"],
-    "position":"Im Stand",
-    "equipment":"Hanteln",
-    "difficulty":"Anspruchsvoll",
-    "duration":3,
-    "subtitle":"Hüftknick im Einbeinstand · Gesäß und Beinrückseite",
-    "start":"Auf rutschfestem Boden aufrecht stehen. Zwei leichte, individuell freigegebene Kurzhanteln körpernah halten. Gewicht auf ein Bein verlagern, Standknie weich beugen und den anderen Fuß etwas vom Boden lösen. Vor dem Start das Gleichgewicht sichern.",
-    "end":"Das Becken ist nach hinten geführt, der Rumpf aus der Hüfte nach vorn geneigt. Das freie Bein zeigt nach hinten, Becken und Schultern bleiben gerade ausgerichtet. Standknie bleibt weich gebeugt, Arme hängen unter den Schultern und die Hanteln bleiben nahe am Standbein. Die persönliche Bewegungsgrenze bestimmt die Tiefe.",
-    "steps":["Standfuß über Ferse, Groß- und Kleinzehenballen stabil belasten. Bauch und Rumpf sanft anspannen.","Becken nach hinten schieben und den Oberkörper aus dem Hüftgelenk nach vorn führen. Gleichzeitig das freie Bein nach hinten anheben; Rücken und Kopf bleiben in einer natürlichen Linie.","Hanteln mit langen Armen körpernah absenken. Nur so weit neigen, wie Gleichgewicht und Beckenstellung kontrolliert bleiben; die Gewichte müssen den Boden nicht erreichen.","Über das Standbein Hüfte und Rumpf wieder aufrichten, das freie Bein mitführen und vor der nächsten Wiederholung ruhig ausbalancieren. Seitenwechsel und Dosierung nach individuellem Trainingsplan."],
-    "breathing":"Beim Vorneigen ruhig einatmen, beim Aufrichten ausatmen. Ohne Schwung arbeiten und nicht die Luft anhalten.",
-    "mistakes":"Rücken nicht rund machen oder überstrecken. Becken nicht zur Seite aufdrehen, Standknie nicht durchdrücken und nicht in eine tiefe Kniebeuge ausweichen. Hanteln nicht weit vor den Körper schieben.",
-    "precautions":"Anspruchsvolle Kraft- und Gleichgewichtsübung: zuerst persönlich anleiten und die sichere Einbeinbelastung prüfen lassen. Zusatzgewicht und Bewegungsweg individuell festlegen. Nach Operationen, bei akuten Beschwerden oder unsicherem Stand nur nach ausdrücklicher Freigabe. Bei Schmerzverstärkung, Schwindel oder Gleichgewichtsverlust abbrechen und beide Füße sicher absetzen.",
-    "easier":"Zunächst ohne Gewicht und mit kleinerem Hüftknick üben; den freien Fuß als leichte Stütze hinter dem Körper absetzen oder eine gesicherte Haltemöglichkeit nach persönlicher Anleitung nutzen.",
-    "harder":"Zusatzlast oder Bewegungsumfang erst erhöhen, wenn Becken und Rücken im gesamten Ablauf kontrolliert bleiben und das Praxisteam zustimmt.",
-    "requiresSupervision":true,
-    "sourceNote":"Eigene deutsche Beschreibung und neu erstellte Illustration nach einer Nutzer-Bewegungsreferenz. Die Quellen erläutern das Grundmuster; kein krankheitsbezogener Wirksamkeitsnachweis für diese Variante hinterlegt.",
-    "license":"Neu generierter Illustrationsentwurf im App-Stil; die eingereichte Originalgrafik wird weder ausgeliefert noch eingebettet. Keine fremde Public-Domain- oder CC-Lizenz behauptet.",
-    "sources":[{"title":"NHS WWL · Hip Level 3, Single Leg Deadlift","url":"https://www.wwl.nhs.uk/media/.leaflets/65783110320970.56499712.pdf"},{"title":"ACE · Romanian Deadlift: Technik und Hilfsmittel","url":"https://www.acefitness.org/continuing-education/certified/may-2025/8865/the-ace-do-it-better-series-the-romanian-deadlift/"}]
+    "id": "einbein-kreuzheben-kurzhanteln",
+    "familyId": "einbein-kreuzheben",
+    "familyTitle": "Einbeiniges rumänisches Kreuzheben",
+    "variantLabel": "Mit zwei Kurzhanteln",
+    "title": "Einbeiniges Kreuzheben mit Kurzhanteln",
+    "region": "Hüfte",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft",
+      "Koordination"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Hinterer Oberschenkel (ischiocrurale Muskulatur)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Hanteln",
+    "difficulty": "Anspruchsvoll",
+    "duration": 3,
+    "subtitle": "Hüftknick im Einbeinstand · Gesäß und Beinrückseite",
+    "start": "Auf rutschfestem Boden aufrecht stehen. Zwei leichte, individuell freigegebene Kurzhanteln körpernah halten. Gewicht auf ein Bein verlagern, Standknie weich beugen und den anderen Fuß etwas vom Boden lösen. Vor dem Start das Gleichgewicht sichern.",
+    "end": "Das Becken ist nach hinten geführt, der Rumpf aus der Hüfte nach vorn geneigt. Das freie Bein zeigt nach hinten, Becken und Schultern bleiben gerade ausgerichtet. Standknie bleibt weich gebeugt, Arme hängen unter den Schultern und die Hanteln bleiben nahe am Standbein. Die persönliche Bewegungsgrenze bestimmt die Tiefe.",
+    "steps": [
+      "Standfuß über Ferse, Groß- und Kleinzehenballen stabil belasten. Bauch und Rumpf sanft anspannen.",
+      "Becken nach hinten schieben und den Oberkörper aus dem Hüftgelenk nach vorn führen. Gleichzeitig das freie Bein nach hinten anheben; Rücken und Kopf bleiben in einer natürlichen Linie.",
+      "Hanteln mit langen Armen körpernah absenken. Nur so weit neigen, wie Gleichgewicht und Beckenstellung kontrolliert bleiben; die Gewichte müssen den Boden nicht erreichen.",
+      "Über das Standbein Hüfte und Rumpf wieder aufrichten, das freie Bein mitführen und vor der nächsten Wiederholung ruhig ausbalancieren. Seitenwechsel und Dosierung nach individuellem Trainingsplan."
+    ],
+    "breathing": "Beim Vorneigen ruhig einatmen, beim Aufrichten ausatmen. Ohne Schwung arbeiten und nicht die Luft anhalten.",
+    "mistakes": "Rücken nicht rund machen oder überstrecken. Becken nicht zur Seite aufdrehen, Standknie nicht durchdrücken und nicht in eine tiefe Kniebeuge ausweichen. Hanteln nicht weit vor den Körper schieben.",
+    "precautions": "Anspruchsvolle Kraft- und Gleichgewichtsübung: zuerst persönlich anleiten und die sichere Einbeinbelastung prüfen lassen. Zusatzgewicht und Bewegungsweg individuell festlegen. Nach Operationen, bei akuten Beschwerden oder unsicherem Stand nur nach ausdrücklicher Freigabe. Bei Schmerzverstärkung, Schwindel oder Gleichgewichtsverlust abbrechen und beide Füße sicher absetzen.",
+    "easier": "Zunächst ohne Gewicht und mit kleinerem Hüftknick üben; den freien Fuß als leichte Stütze hinter dem Körper absetzen oder eine gesicherte Haltemöglichkeit nach persönlicher Anleitung nutzen.",
+    "harder": "Zusatzlast oder Bewegungsumfang erst erhöhen, wenn Becken und Rücken im gesamten Ablauf kontrolliert bleiben und das Praxisteam zustimmt.",
+    "requiresSupervision": true,
+    "sourceNote": "Eigene deutsche Beschreibung und neu erstellte Illustration nach einer Nutzer-Bewegungsreferenz. Die Quellen erläutern das Grundmuster; kein krankheitsbezogener Wirksamkeitsnachweis für diese Variante hinterlegt.",
+    "license": "Neu generierter Illustrationsentwurf im App-Stil; die eingereichte Originalgrafik wird weder ausgeliefert noch eingebettet. Keine fremde Public-Domain- oder CC-Lizenz behauptet.",
+    "sources": [
+      {
+        "title": "NHS WWL · Hip Level 3, Single Leg Deadlift",
+        "url": "https://www.wwl.nhs.uk/media/.leaflets/65783110320970.56499712.pdf"
+      },
+      {
+        "title": "ACE · Romanian Deadlift: Technik und Hilfsmittel",
+        "url": "https://www.acefitness.org/continuing-education/certified/may-2025/8865/the-ace-do-it-better-series-the-romanian-deadlift/"
+      }
+    ]
   },
   {
-    "id":"einbein-kreuzheben-langhantel",
-    "familyId":"einbein-kreuzheben",
-    "familyTitle":"Einbeiniges rumänisches Kreuzheben",
-    "variantLabel":"Mit Langhantel",
-    "title":"Einbeiniges Kreuzheben mit Langhantel",
-    "region":"Hüfte",
-    "goal":"Kräftigung",
-    "trainingTypes":["Kraft","Koordination"],
-    "joints":["Hüftgelenk"],
-    "strengthMuscles":["Großer Gesäßmuskel (M. gluteus maximus)","Hinterer Oberschenkel (ischiocrurale Muskulatur)"],
-    "position":"Im Stand",
-    "equipment":"Langhantel",
-    "difficulty":"Anspruchsvoll",
-    "duration":3,
-    "subtitle":"Beidhändiger Griff · Hüftknick und Einbeinkontrolle",
-    "start":"Eine leichte, freigegebene Langhantel beidhändig etwa schulterbreit im Obergriff vor den Oberschenkeln halten. Standbein sicher belasten, Knie weich beugen und den anderen Fuß leicht anheben. Auf freie Umgebung und sicher befestigte, ausgewogene Hantelscheiben achten.",
-    "end":"Der Rumpf ist aus der Hüfte nach vorn geneigt und das freie Bein nach hinten geführt. Rücken bleibt neutral, Becken gerade und Standknie weich gebeugt. Die Stange hängt unter den Schultern dicht vor dem Standbein; sie berührt weder Schienbein noch Boden.",
-    "steps":["Gleichgewicht auf dem Standbein herstellen und beide Hände sicher an der Stange lassen.","Becken nach hinten führen, Oberkörper kontrolliert nach vorn neigen und das freie Bein nach hinten mitnehmen. Schultern und Becken nicht aufdrehen.","Die Langhantel dicht am Standbein führen und nur bis zur persönlich freigegebenen Tiefe absenken. Kniebeugung und natürlicher Rückenverlauf bleiben erhalten.","Über die Hüfte wieder aufrichten und ruhig ausbalancieren. Bei Unsicherheit frühzeitig das freie Bein absetzen; Wiederholungen und Seitenwechsel nach individuellem Plan."],
-    "breathing":"Kontrolliert absenken und beim Aufrichten ausatmen; kein Pressen oder ruckartiges Hochziehen.",
-    "mistakes":"Die Stange nicht vom Körper wegpendeln lassen. Rücken nicht einrollen, Becken nicht seitlich öffnen und das Standknie nicht durchdrücken. Kein zusätzlicher Schwung aus den Armen.",
-    "precautions":"Nur nach persönlicher Anleitung und bei sicherer Einbeinbelastung verwenden. Die Langhantel lässt keine freie Hand zum Festhalten; Last und Übungsumgebung besonders sorgfältig festlegen. Nach Operationen und bei akuten Beschwerden nur mit ausdrücklicher Freigabe. Bei Schmerzverstärkung, Schwindel oder Kontrollverlust das freie Bein sicher aufstellen und die Übung beenden.",
-    "easier":"Die Bewegung zunächst ohne Zusatzlast mit leichter Fußstütze erlernen. Anschließend nach Anleitung mit sehr leichter Übungsstange und kleinem Bewegungsumfang beginnen.",
-    "harder":"Mehr Last nur nach therapeutischer Freigabe und bei durchgehend stabiler Becken-, Knie- und Rückenstellung einsetzen.",
-    "requiresSupervision":true,
-    "sourceNote":"Eigene Übertragung des einbeinigen Hüftknicks auf eine leichte Langhantel. Die Quellen beschreiben verwandte Grundmuster; keine automatische Eignung für ein Krankheitsbild und kein eigener Wirksamkeitsnachweis dieser Variante.",
-    "license":"Neu generierter Illustrationsentwurf im App-Stil; die eingereichte Originalgrafik wird weder ausgeliefert noch eingebettet. Keine fremde Public-Domain- oder CC-Lizenz behauptet.",
-    "sources":[{"title":"ACE · Romanian Deadlift: Technik und Hilfsmittel","url":"https://www.acefitness.org/continuing-education/certified/may-2025/8865/the-ace-do-it-better-series-the-romanian-deadlift/"},{"title":"NHS WWL · Hip Level 3, Single Leg Deadlift","url":"https://www.wwl.nhs.uk/media/.leaflets/65783110320970.56499712.pdf"}]
+    "id": "einbein-kreuzheben-langhantel",
+    "familyId": "einbein-kreuzheben",
+    "familyTitle": "Einbeiniges rumänisches Kreuzheben",
+    "variantLabel": "Mit Langhantel",
+    "title": "Einbeiniges Kreuzheben mit Langhantel",
+    "region": "Hüfte",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft",
+      "Koordination"
+    ],
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Hinterer Oberschenkel (ischiocrurale Muskulatur)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Langhantel",
+    "difficulty": "Anspruchsvoll",
+    "duration": 3,
+    "subtitle": "Beidhändiger Griff · Hüftknick und Einbeinkontrolle",
+    "start": "Eine leichte, freigegebene Langhantel beidhändig etwa schulterbreit im Obergriff vor den Oberschenkeln halten. Standbein sicher belasten, Knie weich beugen und den anderen Fuß leicht anheben. Auf freie Umgebung und sicher befestigte, ausgewogene Hantelscheiben achten.",
+    "end": "Der Rumpf ist aus der Hüfte nach vorn geneigt und das freie Bein nach hinten geführt. Rücken bleibt neutral, Becken gerade und Standknie weich gebeugt. Die Stange hängt unter den Schultern dicht vor dem Standbein; sie berührt weder Schienbein noch Boden.",
+    "steps": [
+      "Gleichgewicht auf dem Standbein herstellen und beide Hände sicher an der Stange lassen.",
+      "Becken nach hinten führen, Oberkörper kontrolliert nach vorn neigen und das freie Bein nach hinten mitnehmen. Schultern und Becken nicht aufdrehen.",
+      "Die Langhantel dicht am Standbein führen und nur bis zur persönlich freigegebenen Tiefe absenken. Kniebeugung und natürlicher Rückenverlauf bleiben erhalten.",
+      "Über die Hüfte wieder aufrichten und ruhig ausbalancieren. Bei Unsicherheit frühzeitig das freie Bein absetzen; Wiederholungen und Seitenwechsel nach individuellem Plan."
+    ],
+    "breathing": "Kontrolliert absenken und beim Aufrichten ausatmen; kein Pressen oder ruckartiges Hochziehen.",
+    "mistakes": "Die Stange nicht vom Körper wegpendeln lassen. Rücken nicht einrollen, Becken nicht seitlich öffnen und das Standknie nicht durchdrücken. Kein zusätzlicher Schwung aus den Armen.",
+    "precautions": "Nur nach persönlicher Anleitung und bei sicherer Einbeinbelastung verwenden. Die Langhantel lässt keine freie Hand zum Festhalten; Last und Übungsumgebung besonders sorgfältig festlegen. Nach Operationen und bei akuten Beschwerden nur mit ausdrücklicher Freigabe. Bei Schmerzverstärkung, Schwindel oder Kontrollverlust das freie Bein sicher aufstellen und die Übung beenden.",
+    "easier": "Die Bewegung zunächst ohne Zusatzlast mit leichter Fußstütze erlernen. Anschließend nach Anleitung mit sehr leichter Übungsstange und kleinem Bewegungsumfang beginnen.",
+    "harder": "Mehr Last nur nach therapeutischer Freigabe und bei durchgehend stabiler Becken-, Knie- und Rückenstellung einsetzen.",
+    "requiresSupervision": true,
+    "sourceNote": "Eigene Übertragung des einbeinigen Hüftknicks auf eine leichte Langhantel. Die Quellen beschreiben verwandte Grundmuster; keine automatische Eignung für ein Krankheitsbild und kein eigener Wirksamkeitsnachweis dieser Variante.",
+    "license": "Neu generierter Illustrationsentwurf im App-Stil; die eingereichte Originalgrafik wird weder ausgeliefert noch eingebettet. Keine fremde Public-Domain- oder CC-Lizenz behauptet.",
+    "sources": [
+      {
+        "title": "ACE · Romanian Deadlift: Technik und Hilfsmittel",
+        "url": "https://www.acefitness.org/continuing-education/certified/may-2025/8865/the-ace-do-it-better-series-the-romanian-deadlift/"
+      },
+      {
+        "title": "NHS WWL · Hip Level 3, Single Leg Deadlift",
+        "url": "https://www.wwl.nhs.uk/media/.leaflets/65783110320970.56499712.pdf"
+      }
+    ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "position": "Im Stand",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Absenken einatmen, beim Anheben ausatmen. Ruhig weiteratmen und nicht pressen.",
+    "precautions": "Bewegungsumfang, Wiederholungen und Belastung individuell mit dem Praxisteam festlegen. Die Bilder zeigen eine mögliche Stellung und geben keine verbindliche Tiefe vor. Nach Operationen oder bei akuten Beschwerden nur nach persönlicher Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "easier": "Bewegungsweg verkleinern und zunächst ohne Zusatzlast üben. Bei unsicherem Stand die Übung mit dem Praxisteam an eine feste Haltemöglichkeit anpassen.",
+    "harder": "Zusatzgewicht oder Wiederholungszahl erst nach Freigabe und bei sicherer Bewegungskontrolle schrittweise erhöhen.",
+    "sourceNote": "Eigene deutsche Anleitung zum beschriebenen Grundmuster. Die Quellen beschreiben verwandte Übungen; keine automatische Krankheitsbild-Zuordnung und kein Wirksamkeitsnachweis dieser konkreten Variante.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung aus der vorhandenen App-Figur abgeleitet; eigene deutsche Beschreibung. Keine Übernahme fremder Fotos, keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "kniebeuge-ohne-gewicht",
+    "familyId": "kniebeuge",
+    "familyTitle": "Kniebeugen",
+    "variantLabel": "Ohne Gewicht",
+    "title": "Kniebeugen ohne Gewicht",
+    "region": "Knie",
+    "joints": [
+      "Kniegelenk",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Großer Gesäßmuskel (M. gluteus maximus)"
+    ],
+    "equipment": "Ohne Zusatzgerät",
+    "difficulty": "Leicht",
+    "subtitle": "Schulterbreiter Stand · kontrolliert beugen und strecken",
+    "start": "Auf rutschfestem Boden etwa schulterbreit stehen, Fußspitzen leicht nach außen und Knie in dieselbe Richtung ausrichten. Beide Arme ohne Gewicht locker nach vorn ausstrecken.",
+    "end": "Knie und Hüften sind bis zur persönlich freigegebenen Tiefe gebeugt. Die Fersen bleiben am Boden, Knie folgen den Fußspitzen und der Rücken bleibt in natürlicher gerader Haltung. Die Arme zeigen nach vorn.",
+    "steps": [
+      "Gewicht gleichmäßig über beide Füße verteilen und den Rumpf sanft stabilisieren.",
+      "Knie und Hüften langsam beugen und das Becken kontrolliert nach unten führen. Nur so tief gehen, wie Fersen und Knieachse stabil bleiben.",
+      "Arme als Gegengewicht nach vorn führen, ohne die Schultern hochzuziehen.",
+      "Über beide ganzen Füße gleichmäßig aufrichten. Hüfte und Knie gemeinsam strecken, ohne ruckartig durchzudrücken."
+    ],
+    "mistakes": "Knie nicht nach innen fallen lassen, Fersen nicht anheben und Rücken nicht runden oder ins Hohlkreuz ziehen. Tiefe nicht erzwingen; keine ruckartige Aufwärtsbewegung.",
+    "sources": [
+      {
+        "title": "AAOS · Knee Conditioning Program: Half Squats",
+        "url": "https://www.orthoinfo.org/recovery/knee-conditioning-program/"
+      }
+    ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "position": "Im Stand",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Absenken einatmen, beim Anheben ausatmen. Ruhig weiteratmen und nicht pressen.",
+    "precautions": "Bewegungsumfang, Wiederholungen und Belastung individuell mit dem Praxisteam festlegen. Die Bilder zeigen eine mögliche Stellung und geben keine verbindliche Tiefe vor. Nach Operationen oder bei akuten Beschwerden nur nach persönlicher Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "easier": "Bewegungsweg verkleinern und zunächst ohne Zusatzlast üben. Bei unsicherem Stand die Übung mit dem Praxisteam an eine feste Haltemöglichkeit anpassen.",
+    "harder": "Zusatzgewicht oder Wiederholungszahl erst nach Freigabe und bei sicherer Bewegungskontrolle schrittweise erhöhen.",
+    "sourceNote": "Eigene vereinfachte Sumo-Bewegungsvariante ohne beziehungsweise mit einer Kurzhantel. Auf Nutzerkorrektur mit stärkerer Kniebeugung und aufrechtem Rücken illustriert. Die EPF-Quelle beschreibt das verwandte Langhantel-Grundmuster; keine Übernahme von Wettkampf-Lasten, Atemvorgaben oder individueller Übungstiefe.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung aus der vorhandenen App-Figur abgeleitet; eigene deutsche Beschreibung. Keine Übernahme fremder Fotos, keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "sumo-kreuzheben-ohne-gewicht",
+    "familyId": "sumo-kreuzheben",
+    "familyTitle": "Breitbeiniges Kreuzheben",
+    "variantLabel": "Ohne Gewicht",
+    "title": "Breitbeiniges Kreuzheben ohne Gewicht",
+    "region": "Hüfte",
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Hüftadduktoren"
+    ],
+    "equipment": "Ohne Zusatzgerät",
+    "difficulty": "Mittel",
+    "subtitle": "Sumo-Variante · deutliche Kniebeugung · aufrechter, gerader Rücken",
+    "start": "Breiter als schulterbreit stehen. Fußspitzen nach außen richten und die Knie in derselben Richtung ausrichten; Standbreite nur im angenehmen Bereich wählen. Aufrecht stehen und den Rumpf stabilisieren. Die Hände ohne Gewicht mit langen Armen zwischen den Oberschenkeln halten.",
+    "end": "Knie sind deutlich gebeugt und nach außen in Richtung der Fußspitzen ausgerichtet. Das Becken steht abgesenkt zwischen den Beinen; der Rücken bleibt gerade und der Oberkörper aufrecht, ohne aus der Taille nach vorn zu kippen. Beide Fersen bleiben vollständig am Boden. Die Hände hängen zwischen den Knien. Eine geringere Tiefe ist bei eingeschränkter Beweglichkeit ausdrücklich möglich.",
+    "steps": [
+      "Stand stabil einrichten und die Bauchmuskulatur sanft anspannen. Schultern entspannt lassen.",
+      "Beide Knie deutlich beugen und nach außen über den Fußspitzen führen. Becken zwischen den Beinen absenken, Brustkorb aufrecht halten und den Rücken gerade lassen.",
+      "Hände mit langen Armen zwischen den Beinen nach unten führen; kein zusätzliches Gewicht verwenden.",
+      "Über beide Füße den Boden wegdrücken und Hüfte sowie Knie gleichzeitig wieder strecken. Aufrecht enden, ohne den Rücken nach hinten zu überstrecken."
+    ],
+    "mistakes": "Nicht mit fast gestreckten Knien nach vorn klappen. Knie nicht nach innen fallen lassen, Rücken nicht runden und Standbreite oder Tiefe nicht erzwingen. Beide Fersen bleiben belastet.",
+    "sources": [
+      {
+        "title": "European Powerlifting Federation · Wide Stance (Sumo) Deadlift",
+        "url": "https://www.europowerlifting.org/fileadmin/data/coach_corner/Competition_Deadlift_Sumo.pdf"
+      }
+    ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "position": "Im Stand",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Anheben ausatmen, beim langsamen Absenken einatmen. Ruhig weiteratmen.",
+    "precautions": "Bewegungsumfang, Wiederholungen und Belastung individuell mit dem Praxisteam festlegen. Die Bilder zeigen eine mögliche Stellung und geben keine verbindliche Tiefe vor. Nach Operationen oder bei akuten Beschwerden nur nach persönlicher Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "easier": "Bewegungsweg verkleinern und zunächst ohne Zusatzlast üben. Bei unsicherem Stand die Übung mit dem Praxisteam an eine feste Haltemöglichkeit anpassen.",
+    "harder": "Zusatzgewicht oder Wiederholungszahl erst nach Freigabe und bei sicherer Bewegungskontrolle schrittweise erhöhen.",
+    "sourceNote": "Eigene deutsche Beschreibung des beidbeinigen Wadenhebens. Die AAOS-Quelle zeigt das Grundmuster mit Stütze; die freistehende und belastete Variante benötigt zusätzlich sichere Balance und persönliche Freigabe. Kein krankheitsbezogener Wirksamkeitsnachweis für diese konkrete Variante.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung aus der vorhandenen App-Figur abgeleitet; eigene deutsche Beschreibung. Keine Übernahme fremder Fotos, keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "wadenheben-ohne-gewicht",
+    "familyId": "wadenheben",
+    "familyTitle": "Wadenheben im Stand",
+    "variantLabel": "Ohne Gewicht",
+    "title": "Wadenheben ohne Gewicht",
+    "region": "Sprunggelenk",
+    "joints": [
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [
+      "Wadenmuskulatur (M. gastrocnemius / soleus)"
+    ],
+    "equipment": "Ohne Zusatzgerät",
+    "difficulty": "Leicht",
+    "subtitle": "Beidbeinig · Fersen anheben und langsam absenken",
+    "start": "Auf ebenem, rutschfestem Boden hüftbreit und aufrecht stehen. Beide Füße liegen vollständig auf, Knie sind lang und nicht starr durchgedrückt. Arme locker neben dem Körper halten. Die freie Variante setzt sicheren Stand voraus; bei Unsicherheit mit dem Praxisteam eine feste Stütze einrichten.",
+    "end": "Beide Fersen sind angehoben, während Zehen und Vorfüße am Boden bleiben. Rumpf bleibt aufrecht, Fußgelenke weichen weder nach innen noch nach außen aus. Beide Hände bleiben frei von Gewichten.",
+    "steps": [
+      "Gewicht gleichmäßig auf beide Füße verteilen und ruhig ausbalancieren.",
+      "Beide Fersen langsam anheben und sich über die Vorfüße nach oben drücken. Körper bleibt lang und aufrecht.",
+      "Die obere Stellung nur kurz und kontrolliert halten; nicht auf die äußersten Zehenspitzen rollen.",
+      "Beide Fersen langsam vollständig zum Boden zurückführen. Ohne Federn oder Schwung wiederholen."
+    ],
+    "mistakes": "Nicht hüpfen, mit dem Rumpf vor- und zurückschaukeln oder die Fußgelenke seitlich wegknicken lassen. Knie nicht stark beugen und die Fersen nicht fallen lassen.",
+    "sources": [
+      {
+        "title": "AAOS · Foot and Ankle Conditioning Program: Calf Raises",
+        "url": "https://www.orthoinfo.org/recovery/foot-and-ankle-conditioning-program"
+      }
+    ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "position": "Im Stand",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Absenken einatmen, beim Anheben ausatmen. Ruhig weiteratmen und nicht pressen.",
+    "precautions": "Bewegungsumfang, Wiederholungen und Belastung individuell mit dem Praxisteam festlegen. Die Bilder zeigen eine mögliche Stellung und geben keine verbindliche Tiefe vor. Nach Operationen oder bei akuten Beschwerden nur nach persönlicher Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "easier": "Bewegungsweg verkleinern und zunächst ohne Zusatzlast üben. Bei unsicherem Stand die Übung mit dem Praxisteam an eine feste Haltemöglichkeit anpassen.",
+    "harder": "Zusatzgewicht oder Wiederholungszahl erst nach Freigabe und bei sicherer Bewegungskontrolle schrittweise erhöhen.",
+    "sourceNote": "Eigene deutsche Anleitung zum beschriebenen Grundmuster. Die Quellen beschreiben verwandte Übungen; keine automatische Krankheitsbild-Zuordnung und kein Wirksamkeitsnachweis dieser konkreten Variante.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung aus der vorhandenen App-Figur abgeleitet; eigene deutsche Beschreibung. Keine Übernahme fremder Fotos, keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "kniebeuge-zusatzgewicht",
+    "familyId": "kniebeuge",
+    "familyTitle": "Kniebeugen",
+    "variantLabel": "Mit Zusatzgewicht",
+    "title": "Kniebeugen mit Zusatzgewicht",
+    "region": "Knie",
+    "joints": [
+      "Kniegelenk",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Großer Gesäßmuskel (M. gluteus maximus)"
+    ],
+    "equipment": "Hanteln",
+    "difficulty": "Mittel",
+    "subtitle": "Goblet-Kniebeuge · eine Kurzhantel vor der Brust",
+    "start": "Auf rutschfestem Boden etwa schulterbreit stehen, Fußspitzen leicht nach außen und Knie in dieselbe Richtung ausrichten. Eine leichte freigegebene Kurzhantel senkrecht mit beiden Händen sicher vor der Brust halten.",
+    "end": "Knie und Hüften sind bis zur persönlich freigegebenen Tiefe gebeugt. Die Fersen bleiben am Boden, Knie folgen den Fußspitzen und der Rücken bleibt in natürlicher gerader Haltung. Die Hantel bleibt nah vor der Brust.",
+    "steps": [
+      "Gewicht gleichmäßig über beide Füße verteilen und den Rumpf sanft stabilisieren.",
+      "Knie und Hüften langsam beugen und das Becken kontrolliert nach unten führen. Nur so tief gehen, wie Fersen und Knieachse stabil bleiben.",
+      "Hantel nah am Brustkorb halten; Rumpf stabil lassen und die Last nicht nach vorn ausstrecken.",
+      "Über beide ganzen Füße gleichmäßig aufrichten. Hüfte und Knie gemeinsam strecken, ohne ruckartig durchzudrücken."
+    ],
+    "mistakes": "Knie nicht nach innen fallen lassen, Fersen nicht anheben und Rücken nicht runden oder ins Hohlkreuz ziehen. Tiefe nicht erzwingen; keine ruckartige Aufwärtsbewegung.",
+    "sources": [
+      {
+        "title": "NASM · Goblet Squat: Technik und Zielmuskeln",
+        "url": "https://www.nasm.org/resource-center/exercise-library/goblet-squat"
+      }
+    ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "position": "Im Stand",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Absenken einatmen, beim Anheben ausatmen. Ruhig weiteratmen und nicht pressen.",
+    "precautions": "Bewegungsumfang, Wiederholungen und Belastung individuell mit dem Praxisteam festlegen. Die Bilder zeigen eine mögliche Stellung und geben keine verbindliche Tiefe vor. Nach Operationen oder bei akuten Beschwerden nur nach persönlicher Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "easier": "Bewegungsweg verkleinern und zunächst ohne Zusatzlast üben. Bei unsicherem Stand die Übung mit dem Praxisteam an eine feste Haltemöglichkeit anpassen.",
+    "harder": "Zusatzgewicht oder Wiederholungszahl erst nach Freigabe und bei sicherer Bewegungskontrolle schrittweise erhöhen.",
+    "sourceNote": "Eigene vereinfachte Sumo-Bewegungsvariante ohne beziehungsweise mit einer Kurzhantel. Auf Nutzerkorrektur mit stärkerer Kniebeugung und aufrechtem Rücken illustriert. Die EPF-Quelle beschreibt das verwandte Langhantel-Grundmuster; keine Übernahme von Wettkampf-Lasten, Atemvorgaben oder individueller Übungstiefe.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung aus der vorhandenen App-Figur abgeleitet; eigene deutsche Beschreibung. Keine Übernahme fremder Fotos, keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "sumo-kreuzheben-zusatzgewicht",
+    "familyId": "sumo-kreuzheben",
+    "familyTitle": "Breitbeiniges Kreuzheben",
+    "variantLabel": "Mit Zusatzgewicht",
+    "title": "Breitbeiniges Kreuzheben mit Zusatzgewicht",
+    "region": "Hüfte",
+    "joints": [
+      "Hüftgelenk",
+      "Kniegelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Hüftadduktoren"
+    ],
+    "equipment": "Hanteln",
+    "difficulty": "Mittel",
+    "subtitle": "Sumo-Variante · deutliche Kniebeugung · aufrechter, gerader Rücken",
+    "start": "Breiter als schulterbreit stehen. Fußspitzen nach außen richten und die Knie in derselben Richtung ausrichten; Standbreite nur im angenehmen Bereich wählen. Aufrecht stehen und den Rumpf stabilisieren. Eine leichte Kurzhantel senkrecht mit beiden Händen am oberen Hantelkopf sicher greifen und mit langen Armen zwischen den Beinen halten.",
+    "end": "Knie sind deutlich gebeugt und nach außen in Richtung der Fußspitzen ausgerichtet. Das Becken steht abgesenkt zwischen den Beinen; der Rücken bleibt gerade und der Oberkörper aufrecht, ohne aus der Taille nach vorn zu kippen. Beide Fersen bleiben vollständig am Boden. Die Kurzhantel hängt zwischen den Beinen knapp über dem Boden; die Tiefe wird an Beweglichkeit und Hantellänge angepasst.",
+    "steps": [
+      "Stand stabil einrichten und die Bauchmuskulatur sanft anspannen. Schultern entspannt lassen.",
+      "Beide Knie deutlich beugen und nach außen über den Fußspitzen führen. Becken zwischen den Beinen absenken, Brustkorb aufrecht halten und den Rücken gerade lassen.",
+      "Hantel mit langen Armen zwischen den Beinen führen. Nicht mit den Armen ziehen und die Hantel nicht auf den Boden schlagen.",
+      "Über beide Füße den Boden wegdrücken und Hüfte sowie Knie gleichzeitig wieder strecken. Aufrecht enden, ohne den Rücken nach hinten zu überstrecken."
+    ],
+    "mistakes": "Nicht mit fast gestreckten Knien nach vorn klappen. Knie nicht nach innen fallen lassen, Rücken nicht runden und Standbreite oder Tiefe nicht erzwingen. Beide Fersen bleiben belastet.",
+    "sources": [
+      {
+        "title": "European Powerlifting Federation · Wide Stance (Sumo) Deadlift",
+        "url": "https://www.europowerlifting.org/fileadmin/data/coach_corner/Competition_Deadlift_Sumo.pdf"
+      }
+    ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "position": "Im Stand",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Anheben ausatmen, beim langsamen Absenken einatmen. Ruhig weiteratmen.",
+    "precautions": "Bewegungsumfang, Wiederholungen und Belastung individuell mit dem Praxisteam festlegen. Die Bilder zeigen eine mögliche Stellung und geben keine verbindliche Tiefe vor. Nach Operationen oder bei akuten Beschwerden nur nach persönlicher Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "easier": "Bewegungsweg verkleinern und zunächst ohne Zusatzlast üben. Bei unsicherem Stand die Übung mit dem Praxisteam an eine feste Haltemöglichkeit anpassen.",
+    "harder": "Zusatzgewicht oder Wiederholungszahl erst nach Freigabe und bei sicherer Bewegungskontrolle schrittweise erhöhen.",
+    "sourceNote": "Eigene deutsche Beschreibung des beidbeinigen Wadenhebens. Die AAOS-Quelle zeigt das Grundmuster mit Stütze; die freistehende und belastete Variante benötigt zusätzlich sichere Balance und persönliche Freigabe. Kein krankheitsbezogener Wirksamkeitsnachweis für diese konkrete Variante.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung aus der vorhandenen App-Figur abgeleitet; eigene deutsche Beschreibung. Keine Übernahme fremder Fotos, keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "wadenheben-zusatzgewicht",
+    "familyId": "wadenheben",
+    "familyTitle": "Wadenheben im Stand",
+    "variantLabel": "Mit Zusatzgewicht",
+    "title": "Wadenheben mit Zusatzgewicht",
+    "region": "Sprunggelenk",
+    "joints": [
+      "Sprunggelenk"
+    ],
+    "strengthMuscles": [
+      "Wadenmuskulatur (M. gastrocnemius / soleus)"
+    ],
+    "equipment": "Hanteln",
+    "difficulty": "Mittel",
+    "subtitle": "Beidbeinig · Fersen anheben und langsam absenken",
+    "start": "Auf ebenem, rutschfestem Boden hüftbreit und aufrecht stehen. Beide Füße liegen vollständig auf, Knie sind lang und nicht starr durchgedrückt. Je eine leichte freigegebene Kurzhantel seitlich am Körper halten. Diese Variante nur bei sicherem Gleichgewicht wählen.",
+    "end": "Beide Fersen sind angehoben, während Zehen und Vorfüße am Boden bleiben. Rumpf bleibt aufrecht, Fußgelenke weichen weder nach innen noch nach außen aus. Beide Hanteln hängen ruhig neben dem Körper.",
+    "steps": [
+      "Gewicht gleichmäßig auf beide Füße verteilen und ruhig ausbalancieren.",
+      "Beide Fersen langsam anheben und sich über die Vorfüße nach oben drücken. Körper bleibt lang und aufrecht.",
+      "Die obere Stellung nur kurz und kontrolliert halten; nicht auf die äußersten Zehenspitzen rollen.",
+      "Beide Fersen langsam vollständig zum Boden zurückführen. Ohne Federn oder Schwung wiederholen."
+    ],
+    "mistakes": "Nicht hüpfen, mit dem Rumpf vor- und zurückschaukeln oder die Fußgelenke seitlich wegknicken lassen. Knie nicht stark beugen und die Fersen nicht fallen lassen.",
+    "sources": [
+      {
+        "title": "AAOS · Foot and Ankle Conditioning Program: Calf Raises",
+        "url": "https://www.orthoinfo.org/recovery/foot-and-ankle-conditioning-program"
+      }
+    ]
   }
 ]

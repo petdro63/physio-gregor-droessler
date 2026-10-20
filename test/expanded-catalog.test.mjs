@@ -48,7 +48,7 @@ test('reference art is explicitly mapped to real families and protected from pat
     if (pose.familyId) assert(expandedExercises.some(e=>e.familyId===pose.familyId));
     if (pose.exerciseIds) assert(pose.exerciseIds.every(id=>[...additionalExercises,...illustratedExercises].some(e=>e.id===id)));
     assert(pose.column>=0 && pose.column<=1 && pose.row>=0 && pose.row<=2);
-    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl'].includes(pose.atlas));
+    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl','reference-squats','reference-sumo-upright','reference-calf-raises'].includes(pose.atlas));
     assert(pose.column * 2 + 1 < (pose.frameColumns ?? 4));
     assert(pose.row < (pose.frameRows ?? 3));
     const image = fs.readFileSync(new URL(`../server/assets/reference/${pose.atlas}.png`,import.meta.url));
@@ -70,7 +70,7 @@ test('reference art is explicitly mapped to real families and protected from pat
   await staff.get(route.replace('version=1','version=2')).expect(404);
   await staff.get(route.replace('reference-joints','..%2f..%2f.env')).expect(404);
   const overview=(await staff.get('/api/overview')).body;
-  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel'].sort());
+  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht'].sort());
   assert(overview.exercises.every(e=>e.status==='draft' && e.reviewer===''));
   const patient=request.agent(runtime.app);
   const ps=(await patient.get('/api/session')).body;
@@ -108,6 +108,30 @@ test('single-leg deadlift variants use separate equipment-specific frames and st
   }
   const entryList=variants.map(e=>({...e,tags:[]}));
   assert.equal(findExercises(entryList,{joint:'Hüftgelenk',equipment:'Langhantel',trainingType:'Kraft'}).length,1);
+});
+
+test('standing strength additions are filterable by joint and muscle and have distinct unloaded and weighted image rows', () => {
+  const families=['kniebeuge','sumo-kreuzheben','wadenheben'];
+  for(const family of families) {
+    const variants=illustratedExercises.filter(e=>e.familyId===family);
+    assert.equal(variants.length,2);
+    const unloaded=variants.find(e=>e.equipment==='Ohne Zusatzgerät');
+    const weighted=variants.find(e=>e.equipment==='Hanteln');
+    const emptyPose=resolveReferencePose(unloaded),loadedPose=resolveReferencePose(weighted);
+    assert.equal(emptyPose.row,0); assert.equal(loadedPose.row,1);
+    assert.equal(emptyPose.atlas,loadedPose.atlas);
+    assert.equal(emptyPose.frameColumns,2); assert.equal(emptyPose.frameRows,2);
+    assert.equal(resolveReferencePose({...weighted,equipment:'Langhantel'}),undefined);
+    const list=variants.map(e=>({...e,tags:[]}));
+    assert.equal(findExercises(list,{equipment:'Ohne Zusatzgerät',trainingType:'Kraft',joint:unloaded.joints[0]}).length,1);
+    assert.equal(findExercises(list,{muscle:weighted.strengthMuscles[0],equipment:'Hanteln'}).length,1);
+    for(const e of variants) {
+      assert(e.requiresSupervision && e.start && e.end && e.steps.length>=3 && e.precautions);
+      assert.equal(e.conditionUses.length,0);
+      assert(e.trainingTypes.every(t=>taxonomy.trainingTypes.includes(t)));
+      assert(e.joints.every(j=>taxonomy.joints.includes(j)));
+    }
+  }
 });
 
 test('illustrations match equipment and direction instead of reusing bare-arm art for resistance variants', () => {

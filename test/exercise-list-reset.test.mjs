@@ -16,7 +16,7 @@ async function admin(runtime) {
   return {agent,csrf:(await agent.get('/api/session')).body.csrf};
 }
 
-test('exercise-list reset retains only the two recent deadlifts, preserves history, and survives restarts', async t=>{
+test('exercise-list reset retains the selected collection, preserves history, and survives restarts', async t=>{
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'physio-list-reset-'));
   let runtime=null;
   t.after(()=>{runtime?.close();fs.rmSync(dir,{recursive:true,force:true});});
@@ -34,8 +34,8 @@ test('exercise-list reset retains only the two recent deadlifts, preserves histo
   runtime=createApp({demo:true,production:false,dataDir:dir});
   let staff=await admin(runtime);
   let list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.deepEqual(list.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel'].sort());
-  assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercise_list_removals').get().n,before.exercises-2);
+  assert.deepEqual(list.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht'].sort());
+  assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercise_list_removals').get().n,before.exercises-8);
   assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercises').get().n,before.exercises);
   assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercise_versions').get().n,before.versions);
   assert.equal(runtime.db.prepare('SELECT payload FROM plan_versions WHERE plan_id=? AND version=1').get('demo-plan').payload,before.plan);
@@ -45,8 +45,46 @@ test('exercise-list reset retains only the two recent deadlifts, preserves histo
   runtime=createApp({demo:true,production:false,dataDir:dir});
   staff=await admin(runtime);
   list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.equal(list.exercises.length,3);
+  assert.equal(list.exercises.length,9);
   assert(list.exercises.some(e=>e.id===created.id),'Later user-created exercises stay in the list');
   assert(!list.exercises.some(e=>e.id==='schulterkreisen'),'Seeding never restores removed list entries');
   assert.equal(list.history.length,1);
+});
+
+test('an already reset installation receives the six new exercises without restoring old entries or changing edits', async t=>{
+  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'physio-list-additions-'));
+  let runtime=null;
+  t.after(()=>{runtime?.close();fs.rmSync(dir,{recursive:true,force:true});});
+  const db=openDatabase(dir);
+  seed(db); seedResearchDrafts(db);
+  // Reproduce 0.1.11: only the two deadlifts were kept, additions did not exist.
+  const newIds=['kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht'];
+  for(const id of newIds) {
+    db.prepare('DELETE FROM exercise_versions WHERE exercise_id=?').run(id);
+    db.prepare('DELETE FROM exercises WHERE id=?').run(id);
+  }
+  db.prepare(`INSERT INTO exercise_list_removals SELECT id,? FROM exercises WHERE id NOT IN (?,?)`).run('2026-10-20T10:00:00.000Z','einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel');
+  db.prepare('INSERT INTO settings VALUES (?,?)').run('exercise-list-reset-deadlifts-2026-10-20','{}');
+  db.close();
+  runtime=createApp({demo:true,production:false,dataDir:dir});
+  let staff=await admin(runtime);
+  let list=(await staff.agent.get('/api/overview').expect(200)).body;
+  assert.equal(list.exercises.length,8);
+  assert(newIds.every(id=>list.exercises.some(e=>e.id===id)));
+  assert(!list.exercises.some(e=>e.id==='schulterkreisen'));
+  for(const id of newIds) {
+    const exercise=list.exercises.find(e=>e.id===id);
+    assert.equal(exercise.status,'draft');
+    const atlas=id.startsWith('kniebeuge')?'reference-squats':id.startsWith('sumo')?'reference-sumo-upright':'reference-calf-raises';
+    await staff.agent.get(`/api/reference-poses/${id}/${atlas}?version=1`).expect(200).expect('Content-Type',/image\/png/);
+    await staff.agent.get(`/api/reference-poses/${id}/reference-single-leg-rdl?version=1`).expect(404);
+  }
+  const edited=list.exercises.find(e=>e.id==='kniebeuge-zusatzgewicht');
+  await staff.agent.put('/api/exercises/'+edited.id).set('X-CSRF-Token',staff.csrf).send({...edited,title:'Individuell angepasste Kniebeuge'}).expect(200);
+  runtime.close(); runtime=null;
+  runtime=createApp({demo:true,production:false,dataDir:dir});
+  staff=await admin(runtime);
+  list=(await staff.agent.get('/api/overview').expect(200)).body;
+  assert.equal(list.exercises.length,8);
+  assert.equal(list.exercises.find(e=>e.id===edited.id).title,'Individuell angepasste Kniebeuge');
 });

@@ -7,6 +7,13 @@ const legacy = JSON.parse(fs.readFileSync(new URL("./legacy-exercise-classificat
 export const additionalExercises = JSON.parse(fs.readFileSync(new URL("./additional-exercises.json", import.meta.url), "utf8"));
 export const expandedExercises = JSON.parse(fs.readFileSync(new URL("./expanded-exercises.json", import.meta.url), "utf8"));
 export const illustratedExercises = JSON.parse(fs.readFileSync(new URL("./illustrated-exercises.json", import.meta.url), "utf8"));
+// Retain the requested collection on first installation as well as upgrades.
+export const collectionExerciseIds = [
+  'einbein-kreuzheben-kurzhanteln', 'einbein-kreuzheben-langhantel',
+  'kniebeuge-ohne-gewicht', 'kniebeuge-zusatzgewicht',
+  'sumo-kreuzheben-ohne-gewicht', 'sumo-kreuzheben-zusatzgewicht',
+  'wadenheben-ohne-gewicht', 'wadenheben-zusatzgewicht',
+];
 
 // One-time collection reset requested by the user. Keep versioned records for
 // existing plans and history; later newly created exercises remain addable.
@@ -16,8 +23,8 @@ export function resetExerciseListToDeadlifts(db) {
     if (db.prepare('SELECT 1 FROM settings WHERE id=?').get(marker)) return;
     const removedAt = iso();
     db.prepare(`INSERT OR IGNORE INTO exercise_list_removals (exercise_id,removed_at)
-      SELECT id,? FROM exercises WHERE id NOT IN (?,?)`).run(removedAt,
-      'einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel');
+      SELECT id,? FROM exercises WHERE id NOT IN (${collectionExerciseIds.map(()=>'?').join(',')})`).run(removedAt,
+      ...collectionExerciseIds);
     db.prepare('INSERT INTO settings (id,payload) VALUES (?,?)').run(marker,JSON.stringify({appliedAt:removedAt}));
   });
 }

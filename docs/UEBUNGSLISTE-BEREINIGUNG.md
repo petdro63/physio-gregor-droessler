@@ -1,6 +1,8 @@
 # Übungsliste bereinigt · 20.10.2026
 
-Auf ausdrücklichen Nutzerwunsch enthält die Sammlung nach dem Update nur noch:
+Nachtrag: Anschließend wurden auf Nutzerwunsch sechs neue Stand-Kraftübungen ergänzt. Die aktuelle Sammlung enthält damit acht Einträge; die historische Bereinigung bleibt wirksam. Auch beim Erststart werden die sechs später ergänzten IDs erhalten. [Neue Übungen und Bilder](STAND-KRAFTUEBUNGEN.md).
+
+Auf ausdrücklichen Nutzerwunsch enthielt die Sammlung nach Version 0.1.11 nur noch:
 
 - Einbeiniges Kreuzheben mit Kurzhanteln (`einbein-kreuzheben-kurzhanteln`)
 - Einbeiniges Kreuzheben mit Langhantel (`einbein-kreuzheben-langhantel`)
