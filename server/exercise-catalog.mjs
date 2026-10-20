@@ -20,6 +20,10 @@ export const collectionExerciseIds = [
   'seitlicher-ausfallschritt-langhantel', 'quadrizeps-exzentrisch-step-down',
   'katze-kuh-mobilisation', 'piriformisdehnung-rueckenlage',
   'oberkoerperrotation-sitz',
+  'unterarmstuetz', 'unterarmstuetz-knie',
+  'liegestuetz', 'liegestuetz-knie',
+  'unterarmstuetz-beinheben', 'unterarmstuetz-beinheben-knie',
+  'seitstuetz', 'seitstuetz-knie', 'seitliches-hueftheben-knie',
 ];
 
 export function correctSingleLegBridgeSide(db) {

@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.17-dev**, Versionsdatum **20.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.18-dev**, Versionsdatum **20.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -19,7 +19,8 @@ Die Vorschau nutzt ausschließlich erfundene Personen. Demo- und Praxisdatenbank
 
 ## Enthalten
 
-- Bereinigte Übungsliste mit 22 Einträgen: Kraftübungen und Varianten sowie Katze–Kuh, Oberkörperrotation im Sitz und Piriformisdehnung in Rückenlage. Frühere entfernte Einträge bleiben ausgeschlossen; vorhandene Pläne und Verläufe bleiben erhalten.
+- Vier neue Stützübungen mit deutschen Anleitungen und jeweils leichter Kniestütz-Variante; zusätzlich seitliches Hüftheben auf den Knien. Statische Stützübungen werden in Sekunden, dynamische in Wiederholungen dosiert. [Bilder, Prompts und Quellen](docs/PLANK-STUETZVARIANTEN.md).
+- Bereinigte Übungsliste mit 31 Einträgen: Kraftübungen und Varianten sowie Katze–Kuh, Oberkörperrotation im Sitz und Piriformisdehnung in Rückenlage. Frühere entfernte Einträge bleiben ausgeschlossen; vorhandene Pläne und Verläufe bleiben erhalten.
 - Oberkörperrotation im Sitz als statisches Start-/Endbild mit frontalem Ausgangssitz, ruhigem Becken und Drehpfeil. Die bisherige Piriformis-Grafik bleibt auf Nutzerwunsch erhalten. [Details und Bildprompt](docs/OBERKOERPERROTATION-SITZ.md).
 - Katze–Kuh und Piriformisdehnung mit neuen Bildpaaren im bisherigen Stil. Bei der Piriformisdehnung liegt der rechte Knöchel auf dem linken Kniebereich; Haltedauer in Sekunden. [Bilder, Anleitungen und Prompts](docs/KATZE-KUH-PIRIFORMIS.md).
 - Seitliche Ausfallschritte ohne Gewicht, mit Kurzhantel und mit Langhantel sowie exzentrische Quadrizeps-Kräftigung über langsames Absenken von einer niedrigen Stufe. Eigene Bilder im bisherigen Stil und Format. [Details, Quellen und Prompts](docs/SEITLICHE-AUSFALLSCHRITTE-STEPDOWN.md).
@@ -72,7 +73,7 @@ Die Integrationstests prüfen tatsächliche HTTP-Zugriffe auf isolierte temporä
 
 ## Erweiterung Reha und Evidenz (19.10.2026)
 
-Die aktuelle Übungsliste enthält 22 Einträge einschließlich Oberkörperrotation im Sitz. Frühere Rechercheeinträge erscheinen nicht mehr in der Sammlung. Ihre versionierten Daten bleiben für bestehende Pläne und Trainingsverläufe erhalten. Die interne Herkunftsdokumentation bleibt nachvollziehbar; Original-PDFs und deren Fotos werden nicht ausgeliefert.
+Die aktuelle Übungsliste enthält 31 Einträge einschließlich Unterarmstütz, Liegestütz, Unterarmstütz mit Beinheben und Seitstütz mit leichten Kniestütz-Varianten. Frühere Rechercheeinträge erscheinen nicht mehr in der Sammlung. Ihre versionierten Daten bleiben für bestehende Pläne und Trainingsverläufe erhalten. Die interne Herkunftsdokumentation bleibt nachvollziehbar; Original-PDFs und deren Fotos werden nicht ausgeliefert.
 
 Unter **Krankheitsbilder & Evidenz** findet das Praxisteam ausdrücklich zugeordnete Vorschläge nach Diagnose, Phase und Behandlungsvariante für lumbalen Bandscheibenvorfall, vorderen Kreuzbandriss, Knie-/Hüft-/Schulter-TEP, Frozen Shoulder sowie CMD und unspezifische Nackenschmerzen. Studienkarten unterscheiden Programm-/Verfahrensnachweise von unbewiesenen Einzelübungen. Die Entspannungsseite erklärt PIR und zeigt zugängliche Entspannungsübungen.
 
@@ -83,7 +84,7 @@ Vier gemeinfreie CDC-Animationen sind als lokale Bilder und MP4 mit deutschen Un
 
 ## Stand der Inhalte
 
-**Die 22 Einträge der aktuellen Sammlung sind Entwürfe und noch nicht für den realen Patienteneinsatz fachlich freigegeben.** Historische technische Beispiele und deren schematische Videos bleiben ebenfalls ungeprüft. Neue Übungen können nach Bedarf wieder in die Sammlung aufgenommen werden; Demoübungen können nicht durch einen bloßen Statuswechsel produktiv freigegeben werden.
+**Die 31 Einträge der aktuellen Sammlung sind Entwürfe und noch nicht für den realen Patienteneinsatz fachlich freigegeben.** Historische technische Beispiele und deren schematische Videos bleiben ebenfalls ungeprüft. Neue Übungen können nach Bedarf wieder in die Sammlung aufgenommen werden; Demoübungen können nicht durch einen bloßen Statuswechsel produktiv freigegeben werden.
 
 Lizenz der schematischen Medien: im Projekt selbst erzeugt, ohne fremde Patientenaufnahmen. Es wurde keine externe Übungsbibliothek übernommen und keine Lizenz bestehender Anbieter vorausgesetzt.
 

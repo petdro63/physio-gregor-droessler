@@ -1232,5 +1232,470 @@
         "url": "https://www.nhs.uk/live-well/exercise/sitting-exercises/"
       }
     ]
+  },
+  {
+    "region": "Rumpf",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "equipment": "Matte",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "precautions": "Eignung, Belastung und Dosierung mit dem Praxisteam abstimmen. Nach Operationen nur nach Freigabe üben. Bei Schmerzen in Schulter, Handgelenk, Knie oder Rücken abbrechen und die Belastung anpassen lassen. Bei ausstrahlenden Beschwerden, Taubheit oder Schwindel aufhören.",
+    "breathing": "Ruhig weiteratmen und nicht pressen. Beim Hochdrücken oder Anheben ausatmen.",
+    "mistakes": "Nicht ins Hohlkreuz fallen, Schultern nicht zu den Ohren ziehen und den Atem nicht anhalten. Nur so lange üben, wie die Körperlinie kontrolliert bleibt.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Zeichnungen nach Nutzerreferenz. Quellen erläutern verwandte Grundmuster; keine automatische Diagnosezuordnung oder Aussage über die Wirksamkeit dieser konkreten Variante. Die vorgeschlagenen Sekunden sind ein editierbarer technischer Planstandard.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung im vorhandenen App-Stil; eigene deutsche Beschreibung. Das eingereichte Poster und dessen Marken werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "unterarmstuetz",
+    "familyId": "unterarmstuetz",
+    "familyTitle": "Unterarmstütz (Plank)",
+    "title": "Unterarmstütz (Plank)",
+    "variantLabel": "Stütz auf den Füßen",
+    "subtitle": "Unterarme und Vorfüße tragen · ruhig halten",
+    "difficulty": "Mittel",
+    "position": "Im Unterarmstütz",
+    "joints": [
+      "Schultergelenk",
+      "Lendenwirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Vorderer Sägemuskel (M. serratus anterior)"
+    ],
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 20,
+    "start": "Auf einer rutschfesten Matte beide Unterarme ablegen, Ellenbogen unter den Schultern. Die Knie sind zunächst am Boden. Den Blick zur Matte richten und Bauch und Gesäß leicht anspannen.",
+    "end": "Den Rumpf anheben und das Gewicht über Unterarme und beide Vorfüße tragen. Schultern, Becken und Fußgelenke bilden eine gerade Linie. Die Beine sind gestreckt und die Knie vom Boden gelöst. Die Stellung ruhig halten.",
+    "steps": [
+      "Unterarme stabil auflegen und den Nacken lang lassen.",
+      "Die Beine nach hinten strecken, Vorfüße aufstellen und die Knie anheben.",
+      "Die gerade Körperlinie für die im Plan eingestellten Sekunden halten. Weiteratmen; anschließend beide Knie kontrolliert ablegen und entspannen."
+    ],
+    "easier": "Zur Variante „Unterarmstütz mit Kniestütz“ wechseln.",
+    "harder": "Die Haltedauer nur bei stabiler Körperlinie nach persönlicher Vorgabe steigern.",
+    "sources": [
+      {
+        "title": "ACE · Front Plank",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/32/front-plank/"
+      },
+      {
+        "title": "Worcestershire Acute Hospitals NHS · Core Stability 2",
+        "url": "https://www.worcsacute.nhs.uk/leaflets/core-stability-2-physiotherapy/"
+      }
+    ]
+  },
+  {
+    "region": "Rumpf",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "equipment": "Matte",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "precautions": "Eignung, Belastung und Dosierung mit dem Praxisteam abstimmen. Nach Operationen nur nach Freigabe üben. Bei Schmerzen in Schulter, Handgelenk, Knie oder Rücken abbrechen und die Belastung anpassen lassen. Bei ausstrahlenden Beschwerden, Taubheit oder Schwindel aufhören.",
+    "breathing": "Ruhig weiteratmen und nicht pressen. Beim Hochdrücken oder Anheben ausatmen.",
+    "mistakes": "Nicht ins Hohlkreuz fallen, Schultern nicht zu den Ohren ziehen und den Atem nicht anhalten. Nur so lange üben, wie die Körperlinie kontrolliert bleibt.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Zeichnungen nach Nutzerreferenz. Quellen erläutern verwandte Grundmuster; keine automatische Diagnosezuordnung oder Aussage über die Wirksamkeit dieser konkreten Variante. Die vorgeschlagenen Sekunden sind ein editierbarer technischer Planstandard.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung im vorhandenen App-Stil; eigene deutsche Beschreibung. Das eingereichte Poster und dessen Marken werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "liegestuetz",
+    "familyId": "liegestuetz",
+    "familyTitle": "Liegestütz",
+    "title": "Liegestütz",
+    "variantLabel": "Stütz auf den Füßen",
+    "subtitle": "Auf Händen und Vorfüßen · kontrolliert absenken und hochdrücken",
+    "difficulty": "Anspruchsvoll",
+    "position": "Im Handstütz",
+    "joints": [
+      "Schultergelenk",
+      "Ellenbogengelenk",
+      "Handgelenk"
+    ],
+    "strengthMuscles": [
+      "Brustmuskel (M. pectoralis major)",
+      "Trizeps (M. triceps brachii)",
+      "Bauchmuskulatur",
+      "Vorderer Sägemuskel (M. serratus anterior)"
+    ],
+    "dosageMode": "repetitions",
+    "start": "Die Hände etwa schulterbreit auf die Matte setzen. Mit gestreckten, nicht durchgedrückten Armen und beide Vorfüße stützen. Schultern, Becken und Fußgelenke bilden eine Linie. Beide Beine sind gestreckt, die Knie bleiben angehoben.",
+    "end": "Beide Ellenbogen sind nach hinten und leicht außen gebeugt. Der Brustkorb ist kontrolliert zur Matte abgesenkt, ohne abzulegen. Schultern, Becken und Fußgelenke bleiben in einer Linie. Hände und Vorfüße tragen das Gewicht.",
+    "steps": [
+      "Hände und Stützpunkte sichern, Rumpf anspannen und Blick zur Matte richten.",
+      "Mit dem Einatmen die Ellenbogen beugen und den Körper als Einheit absenken. Nur so tief gehen, wie die Haltung angenehm und stabil bleibt.",
+      "Mit dem Ausatmen über beide Hände wieder hochdrücken. Die im Plan angegebenen Wiederholungen langsam ausführen."
+    ],
+    "easier": "Zur Variante „Liegestütz mit Kniestütz“ wechseln.",
+    "harder": "Die Absenkphase nach persönlicher Vorgabe verlangsamen, ohne die Haltung zu verlieren.",
+    "sources": [
+      {
+        "title": "ACE · Bent-Knee Push-Up",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/13/bent-knee-push-up/"
+      }
+    ]
+  },
+  {
+    "region": "Rumpf",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "equipment": "Matte",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "precautions": "Eignung, Belastung und Dosierung mit dem Praxisteam abstimmen. Nach Operationen nur nach Freigabe üben. Bei Schmerzen in Schulter, Handgelenk, Knie oder Rücken abbrechen und die Belastung anpassen lassen. Bei ausstrahlenden Beschwerden, Taubheit oder Schwindel aufhören.",
+    "breathing": "Ruhig weiteratmen und nicht pressen. Beim Hochdrücken oder Anheben ausatmen.",
+    "mistakes": "Nicht ins Hohlkreuz fallen, Schultern nicht zu den Ohren ziehen und den Atem nicht anhalten. Nur so lange üben, wie die Körperlinie kontrolliert bleibt.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Zeichnungen nach Nutzerreferenz. Quellen erläutern verwandte Grundmuster; keine automatische Diagnosezuordnung oder Aussage über die Wirksamkeit dieser konkreten Variante. Die vorgeschlagenen Sekunden sind ein editierbarer technischer Planstandard.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung im vorhandenen App-Stil; eigene deutsche Beschreibung. Das eingereichte Poster und dessen Marken werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "unterarmstuetz-beinheben",
+    "familyId": "unterarmstuetz-beinheben",
+    "familyTitle": "Unterarmstütz mit Beinheben",
+    "title": "Unterarmstütz mit Beinheben",
+    "variantLabel": "Stütz auf den Füßen",
+    "subtitle": "Ein Bein anheben · Becken bleibt waagerecht",
+    "difficulty": "Anspruchsvoll",
+    "position": "Im Unterarmstütz",
+    "joints": [
+      "Hüftgelenk",
+      "Schultergelenk",
+      "Lendenwirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Vorderer Sägemuskel (M. serratus anterior)",
+      "Großer Gesäßmuskel (M. gluteus maximus)"
+    ],
+    "dosageMode": "repetitions",
+    "start": "Beide Unterarme auflegen, Ellenbogen unter den Schultern. Mit beiden Vorfüßen stützen, Beine strecken und die Knie vom Boden lösen. Den Nacken lang und das Becken ruhig halten.",
+    "end": "Das rechte Bein ist nach hinten gestreckt und leicht angehoben, höchstens bis zur Hüfthöhe. Der linke Vorfuß bleibt als Stützpunkt auf der Matte. Beide Unterarme tragen weiter. Das Becken bleibt waagerecht, ohne ins Hohlkreuz auszuweichen.",
+    "steps": [
+      "Zuerst die stabile Ausgangsstellung einnehmen und ruhig weiteratmen.",
+      "Das Gewicht kontrolliert auf den linken Vorfuß verlagern und das rechte gestreckte Bein leicht anheben.",
+      "Das rechte Bein langsam zurückführen. Danach nach persönlicher Vorgabe die Seite wechseln. Pro Wiederholung einmal heben und wieder absetzen; Wiederholungen je Seite mit dem Praxisteam festlegen."
+    ],
+    "easier": "Zur Variante mit Kniestütz wechseln oder zunächst beide Füße auf der Matte lassen.",
+    "harder": "Langsamer bewegen und das Becken dabei unverändert stabil halten; keine zusätzliche Höhe erzwingen.",
+    "sources": [
+      {
+        "title": "Worcestershire Acute Hospitals NHS · Core Stability 2",
+        "url": "https://www.worcsacute.nhs.uk/leaflets/core-stability-2-physiotherapy/"
+      },
+      {
+        "title": "ACE · Front Plank",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/32/front-plank/"
+      }
+    ]
+  },
+  {
+    "region": "Rumpf",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "equipment": "Matte",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "precautions": "Eignung, Belastung und Dosierung mit dem Praxisteam abstimmen. Nach Operationen nur nach Freigabe üben. Bei Schmerzen in Schulter, Handgelenk, Knie oder Rücken abbrechen und die Belastung anpassen lassen. Bei ausstrahlenden Beschwerden, Taubheit oder Schwindel aufhören.",
+    "breathing": "Ruhig weiteratmen und nicht pressen. Beim Hochdrücken oder Anheben ausatmen.",
+    "mistakes": "Nicht ins Hohlkreuz fallen, Schultern nicht zu den Ohren ziehen und den Atem nicht anhalten. Nur so lange üben, wie die Körperlinie kontrolliert bleibt.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Zeichnungen nach Nutzerreferenz. Quellen erläutern verwandte Grundmuster; keine automatische Diagnosezuordnung oder Aussage über die Wirksamkeit dieser konkreten Variante. Die vorgeschlagenen Sekunden sind ein editierbarer technischer Planstandard.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung im vorhandenen App-Stil; eigene deutsche Beschreibung. Das eingereichte Poster und dessen Marken werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "seitstuetz",
+    "familyId": "seitstuetz",
+    "familyTitle": "Seitstütz",
+    "title": "Seitstütz",
+    "variantLabel": "Stütz auf den Füßen",
+    "subtitle": "Unterarm und Füße tragen · seitlich halten",
+    "difficulty": "Anspruchsvoll",
+    "position": "In Seitlage",
+    "joints": [
+      "Schultergelenk",
+      "Lendenwirbelsäule",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"
+    ],
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 20,
+    "start": "Auf der linken Seite liegen und den linken Ellenbogen unter der Schulter aufstützen. Die gestreckten Beine übereinander legen und den äußeren Fußrand aufsetzen. Die rechte Hand liegt an der Hüfte, das Becken ist zunächst abgesenkt.",
+    "end": "Das Becken ist angehoben. Schultern, Becken und Fußgelenke bilden seitlich eine gerade Linie. Der linke Unterarm und die Füße bleiben auf der Matte. Der rechte Arm kann nach oben zeigen, sofern die Schulter dies angenehm zulässt; alternativ die Hand an der Hüfte lassen.",
+    "steps": [
+      "Unteren Ellenbogen unter der Schulter ausrichten und die Stützfläche sichern.",
+      "Mit dem Ausatmen das Becken anheben, ohne nach vorne oder hinten zu kippen. Den oberen Arm bei Bedarf nach oben führen.",
+      "Die Stellung für die im Plan eingestellten Sekunden ruhig halten. Dann das Becken langsam ablegen und nach persönlicher Vorgabe auf der anderen Seite üben."
+    ],
+    "easier": "Zur Variante „Seitstütz mit Kniestütz“ wechseln und die obere Hand an der Hüfte lassen.",
+    "harder": "Die Haltedauer nach persönlicher Vorgabe steigern, ohne das Becken abzusenken.",
+    "sources": [
+      {
+        "title": "NHS Bexley MSK · Modified Side Plank",
+        "url": "https://msk-bexley.nhs.uk/conditions/knee-pain/patellofemoral-pain-syndrome-pfps"
+      }
+    ]
+  },
+  {
+    "region": "Rumpf",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "equipment": "Matte",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "precautions": "Eignung, Belastung und Dosierung mit dem Praxisteam abstimmen. Nach Operationen nur nach Freigabe üben. Bei Schmerzen in Schulter, Handgelenk, Knie oder Rücken abbrechen und die Belastung anpassen lassen. Bei ausstrahlenden Beschwerden, Taubheit oder Schwindel aufhören.",
+    "breathing": "Ruhig weiteratmen und nicht pressen. Beim Hochdrücken oder Anheben ausatmen.",
+    "mistakes": "Nicht ins Hohlkreuz fallen, Schultern nicht zu den Ohren ziehen und den Atem nicht anhalten. Nur so lange üben, wie die Körperlinie kontrolliert bleibt.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Zeichnungen nach Nutzerreferenz. Quellen erläutern verwandte Grundmuster; keine automatische Diagnosezuordnung oder Aussage über die Wirksamkeit dieser konkreten Variante. Die vorgeschlagenen Sekunden sind ein editierbarer technischer Planstandard.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung im vorhandenen App-Stil; eigene deutsche Beschreibung. Das eingereichte Poster und dessen Marken werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "unterarmstuetz-knie",
+    "familyId": "unterarmstuetz",
+    "familyTitle": "Unterarmstütz (Plank)",
+    "title": "Unterarmstütz (Plank) mit Kniestütz",
+    "variantLabel": "Kniestütz – leicht",
+    "subtitle": "Beide Knie bleiben auf der Matte · ruhig halten",
+    "difficulty": "Leicht",
+    "position": "Im Unterarmstütz",
+    "joints": [
+      "Schultergelenk",
+      "Lendenwirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Vorderer Sägemuskel (M. serratus anterior)"
+    ],
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 20,
+    "start": "Auf einer rutschfesten Matte beide Unterarme ablegen, Ellenbogen unter den Schultern. Die Knie sind zunächst am Boden. Den Blick zur Matte richten und Bauch und Gesäß leicht anspannen.",
+    "end": "Den Rumpf anheben und das Gewicht über Unterarme und beide Knie tragen. Schultern, Becken und Knie bilden eine gerade Linie. Beide Knie bleiben durchgehend auf der Matte. Die Stellung ruhig halten.",
+    "steps": [
+      "Unterarme stabil auflegen und den Nacken lang lassen.",
+      "Mit beiden Knien als Stützpunkt das Becken anheben; die Knie bleiben hinter der Hüfte am Boden.",
+      "Die gerade Körperlinie für die im Plan eingestellten Sekunden halten. Weiteratmen; anschließend beide Knie kontrolliert ablegen und entspannen."
+    ],
+    "easier": "Kürzer halten und längere Pausen machen. Bei Bedarf eine weichere Knieunterlage verwenden.",
+    "harder": "Nach persönlicher Freigabe auf den Vorfüßen statt auf den Knien stützen.",
+    "sources": [
+      {
+        "title": "ACE · Front Plank",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/32/front-plank/"
+      },
+      {
+        "title": "Worcestershire Acute Hospitals NHS · Core Stability 2",
+        "url": "https://www.worcsacute.nhs.uk/leaflets/core-stability-2-physiotherapy/"
+      }
+    ]
+  },
+  {
+    "region": "Rumpf",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "equipment": "Matte",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "precautions": "Eignung, Belastung und Dosierung mit dem Praxisteam abstimmen. Nach Operationen nur nach Freigabe üben. Bei Schmerzen in Schulter, Handgelenk, Knie oder Rücken abbrechen und die Belastung anpassen lassen. Bei ausstrahlenden Beschwerden, Taubheit oder Schwindel aufhören.",
+    "breathing": "Ruhig weiteratmen und nicht pressen. Beim Hochdrücken oder Anheben ausatmen.",
+    "mistakes": "Nicht ins Hohlkreuz fallen, Schultern nicht zu den Ohren ziehen und den Atem nicht anhalten. Nur so lange üben, wie die Körperlinie kontrolliert bleibt.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Zeichnungen nach Nutzerreferenz. Quellen erläutern verwandte Grundmuster; keine automatische Diagnosezuordnung oder Aussage über die Wirksamkeit dieser konkreten Variante. Die vorgeschlagenen Sekunden sind ein editierbarer technischer Planstandard.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung im vorhandenen App-Stil; eigene deutsche Beschreibung. Das eingereichte Poster und dessen Marken werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "liegestuetz-knie",
+    "familyId": "liegestuetz",
+    "familyTitle": "Liegestütz",
+    "title": "Liegestütz mit Kniestütz",
+    "variantLabel": "Kniestütz – leicht",
+    "subtitle": "Knie bleiben am Boden · Brust kontrolliert absenken",
+    "difficulty": "Leicht",
+    "position": "Im Handstütz",
+    "joints": [
+      "Schultergelenk",
+      "Ellenbogengelenk",
+      "Handgelenk"
+    ],
+    "strengthMuscles": [
+      "Brustmuskel (M. pectoralis major)",
+      "Trizeps (M. triceps brachii)",
+      "Bauchmuskulatur",
+      "Vorderer Sägemuskel (M. serratus anterior)"
+    ],
+    "dosageMode": "repetitions",
+    "start": "Die Hände etwa schulterbreit auf die Matte setzen. Mit gestreckten, nicht durchgedrückten Armen und beide Knie stützen. Schultern, Becken und Knie bilden eine Linie. Die Knie bleiben auf der Matte; die Unterschenkel zeigen nach hinten.",
+    "end": "Beide Ellenbogen sind nach hinten und leicht außen gebeugt. Der Brustkorb ist kontrolliert zur Matte abgesenkt, ohne abzulegen. Schultern, Becken und Knie bleiben in einer Linie. Beide Knie bleiben auch beim Absenken auf der Matte.",
+    "steps": [
+      "Hände und Stützpunkte sichern, Rumpf anspannen und Blick zur Matte richten.",
+      "Mit dem Einatmen die Ellenbogen beugen und den Körper als Einheit absenken. Nur so tief gehen, wie die Haltung angenehm und stabil bleibt.",
+      "Mit dem Ausatmen über beide Hände wieder hochdrücken. Die im Plan angegebenen Wiederholungen langsam ausführen."
+    ],
+    "easier": "Weniger tief absenken und weniger Wiederholungen ausführen. Eine Unterlage für die Knie nutzen.",
+    "harder": "Erst nach persönlicher Freigabe zum Liegestütz auf den Vorfüßen wechseln.",
+    "sources": [
+      {
+        "title": "ACE · Bent-Knee Push-Up",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/13/bent-knee-push-up/"
+      }
+    ]
+  },
+  {
+    "region": "Rumpf",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "equipment": "Matte",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "precautions": "Eignung, Belastung und Dosierung mit dem Praxisteam abstimmen. Nach Operationen nur nach Freigabe üben. Bei Schmerzen in Schulter, Handgelenk, Knie oder Rücken abbrechen und die Belastung anpassen lassen. Bei ausstrahlenden Beschwerden, Taubheit oder Schwindel aufhören.",
+    "breathing": "Ruhig weiteratmen und nicht pressen. Beim Hochdrücken oder Anheben ausatmen.",
+    "mistakes": "Nicht ins Hohlkreuz fallen, Schultern nicht zu den Ohren ziehen und den Atem nicht anhalten. Nur so lange üben, wie die Körperlinie kontrolliert bleibt.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Zeichnungen nach Nutzerreferenz. Quellen erläutern verwandte Grundmuster; keine automatische Diagnosezuordnung oder Aussage über die Wirksamkeit dieser konkreten Variante. Die vorgeschlagenen Sekunden sind ein editierbarer technischer Planstandard.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung im vorhandenen App-Stil; eigene deutsche Beschreibung. Das eingereichte Poster und dessen Marken werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "unterarmstuetz-beinheben-knie",
+    "familyId": "unterarmstuetz-beinheben",
+    "familyTitle": "Unterarmstütz mit Beinheben",
+    "title": "Unterarmstütz mit Beinheben mit Kniestütz",
+    "variantLabel": "Kniestütz – leicht",
+    "subtitle": "Ein Knie trägt · das andere Bein nach hinten strecken",
+    "difficulty": "Leicht",
+    "position": "Im Unterarmstütz",
+    "joints": [
+      "Hüftgelenk",
+      "Schultergelenk",
+      "Lendenwirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Vorderer Sägemuskel (M. serratus anterior)",
+      "Großer Gesäßmuskel (M. gluteus maximus)"
+    ],
+    "dosageMode": "repetitions",
+    "start": "Beide Unterarme auflegen, Ellenbogen unter den Schultern. Beide Knie hinter der Hüfte auf der Matte lassen und den Rumpf in einer geraden Linie bis zu den Knien stabilisieren. Den Nacken lang und das Becken ruhig halten.",
+    "end": "Das rechte Bein ist nach hinten gestreckt und leicht angehoben, höchstens bis zur Hüfthöhe. Das linke Knie bleibt als Stützpunkt auf der Matte. Beide Unterarme tragen weiter. Das Becken bleibt waagerecht, ohne ins Hohlkreuz auszuweichen.",
+    "steps": [
+      "Zuerst die stabile Ausgangsstellung einnehmen und ruhig weiteratmen.",
+      "Das linke Knie liegen lassen und das rechte Bein langsam nach hinten strecken und anheben.",
+      "Das rechte Bein langsam zurückführen. Danach nach persönlicher Vorgabe die Seite wechseln. Pro Wiederholung einmal heben und wieder absetzen; Wiederholungen je Seite mit dem Praxisteam festlegen."
+    ],
+    "easier": "Das Bein nur ein kleines Stück strecken oder zunächst beim Unterarmstütz mit beiden Knien am Boden bleiben.",
+    "harder": "Nach persönlicher Freigabe den Unterarmstütz mit Beinheben auf den Vorfüßen wählen.",
+    "sources": [
+      {
+        "title": "Worcestershire Acute Hospitals NHS · Core Stability 2",
+        "url": "https://www.worcsacute.nhs.uk/leaflets/core-stability-2-physiotherapy/"
+      },
+      {
+        "title": "ACE · Front Plank",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/32/front-plank/"
+      }
+    ]
+  },
+  {
+    "region": "Rumpf",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "equipment": "Matte",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "precautions": "Eignung, Belastung und Dosierung mit dem Praxisteam abstimmen. Nach Operationen nur nach Freigabe üben. Bei Schmerzen in Schulter, Handgelenk, Knie oder Rücken abbrechen und die Belastung anpassen lassen. Bei ausstrahlenden Beschwerden, Taubheit oder Schwindel aufhören.",
+    "breathing": "Ruhig weiteratmen und nicht pressen. Beim Hochdrücken oder Anheben ausatmen.",
+    "mistakes": "Nicht ins Hohlkreuz fallen, Schultern nicht zu den Ohren ziehen und den Atem nicht anhalten. Nur so lange üben, wie die Körperlinie kontrolliert bleibt.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Zeichnungen nach Nutzerreferenz. Quellen erläutern verwandte Grundmuster; keine automatische Diagnosezuordnung oder Aussage über die Wirksamkeit dieser konkreten Variante. Die vorgeschlagenen Sekunden sind ein editierbarer technischer Planstandard.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung im vorhandenen App-Stil; eigene deutsche Beschreibung. Das eingereichte Poster und dessen Marken werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "seitstuetz-knie",
+    "familyId": "seitstuetz",
+    "familyTitle": "Seitstütz",
+    "title": "Seitstütz mit Kniestütz",
+    "variantLabel": "Kniestütz – leicht",
+    "subtitle": "Unterarm und gebeugte Knie tragen · seitlich halten",
+    "difficulty": "Leicht",
+    "position": "In Seitlage",
+    "joints": [
+      "Schultergelenk",
+      "Lendenwirbelsäule",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"
+    ],
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 20,
+    "start": "Auf der linken Seite liegen und den linken Ellenbogen unter der Schulter aufstützen. Beide Knie etwa 90 Grad beugen und übereinander auf der Matte ablegen; die Unterschenkel zeigen nach hinten. Die rechte Hand liegt an der Hüfte, das Becken ist zunächst abgesenkt.",
+    "end": "Das Becken ist angehoben. Schultern, Becken und Knie bilden seitlich eine gerade Linie. Der linke Unterarm und die gebeugten Knie bleiben auf der Matte. Der rechte Arm kann nach oben zeigen, sofern die Schulter dies angenehm zulässt; alternativ die Hand an der Hüfte lassen.",
+    "steps": [
+      "Unteren Ellenbogen unter der Schulter ausrichten und die Stützfläche sichern.",
+      "Mit dem Ausatmen das Becken anheben, ohne nach vorne oder hinten zu kippen. Den oberen Arm bei Bedarf nach oben führen.",
+      "Die Stellung für die im Plan eingestellten Sekunden ruhig halten. Dann das Becken langsam ablegen und nach persönlicher Vorgabe auf der anderen Seite üben."
+    ],
+    "easier": "Oberen Arm an der Hüfte lassen und kürzer halten. Bei Bedarf die Knie weich unterlegen.",
+    "harder": "Nach persönlicher Freigabe mit gestreckten Beinen auf den Füßen stützen.",
+    "sources": [
+      {
+        "title": "NHS Bexley MSK · Modified Side Plank",
+        "url": "https://msk-bexley.nhs.uk/conditions/knee-pain/patellofemoral-pain-syndrome-pfps"
+      }
+    ]
+  },
+  {
+    "region": "Rumpf",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "equipment": "Matte",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "precautions": "Übung, Bewegungsweg und Dosierung persönlich mit dem Praxisteam abstimmen. Nach Operationen oder bei akuten Beschwerden nur nach Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "breathing": "Beim Anheben beziehungsweise Aufrichten ausatmen, beim Absenken einatmen. Ohne Pressatmung arbeiten.",
+    "mistakes": "Nicht in der Schulter einsinken, den Kopf abknicken oder das Becken vor- und zurückdrehen. Die Bewegung erfolgt über Anheben und Absenken des Beckens; Beine bleiben zusammen.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Zeichnungen nach Nutzerreferenz. Quellen erläutern verwandte Grundmuster; keine automatische Diagnosezuordnung oder Aussage über die Wirksamkeit dieser konkreten Variante. Die vorgeschlagenen Sekunden sind ein editierbarer technischer Planstandard.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung im vorhandenen App-Stil; eigene deutsche Beschreibung. Das eingereichte Poster und dessen Marken werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "dosageMode": "repetitions",
+    "easier": "Nur wenig anheben, weniger Wiederholungen ausführen und die Knie bei Bedarf weich unterlegen.",
+    "harder": "Nach persönlicher Freigabe zur bestehenden Variante mit gestreckten Beinen wechseln.",
+    "id": "seitliches-hueftheben-knie",
+    "familyId": "seitliches-hueftheben",
+    "familyTitle": "Seitliches Hüftheben",
+    "variantLabel": "Kniestütz – leicht",
+    "title": "Seitliches Hüftheben mit Kniestütz",
+    "joints": [
+      "Hüftgelenk",
+      "Lendenwirbelsäule",
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"
+    ],
+    "position": "In Seitlage",
+    "difficulty": "Leicht",
+    "subtitle": "Gebeugte Knie bleiben am Boden · Becken heben und senken",
+    "start": "Auf der linken Seite liegen, linken Unterarm aufstützen und Ellenbogen unter der Schulter ausrichten. Beide Knie etwa 90 Grad beugen und übereinander auf der Matte ablegen. Die rechte Hand liegt an der Hüfte, das Becken ist abgesenkt.",
+    "end": "Das Becken ist angehoben, sodass Schulter, Hüfte und Knie eine Linie bilden. Linker Unterarm und gebeugte Knie bleiben auf der Matte. Die rechte Hand bleibt an der Hüfte und das Becken kippt nicht nach vorn oder hinten.",
+    "steps": [
+      "Unterarm und Knie stabil auflegen, Bauch leicht anspannen.",
+      "Mit dem Ausatmen das Becken über den Unterarm und das untere Knie nach oben drücken. Die gebeugten Knie bleiben am Boden.",
+      "Das Becken langsam wieder zur Matte absenken und erneut anheben. Nach den vereinbarten Wiederholungen die Seite wechseln; die Anzahl je Seite persönlich festlegen."
+    ],
+    "sources": [
+      {
+        "title": "NHS Bexley MSK · Modified Side Plank",
+        "url": "https://msk-bexley.nhs.uk/conditions/knee-pain/patellofemoral-pain-syndrome-pfps"
+      }
+    ]
   }
 ]

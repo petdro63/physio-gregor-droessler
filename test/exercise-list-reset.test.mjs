@@ -7,6 +7,7 @@ import request from 'supertest';
 import { openDatabase } from '../server/db.mjs';
 import { seed } from '../server/seed.mjs';
 import { seedResearchDrafts } from '../server/exercise-catalog.mjs';
+import { resolveReferencePose } from '../src/reference-lookup.ts';
 import { createApp } from '../server/app.mjs';
 
 async function admin(runtime) {
@@ -34,8 +35,8 @@ test('exercise-list reset retains the selected collection, preserves history, an
   runtime=createApp({demo:true,production:false,dataDir:dir});
   let staff=await admin(runtime);
   let list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.deepEqual(list.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage','oberkoerperrotation-sitz'].sort());
-  assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercise_list_removals').get().n,before.exercises-22);
+  assert.deepEqual(list.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage','oberkoerperrotation-sitz','unterarmstuetz','liegestuetz','unterarmstuetz-beinheben','seitstuetz','unterarmstuetz-knie','liegestuetz-knie','unterarmstuetz-beinheben-knie','seitstuetz-knie','seitliches-hueftheben-knie'].sort());
+  assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercise_list_removals').get().n,before.exercises-31);
   assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercises').get().n,before.exercises);
   assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercise_versions').get().n,before.versions);
   assert.equal(runtime.db.prepare('SELECT payload FROM plan_versions WHERE plan_id=? AND version=1').get('demo-plan').payload,before.plan);
@@ -45,7 +46,7 @@ test('exercise-list reset retains the selected collection, preserves history, an
   runtime=createApp({demo:true,production:false,dataDir:dir});
   staff=await admin(runtime);
   list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.equal(list.exercises.length,23);
+  assert.equal(list.exercises.length,32);
   assert(list.exercises.some(e=>e.id===created.id),'Later user-created exercises stay in the list');
   assert(!list.exercises.some(e=>e.id==='schulterkreisen'),'Seeding never restores removed list entries');
   assert.equal(list.history.length,1);
@@ -58,7 +59,7 @@ test('an already reset installation receives later additions without restoring o
   const db=openDatabase(dir);
   seed(db); seedResearchDrafts(db);
   // Reproduce 0.1.11: only the two deadlifts were kept, additions did not exist.
-  const newIds=['kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage','oberkoerperrotation-sitz'];
+  const newIds=['kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage','oberkoerperrotation-sitz','unterarmstuetz','liegestuetz','unterarmstuetz-beinheben','seitstuetz','unterarmstuetz-knie','liegestuetz-knie','unterarmstuetz-beinheben-knie','seitstuetz-knie','seitliches-hueftheben-knie'];
   for(const id of newIds) {
     db.prepare('DELETE FROM exercise_versions WHERE exercise_id=?').run(id);
     db.prepare('DELETE FROM exercises WHERE id=?').run(id);
@@ -69,13 +70,13 @@ test('an already reset installation receives later additions without restoring o
   runtime=createApp({demo:true,production:false,dataDir:dir});
   let staff=await admin(runtime);
   let list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.equal(list.exercises.length,22);
+  assert.equal(list.exercises.length,31);
   assert(newIds.every(id=>list.exercises.some(e=>e.id===id)));
   assert(!list.exercises.some(e=>e.id==='schulterkreisen'));
   for(const id of newIds) {
     const exercise=list.exercises.find(e=>e.id===id);
     assert.equal(exercise.status,'draft');
-    const atlas=id.startsWith('kniebeuge')?'reference-squats':id.startsWith('sumo')?'reference-sumo-upright':id==='wandsitz'?'reference-wall-sit':id==='bruecke-einbeinig'?'reference-single-leg-bridge-right':id.startsWith('bruecke')?'reference-bridges':id.startsWith('ausfallschritt')?'reference-lunges':id==='seitliches-hueftheben'?'reference-side-hip-lift':id.startsWith('seitlicher-ausfallschritt')?'reference-lateral-lunges':id==='quadrizeps-exzentrisch-step-down'?'reference-eccentric-step-down':id==='katze-kuh-mobilisation'?'reference-cat-cow':id==='piriformisdehnung-rueckenlage'?'reference-piriformis-stretch':id==='oberkoerperrotation-sitz'?'reference-seated-trunk-rotation':'reference-calf-raises';
+    const atlas=resolveReferencePose(exercise).atlas;
     await staff.agent.get(`/api/reference-poses/${id}/${atlas}?version=1`).expect(200).expect('Content-Type',/image\/png/);
     await staff.agent.get(`/api/reference-poses/${id}/reference-single-leg-rdl?version=1`).expect(404);
   }
@@ -85,6 +86,6 @@ test('an already reset installation receives later additions without restoring o
   runtime=createApp({demo:true,production:false,dataDir:dir});
   staff=await admin(runtime);
   list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.equal(list.exercises.length,22);
+  assert.equal(list.exercises.length,31);
   assert.equal(list.exercises.find(e=>e.id===edited.id).title,'Individuell angepasste Kniebeuge');
 });
