@@ -1,5 +1,7 @@
 # Seitliche Ausfallschritte und exzentrischer Step-down · 20.10.2026
 
+Nachtrag: Mit Katze–Kuh und Piriformisdehnung enthält die aktuelle Sammlung 21 Einträge. [Aktueller Stand](KATZE-KUH-PIRIFORMIS.md).
+
 Die Sammlung wurde auf 19 Einträge erweitert:
 
 | Übung | ID | Bildzeile / Hilfsmittel |

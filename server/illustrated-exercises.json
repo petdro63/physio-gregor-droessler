@@ -1077,5 +1077,115 @@
         "url": "https://www.nth.nhs.uk/resources/lower-limb-exercise-and-education/"
       }
     ]
+  },
+  {
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "strengthMuscles": [],
+    "equipment": "Matte",
+    "difficulty": "Leicht",
+    "precautions": "Bewegungsweg, Eignung und Dosierung persönlich mit dem Praxisteam festlegen. Nach Operationen oder bei akuten Beschwerden nur im freigegebenen Bewegungsbereich üben. Bei neuen oder zunehmenden Schmerzen, ausstrahlenden Beschwerden, Kribbeln oder Taubheit abbrechen und die Übung abklären lassen.",
+    "easier": "Nur kleine Becken- und Rückenbewegungen ausführen. Bei Handgelenk- oder Kniebeschwerden die Stützstellung persönlich anpassen und gegebenenfalls eine weiche Unterlage verwenden.",
+    "harder": "Bewegungsumfang oder Dosierung nur nach Freigabe und ohne Erzwingen eines Endbereichs steigern.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Illustration nach Nutzer-Bewegungsreferenz. Die Quellen erläutern das Grundmuster; keine automatische Diagnosezuordnung und kein krankheitsbezogener Wirksamkeitsnachweis dieser konkreten Variante.",
+    "license": "Neu mit integrierter Bildgenerierung im vorhandenen App-Stil erstellte Illustration; eigene deutsche Beschreibung. Die eingereichten Originalbilder werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "katze-kuh-mobilisation",
+    "familyId": "katze-kuh",
+    "familyTitle": "Katze–Kuh",
+    "variantLabel": "Mobilisation im Vierfüßlerstand",
+    "title": "Katze–Kuh",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "dosageMode": "repetitions",
+    "region": "Rücken",
+    "joints": [
+      "Brustwirbelsäule",
+      "Lendenwirbelsäule"
+    ],
+    "position": "Im Vierfüßlerstand",
+    "tags": [
+      "Katze Kuh",
+      "Cat Cow",
+      "Cat Camel",
+      "Wirbelsäule",
+      "Mobilisation"
+    ],
+    "subtitle": "Vierfüßlerstand · Rücken sanft runden und wieder öffnen",
+    "start": "Auf einer rutschfesten Matte in den Vierfüßlerstand kommen. Hände unter den Schultern und Knie unter der Hüfte aufsetzen, Ellenbogen nicht verriegeln. Aus der neutralen Stellung beim Ausatmen den Rücken sanft nach oben runden, Becken etwas einrollen und den Kopf locker mitnehmen: die Katze.",
+    "end": "Aus der gerundeten Katze wird der Rücken wieder geöffnet: Becken sanft nach vorn kippen und den Brustkorb nach vorn führen. Die Wirbelsäule geht in eine leichte, angenehme Gegenbewegung: die Kuh. Hände und Knie bleiben aufgestellt; den Nacken nicht nach hinten überstrecken.",
+    "steps": [
+      "Vierfüßlerstand sicher einrichten und zunächst die neutrale Rückenstellung finden. Hände und Knie bleiben während der Übung an ihrem Platz.",
+      "Ausatmen und den Rücken langsam wie einen Katzenbuckel nach oben wölben. Becken sanft einrollen, Bauch nach innen führen und den Kopf entspannt sinken lassen.",
+      "Einatmen und die Rundung lösen. Becken leicht nach vorn kippen und den Brustkorb öffnen, ohne in ein starkes Hohlkreuz zu fallen.",
+      "Ruhig zwischen Katze und Kuh wechseln. Ein vollständiger Wechsel zählt als eine Wiederholung; Anzahl nach persönlichem Trainingsplan. Abschließend zur neutralen Stellung zurückkehren."
+    ],
+    "breathing": "Beim Runden zur Katze ausatmen, beim Öffnen zur Kuh einatmen. Den Atem fließen lassen; kein Pressen.",
+    "mistakes": "Nicht nur den Kopf bewegen, die Ellenbogen nicht verriegeln und die Schultern nicht zu den Ohren ziehen. Keine ruckartigen oder erzwungenen Endstellungen, kein starkes Durchhängen im unteren Rücken.",
+    "sources": [
+      {
+        "title": "University Hospitals Plymouth NHS · Cat & Camel",
+        "url": "https://www.plymouthhospitals.nhs.uk/display-pil/pil-back-rehabilitation-programme-3972"
+      }
+    ]
+  },
+  {
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "strengthMuscles": [],
+    "equipment": "Matte",
+    "difficulty": "Leicht",
+    "precautions": "Bewegungsweg, Eignung und Dosierung persönlich mit dem Praxisteam festlegen. Nach Operationen oder bei akuten Beschwerden nur im freigegebenen Bewegungsbereich üben. Bei neuen oder zunehmenden Schmerzen, ausstrahlenden Beschwerden, Kribbeln oder Taubheit abbrechen und die Übung abklären lassen.",
+    "easier": "Den linken Fuß zunächst auf der Matte lassen und nur die überkreuzte Stellung einnehmen. Bei Bedarf die Griffführung und Beinposition persönlich anpassen lassen.",
+    "harder": "Die Zugstärke nicht gewaltsam erhöhen. Eine längere Haltedauer nur nach persönlicher Vorgabe und bei angenehmem Dehngefühl wählen.",
+    "sourceNote": "Eigene deutsche Anleitung und neue Illustration nach Nutzer-Bewegungsreferenz. Die Quellen erläutern das Grundmuster; keine automatische Diagnosezuordnung und kein krankheitsbezogener Wirksamkeitsnachweis dieser konkreten Variante.",
+    "license": "Neu mit integrierter Bildgenerierung im vorhandenen App-Stil erstellte Illustration; eigene deutsche Beschreibung. Die eingereichten Originalbilder werden nicht ausgeliefert. Keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "piriformisdehnung-rueckenlage",
+    "familyId": "piriformisdehnung",
+    "familyTitle": "Piriformisdehnung in Rückenlage",
+    "variantLabel": "Rechter Knöchel auf linkem Kniebereich",
+    "title": "Piriformisdehnung in Rückenlage",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 20,
+    "region": "Hüfte",
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "position": "In Rückenlage",
+    "tags": [
+      "Piriformis",
+      "M. piriformis",
+      "Gesäßdehnung",
+      "Figure Four",
+      "Hüftaußenrotatoren"
+    ],
+    "subtitle": "Rechter Knöchel auf linkem Kniebereich · linken Oberschenkel heranziehen",
+    "start": "In Rückenlage auf einer rutschfesten Matte liegen, Kopf und Schultern entspannt auflegen; bei Bedarf ein flaches Kissen nutzen. Das linke Bein anwinkeln und den linken Fuß aufstellen. Den rechten Knöchel auf den linken Oberschenkel direkt oberhalb des Knies legen. Das rechte Knie zeigt locker nach außen; nicht auf die Kniescheibe drücken.",
+    "end": "Der rechte Knöchel bleibt auf dem linken Oberschenkel direkt oberhalb des Knies abgelegt. Beide Hände umfassen die Rückseite des linken Oberschenkels und ziehen ihn sanft zum Oberkörper, sodass sich der linke Fuß vom Boden löst. Im rechten Gesäß entsteht ein angenehmer Dehnzug. Kopf, Schultern und Becken bleiben möglichst entspannt auf der Matte.",
+    "steps": [
+      "Den rechten Knöchel wie in der Ausgangsstellung auf den linken Kniebereich legen und das rechte Knie locker nach außen öffnen.",
+      "Mit einer Hand durch die Öffnung zwischen den Beinen und mit der anderen außen herum hinter den linken Oberschenkel greifen. Nicht das rechte Knie oder den rechten Unterschenkel heranziehen.",
+      "Den linken Oberschenkel langsam Richtung Oberkörper führen, bis ein angenehmer Dehnzug im rechten Gesäß spürbar ist. Der rechte Knöchel bleibt auf dem linken Kniebereich; nicht federn oder das rechte Knie herunterdrücken.",
+      "Für die im Plan festgelegten Sekunden ruhig halten und normal weiteratmen. Danach den linken Fuß kontrolliert aufstellen, den rechten Knöchel lösen und nach persönlicher Vorgabe die Seite wechseln."
+    ],
+    "breathing": "In der Dehnstellung ruhig und gleichmäßig weiteratmen. Mit dem Ausatmen entspannen, ohne stärker in die Dehnung zu ziehen.",
+    "mistakes": "Nicht am rechten Knie ziehen oder darauf drücken, den Kopf nicht von der Unterlage hochziehen und den Rücken nicht verdrehen. Kein Wippen und kein Erzwingen eines stechenden oder ausstrahlenden Dehngefühls.",
+    "sources": [
+      {
+        "title": "Cambridge University Hospitals NHS · Piriformis stretch",
+        "url": "https://www.cuh.nhs.uk/patient-information/stretches-for-the-hip/"
+      },
+      {
+        "title": "Kent Community Health NHS · Piriformis stretch",
+        "url": "https://www.kentcht.nhs.uk/leaflet/lower-limb-strengthening-activities/"
+      }
+    ]
   }
 ]

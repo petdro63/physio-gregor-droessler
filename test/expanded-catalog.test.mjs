@@ -48,7 +48,7 @@ test('reference art is explicitly mapped to real families and protected from pat
     if (pose.familyId) assert(expandedExercises.some(e=>e.familyId===pose.familyId));
     if (pose.exerciseIds) assert(pose.exerciseIds.every(id=>[...additionalExercises,...illustratedExercises].some(e=>e.id===id)));
     assert(pose.column>=0 && pose.column<=1 && pose.row>=0 && pose.row<=2);
-    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl','reference-squats','reference-sumo-upright','reference-calf-raises','reference-wall-sit','reference-bridges','reference-single-leg-bridge-right','reference-lunges','reference-side-hip-lift','reference-lateral-lunges','reference-eccentric-step-down'].includes(pose.atlas));
+    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl','reference-squats','reference-sumo-upright','reference-calf-raises','reference-wall-sit','reference-bridges','reference-single-leg-bridge-right','reference-lunges','reference-side-hip-lift','reference-lateral-lunges','reference-eccentric-step-down','reference-cat-cow','reference-piriformis-stretch'].includes(pose.atlas));
     assert(pose.column * 2 + 1 < (pose.frameColumns ?? 4));
     assert(pose.row < (pose.frameRows ?? 3));
     const image = fs.readFileSync(new URL(`../server/assets/reference/${pose.atlas}.png`,import.meta.url));
@@ -70,7 +70,7 @@ test('reference art is explicitly mapped to real families and protected from pat
   await staff.get(route.replace('version=1','version=2')).expect(404);
   await staff.get(route.replace('reference-joints','..%2f..%2f.env')).expect(404);
   const overview=(await staff.get('/api/overview')).body;
-  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down'].sort());
+  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage'].sort());
   assert(overview.exercises.every(e=>e.status==='draft' && e.reviewer===''));
   const patient=request.agent(runtime.app);
   const ps=(await patient.get('/api/session')).body;
@@ -108,6 +108,31 @@ test('single-leg deadlift variants use separate equipment-specific frames and st
   }
   const entryList=variants.map(e=>({...e,tags:[]}));
   assert.equal(findExercises(entryList,{joint:'Hüftgelenk',equipment:'Langhantel',trainingType:'Kraft'}).length,1);
+});
+
+test('cat-cow is mobilisation and the right-on-left piriformis stretch uses timed stretching instead of strength repetitions',()=>{
+  const cat=illustratedExercises.find(e=>e.id==='katze-kuh-mobilisation');
+  const piriformis=illustratedExercises.find(e=>e.id==='piriformisdehnung-rueckenlage');
+  assert.deepEqual(cat.trainingTypes,['Mobilisation']);
+  assert.equal(cat.position,'Im Vierfüßlerstand');
+  assert.equal(cat.dosageMode,'repetitions');
+  assert.deepEqual(piriformis.trainingTypes,['Dehnung']);
+  assert.equal(piriformis.dosageMode,'hold');
+  assert.equal(piriformis.defaultHoldSeconds,20);
+  assert(piriformis.start.includes('rechten Knöchel auf den linken Oberschenkel'));
+  assert(piriformis.end.includes('rechte Knöchel bleibt auf dem linken Oberschenkel'));
+  assert(piriformis.steps.some(s=>s.includes('hinter den linken Oberschenkel')));
+  for(const e of [cat,piriformis]) {
+    assert.deepEqual(e.strengthMuscles,[]);
+    assert.deepEqual(e.conditionUses,[]);
+    assert(e.joints.every(j=>taxonomy.joints.includes(j)));
+    assert.equal(resolveReferencePose(e).frameRows,1);
+    assert.equal(resolveReferencePose({...e,equipment:'Hanteln'}),undefined);
+  }
+  const list=[cat,piriformis];
+  assert.equal(findExercises(list,{trainingType:'Mobilisation',position:'Im Vierfüßlerstand'}).length,1);
+  assert.equal(findExercises(list,{trainingType:'Dehnung',search:'Piriformis'}).length,1);
+  assert.equal(findExercises(list,{trainingType:'Kraft'}).length,0);
 });
 
 test('lateral lunges map each load separately and eccentric quadriceps work specifies slow lowering with supported return',()=>{
