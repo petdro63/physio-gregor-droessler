@@ -11,6 +11,9 @@ export type ReferencePoseDefinition = {
   scope?: 'base' | 'variant';
   reverse?: boolean;
   fixedFrame?: number;
+  frameColumns?: number;
+  frameRows?: number;
+  frameAspectRatio?: number;
 };
 type PoseExercise = { id: string; familyId?: string; equipment: string };
 export const referenceRegistry = registry as ReferencePoseDefinition[];

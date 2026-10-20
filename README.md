@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.9-dev**, Versionsdatum **19.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.10-dev**, Versionsdatum **20.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -20,7 +20,8 @@ Die Vorschau nutzt ausschließlich erfundene Personen. Demo- und Praxisdatenbank
 ## Enthalten
 
 - Erweiterter Gelenkkatalog mit 1.200 zusätzlichen Variantenentwürfen: je 200 für Schulter, Ellenbogen, Handgelenk, Hüfte, Knie und Sprunggelenk. Insgesamt 150 Grundmuster mit acht Varianten; keine automatisch fachlich freigegebenen Behandlungen. [Umfang, Recherche und Bildabdeckung](docs/KATALOG-ERWEITERUNG.md).
-- Gruppierung nach Grundmuster, direkter Variantenwechsel und 24 Ergebnisse pro Seite. Vier Bildtafeln mit 24 Start-/End-Bildpaaren anhand der Nutzerfigur, einschließlich Hanteln, Theraband, Stab und Manschetten. Nur passend zugeordnete Bilder werden angezeigt; die vollständige Bebilderung steht noch aus.
+- Gruppierung nach Grundmuster, direkter Variantenwechsel und 24 Ergebnisse pro Seite. Fünf Bildtafeln mit 26 Start-/End-Bildpaaren anhand der Nutzerfigur, einschließlich Hanteln, Theraband, Stab und Manschetten. Nur passend zugeordnete Bilder werden angezeigt; die vollständige Bebilderung steht noch aus.
+- Einbeiniges Kreuzheben mit Kurzhanteln und Langhantel: eigene neue Start-/Enddarstellungen, Anleitung und Filterzuordnung. Die Nutzer-Originalgrafik wird nicht ausgeliefert. [Bildherkunft und Details](docs/EINBEINIGES-KREUZHEBEN.md).
 - Neues sportliches Design mit klarer Gelenkauswahl. Broschürenfilter und Broschürenliste entfernt; Quellen an den Übungen bleiben erhalten. [Gestaltung, Bildherkunft und offene Abdeckung](docs/DESIGN-UND-BILDER.md).
 
 - Responsive Patientenansicht mit persönlichem Trainingsplan und Übungskarten.

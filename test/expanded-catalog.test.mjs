@@ -48,7 +48,9 @@ test('reference art is explicitly mapped to real families and protected from pat
     if (pose.familyId) assert(expandedExercises.some(e=>e.familyId===pose.familyId));
     if (pose.exerciseIds) assert(pose.exerciseIds.every(id=>[...additionalExercises,...illustratedExercises].some(e=>e.id===id)));
     assert(pose.column>=0 && pose.column<=1 && pose.row>=0 && pose.row<=2);
-    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment'].includes(pose.atlas));
+    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl'].includes(pose.atlas));
+    assert(pose.column * 2 + 1 < (pose.frameColumns ?? 4));
+    assert(pose.row < (pose.frameRows ?? 3));
     const image = fs.readFileSync(new URL(`../server/assets/reference/${pose.atlas}.png`,import.meta.url));
     assert.equal(image.subarray(1,4).toString(),'PNG');
   }
@@ -61,6 +63,9 @@ test('reference art is explicitly mapped to real families and protected from pat
   const session=(await staff.get('/api/session')).body;
   await staff.post('/api/demo').set('X-CSRF-Token',session.csrf).send({role:'admin'}).expect(200);
   await staff.get(route).expect(200).expect('Content-Type',/image\/png/);
+  const rdlRoute='/api/reference-poses/einbein-kreuzheben-kurzhanteln/reference-single-leg-rdl?version=1';
+  await staff.get(rdlRoute).expect(200).expect('Content-Type',/image\/png/);
+  await staff.get(rdlRoute.replace('reference-single-leg-rdl','codex-clipboard-b0213c39-af52-47d1-bc59-4bba02848577')).expect(404);
   await staff.get(route.replace('reference-joints','reference-ball')).expect(404);
   await staff.get(route.replace('version=1','version=2')).expect(404);
   await staff.get(route.replace('reference-joints','..%2f..%2f.env')).expect(404);
@@ -72,6 +77,7 @@ test('reference art is explicitly mapped to real families and protected from pat
   const ps=(await patient.get('/api/session')).body;
   await patient.post('/api/demo').set('X-CSRF-Token',ps.csrf).send({role:'patient'}).expect(200);
   await patient.get(route).expect(404);
+  await patient.get(rdlRoute).expect(404);
   assert(!(await patient.get('/api/overview')).body.exercises.some(e=>e.id.startsWith('katalog-')));
   const csrf=(await staff.get('/api/session')).body.csrf;
   const exercise=added.find(e=>e.id==='katalog-shoulder-flex-stand-aktiv');
@@ -80,6 +86,29 @@ test('reference art is explicitly mapped to real families and protected from pat
   assert.equal(stored.end,'Individuell geprüfte Endstellung');
   assert.equal(stored.familyId,exercise.familyId);
   assert.equal(stored.variantLabel,exercise.variantLabel);
+});
+
+test('single-leg deadlift variants use separate equipment-specific frames and stay clinical drafts', () => {
+  const variants=illustratedExercises.filter(e=>e.familyId==='einbein-kreuzheben');
+  assert.equal(variants.length,2);
+  const dumbbell=variants.find(e=>e.equipment==='Hanteln');
+  const barbell=variants.find(e=>e.equipment==='Langhantel');
+  const start=resolveReferencePose(dumbbell), alternative=resolveReferencePose(barbell);
+  assert.equal(start.atlas,'reference-single-leg-rdl');
+  assert.equal(alternative.atlas,start.atlas);
+  assert.equal(start.row,0); assert.equal(alternative.row,1);
+  assert.equal(start.frameColumns,2); assert.equal(start.frameRows,2);
+  assert.equal(resolveReferencePose({...dumbbell,equipment:'Theraband'}),undefined);
+  for(const entry of variants) {
+    assert(entry.requiresSupervision && entry.difficulty==='Anspruchsvoll');
+    assert.deepEqual(entry.joints,['Hüftgelenk']);
+    assert(entry.trainingTypes.includes('Kraft') && entry.trainingTypes.includes('Koordination'));
+    assert(entry.strengthMuscles.includes('Hinterer Oberschenkel (ischiocrurale Muskulatur)'));
+    assert(!entry.conditionUses?.length);
+    assert(!JSON.stringify(entry).includes('codex-clipboard'));
+  }
+  const entryList=variants.map(e=>({...e,tags:[]}));
+  assert.equal(findExercises(entryList,{joint:'Hüftgelenk',equipment:'Langhantel',trainingType:'Kraft'}).length,1);
 });
 
 test('illustrations match equipment and direction instead of reusing bare-arm art for resistance variants', () => {
