@@ -288,13 +288,13 @@
     "precautions": "Bewegungsumfang, Wiederholungen und Belastung individuell mit dem Praxisteam festlegen. Die Bilder zeigen eine mögliche Stellung und geben keine verbindliche Tiefe vor. Nach Operationen oder bei akuten Beschwerden nur nach persönlicher Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
     "easier": "Bewegungsweg verkleinern und zunächst ohne Zusatzlast üben. Bei unsicherem Stand die Übung mit dem Praxisteam an eine feste Haltemöglichkeit anpassen.",
     "harder": "Zusatzgewicht oder Wiederholungszahl erst nach Freigabe und bei sicherer Bewegungskontrolle schrittweise erhöhen.",
-    "sourceNote": "Eigene vereinfachte Sumo-Bewegungsvariante ohne beziehungsweise mit einer Kurzhantel. Auf Nutzerkorrektur mit stärkerer Kniebeugung und aufrechtem Rücken illustriert. Die EPF-Quelle beschreibt das verwandte Langhantel-Grundmuster; keine Übernahme von Wettkampf-Lasten, Atemvorgaben oder individueller Übungstiefe.",
+    "sourceNote": "Eigene breite Kniebeugen-Variante ohne beziehungsweise mit einer Kurzhantel. Auf Nutzerwunsch mit deutlicher Kniebeugung und aufrechtem Rücken illustriert und in Breitbeinige Kniebeugen umbenannt. Quellen erläutern verwandte Grundmuster; kein krankheitsbezogener Wirksamkeitsnachweis für diese konkrete Variante.",
     "license": "Neue Illustration mit integrierter Bildgenerierung aus der vorhandenen App-Figur abgeleitet; eigene deutsche Beschreibung. Keine Übernahme fremder Fotos, keine fremde CC-/Public-Domain-Lizenz behauptet.",
     "id": "sumo-kreuzheben-ohne-gewicht",
     "familyId": "sumo-kreuzheben",
-    "familyTitle": "Breitbeiniges Kreuzheben",
+    "familyTitle": "Breitbeinige Kniebeugen",
     "variantLabel": "Ohne Gewicht",
-    "title": "Breitbeiniges Kreuzheben ohne Gewicht",
+    "title": "Breitbeinige Kniebeugen ohne Gewicht",
     "region": "Hüfte",
     "joints": [
       "Hüftgelenk",
@@ -307,7 +307,7 @@
     ],
     "equipment": "Ohne Zusatzgerät",
     "difficulty": "Mittel",
-    "subtitle": "Sumo-Variante · deutliche Kniebeugung · aufrechter, gerader Rücken",
+    "subtitle": "Breiter Stand · deutliche Kniebeugung · aufrechter, gerader Rücken",
     "start": "Breiter als schulterbreit stehen. Fußspitzen nach außen richten und die Knie in derselben Richtung ausrichten; Standbreite nur im angenehmen Bereich wählen. Aufrecht stehen und den Rumpf stabilisieren. Die Hände ohne Gewicht mit langen Armen zwischen den Oberschenkeln halten.",
     "end": "Knie sind deutlich gebeugt und nach außen in Richtung der Fußspitzen ausgerichtet. Das Becken steht abgesenkt zwischen den Beinen; der Rücken bleibt gerade und der Oberkörper aufrecht, ohne aus der Taille nach vorn zu kippen. Beide Fersen bleiben vollständig am Boden. Die Hände hängen zwischen den Knien. Eine geringere Tiefe ist bei eingeschränkter Beweglichkeit ausdrücklich möglich.",
     "steps": [
@@ -431,13 +431,13 @@
     "precautions": "Bewegungsumfang, Wiederholungen und Belastung individuell mit dem Praxisteam festlegen. Die Bilder zeigen eine mögliche Stellung und geben keine verbindliche Tiefe vor. Nach Operationen oder bei akuten Beschwerden nur nach persönlicher Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
     "easier": "Bewegungsweg verkleinern und zunächst ohne Zusatzlast üben. Bei unsicherem Stand die Übung mit dem Praxisteam an eine feste Haltemöglichkeit anpassen.",
     "harder": "Zusatzgewicht oder Wiederholungszahl erst nach Freigabe und bei sicherer Bewegungskontrolle schrittweise erhöhen.",
-    "sourceNote": "Eigene vereinfachte Sumo-Bewegungsvariante ohne beziehungsweise mit einer Kurzhantel. Auf Nutzerkorrektur mit stärkerer Kniebeugung und aufrechtem Rücken illustriert. Die EPF-Quelle beschreibt das verwandte Langhantel-Grundmuster; keine Übernahme von Wettkampf-Lasten, Atemvorgaben oder individueller Übungstiefe.",
+    "sourceNote": "Eigene breite Kniebeugen-Variante ohne beziehungsweise mit einer Kurzhantel. Auf Nutzerwunsch mit deutlicher Kniebeugung und aufrechtem Rücken illustriert und in Breitbeinige Kniebeugen umbenannt. Quellen erläutern verwandte Grundmuster; kein krankheitsbezogener Wirksamkeitsnachweis für diese konkrete Variante.",
     "license": "Neue Illustration mit integrierter Bildgenerierung aus der vorhandenen App-Figur abgeleitet; eigene deutsche Beschreibung. Keine Übernahme fremder Fotos, keine fremde CC-/Public-Domain-Lizenz behauptet.",
     "id": "sumo-kreuzheben-zusatzgewicht",
     "familyId": "sumo-kreuzheben",
-    "familyTitle": "Breitbeiniges Kreuzheben",
+    "familyTitle": "Breitbeinige Kniebeugen",
     "variantLabel": "Mit Zusatzgewicht",
-    "title": "Breitbeiniges Kreuzheben mit Zusatzgewicht",
+    "title": "Breitbeinige Kniebeugen mit Zusatzgewicht",
     "region": "Hüfte",
     "joints": [
       "Hüftgelenk",
@@ -450,7 +450,7 @@
     ],
     "equipment": "Hanteln",
     "difficulty": "Mittel",
-    "subtitle": "Sumo-Variante · deutliche Kniebeugung · aufrechter, gerader Rücken",
+    "subtitle": "Breiter Stand · deutliche Kniebeugung · aufrechter, gerader Rücken",
     "start": "Breiter als schulterbreit stehen. Fußspitzen nach außen richten und die Knie in derselben Richtung ausrichten; Standbreite nur im angenehmen Bereich wählen. Aufrecht stehen und den Rumpf stabilisieren. Eine leichte Kurzhantel senkrecht mit beiden Händen am oberen Hantelkopf sicher greifen und mit langen Armen zwischen den Beinen halten.",
     "end": "Knie sind deutlich gebeugt und nach außen in Richtung der Fußspitzen ausgerichtet. Das Becken steht abgesenkt zwischen den Beinen; der Rücken bleibt gerade und der Oberkörper aufrecht, ohne aus der Taille nach vorn zu kippen. Beide Fersen bleiben vollständig am Boden. Die Kurzhantel hängt zwischen den Beinen knapp über dem Boden; die Tiefe wird an Beweglichkeit und Hantellänge angepasst.",
     "steps": [
@@ -512,5 +512,152 @@
         "url": "https://www.orthoinfo.org/recovery/foot-and-ankle-conditioning-program"
       }
     ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "equipment": "Wand",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Während der gesamten Bewegung ruhig weiteratmen und nicht pressen.",
+    "precautions": "Bewegungsweg, Dosierung und Eignung vor dem Einsatz persönlich mit dem Praxisteam festlegen. Die Bilder zeigen eine mögliche Stellung. Nach Operationen oder bei akuten Beschwerden nur nach Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "easier": "Höher an der Wand bleiben, also die Knie weniger beugen, und die Haltedauer nach persönlicher Vorgabe verkürzen.",
+    "harder": "Die Haltedauer erst nach persönlicher Freigabe verlängern; die sichere 90°-Stellung nicht durch tieferes Absenken erzwingen.",
+    "sourceNote": "Eigene deutsche Anleitung zum beschriebenen Bewegungsmuster. Die Quelle erläutert verwandte Grundübungen und Progressionen; keine automatische Diagnosezuordnung und kein Wirksamkeitsnachweis dieser konkreten Variante.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung im Stil der vorhandenen App-Figur; eigene deutsche Anleitung. Keine fremden Originalbilder oder behauptete CC-/Public-Domain-Lizenz.",
+    "sources": [
+      {
+        "title": "South Tees Hospitals NHS · Functional hip strengthening: wall squat and bridging",
+        "url": "https://www.southtees.nhs.uk/resources/functional-hip-strengthening-class/"
+      }
+    ],
+    "id": "wandsitz",
+    "familyId": "wandsitz",
+    "familyTitle": "Wandsitz",
+    "variantLabel": "Halten an der Wand",
+    "title": "Wandsitz",
+    "region": "Knie",
+    "joints": [
+      "Kniegelenk",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Großer Gesäßmuskel (M. gluteus maximus)"
+    ],
+    "position": "Im Stand",
+    "difficulty": "Mittel",
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 20,
+    "subtitle": "Stand an der Wand → Sitz mit 90° Kniebeugung · Haltedauer in Sekunden",
+    "start": "Mit dem Rücken aufrecht an einer stabilen freien Wand stehen. Beide Füße hüftbreit und so weit vor der Wand aufstellen, dass sie in der Sitzstellung unter den Knien stehen. Sohlen rutschfest aufsetzen; Arme locker seitlich halten.",
+    "end": "Rücken und Becken liegen an der Wand. Die Knie sind ungefähr 90° gebeugt, Oberschenkel waagerecht und Unterschenkel senkrecht. Beide Füße stehen vollständig am Boden. Das Gesäß ist ohne Stuhl an der Wand abgesenkt; die Hände drücken nicht auf die Oberschenkel. Diese Stellung für die persönlich festgelegten Sekunden halten.",
+    "steps": [
+      "Fußstellung sicher einrichten und den Rücken an der Wand lassen.",
+      "Langsam an der Wand abwärts gleiten, bis die freigegebene Sitzhöhe erreicht ist. Zielstellung bei entsprechender Freigabe: 90° Kniebeugung, Knie über den Fußgelenken.",
+      "Die Stellung für die im Trainingsplan angegebene Haltedauer in Sekunden ruhig halten. Gleichmäßig atmen, Knie in Richtung der Fußspitzen führen.",
+      "Nach Ablauf der Haltedauer über beide Füße kontrolliert wieder an der Wand aufrichten. Zwischen den Sätzen die eingestellte Pause einhalten."
+    ],
+    "mistakes": "Nicht die Luft anhalten, Knie nach innen fallen lassen oder über die freigegebene Tiefe abwärts gleiten. Rücken nicht von der Wand lösen und nicht mit den Händen auf den Knien abstützen."
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "equipment": "Matte",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Anheben ausatmen und beim langsamen Absenken einatmen. Nicht pressen.",
+    "precautions": "Bewegungsweg, Dosierung und Eignung vor dem Einsatz persönlich mit dem Praxisteam festlegen. Die Bilder zeigen eine mögliche Stellung. Nach Operationen oder bei akuten Beschwerden nur nach Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "easier": "Becken nur wenig anheben und den Bewegungsweg mit dem Praxisteam abstimmen.",
+    "harder": "Erst bei sicherer Bewegungskontrolle und nach Freigabe den Bewegungsweg oder die Dosierung steigern.",
+    "sourceNote": "Eigene deutsche Anleitung zum beschriebenen Bewegungsmuster. Die Quelle erläutert verwandte Grundübungen und Progressionen; keine automatische Diagnosezuordnung und kein Wirksamkeitsnachweis dieser konkreten Variante.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung im Stil der vorhandenen App-Figur; eigene deutsche Anleitung. Keine fremden Originalbilder oder behauptete CC-/Public-Domain-Lizenz.",
+    "sources": [
+      {
+        "title": "South Tees Hospitals NHS · Functional hip strengthening: wall squat and bridging",
+        "url": "https://www.southtees.nhs.uk/resources/functional-hip-strengthening-class/"
+      }
+    ],
+    "id": "bruecke-rueckenlage",
+    "familyId": "bruecke-rueckenlage",
+    "familyTitle": "Brücke in Rückenlage",
+    "variantLabel": "Beidbeinig",
+    "title": "Brücke in Rückenlage",
+    "region": "Hüfte",
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Hinterer Oberschenkel (ischiocrurale Muskulatur)"
+    ],
+    "position": "In Rückenlage",
+    "difficulty": "Leicht",
+    "dosageMode": "repetitions",
+    "subtitle": "Beine angewinkelt · Gesäß kontrolliert vom Boden abheben",
+    "start": "Auf einer rutschfesten Matte in Rückenlage liegen. Beide Beine anwinkeln und die Füße hüftbreit vollständig aufstellen. Kopf und Schultern ruhen auf der Matte, die Arme liegen locker seitlich neben dem Körper.",
+    "end": "Das Gesäß und das Becken sind vom Boden abgehoben. Schultern, Becken und Knie bilden ungefähr eine gerade ansteigende Linie. Kopf und Schultern bleiben auf der Matte; beide Füße tragen gleichmäßig. Der Rücken wird nicht ins Hohlkreuz gedrückt.",
+    "steps": [
+      "Beide Füße gleichmäßig belasten, Bauch und Gesäß sanft anspannen.",
+      "Über beide Füße das Becken und Gesäß langsam von der Matte anheben. Knie bleiben in Richtung der Fußspitzen ausgerichtet.",
+      "Nur bis zur kontrollierbaren geraden Linie zwischen Schultern, Becken und Knien heben; Kopf und Nacken bleiben entspannt liegen.",
+      "Becken und Gesäß langsam wieder auf der Matte ablegen. Die im Trainingsplan festgelegten Wiederholungen ausführen."
+    ],
+    "mistakes": "Nicht in ein Hohlkreuz ausweichen, das Becken seitlich verdrehen oder sich über Kopf und Nacken hochdrücken. Knie nicht nach innen fallen lassen."
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "equipment": "Matte",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Anheben ausatmen, beim Absenken einatmen. Das freie Bein ruhig halten und nicht pressen.",
+    "precautions": "Bewegungsweg, Dosierung und Eignung vor dem Einsatz persönlich mit dem Praxisteam festlegen. Die Bilder zeigen eine mögliche Stellung. Nach Operationen oder bei akuten Beschwerden nur nach Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "easier": "Zur beidbeinigen Brücke zurückkehren oder das Becken nur wenig anheben. Bei eingeschränkter Beweglichkeit die Stellung des freien Beins persönlich anpassen lassen.",
+    "harder": "Erst bei sicherer Bewegungskontrolle und nach Freigabe den Bewegungsweg oder die Dosierung steigern.",
+    "sourceNote": "Eigene deutsche Anleitung zum beschriebenen Bewegungsmuster. Die Quelle erläutert verwandte Grundübungen und Progressionen; keine automatische Diagnosezuordnung und kein Wirksamkeitsnachweis dieser konkreten Variante.",
+    "license": "Neue Illustration mit integrierter Bildgenerierung im Stil der vorhandenen App-Figur; eigene deutsche Anleitung. Keine fremden Originalbilder oder behauptete CC-/Public-Domain-Lizenz.",
+    "sources": [
+      {
+        "title": "South Tees Hospitals NHS · Functional hip strengthening: wall squat and bridging",
+        "url": "https://www.southtees.nhs.uk/resources/functional-hip-strengthening-class/"
+      }
+    ],
+    "id": "bruecke-einbeinig",
+    "familyId": "bruecke-rueckenlage",
+    "familyTitle": "Brücke in Rückenlage",
+    "variantLabel": "Einbeinig · freies Bein gestreckt",
+    "title": "Einbeinige Brücke",
+    "region": "Hüfte",
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Großer Gesäßmuskel (M. gluteus maximus)",
+      "Hinterer Oberschenkel (ischiocrurale Muskulatur)",
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"
+    ],
+    "position": "In Rückenlage",
+    "difficulty": "Anspruchsvoll",
+    "dosageMode": "repetitions",
+    "subtitle": "Ein Fuß trägt · freies Bein nach oben gestreckt",
+    "start": "Wie bei der beidbeinigen Brücke in Rückenlage auf der Matte beginnen. Ein Bein bleibt angewinkelt und der Fuß vollständig aufgestellt. Das andere Bein vom Boden lösen und nach oben strecken, ohne das Knie gewaltsam durchzudrücken. Becken liegt zunächst auf der Matte, Kopf, Schultern und Arme ruhen auf.",
+    "end": "Becken und Gesäß sind vom Boden abgehoben und werden über den einen aufgestellten Fuß getragen. Das freie Bein bleibt nach oben gestreckt und hat keinen Bodenkontakt. Das Becken bleibt waagerecht; Kopf und Schultern liegen weiterhin auf der Matte.",
+    "steps": [
+      "Zuerst die sichere beidbeinige Brücke beherrschen. Dann ein Bein nach oben strecken, das andere mit aufgestelltem Fuß als Stützbein belassen.",
+      "Bauch und Gesäß sanft anspannen und das Becken über den aufgestellten Fuß langsam anheben. Das freie Bein bleibt gestreckt nach oben gerichtet.",
+      "Nur so hoch heben, wie das Becken ohne Verdrehen oder Absinken einer Seite kontrolliert bleibt. Kopf und Nacken nicht belasten.",
+      "Becken und Gesäß langsam ablegen. Nach den vereinbarten Wiederholungen das freie Bein sicher abstellen und die Seite wechseln."
+    ],
+    "mistakes": "Nicht mit dem angehobenen Bein Schwung holen, das Becken seitlich kippen lassen oder ins Hohlkreuz drücken. Der freie Fuß bleibt während der Bewegung vom Boden gelöst."
   }
 ]

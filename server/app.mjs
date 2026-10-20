@@ -26,7 +26,7 @@ import {
   transaction,
   audit,
 } from "./db.mjs";
-import { classifyExercise, seedResearchDrafts, resetExerciseListToDeadlifts, taxonomy } from "./exercise-catalog.mjs";
+import { classifyExercise, seedResearchDrafts, resetExerciseListToDeadlifts, renameWideSquats, taxonomy } from "./exercise-catalog.mjs";
 import { clinicalLibrary, catalogMedia } from "./clinical-content.mjs";
 import { seed, coverage } from "./seed.mjs";
 import { VERSION, VERSION_DATE, TIME_ZONE } from "./version.mjs";
@@ -83,6 +83,8 @@ const exerciseSchema = z.object({
   harder: text,
   difficulty: z.enum(["Leicht", "Mittel", "Anspruchsvoll"]),
   duration: z.number().int().min(1).max(120),
+  dosageMode: z.enum(['repetitions','hold']).default('repetitions'),
+  defaultHoldSeconds: z.number().int().min(1).max(600).default(20),
   author: text,
   reviewer: text,
   reviewedAt: z.union([date, z.literal("")]),
@@ -152,6 +154,7 @@ export function createApp(options = {}) {
       JSON.stringify(defaultSettings),
     );
   resetExerciseListToDeadlifts(db);
+  renameWideSquats(db);
   const mediaDir = path.join(dir, "media");
   fs.mkdirSync(mediaDir, { recursive: true });
   const secretFile = path.join(dir, "session-secret");
@@ -986,6 +989,8 @@ export function createApp(options = {}) {
       const p = planSchema.parse(req.body);
       for (const i of p.items) {
         const e = getExercise(i.exerciseId, i.exerciseVersion);
+        if (e?.dosageMode === 'hold' && i.hold < 1)
+          throw fail(400, 'Für Halteübungen muss eine Haltedauer in Sekunden angegeben werden.');
         if (
           !e ||
           (e.status !== "published" && !(demo && e.status === "demo")) ||

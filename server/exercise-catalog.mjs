@@ -13,7 +13,28 @@ export const collectionExerciseIds = [
   'kniebeuge-ohne-gewicht', 'kniebeuge-zusatzgewicht',
   'sumo-kreuzheben-ohne-gewicht', 'sumo-kreuzheben-zusatzgewicht',
   'wadenheben-ohne-gewicht', 'wadenheben-zusatzgewicht',
+  'wandsitz', 'bruecke-rueckenlage', 'bruecke-einbeinig',
 ];
+
+// A title correction creates a new current version; prescribed older versions
+// and individual editorial titles remain intact.
+export function renameWideSquats(db) {
+  transaction(db, () => {
+    for (const id of ['sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht']) {
+      const row=db.prepare('SELECT * FROM exercises WHERE id=?').get(id);
+      if (!row) continue;
+      const stored=db.prepare('SELECT payload FROM exercise_versions WHERE exercise_id=? AND version=?').get(id,row.current_version);
+      const current=JSON.parse(stored.payload);
+      if (!['Breitbeiniges Kreuzheben ohne Gewicht','Breitbeiniges Kreuzheben mit Zusatzgewicht'].includes(current.title)) continue;
+      const updated={...current,title:current.title.replace('Breitbeiniges Kreuzheben','Breitbeinige Kniebeugen'),familyTitle:'Breitbeinige Kniebeugen'};
+      if (updated.subtitle === 'Sumo-Variante · deutliche Kniebeugung · aufrechter, gerader Rücken')
+        updated.subtitle='Breiter Stand · deutliche Kniebeugung · aufrechter, gerader Rücken';
+      const version=row.current_version+1;
+      db.prepare('INSERT INTO exercise_versions VALUES (?,?,?,?)').run(id,version,JSON.stringify(updated),iso());
+      db.prepare('UPDATE exercises SET current_version=? WHERE id=?').run(version,id);
+    }
+  });
+}
 
 // One-time collection reset requested by the user. Keep versioned records for
 // existing plans and history; later newly created exercises remain addable.

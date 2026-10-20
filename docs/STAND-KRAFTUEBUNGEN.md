@@ -1,5 +1,7 @@
 # Kniebeugen, breites Kreuzheben und Wadenheben · 20.10.2026
 
+Nachtrag: Die breite Variante wurde in „Breitbeinige Kniebeugen“ umbenannt. Mit Wandsitz und zwei Brücken umfasst die aktuelle Sammlung elf Einträge. Die folgenden Angaben beschreiben den Stand von Version 0.1.12. [Aktuelle Erweiterung](WANDSITZ-UND-BRUECKEN.md).
+
 Die Sammlung enthält zusätzlich sechs Einträge, jeweils ohne Gewicht und mit Kurzhantel-Zusatzgewicht:
 
 | Familie | Ohne Gewicht | Mit Zusatzgewicht |

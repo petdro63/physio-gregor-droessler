@@ -1,5 +1,7 @@
 # Übungsliste bereinigt · 20.10.2026
 
+Aktueller Stand: Die Sammlung wurde später um Wandsitz und zwei Brücken auf elf Einträge erweitert. [Aktuelle Ergänzungen](WANDSITZ-UND-BRUECKEN.md).
+
 Nachtrag: Anschließend wurden auf Nutzerwunsch sechs neue Stand-Kraftübungen ergänzt. Die aktuelle Sammlung enthält damit acht Einträge; die historische Bereinigung bleibt wirksam. Auch beim Erststart werden die sechs später ergänzten IDs erhalten. [Neue Übungen und Bilder](STAND-KRAFTUEBUNGEN.md).
 
 Auf ausdrücklichen Nutzerwunsch enthielt die Sammlung nach Version 0.1.11 nur noch:

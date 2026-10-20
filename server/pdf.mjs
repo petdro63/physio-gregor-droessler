@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 import { VERSION, VERSION_DATE } from "./version.mjs";
+import { dosageLabel } from '../src/dosage.ts';
 export async function makePlanPdf(plan, patient, practice, demo, db, mediaDir) {
   const doc = await PDFDocument.create();
   const font = await doc.embedFont(StandardFonts.Helvetica);
@@ -42,7 +43,7 @@ export async function makePlanPdf(plan, patient, practice, demo, db, mediaDir) {
     const e = item.exercise;
     line(`${index + 1}. ${e.title}`, 14, true);
     line(
-      `${item.sets} Saetze x ${item.reps} Wiederholungen | Halten: ${item.hold}s | Pause: ${item.pause}s`,
+      `${dosageLabel(item)}${e.dosageMode === 'hold' ? '' : ` | Halten: ${item.hold}s`} | Pause: ${item.pause}s`,
       10,
     );
     const first = e.media

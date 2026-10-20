@@ -34,8 +34,8 @@ test('exercise-list reset retains the selected collection, preserves history, an
   runtime=createApp({demo:true,production:false,dataDir:dir});
   let staff=await admin(runtime);
   let list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.deepEqual(list.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht'].sort());
-  assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercise_list_removals').get().n,before.exercises-8);
+  assert.deepEqual(list.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig'].sort());
+  assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercise_list_removals').get().n,before.exercises-11);
   assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercises').get().n,before.exercises);
   assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercise_versions').get().n,before.versions);
   assert.equal(runtime.db.prepare('SELECT payload FROM plan_versions WHERE plan_id=? AND version=1').get('demo-plan').payload,before.plan);
@@ -45,20 +45,20 @@ test('exercise-list reset retains the selected collection, preserves history, an
   runtime=createApp({demo:true,production:false,dataDir:dir});
   staff=await admin(runtime);
   list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.equal(list.exercises.length,9);
+  assert.equal(list.exercises.length,12);
   assert(list.exercises.some(e=>e.id===created.id),'Later user-created exercises stay in the list');
   assert(!list.exercises.some(e=>e.id==='schulterkreisen'),'Seeding never restores removed list entries');
   assert.equal(list.history.length,1);
 });
 
-test('an already reset installation receives the six new exercises without restoring old entries or changing edits', async t=>{
+test('an already reset installation receives later additions without restoring old entries or changing edits', async t=>{
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'physio-list-additions-'));
   let runtime=null;
   t.after(()=>{runtime?.close();fs.rmSync(dir,{recursive:true,force:true});});
   const db=openDatabase(dir);
   seed(db); seedResearchDrafts(db);
   // Reproduce 0.1.11: only the two deadlifts were kept, additions did not exist.
-  const newIds=['kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht'];
+  const newIds=['kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig'];
   for(const id of newIds) {
     db.prepare('DELETE FROM exercise_versions WHERE exercise_id=?').run(id);
     db.prepare('DELETE FROM exercises WHERE id=?').run(id);
@@ -69,13 +69,13 @@ test('an already reset installation receives the six new exercises without resto
   runtime=createApp({demo:true,production:false,dataDir:dir});
   let staff=await admin(runtime);
   let list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.equal(list.exercises.length,8);
+  assert.equal(list.exercises.length,11);
   assert(newIds.every(id=>list.exercises.some(e=>e.id===id)));
   assert(!list.exercises.some(e=>e.id==='schulterkreisen'));
   for(const id of newIds) {
     const exercise=list.exercises.find(e=>e.id===id);
     assert.equal(exercise.status,'draft');
-    const atlas=id.startsWith('kniebeuge')?'reference-squats':id.startsWith('sumo')?'reference-sumo-upright':'reference-calf-raises';
+    const atlas=id.startsWith('kniebeuge')?'reference-squats':id.startsWith('sumo')?'reference-sumo-upright':id==='wandsitz'?'reference-wall-sit':id.startsWith('bruecke')?'reference-bridges':'reference-calf-raises';
     await staff.agent.get(`/api/reference-poses/${id}/${atlas}?version=1`).expect(200).expect('Content-Type',/image\/png/);
     await staff.agent.get(`/api/reference-poses/${id}/reference-single-leg-rdl?version=1`).expect(404);
   }
@@ -85,6 +85,6 @@ test('an already reset installation receives the six new exercises without resto
   runtime=createApp({demo:true,production:false,dataDir:dir});
   staff=await admin(runtime);
   list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.equal(list.exercises.length,8);
+  assert.equal(list.exercises.length,11);
   assert.equal(list.exercises.find(e=>e.id===edited.id).title,'Individuell angepasste Kniebeuge');
 });

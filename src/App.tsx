@@ -32,6 +32,7 @@ import {
   X,
 } from "lucide-react";
 import taxonomy from "./exercise-taxonomy.json";
+import { defaultPlanDosage, dosageLabel } from './dosage';
 import rehabLibrary from "./rehab-evidence.json" with { type: "json" };
 import { ConditionLibrary, RelaxationPage, ClinicalAssignmentFields, EvidenceCard } from "./ClinicalLibrary";
 import { LicensedMedia, catalogMediaUrl } from "./LicensedMedia";
@@ -1062,12 +1063,12 @@ function ExerciseCard({
             {item ? (
               <>
                 <ClipboardList size={15} />
-                {item.sets} Sätze × {item.reps} Wdh.
+                {dosageLabel(item, true)}
               </>
             ) : (
               <>
                 <Clock3 size={15} />
-                ca. {e.duration} Min.
+                {e.dosageMode === 'hold' ? 'Haltedauer in Sekunden' : `ca. ${e.duration} Min.`}
               </>
             )}
           </span>
@@ -1662,7 +1663,7 @@ function Training({
               </div>
               <h2>{item.exercise.title}</h2>
               <p>
-                {item.sets} Sätze × {item.reps} Wiederholungen · {item.side}
+                {dosageLabel(item)} · {item.side}
               </p>
               <ol className="steps">
                 {item.exercise.steps.map((s, i) => (
@@ -2143,10 +2144,7 @@ function PlanEditor({
                 {
                   exerciseId: exercise.id,
                   exerciseVersion: exercise.version,
-                  sets: 2,
-                  reps: 10,
-                  hold: 0,
-                  pause: 30,
+                  ...defaultPlanDosage(exercise),
                   side: "Beidseits",
                   resistance: "Ohne Zusatzgewicht",
                   note: "",
@@ -2202,9 +2200,9 @@ function PlanEditor({
               {[
                 { key: "sets", label: "Sätze", max: 20, min: 1 },
                 { key: "reps", label: "Wiederholungen", max: 200, min: 1 },
-                { key: "hold", label: "Halten (s)", max: 600, min: 0 },
+                { key: "hold", label: item.exercise.dosageMode === 'hold' ? "Haltedauer (Sekunden)" : "Halten (s)", max: 600, min: item.exercise.dosageMode === 'hold' ? 1 : 0 },
                 { key: "pause", label: "Pause (s)", max: 600, min: 0 },
-              ].map((f) => (
+              ].filter(f => item.exercise.dosageMode !== 'hold' || f.key !== 'reps').map((f) => (
                 <label key={f.key}>
                   {f.label}
                   <input
@@ -2283,6 +2281,8 @@ const emptyExercise: Omit<Exercise, "id" | "version" | "status"> = {
   harder: "",
   difficulty: "Leicht",
   duration: 3,
+  dosageMode: 'repetitions',
+  defaultHoldSeconds: 20,
   author: "",
   reviewer: "",
   reviewedAt: "",
@@ -2372,6 +2372,10 @@ function ExerciseEditor({
           </label>
         </div>
         <ClinicalAssignmentFields uses={form.conditionUses} onChange={uses => field("conditionUses",uses)} />
+        <div className="form-grid">
+          <label>Dosierungsart<select value={form.dosageMode || 'repetitions'} onChange={e => field('dosageMode',e.target.value)}><option value="repetitions">Wiederholungen</option><option value="hold">Haltedauer in Sekunden</option></select></label>
+          {form.dosageMode === 'hold' && <label>Vorschlag Haltedauer (Sekunden)<input type="number" min={1} max={600} required value={form.defaultHoldSeconds || 20} onChange={e => field('defaultHoldSeconds',Number(e.target.value))}/></label>}
+        </div>
         <label className="clinical-checkbox"><input type="checkbox" checked={form.requiresSupervision} onChange={e => field("requiresSupervision",e.target.checked)}/>Nur nach persönlicher Anleitung</label>
         <label>Postisometrische Relaxation (PIR)<select value={form.methodTags.includes("PIR") ? "PIR" : ""} onChange={e => field("methodTags",e.target.value ? [...new Set([...form.methodTags,"PIR"])] : form.methodTags.filter(t => t!=="PIR"))}><option value="">Keine PIR-Technik</option><option value="PIR">PIR / angeleitete Verfahrensvariante</option></select></label>
         <div className="classification-editor">

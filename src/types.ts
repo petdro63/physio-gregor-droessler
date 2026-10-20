@@ -46,6 +46,8 @@ export type Exercise = {
   harder: string;
   difficulty: string;
   duration: number;
+  dosageMode?: 'repetitions' | 'hold';
+  defaultHoldSeconds?: number;
   author: string;
   reviewer: string;
   reviewedAt: string;
