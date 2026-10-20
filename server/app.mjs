@@ -26,7 +26,7 @@ import {
   transaction,
   audit,
 } from "./db.mjs";
-import { classifyExercise, seedResearchDrafts, taxonomy } from "./exercise-catalog.mjs";
+import { classifyExercise, seedResearchDrafts, resetExerciseListToDeadlifts, taxonomy } from "./exercise-catalog.mjs";
 import { clinicalLibrary, catalogMedia } from "./clinical-content.mjs";
 import { seed, coverage } from "./seed.mjs";
 import { VERSION, VERSION_DATE, TIME_ZONE } from "./version.mjs";
@@ -151,6 +151,7 @@ export function createApp(options = {}) {
       "practice",
       JSON.stringify(defaultSettings),
     );
+  resetExerciseListToDeadlifts(db);
   const mediaDir = path.join(dir, "media");
   fs.mkdirSync(mediaDir, { recursive: true });
   const secretFile = path.join(dir, "session-secret");
@@ -607,7 +608,7 @@ export function createApp(options = {}) {
       ? getPlans(selected.id).map((p) => hydratePlan(p, req.user))
       : [];
     const exercises = db
-      .prepare("SELECT id FROM exercises ORDER BY rowid")
+      .prepare("SELECT e.id FROM exercises e WHERE NOT EXISTS (SELECT 1 FROM exercise_list_removals r WHERE r.exercise_id=e.id) ORDER BY e.rowid")
       .all()
       .filter((e) => canExercise(req.user, e.id))
       .map((e) => getExercise(e.id));

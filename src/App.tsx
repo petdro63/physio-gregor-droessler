@@ -1141,7 +1141,7 @@ function Library({
     [condition, setCondition] = useState(""),
     [method, setMethod] = useState("");
   const [page, setPage] = useState(1);
-  const [groupFamilies, setGroupFamilies] = useState(true);
+  const [groupFamilies, setGroupFamilies] = useState(exercises.length > 12);
   const filtered = findExercises(exercises, { search, region, goal, equipment, difficulty, position, trainingType, joint, muscle, sort, condition, method });
   const representatives = new Map<string, string>();
   for (const exercise of filtered) if (exercise.familyId) {
@@ -1178,11 +1178,11 @@ function Library({
           </button>
         )}
       </div>
-      {staff && <section className="catalog-summary panel" aria-label="Gelenkabdeckung">
+      {staff && exercises.length > 2 && <section className="catalog-summary panel" aria-label="Gelenkabdeckung">
         <div className="catalog-section-label"><span>01 / FOKUS WÄHLEN</span><span>{exercises.length.toLocaleString('de-DE')} ÜBUNGEN & VARIANTEN</span></div>
         <h2>Wo setzen wir an?</h2>
-        <div className="joint-shortcuts">{["Schultergelenk", "Ellenbogengelenk", "Handgelenk", "Hüftgelenk", "Kniegelenk", "Sprunggelenk"].map((name,index) => <button type="button" key={name} aria-label={name} aria-pressed={joint === name} className={joint === name ? "button primary" : "button secondary"} onClick={() => { resetFilters(); setJoint(name); }}><span className="joint-number">0{index+1}</span><div className="joint-miniature" aria-hidden="true" style={{backgroundPosition:`${(index % 2 * 2 + 1) * 100 / 3}% ${Math.floor(index / 2) * 50}%`}}/><strong>{['Schulter','Ellenbogen','Handgelenk','Hüfte','Knie','Sprunggelenk'][index]}</strong><span>{exercises.filter(e => e.joints.includes(name)).length} Einträge <ArrowRight size={15}/></span></button>)}</div>
-        <details className="catalog-editorial-note"><summary>Über diese Bibliothek</summary><p>150 neue Grundmuster mit 1.200 Variantenentwürfen sowie bestehende Übungen. Fachliche Freigaben stehen noch aus.</p></details>
+        <div className="joint-shortcuts">{["Schultergelenk", "Ellenbogengelenk", "Handgelenk", "Hüftgelenk", "Kniegelenk", "Sprunggelenk"].map((name,index) => exercises.some(e => e.joints.includes(name)) ? <button type="button" key={name} aria-label={name} aria-pressed={joint === name} className={joint === name ? "button primary" : "button secondary"} onClick={() => { resetFilters(); setJoint(name); }}><span className="joint-number">0{index+1}</span><div className="joint-miniature" aria-hidden="true" style={{backgroundPosition:`${(index % 2 * 2 + 1) * 100 / 3}% ${Math.floor(index / 2) * 50}%`}}/><strong>{['Schulter','Ellenbogen','Handgelenk','Hüfte','Knie','Sprunggelenk'][index]}</strong><span>{exercises.filter(e => e.joints.includes(name)).length} Einträge <ArrowRight size={15}/></span></button> : null)}</div>
+        <details className="catalog-editorial-note"><summary>Über diese Bibliothek</summary><p>Die Sammlung enthält die aktuell aufgenommenen Übungen und Varianten. Entwürfe benötigen vor dem individuellen Einsatz eine fachliche Freigabe.</p></details>
       </section>}
       <div className="library-toolbar">
         <label className="search-input">

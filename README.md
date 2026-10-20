@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.10-dev**, Versionsdatum **20.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.11-dev**, Versionsdatum **20.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -19,8 +19,8 @@ Die Vorschau nutzt ausschließlich erfundene Personen. Demo- und Praxisdatenbank
 
 ## Enthalten
 
-- Erweiterter Gelenkkatalog mit 1.200 zusätzlichen Variantenentwürfen: je 200 für Schulter, Ellenbogen, Handgelenk, Hüfte, Knie und Sprunggelenk. Insgesamt 150 Grundmuster mit acht Varianten; keine automatisch fachlich freigegebenen Behandlungen. [Umfang, Recherche und Bildabdeckung](docs/KATALOG-ERWEITERUNG.md).
-- Gruppierung nach Grundmuster, direkter Variantenwechsel und 24 Ergebnisse pro Seite. Fünf Bildtafeln mit 26 Start-/End-Bildpaaren anhand der Nutzerfigur, einschließlich Hanteln, Theraband, Stab und Manschetten. Nur passend zugeordnete Bilder werden angezeigt; die vollständige Bebilderung steht noch aus.
+- Auf Nutzerwunsch bereinigte Übungsliste: ausschließlich das zuletzt ergänzte einbeinige Kreuzheben mit Kurzhanteln und Langhantel. Frühere Einträge wurden dauerhaft aus der Sammlung entfernt; vorhandene Pläne und Trainingsverläufe bleiben erhalten. [Details zur Listenbereinigung](docs/UEBUNGSLISTE-BEREINIGUNG.md).
+- Start-/Endbilder für beide Kreuzheben-Varianten, Variantenwechsel und eine erweiterbare Sammlung für später neu angelegte Übungen.
 - Einbeiniges Kreuzheben mit Kurzhanteln und Langhantel: eigene neue Start-/Enddarstellungen, Anleitung und Filterzuordnung. Die Nutzer-Originalgrafik wird nicht ausgeliefert. [Bildherkunft und Details](docs/EINBEINIGES-KREUZHEBEN.md).
 - Neues sportliches Design mit klarer Gelenkauswahl. Broschürenfilter und Broschürenliste entfernt; Quellen an den Übungen bleiben erhalten. [Gestaltung, Bildherkunft und offene Abdeckung](docs/DESIGN-UND-BILDER.md).
 
@@ -35,7 +35,6 @@ Die Vorschau nutzt ausschließlich erfundene Personen. Demo- und Praxisdatenbank
 - Übungseditor, geschützte Bild-/Video-Uploads mit Inhaltsprüfung, Redaktionsstatus und Freigabeprüfung.
 - Übungs- und Trainingsplanversionen; alte Trainingseinträge verweisen auf ihre ursprünglichen Versionen.
 - Suchbare Bibliothek mit kombinierten Filtern für Trainingsart (Kraft/Mobilisation/Dehnung), Gelenke, Zielmuskeln, Hilfsmittel und Ausgangsstellung; Sortierung nach Gelenk, Trainingsart oder Name.
-- 18 zusätzliche recherchierte Textentwürfe mit Hanteln, Stab, Theraband, Pezziball sowie Übungen im Stand, Sitz und Vierfüßlerstand; einzeln verlinkte Quellen und editierbare anatomische Zuordnungen.
 - Abdeckungskatalog, individuelle Dosierung und Planreihenfolge.
 - PDF-Export mit Bildern, Datenauskunft als JSON, Praxisverwaltung, Teameinladungen und Auditprotokoll.
 - PWA-Manifest und datensparsame Offline-Seite; kein Offlinecache für Gesundheitsdaten.
@@ -68,7 +67,7 @@ Die Integrationstests prüfen tatsächliche HTTP-Zugriffe auf isolierte temporä
 
 ## Erweiterung Reha und Evidenz (19.10.2026)
 
-Die lokale Demo enthält jetzt 167 Einträge: 12 technische Beispiele und 155 redaktionelle Entwürfe. 131 neue Kurzfassungen decken alle 15 Hirslanden-Broschüren ab. Hinzu kommen Kieferübungen mit Korken, drei PIR-Beispiele und ergänzende Reha-Übungen. Original-PDFs und deren Fotos werden nicht kopiert.
+Die aktuelle Übungsliste enthält auf Nutzerwunsch nur die beiden zuletzt erstellten Kreuzheben-Varianten. Frühere Rechercheeinträge erscheinen nicht mehr in der Sammlung. Ihre versionierten Daten bleiben für bestehende Pläne und Trainingsverläufe erhalten. Die interne Herkunftsdokumentation bleibt nachvollziehbar; Original-PDFs und deren Fotos werden nicht ausgeliefert.
 
 Unter **Krankheitsbilder & Evidenz** findet das Praxisteam ausdrücklich zugeordnete Vorschläge nach Diagnose, Phase und Behandlungsvariante für lumbalen Bandscheibenvorfall, vorderen Kreuzbandriss, Knie-/Hüft-/Schulter-TEP, Frozen Shoulder sowie CMD und unspezifische Nackenschmerzen. Studienkarten unterscheiden Programm-/Verfahrensnachweise von unbewiesenen Einzelübungen. Die Entspannungsseite erklärt PIR und zeigt zugängliche Entspannungsübungen.
 
@@ -79,7 +78,7 @@ Vier gemeinfreie CDC-Animationen sind als lokale Bilder und MP4 mit deutschen Un
 
 ## Stand der Inhalte
 
-**Keine Übung ist für den realen Patienteneinsatz fachlich freigegeben.** Die 12 Beispiele und das schematische Video zeigen die Technik. Das Video ist keine bewegungsspezifische Therapieanleitung. Eine vollständige Bibliothek aller gängigen Praxisübungen bleibt das Ziel; ihr Ausbau benötigt eigene oder lizenzierte Originalmedien und fachliche Prüfung. Demoübungen können nicht durch einen bloßen Statuswechsel produktiv freigegeben werden.
+**Die beiden Kreuzheben-Varianten sind Entwürfe und noch nicht für den realen Patienteneinsatz fachlich freigegeben.** Historische technische Beispiele und deren schematische Videos bleiben ebenfalls ungeprüft. Neue Übungen können nach Bedarf wieder in die Sammlung aufgenommen werden; Demoübungen können nicht durch einen bloßen Statuswechsel produktiv freigegeben werden.
 
 Lizenz der schematischen Medien: im Projekt selbst erzeugt, ohne fremde Patientenaufnahmen. Es wurde keine externe Übungsbibliothek übernommen und keine Lizenz bestehender Anbieter vorausgesetzt.
 

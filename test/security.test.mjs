@@ -53,7 +53,8 @@ test("protected routes require authentication and never expose cross-patient rec
     .body;
   assert.equal(o.selectedPatient.id, "demo-patient");
   assert.equal(o.patients.length, 1);
-  assert.equal(o.exercises.length, 3);
+  assert.equal(o.exercises.length, 0);
+  assert.equal(o.plans[0].items.length, 3, 'Removing catalog entries preserves assigned plans');
   await p.a.get("/api/patients/demo-patient-b/export").expect(404);
   await p.a.get("/api/exercises/nacken-drehen").expect(404);
   await post(p, "/patients", {
@@ -642,8 +643,8 @@ test("patient birth dates persist, validate and respect patient assignments", as
 test("classification metadata is versioned and research drafts stay staff-only", async (t) => {
   const r = fixture(t), admin = await agent(r), patient = await agent(r, "patient");
   const overview = (await admin.a.get("/api/overview").expect(200)).body;
-  assert(overview.exercises.length >= 30);
-  const exercise = overview.exercises.find(e => e.id === "hantel-beugen-sitz");
+  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),["einbein-kreuzheben-kurzhanteln","einbein-kreuzheben-langhantel"].sort());
+  const exercise = (await admin.a.get('/api/exercises/hantel-beugen-sitz').expect(200)).body;
   assert.equal(exercise.status, "draft");
   assert.deepEqual(exercise.trainingTypes, ["Kraft"]);
   assert(exercise.strengthMuscles.includes("Bizeps (M. biceps brachii)"));

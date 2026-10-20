@@ -8,6 +8,20 @@ export const additionalExercises = JSON.parse(fs.readFileSync(new URL("./additio
 export const expandedExercises = JSON.parse(fs.readFileSync(new URL("./expanded-exercises.json", import.meta.url), "utf8"));
 export const illustratedExercises = JSON.parse(fs.readFileSync(new URL("./illustrated-exercises.json", import.meta.url), "utf8"));
 
+// One-time collection reset requested by the user. Keep versioned records for
+// existing plans and history; later newly created exercises remain addable.
+export function resetExerciseListToDeadlifts(db) {
+  const marker = 'exercise-list-reset-deadlifts-2026-10-20';
+  transaction(db, () => {
+    if (db.prepare('SELECT 1 FROM settings WHERE id=?').get(marker)) return;
+    const removedAt = iso();
+    db.prepare(`INSERT OR IGNORE INTO exercise_list_removals (exercise_id,removed_at)
+      SELECT id,? FROM exercises WHERE id NOT IN (?,?)`).run(removedAt,
+      'einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel');
+    db.prepare('INSERT INTO settings (id,payload) VALUES (?,?)').run(marker,JSON.stringify({appliedAt:removedAt}));
+  });
+}
+
 export function classifyExercise(exercise, id = exercise.id) {
   const defaults = legacy[id] || { trainingTypes: [], joints: [], strengthMuscles: [] };
   return { ...defaults, sources: [], conditionUses: [], methodTags: [], catalogMedia: [], requiresSupervision: false, brochureId: "", end: "", familyId: "", familyTitle: "", variantLabel: "", sourceNote: "", ...clinicalMappings[id], ...exercise };

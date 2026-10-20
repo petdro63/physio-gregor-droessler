@@ -70,9 +70,8 @@ test('reference art is explicitly mapped to real families and protected from pat
   await staff.get(route.replace('version=1','version=2')).expect(404);
   await staff.get(route.replace('reference-joints','..%2f..%2f.env')).expect(404);
   const overview=(await staff.get('/api/overview')).body;
-  const added=overview.exercises.filter(e=>e.id.startsWith('katalog-'));
-  assert.equal(added.length,1200);
-  assert(added.every(e=>e.status==='draft' && e.reviewer===''));
+  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel'].sort());
+  assert(overview.exercises.every(e=>e.status==='draft' && e.reviewer===''));
   const patient=request.agent(runtime.app);
   const ps=(await patient.get('/api/session')).body;
   await patient.post('/api/demo').set('X-CSRF-Token',ps.csrf).send({role:'patient'}).expect(200);
@@ -80,7 +79,7 @@ test('reference art is explicitly mapped to real families and protected from pat
   await patient.get(rdlRoute).expect(404);
   assert(!(await patient.get('/api/overview')).body.exercises.some(e=>e.id.startsWith('katalog-')));
   const csrf=(await staff.get('/api/session')).body.csrf;
-  const exercise=added.find(e=>e.id==='katalog-shoulder-flex-stand-aktiv');
+  const exercise=(await staff.get('/api/exercises/katalog-shoulder-flex-stand-aktiv').expect(200)).body;
   const updated=(await staff.put('/api/exercises/'+exercise.id).set('X-CSRF-Token',csrf).send({...exercise,end:'Individuell geprüfte Endstellung'}).expect(200)).body;
   const stored=(await staff.get('/api/exercises/'+exercise.id)).body;
   assert.equal(stored.end,'Individuell geprüfte Endstellung');
