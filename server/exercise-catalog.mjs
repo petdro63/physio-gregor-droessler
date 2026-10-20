@@ -14,7 +14,29 @@ export const collectionExerciseIds = [
   'sumo-kreuzheben-ohne-gewicht', 'sumo-kreuzheben-zusatzgewicht',
   'wadenheben-ohne-gewicht', 'wadenheben-zusatzgewicht',
   'wandsitz', 'bruecke-rueckenlage', 'bruecke-einbeinig',
+  'ausfallschritt-ohne-gewicht', 'ausfallschritt-kurzhanteln',
+  'ausfallschritt-langhantel', 'seitliches-hueftheben',
 ];
+
+export function correctSingleLegBridgeSide(db) {
+  transaction(db, () => {
+    const row=db.prepare("SELECT * FROM exercises WHERE id='bruecke-einbeinig'").get();
+    if (!row) return;
+    const current=JSON.parse(db.prepare('SELECT payload FROM exercise_versions WHERE exercise_id=? AND version=?').get(row.id,row.current_version).payload);
+    // Only replace the original generic wording, preserving individual edits.
+    if (!current.start.includes('Ein Bein bleibt angewinkelt')) return;
+    const updated={...current,
+      start:current.start.replace('Ein Bein bleibt angewinkelt','Das linke Bein bleibt angewinkelt').replace('Das andere Bein vom Boden lösen','Das rechte Bein vom Boden lösen'),
+      end:current.end.replace('über den einen aufgestellten Fuß','über den linken aufgestellten Fuß').replace('Das freie Bein bleibt nach oben gestreckt','Das rechte Bein bleibt nach oben gestreckt'),
+      steps:current.steps.map(s=>s.replace('Dann ein Bein nach oben strecken, das andere mit aufgestelltem Fuß als Stützbein belassen.','Dann das rechte Bein nach oben strecken, das linke mit aufgestelltem Fuß als Stützbein belassen.').replace('über den aufgestellten Fuß','über den linken aufgestellten Fuß').replace('Das freie Bein bleibt gestreckt','Das rechte Bein bleibt gestreckt')),
+    };
+    if (current.variantLabel==='Einbeinig · freies Bein gestreckt') updated.variantLabel='Einbeinig · rechtes Bein angehoben';
+    if (current.subtitle==='Ein Fuß trägt · freies Bein nach oben gestreckt') updated.subtitle='Linker Fuß trägt · rechtes Bein bleibt nach oben gestreckt';
+    const version=row.current_version+1;
+    db.prepare('INSERT INTO exercise_versions VALUES (?,?,?,?)').run(row.id,version,JSON.stringify(updated),iso());
+    db.prepare('UPDATE exercises SET current_version=? WHERE id=?').run(version,row.id);
+  });
+}
 
 // A title correction creates a new current version; prescribed older versions
 // and individual editorial titles remain intact.

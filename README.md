@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.13-dev**, Versionsdatum **20.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.14-dev**, Versionsdatum **20.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -19,7 +19,8 @@ Die Vorschau nutzt ausschließlich erfundene Personen. Demo- und Praxisdatenbank
 
 ## Enthalten
 
-- Bereinigte Übungsliste mit elf Einträgen: einbeiniges Kreuzheben mit Kurz- und Langhantel, Kniebeugen, breitbeinige Kniebeugen und Wadenheben jeweils ohne und mit Zusatzgewicht sowie Wandsitz, Brücke in Rückenlage und einbeinige Brücke. Frühere entfernte Einträge bleiben ausgeschlossen; vorhandene Pläne und Verläufe bleiben erhalten.
+- Bereinigte Übungsliste mit 15 Einträgen: einbeiniges Kreuzheben mit Kurz- und Langhantel, Kniebeugen, breitbeinige Kniebeugen und Wadenheben jeweils ohne und mit Zusatzgewicht, Wandsitz, beide Brücken sowie drei Ausfallschritt-Varianten und seitliches Hüftheben. Frühere entfernte Einträge bleiben ausgeschlossen; vorhandene Pläne und Verläufe bleiben erhalten.
+- Neue Ausfallschritte ohne Gewicht, mit Kurz- und Langhantel sowie seitliches Hüftheben im Unterarm-Seitstütz. Bei der einbeinigen Brücke ist das rechte Bein in beiden Bildern angehoben. [Bilder, Anleitungen und Prompts](docs/AUSFALLSCHRITTE-UND-HUEFTHEBEN.md).
 - Wandsitz mit Sekunden Haltedauer statt Wiederholungen im Planeditor, auf Übungskarten, im Training und im PDF. Neue Start-/Endbilder für Wandsitz und beide Brücken; breite Variante in „Breitbeinige Kniebeugen“ umbenannt. [Details, Bilder und Prompts](docs/WANDSITZ-UND-BRUECKEN.md).
 - Sechs neue Stand-Kraftübungen mit eigenen Start-/Endbildern aus der vorhandenen App-Figur. Breite Variante mit stärkerer Kniebeugung und aufrechtem Rücken korrigiert. [Anleitungen, Quellen und Bildherkunft](docs/STAND-KRAFTUEBUNGEN.md).
 - Einbeiniges Kreuzheben mit Kurzhanteln und Langhantel: eigene neue Start-/Enddarstellungen, Anleitung und Filterzuordnung. Die Nutzer-Originalgrafik wird nicht ausgeliefert. [Bildherkunft und Details](docs/EINBEINIGES-KREUZHEBEN.md).
@@ -68,7 +69,7 @@ Die Integrationstests prüfen tatsächliche HTTP-Zugriffe auf isolierte temporä
 
 ## Erweiterung Reha und Evidenz (19.10.2026)
 
-Die aktuelle Übungsliste enthält elf Einträge einschließlich Wandsitz und beiden Brücken. Frühere Rechercheeinträge erscheinen nicht mehr in der Sammlung. Ihre versionierten Daten bleiben für bestehende Pläne und Trainingsverläufe erhalten. Die interne Herkunftsdokumentation bleibt nachvollziehbar; Original-PDFs und deren Fotos werden nicht ausgeliefert.
+Die aktuelle Übungsliste enthält 15 Einträge einschließlich Ausfallschritten und seitlichem Hüftheben. Frühere Rechercheeinträge erscheinen nicht mehr in der Sammlung. Ihre versionierten Daten bleiben für bestehende Pläne und Trainingsverläufe erhalten. Die interne Herkunftsdokumentation bleibt nachvollziehbar; Original-PDFs und deren Fotos werden nicht ausgeliefert.
 
 Unter **Krankheitsbilder & Evidenz** findet das Praxisteam ausdrücklich zugeordnete Vorschläge nach Diagnose, Phase und Behandlungsvariante für lumbalen Bandscheibenvorfall, vorderen Kreuzbandriss, Knie-/Hüft-/Schulter-TEP, Frozen Shoulder sowie CMD und unspezifische Nackenschmerzen. Studienkarten unterscheiden Programm-/Verfahrensnachweise von unbewiesenen Einzelübungen. Die Entspannungsseite erklärt PIR und zeigt zugängliche Entspannungsübungen.
 
@@ -79,7 +80,7 @@ Vier gemeinfreie CDC-Animationen sind als lokale Bilder und MP4 mit deutschen Un
 
 ## Stand der Inhalte
 
-**Die elf Einträge der aktuellen Sammlung sind Entwürfe und noch nicht für den realen Patienteneinsatz fachlich freigegeben.** Historische technische Beispiele und deren schematische Videos bleiben ebenfalls ungeprüft. Neue Übungen können nach Bedarf wieder in die Sammlung aufgenommen werden; Demoübungen können nicht durch einen bloßen Statuswechsel produktiv freigegeben werden.
+**Die 15 Einträge der aktuellen Sammlung sind Entwürfe und noch nicht für den realen Patienteneinsatz fachlich freigegeben.** Historische technische Beispiele und deren schematische Videos bleiben ebenfalls ungeprüft. Neue Übungen können nach Bedarf wieder in die Sammlung aufgenommen werden; Demoübungen können nicht durch einen bloßen Statuswechsel produktiv freigegeben werden.
 
 Lizenz der schematischen Medien: im Projekt selbst erzeugt, ohne fremde Patientenaufnahmen. Es wurde keine externe Übungsbibliothek übernommen und keine Lizenz bestehender Anbieter vorausgesetzt.
 

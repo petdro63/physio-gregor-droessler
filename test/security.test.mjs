@@ -643,7 +643,7 @@ test("patient birth dates persist, validate and respect patient assignments", as
 test("classification metadata is versioned and research drafts stay staff-only", async (t) => {
   const r = fixture(t), admin = await agent(r), patient = await agent(r, "patient");
   const overview = (await admin.a.get("/api/overview").expect(200)).body;
-  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig'].sort());
+  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben'].sort());
   const exercise = (await admin.a.get('/api/exercises/hantel-beugen-sitz').expect(200)).body;
   assert.equal(exercise.status, "draft");
   assert.deepEqual(exercise.trainingTypes, ["Kraft"]);

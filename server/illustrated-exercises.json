@@ -635,7 +635,7 @@
     "id": "bruecke-einbeinig",
     "familyId": "bruecke-rueckenlage",
     "familyTitle": "Brücke in Rückenlage",
-    "variantLabel": "Einbeinig · freies Bein gestreckt",
+    "variantLabel": "Einbeinig · rechtes Bein angehoben",
     "title": "Einbeinige Brücke",
     "region": "Hüfte",
     "joints": [
@@ -649,15 +649,228 @@
     "position": "In Rückenlage",
     "difficulty": "Anspruchsvoll",
     "dosageMode": "repetitions",
-    "subtitle": "Ein Fuß trägt · freies Bein nach oben gestreckt",
-    "start": "Wie bei der beidbeinigen Brücke in Rückenlage auf der Matte beginnen. Ein Bein bleibt angewinkelt und der Fuß vollständig aufgestellt. Das andere Bein vom Boden lösen und nach oben strecken, ohne das Knie gewaltsam durchzudrücken. Becken liegt zunächst auf der Matte, Kopf, Schultern und Arme ruhen auf.",
-    "end": "Becken und Gesäß sind vom Boden abgehoben und werden über den einen aufgestellten Fuß getragen. Das freie Bein bleibt nach oben gestreckt und hat keinen Bodenkontakt. Das Becken bleibt waagerecht; Kopf und Schultern liegen weiterhin auf der Matte.",
+    "subtitle": "Linker Fuß trägt · rechtes Bein bleibt nach oben gestreckt",
+    "start": "Wie bei der beidbeinigen Brücke in Rückenlage auf der Matte beginnen. Das linke Bein bleibt angewinkelt und der Fuß vollständig aufgestellt. Das rechte Bein vom Boden lösen und nach oben strecken, ohne das Knie gewaltsam durchzudrücken. Becken liegt zunächst auf der Matte, Kopf, Schultern und Arme ruhen auf.",
+    "end": "Becken und Gesäß sind vom Boden abgehoben und werden über den linken aufgestellten Fuß getragen. Das rechte Bein bleibt nach oben gestreckt und hat keinen Bodenkontakt. Das Becken bleibt waagerecht; Kopf und Schultern liegen weiterhin auf der Matte.",
     "steps": [
-      "Zuerst die sichere beidbeinige Brücke beherrschen. Dann ein Bein nach oben strecken, das andere mit aufgestelltem Fuß als Stützbein belassen.",
-      "Bauch und Gesäß sanft anspannen und das Becken über den aufgestellten Fuß langsam anheben. Das freie Bein bleibt gestreckt nach oben gerichtet.",
+      "Zuerst die sichere beidbeinige Brücke beherrschen. Dann das rechte Bein nach oben strecken, das linke mit aufgestelltem Fuß als Stützbein belassen.",
+      "Bauch und Gesäß sanft anspannen und das Becken über den linken aufgestellten Fuß langsam anheben. Das rechte Bein bleibt gestreckt nach oben gerichtet.",
       "Nur so hoch heben, wie das Becken ohne Verdrehen oder Absinken einer Seite kontrolliert bleibt. Kopf und Nacken nicht belasten.",
       "Becken und Gesäß langsam ablegen. Nach den vereinbarten Wiederholungen das freie Bein sicher abstellen und die Seite wechseln."
     ],
     "mistakes": "Nicht mit dem angehobenen Bein Schwung holen, das Becken seitlich kippen lassen oder ins Hohlkreuz drücken. Der freie Fuß bleibt während der Bewegung vom Boden gelöst."
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "dosageMode": "repetitions",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Anheben beziehungsweise Aufrichten ausatmen, beim Absenken einatmen. Ohne Pressatmung arbeiten.",
+    "precautions": "Übung, Bewegungsweg und Dosierung persönlich mit dem Praxisteam abstimmen. Nach Operationen oder bei akuten Beschwerden nur nach Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "easier": "Zunächst ohne Zusatzlast und mit kleinerem Bewegungsweg unter persönlicher Anleitung üben.",
+    "harder": "Wiederholungszahl oder Belastung erst bei sicherer Kontrolle und nach persönlicher Freigabe steigern.",
+    "sourceNote": "Eigene deutsche Anleitung und neu gezeichnete Darstellung nach Nutzer-Bewegungsreferenz. Die Quellen erläutern das Grundmuster; kein krankheitsbezogener Wirksamkeitsnachweis für diese konkrete Variante hinterlegt.",
+    "license": "Neu mit integrierter Bildgenerierung im vorhandenen App-Stil erstellte Illustration. Die eingereichten Originalbilder und ihre Anatomiedarstellungen werden nicht in der App ausgeliefert. Eigene deutsche Beschreibung; keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "ausfallschritt-ohne-gewicht",
+    "familyId": "ausfallschritte",
+    "familyTitle": "Ausfallschritte",
+    "variantLabel": "Ohne Gewicht",
+    "title": "Ausfallschritte ohne Gewicht",
+    "region": "Knie",
+    "joints": [
+      "Kniegelenk",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Großer Gesäßmuskel (M. gluteus maximus)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Ohne Zusatzgerät",
+    "difficulty": "Mittel",
+    "subtitle": "Schritt nach vorn · kontrolliert absenken · aufrecht zurückkehren",
+    "start": "Auf rutschfestem Boden aufrecht etwa hüftbreit stehen und ausreichend freien Platz nach vorn prüfen. Rumpf sanft stabilisieren. Die Hände bleiben ohne Gewichte locker seitlich am Körper.",
+    "end": "Das rechte Bein steht vorn, der vordere Fuß liegt vollständig auf. Beide Knie sind gebeugt; das hintere Knie bleibt knapp über dem Boden. Die hintere Ferse ist angehoben. Knie folgen den Fußspitzen, der Rumpf bleibt stabil und aufrecht. Die Kniebeugung richtet sich nach der persönlichen Freigabe. Die Hände bleiben ohne Gewichte locker seitlich am Körper.",
+    "steps": [
+      "Gleichgewicht herstellen und den Rumpf sanft stabilisieren.",
+      "Mit dem rechten Fuß kontrolliert einen ausreichend langen Schritt nach vorn machen und den ganzen vorderen Fuß aufsetzen.",
+      "Beide Knie langsam beugen und das Becken absenken. Vorderes Knie in Richtung der Zehen führen, hinteres Knie nicht auf den Boden schlagen. Schultern und Becken bleiben nach vorn ausgerichtet.",
+      "Über den vorderen Fuß wieder hochdrücken und in den aufrechten Stand zurückkehren. Nach den vereinbarten Wiederholungen die Seite wechseln."
+    ],
+    "mistakes": "Nicht nach vorn kippen, das vordere Knie nach innen fallen lassen oder die Schrittbreite auf eine schmale Linie reduzieren. Vorderen Fuß vollständig belasten und Gewichte nicht schwingen lassen.",
+    "sources": [
+      {
+        "title": "ACE · Forward Lunge",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/94/forward-lunge/"
+      },
+      {
+        "title": "South Tees Hospitals NHS · Functional hip strengthening: lunges",
+        "url": "https://www.southtees.nhs.uk/resources/functional-hip-strengthening-class/"
+      }
+    ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "dosageMode": "repetitions",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Anheben beziehungsweise Aufrichten ausatmen, beim Absenken einatmen. Ohne Pressatmung arbeiten.",
+    "precautions": "Übung, Bewegungsweg und Dosierung persönlich mit dem Praxisteam abstimmen. Nach Operationen oder bei akuten Beschwerden nur nach Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen. Zusatzlast erst verwenden, wenn der Ausfallschritt ohne Gewicht sicher gelingt.",
+    "easier": "Zunächst ohne Zusatzlast und mit kleinerem Bewegungsweg unter persönlicher Anleitung üben.",
+    "harder": "Wiederholungszahl oder Belastung erst bei sicherer Kontrolle und nach persönlicher Freigabe steigern.",
+    "sourceNote": "Eigene deutsche Anleitung und neu gezeichnete Darstellung nach Nutzer-Bewegungsreferenz. Die Quellen erläutern das Grundmuster; kein krankheitsbezogener Wirksamkeitsnachweis für diese konkrete Variante hinterlegt.",
+    "license": "Neu mit integrierter Bildgenerierung im vorhandenen App-Stil erstellte Illustration. Die eingereichten Originalbilder und ihre Anatomiedarstellungen werden nicht in der App ausgeliefert. Eigene deutsche Beschreibung; keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "ausfallschritt-kurzhanteln",
+    "familyId": "ausfallschritte",
+    "familyTitle": "Ausfallschritte",
+    "variantLabel": "Mit Kurzhanteln",
+    "title": "Ausfallschritte mit Kurzhanteln",
+    "region": "Knie",
+    "joints": [
+      "Kniegelenk",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Großer Gesäßmuskel (M. gluteus maximus)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Hanteln",
+    "difficulty": "Mittel",
+    "subtitle": "Schritt nach vorn · kontrolliert absenken · aufrecht zurückkehren",
+    "start": "Auf rutschfestem Boden aufrecht etwa hüftbreit stehen und ausreichend freien Platz nach vorn prüfen. Rumpf sanft stabilisieren. Je eine leichte freigegebene Kurzhantel mit langen Armen seitlich am Körper halten.",
+    "end": "Das rechte Bein steht vorn, der vordere Fuß liegt vollständig auf. Beide Knie sind gebeugt; das hintere Knie bleibt knapp über dem Boden. Die hintere Ferse ist angehoben. Knie folgen den Fußspitzen, der Rumpf bleibt stabil und aufrecht. Die Kniebeugung richtet sich nach der persönlichen Freigabe. Je eine leichte freigegebene Kurzhantel mit langen Armen seitlich am Körper halten.",
+    "steps": [
+      "Gleichgewicht herstellen und den Rumpf sanft stabilisieren.",
+      "Mit dem rechten Fuß kontrolliert einen ausreichend langen Schritt nach vorn machen und den ganzen vorderen Fuß aufsetzen.",
+      "Beide Knie langsam beugen und das Becken absenken. Vorderes Knie in Richtung der Zehen führen, hinteres Knie nicht auf den Boden schlagen. Schultern und Becken bleiben nach vorn ausgerichtet.",
+      "Über den vorderen Fuß wieder hochdrücken und in den aufrechten Stand zurückkehren. Nach den vereinbarten Wiederholungen die Seite wechseln."
+    ],
+    "mistakes": "Nicht nach vorn kippen, das vordere Knie nach innen fallen lassen oder die Schrittbreite auf eine schmale Linie reduzieren. Vorderen Fuß vollständig belasten und Gewichte nicht schwingen lassen.",
+    "sources": [
+      {
+        "title": "ACE · Forward Lunge",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/94/forward-lunge/"
+      },
+      {
+        "title": "South Tees Hospitals NHS · Functional hip strengthening: lunges",
+        "url": "https://www.southtees.nhs.uk/resources/functional-hip-strengthening-class/"
+      }
+    ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "dosageMode": "repetitions",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Anheben beziehungsweise Aufrichten ausatmen, beim Absenken einatmen. Ohne Pressatmung arbeiten.",
+    "precautions": "Übung, Bewegungsweg und Dosierung persönlich mit dem Praxisteam abstimmen. Nach Operationen oder bei akuten Beschwerden nur nach Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen. Anspruchsvolle Zusatzlast-Variante ohne freie Hand zum Festhalten: erst nach persönlicher Anleitung, sicherem Gleichgewicht und organisiertem Aufnehmen/Ablegen der Stange einsetzen.",
+    "easier": "Zunächst ohne Zusatzlast und mit kleinerem Bewegungsweg unter persönlicher Anleitung üben.",
+    "harder": "Wiederholungszahl oder Belastung erst bei sicherer Kontrolle und nach persönlicher Freigabe steigern.",
+    "sourceNote": "Eigene deutsche Anleitung und neu gezeichnete Darstellung nach Nutzer-Bewegungsreferenz. Die Quellen erläutern das Grundmuster; kein krankheitsbezogener Wirksamkeitsnachweis für diese konkrete Variante hinterlegt.",
+    "license": "Neu mit integrierter Bildgenerierung im vorhandenen App-Stil erstellte Illustration. Die eingereichten Originalbilder und ihre Anatomiedarstellungen werden nicht in der App ausgeliefert. Eigene deutsche Beschreibung; keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "ausfallschritt-langhantel",
+    "familyId": "ausfallschritte",
+    "familyTitle": "Ausfallschritte",
+    "variantLabel": "Mit Langhantel",
+    "title": "Ausfallschritte mit Langhantel",
+    "region": "Knie",
+    "joints": [
+      "Kniegelenk",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Großer Gesäßmuskel (M. gluteus maximus)"
+    ],
+    "position": "Im Stand",
+    "equipment": "Langhantel",
+    "difficulty": "Anspruchsvoll",
+    "subtitle": "Schritt nach vorn · kontrolliert absenken · aufrecht zurückkehren",
+    "start": "Auf rutschfestem Boden aufrecht etwa hüftbreit stehen und ausreichend freien Platz nach vorn prüfen. Rumpf sanft stabilisieren. Eine leichte Langhantel nach Anleitung sicher auf dem oberen Rücken unterhalb des Nackens positionieren und mit beiden Händen festhalten. Sichere Ablage und Hilfe zum Aufnehmen und Ablegen vorab festlegen.",
+    "end": "Das rechte Bein steht vorn, der vordere Fuß liegt vollständig auf. Beide Knie sind gebeugt; das hintere Knie bleibt knapp über dem Boden. Die hintere Ferse ist angehoben. Knie folgen den Fußspitzen, der Rumpf bleibt stabil und aufrecht. Die Kniebeugung richtet sich nach der persönlichen Freigabe. Eine leichte Langhantel nach Anleitung sicher auf dem oberen Rücken unterhalb des Nackens positionieren und mit beiden Händen festhalten. Sichere Ablage und Hilfe zum Aufnehmen und Ablegen vorab festlegen.",
+    "steps": [
+      "Gleichgewicht herstellen und den Rumpf sanft stabilisieren.",
+      "Mit dem rechten Fuß kontrolliert einen ausreichend langen Schritt nach vorn machen und den ganzen vorderen Fuß aufsetzen.",
+      "Beide Knie langsam beugen und das Becken absenken. Vorderes Knie in Richtung der Zehen führen, hinteres Knie nicht auf den Boden schlagen. Schultern und Becken bleiben nach vorn ausgerichtet.",
+      "Über den vorderen Fuß wieder hochdrücken und in den aufrechten Stand zurückkehren. Nach den vereinbarten Wiederholungen die Seite wechseln."
+    ],
+    "mistakes": "Nicht nach vorn kippen, das vordere Knie nach innen fallen lassen oder die Schrittbreite auf eine schmale Linie reduzieren. Vorderen Fuß vollständig belasten und Gewichte nicht schwingen lassen.",
+    "sources": [
+      {
+        "title": "ACE · Forward Lunge",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/94/forward-lunge/"
+      },
+      {
+        "title": "South Tees Hospitals NHS · Functional hip strengthening: lunges",
+        "url": "https://www.southtees.nhs.uk/resources/functional-hip-strengthening-class/"
+      }
+    ]
+  },
+  {
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "dosageMode": "repetitions",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "breathing": "Beim Anheben beziehungsweise Aufrichten ausatmen, beim Absenken einatmen. Ohne Pressatmung arbeiten.",
+    "precautions": "Übung, Bewegungsweg und Dosierung persönlich mit dem Praxisteam abstimmen. Nach Operationen oder bei akuten Beschwerden nur nach Freigabe. Bei neuen oder zunehmenden Schmerzen, Schwindel oder Kontrollverlust abbrechen.",
+    "easier": "Nach persönlicher Anleitung den Seitstütz mit angewinkelten Knien und kürzerem Hebel erlernen. Bei Schulter- oder Handbeschwerden die Stützbelastung vorher prüfen lassen.",
+    "harder": "Wiederholungszahl oder Belastung erst bei sicherer Kontrolle und nach persönlicher Freigabe steigern.",
+    "sourceNote": "Eigene dynamische Variante des Seitstützes nach der ersten Nutzer-Vorlage ohne Gewicht. Die Quellen beschreiben das statische Grundmuster; daraus folgt kein Wirksamkeitsnachweis der dynamischen Variante bei einem Krankheitsbild.",
+    "license": "Neu mit integrierter Bildgenerierung im vorhandenen App-Stil erstellte Illustration. Die eingereichten Originalbilder und ihre Anatomiedarstellungen werden nicht in der App ausgeliefert. Eigene deutsche Beschreibung; keine fremde CC-/Public-Domain-Lizenz behauptet.",
+    "id": "seitliches-hueftheben",
+    "familyId": "seitliches-hueftheben",
+    "familyTitle": "Seitliches Hüftheben",
+    "variantLabel": "Seitstütz am Boden",
+    "title": "Seitliches Hüftheben",
+    "region": "Rumpf",
+    "joints": [
+      "Hüftgelenk",
+      "Lendenwirbelsäule",
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [
+      "Bauchmuskulatur",
+      "Seitliche Gesäßmuskeln (M. gluteus medius / minimus)"
+    ],
+    "position": "In Seitlage",
+    "equipment": "Matte",
+    "difficulty": "Anspruchsvoll",
+    "subtitle": "Seitstütz auf dem Unterarm · Becken anheben und absenken",
+    "start": "Auf der linken Seite auf einer rutschfesten Matte liegen. Den linken Unterarm aufstützen, Ellenbogen unter der Schulter ausrichten. Beine lang übereinanderlegen, rechte Hand an die Hüfte legen. Das Becken ist abgesenkt; Kopf und Rumpf bleiben ausgerichtet.",
+    "end": "Das Becken ist von der Matte abgehoben. Kopf, Schulter, Becken und Fußgelenke bilden eine lange Linie. Der linke Unterarm und die Außenkante des unteren Fußes tragen; die rechte Hand bleibt an der Hüfte. Becken und Schultern bleiben übereinander ohne Verdrehung.",
+    "steps": [
+      "Unterarm und unteren Fuß sicher aufsetzen und den Rumpf sanft anspannen. Schulter vom Ohr entfernt halten.",
+      "Über Unterarm und unteren Fuß das Becken langsam von der Matte anheben, bis der Körper eine gerade Linie bildet.",
+      "Die obere Stellung kurz kontrollieren. Nicht das obere Bein anheben und nicht in einen vorderen Unterarmstütz drehen.",
+      "Das Becken langsam wieder Richtung Matte absenken. Nach den persönlich festgelegten Wiederholungen die Seite wechseln."
+    ],
+    "mistakes": "Nicht in der Schulter einsinken, den Kopf abknicken oder das Becken vor- und zurückdrehen. Die Bewegung erfolgt über Anheben und Absenken des Beckens; Beine bleiben zusammen.",
+    "sources": [
+      {
+        "title": "NASM · Side Plank: Ausrichtung und Zielmuskeln",
+        "url": "https://www.nasm.org/resource-center/exercise-library/side-plank"
+      },
+      {
+        "title": "ACE · Modified Side Plank: einfachere Stützvariante",
+        "url": "https://www.acefitness.org/resources/everyone/exercise-library/100/side-plank-modified/"
+      }
+    ]
   }
 ]

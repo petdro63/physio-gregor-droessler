@@ -1,5 +1,7 @@
 # Wandsitz und Brücken · 20.10.2026
 
+Nachtrag: Für die einbeinige Brücke gibt es nun eine eigene korrigierte Bildtafel mit dem rechten Bein in beiden Stellungen oben. Die Sammlung wurde auf 15 Einträge erweitert. [Aktueller Stand](AUSFALLSCHRITTE-UND-HUEFTHEBEN.md).
+
 Die breite Kniebeugen-Variante heißt jetzt **Breitbeinige Kniebeugen ohne Gewicht** beziehungsweise **Breitbeinige Kniebeugen mit Zusatzgewicht**. Die bestehenden internen IDs bleiben erhalten. Bei vorhandenen Einträgen mit dem ursprünglichen Titel wird eine neue Übungsversion erstellt; alte Planverweise und individuelle Umbenennungen bleiben erhalten.
 
 Drei neue Entwürfe ergänzen die Sammlung auf elf Einträge:

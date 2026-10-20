@@ -33,8 +33,8 @@ test('wall sit uses a hold dose and the two bridge illustrations have distinct s
   const bridge=illustratedExercises.find(e=>e.id==='bruecke-rueckenlage');
   const single=illustratedExercises.find(e=>e.id==='bruecke-einbeinig');
   assert.equal(resolveReferencePose(bridge).row,0);
-  assert.equal(resolveReferencePose(single).row,1);
-  assert.equal(resolveReferencePose(bridge).atlas,resolveReferencePose(single).atlas);
+  assert.equal(resolveReferencePose(single).row,0);
+  assert.equal(resolveReferencePose(single).atlas,'reference-single-leg-bridge-right');
   assert.equal(bridge.position,'In Rückenlage');
   assert(single.start.includes('nach oben strecken'));
   assert(single.end.includes('keinen Bodenkontakt'));
