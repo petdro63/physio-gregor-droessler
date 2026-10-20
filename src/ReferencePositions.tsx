@@ -10,7 +10,7 @@ export function ReferencePose({ exercise, phase = 0 }: { exercise: Exercise; pha
   const frame = pose.fixedFrame ?? (pose.reverse ? (phase ? 0 : 1) : (phase ? 1 : 0));
   const column = pose.column * 2 + frame;
   const columns = pose.frameColumns ?? 4, rows = pose.frameRows ?? 3;
-  return <div className="reference-pose" role="img" aria-label={`${exercise.familyTitle || exercise.title}: ${phase ? 'Endstellung' : 'Ausgangsstellung'}, Illustrationsentwurf mit ${exercise.equipment}`} style={{backgroundImage:`url("/api/reference-poses/${encodeURIComponent(exercise.id)}/${pose.atlas}?version=${exercise.version}")`,backgroundSize:`${columns * 100}% ${rows * 100}%`,backgroundPosition:`${columns > 1 ? column * 100 / (columns - 1) : 0}% ${rows > 1 ? pose.row * 100 / (rows - 1) : 0}%`,aspectRatio:pose.frameAspectRatio ?? 1.125,height:'auto'}} />;
+  return <div className="reference-pose" role="img" aria-label={`${exercise.familyTitle || exercise.title}: ${phase ? 'Endstellung' : 'Ausgangsstellung'}, Illustrationsentwurf mit ${exercise.equipment}`} style={{backgroundImage:`url("/api/reference-poses/${encodeURIComponent(exercise.id)}/${pose.atlas}?version=${exercise.version}")`,backgroundSize:`${columns * 100}% ${rows * 100}%`,backgroundPosition:`${columns > 1 ? column * 100 / (columns - 1) : 0}% ${rows > 1 ? pose.row * 100 / (rows - 1) : 0}%`,aspectRatio:pose.frameAspectRatio ?? 1.125,height:pose.frameAspectRatio ? 'auto' : undefined}} />;
 }
 export function ReferencePositions({ exercise }: { exercise: Exercise }) {
   const pose = referencePose(exercise);
