@@ -48,56 +48,35 @@ export function correctSingleLegBridgeSide(db) {
 
 
 // Update the existing seated neck rotation without duplicating it or overwriting personal edits.
+// Add a NEW library exercise; never restore or alter previously removed exercises.
 export function publishSeatedNeckRotation(db) {
   transaction(db, () => {
-    const id = 'nacken-drehen';
-    db.prepare('DELETE FROM exercise_list_removals WHERE exercise_id=?').run(id);
-    const row = db.prepare('SELECT * FROM exercises WHERE id=?').get(id);
-    if (!row) {
-      const exercise = classifyExercise({
-        id, title: 'Kopfrotation im Sitzen', region: 'Nacken', goal: 'Mobilisation',
-        trainingTypes: ['Mobilisation'], joints: ['Halswirbelsäule'],
-        position: 'Im Sitzen', equipment: 'Stuhl',
-        subtitle: 'Kopfrotation im Sitzen · langsam und kontrolliert',
-        start: 'Aufrecht auf einem stabilen Stuhl sitzen. Beide Füße stehen sicher am Boden. Schultern entspannen und den Blick geradeaus richten.',
-        end: 'Der Kopf ist sanft zur Seite gedreht, während Schultern und Oberkörper nach vorne zeigen.',
-        steps: [
-          'Den Kopf langsam nach links drehen, ohne die Schultern mitzudrehen. Nur so weit bewegen, wie es angenehm möglich ist.',
-          'Den Kopf kontrolliert zur Mitte zurückführen.',
-          'Den Kopf langsam nach rechts drehen und wieder zur Mitte zurückkehren.'
-        ],
-        mistakes: 'Den Kopf nicht ruckartig drehen, nach hinten überstrecken oder mit den Händen weiterdrücken. Bei Schwindel oder zunehmenden Schmerzen abbrechen.',
-        breathing: 'Ruhig und gleichmäßig weiteratmen.',
-        precautions: 'Vor Verwendung individuell therapeutisch prüfen. Bei akuten Halswirbelsäulenbeschwerden, nach Eingriffen oder bei Schwindel nur nach Freigabe.',
-        easier: 'Bewegungsumfang verkleinern.', harder: 'Nur nach therapeutischer Freigabe anpassen.',
-        difficulty: 'Leicht', duration: 3, media: [], demo: false,
-        author: 'Eigene Übungsbeschreibung', reviewer: '', reviewedAt: '',
-        license: 'Eigene schematische Illustration; fachliche Prüfung ausstehend.',
-        licenseUntil: '', transcript: '', tags: ['Nacken', 'Mobilisation', 'Im Sitzen']
-      });
-      db.prepare('INSERT INTO exercises VALUES (?,?,?,?)').run(id,1,'draft','system');
-      db.prepare('INSERT INTO exercise_versions VALUES (?,?,?,?)').run(id,1,JSON.stringify(exercise),iso());
-      return;
-    }
-    const current = JSON.parse(db.prepare('SELECT payload FROM exercise_versions WHERE exercise_id=? AND version=?').get(id,row.current_version).payload);
-    if (current.title !== 'Kopf behutsam drehen' || current.subtitle === 'Kopfrotation im Sitzen · langsam und kontrolliert') return;
-    if (current.start !== 'Aufrecht sitzen und den Blick nach vorn richten.') return;
-    const updated = { ...current,
-      subtitle: 'Kopfrotation im Sitzen · langsam und kontrolliert',
-      start: 'Aufrecht auf einem stabilen Stuhl sitzen. Beide Füße stehen sicher am Boden. Schultern entspannen und den Blick geradeaus richten.',
-      end: 'Der Kopf ist sanft zur Seite gedreht, während Schultern und Oberkörper nach vorne zeigen.',
+    const id = 'kopfrotation-sitzend';
+    if (db.prepare('SELECT 1 FROM exercises WHERE id=?').get(id)) return;
+    const exercise = classifyExercise({
+      id, title: 'Kopfrotation im Sitzen', region: 'Nacken', goal: 'Mobilisation',
+      trainingTypes: ['Mobilisation'], joints: ['Halswirbelsäule'],
+      position: 'Im Sitzen', equipment: 'Stuhl',
+      subtitle: 'Langsame Rotation nach links und rechts',
+      start: 'Aufrecht auf einem stabilen Stuhl sitzen, beide Füße auf dem Boden. Schultern locker und Blick geradeaus.',
+      end: 'Der Kopf ist behutsam zu einer Seite gedreht; Oberkörper und Schultern bleiben nach vorn gerichtet.',
       steps: [
-        'Den Kopf langsam nach links drehen, ohne die Schultern mitzudrehen. Nur so weit bewegen, wie es angenehm möglich ist.',
-        'Den Kopf kontrolliert zur Mitte zurückführen.',
-        'Den Kopf langsam nach rechts drehen und wieder zur Mitte zurückkehren.'
+        'Den Kopf langsam nach links drehen, nur so weit wie angenehm.',
+        'Zur Mitte zurückkehren und den Kopf langsam nach rechts drehen.',
+        'Kontrolliert zur Mitte zurückkehren und ruhig weiteratmen.'
       ],
-      mistakes: 'Den Kopf nicht ruckartig drehen, nach hinten überstrecken oder mit den Händen weiterdrücken. Bei Schwindel, neuen ausstrahlenden Beschwerden oder zunehmenden Schmerzen die Übung abbrechen.',
-      precautions: 'Demonstrationsinhalt: Eignung und Bewegungsgrenzen therapeutisch prüfen, besonders bei akuten Beschwerden oder nach Eingriffen an der Halswirbelsäule.',
-      breathing: 'Ruhig und gleichmäßig weiteratmen.'
-    };
-    const version = row.current_version + 1;
-    db.prepare('INSERT INTO exercise_versions VALUES (?,?,?,?)').run(id,version,JSON.stringify(updated),iso());
-    db.prepare('UPDATE exercises SET current_version=? WHERE id=?').run(version,id);
+      mistakes: 'Nicht ruckartig drehen, den Oberkörper mitdrehen oder eine schmerzhafte Endstellung erzwingen.',
+      precautions: 'Vor Anwendung individuell therapeutisch prüfen. Bei Schwindel, neu auftretenden ausstrahlenden Beschwerden oder zunehmenden Schmerzen abbrechen.',
+      breathing: 'Gleichmäßig weiteratmen.',
+      easier: 'Bewegungsumfang verkleinern.',
+      harder: 'Nur nach therapeutischer Freigabe anpassen.',
+      difficulty: 'Leicht', duration: 3, media: [], demo: false,
+      author: 'Eigene Übungsbeschreibung', reviewer: '', reviewedAt: '',
+      license: 'Eigene schematische Illustration; fachliche Prüfung ausstehend.',
+      licenseUntil: '', transcript: '', tags: ['Nacken', 'Mobilisation', 'Im Sitzen']
+    });
+    db.prepare('INSERT INTO exercises VALUES (?,?,?,?)').run(id, 1, 'draft', 'system');
+    db.prepare('INSERT INTO exercise_versions VALUES (?,?,?,?)').run(id, 1, JSON.stringify(exercise), iso());
   });
 }
 
