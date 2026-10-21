@@ -151,6 +151,15 @@ function App() {
     ),
     [coverage, setCoverage] = useState(false),
     [about, setAbout] = useState(false);
+  const [randomExerciseIds, setRandomExerciseIds] = useState<string[]>([]);
+  const chooseRandomExercises = () => {
+    const available = [...(data?.exercises || [])];
+    for (let i = available.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [available[i], available[j]] = [available[j], available[i]];
+    }
+    setRandomExerciseIds(available.slice(0, 3).map((exercise) => exercise.id));
+  };
   const deepLinkOpened = useRef(false);
   const loadSession = async () => {
     const s = await api<Session>("/session");
@@ -563,18 +572,25 @@ function App() {
                           <Download size={16} /> Plan als PDF
                         </a>
                       </div>
-                      <div className="exercise-grid">
-                        {plan.items.map((item, i) => (
-                          <ExerciseCard
-                            key={item.exerciseId}
-                            exercise={item.exercise}
-                            item={item}
-                            index={i}
-                            done={completed.has(item.exerciseId)}
-                            onClick={() => setDetail(item.exercise)}
-                          />
-                        ))}
-                      </div>
+                      <section className="panel" aria-label="Zufällige Übungen">
+                        <button className="button primary" type="button" onClick={chooseRandomExercises}>
+                          <Activity size={17} /> 3 zufällige Übungen auswählen
+                        </button>
+                        <p>Die Auswahl stammt ausschließlich aus der aktuell verfügbaren Übungsbibliothek. Ihr Trainingsplan bleibt unverändert.</p>
+                        {randomExerciseIds.length > 0 && (
+                          <div className="exercise-grid">
+                            {randomExerciseIds.map((id) => {
+                              const exercise = data?.exercises.find((entry) => entry.id === id);
+                              return exercise ? (
+                                <button key={id} type="button" className="card" onClick={() => setDetail(exercise)}>
+                                  <strong>{exercise.title}</strong>
+                                  <span>{exercise.region} · {exercise.position}</span>
+                                </button>
+                              ) : null;
+                            })}
+                          </div>
+                        )}
+                      </section>
                       <div className="bottom-grid">
                         <section className="week-card">
                           <div className="section-title">
