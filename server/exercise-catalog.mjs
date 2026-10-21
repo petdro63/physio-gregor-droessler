@@ -79,7 +79,9 @@ export function publishSeatedNeckRotation(db) {
       license: 'Eigene schematische Illustration; fachliche Prüfung ausstehend.',
       licenseUntil: '', transcript: '', tags: ['Nacken', 'Mobilisation', 'Im Sitzen']
     });
-    db.prepare('INSERT INTO exercises VALUES (?,?,?,?)').run(id, 1, 'draft', 'system');
+    const creator = db.prepare("SELECT id FROM users WHERE role IN ('admin','therapist') ORDER BY CASE role WHEN 'admin' THEN 0 ELSE 1 END, created_at LIMIT 1").get();
+    if (!creator) return; // Fresh practice install: wait until staff setup is complete.
+    db.prepare('INSERT INTO exercises VALUES (?,?,?,?)').run(id, 1, 'draft', creator.id);
     db.prepare('INSERT INTO exercise_versions VALUES (?,?,?,?)').run(id, 1, JSON.stringify(exercise), iso());
   });
 }
