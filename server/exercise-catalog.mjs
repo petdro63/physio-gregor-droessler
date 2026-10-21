@@ -52,6 +52,10 @@ export function correctSingleLegBridgeSide(db) {
 export function publishSeatedNeckRotation(db) {
   transaction(db, () => {
     const id = 'kopfrotation-sitzend';
+    // Restore the prior list reset's removal entry if older application versions cleared it.
+    if (db.prepare("SELECT 1 FROM settings WHERE id='exercise-list-reset-deadlifts-2026-10-20'").get()) {
+      db.prepare('INSERT OR IGNORE INTO exercise_list_removals (exercise_id,removed_at) VALUES (?,?)').run('nacken-drehen', iso());
+    }
     if (db.prepare('SELECT 1 FROM exercises WHERE id=?').get(id)) return;
     const exercise = classifyExercise({
       id, title: 'Kopfrotation im Sitzen', region: 'Nacken', goal: 'Mobilisation',
