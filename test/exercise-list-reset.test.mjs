@@ -35,10 +35,10 @@ test('exercise-list reset retains the selected collection, preserves history, an
   runtime=createApp({demo:true,production:false,dataDir:dir});
   let staff=await admin(runtime);
   let list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.deepEqual(list.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage','oberkoerperrotation-sitz','unterarmstuetz','liegestuetz','unterarmstuetz-beinheben','seitstuetz','unterarmstuetz-knie','liegestuetz-knie','unterarmstuetz-beinheben-knie','seitstuetz-knie','seitliches-hueftheben-knie','kopfrotation-sitzend'].sort());
+  assert.deepEqual(list.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage','oberkoerperrotation-sitz','unterarmstuetz','liegestuetz','unterarmstuetz-beinheben','seitstuetz','unterarmstuetz-knie','liegestuetz-knie','unterarmstuetz-beinheben-knie','seitstuetz-knie','seitliches-hueftheben-knie','kopfrotation-sitzend','kopfseitneigung-sitzend','taube-sitzend'].sort());
   assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercise_list_removals').get().n,before.exercises-31);
-  assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercises').get().n,before.exercises+1);
-  assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercise_versions').get().n,before.versions+1);
+  assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercises').get().n,before.exercises+3);
+  assert.equal(runtime.db.prepare('SELECT COUNT(*) n FROM exercise_versions').get().n,before.versions+3);
   assert.equal(runtime.db.prepare('SELECT payload FROM plan_versions WHERE plan_id=? AND version=1').get('demo-plan').payload,before.plan);
   assert.deepEqual(runtime.db.prepare('SELECT * FROM training_sessions WHERE id=?').get('existing-history'),before.history);
   const created=(await staff.agent.post('/api/exercises').set('X-CSRF-Token',staff.csrf).send({...list.exercises[0],title:'Später neu angelegte Übung',familyId:'',familyTitle:'',variantLabel:''}).expect(201)).body;
@@ -46,7 +46,7 @@ test('exercise-list reset retains the selected collection, preserves history, an
   runtime=createApp({demo:true,production:false,dataDir:dir});
   staff=await admin(runtime);
   list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.equal(list.exercises.length,33);
+  assert.equal(list.exercises.length,35);
   assert(list.exercises.some(e=>e.id===created.id),'Later user-created exercises stay in the list');
   assert(!list.exercises.some(e=>e.id==='schulterkreisen'),'Seeding never restores removed list entries');
   assert.equal(list.history.length,1);
@@ -70,7 +70,7 @@ test('an already reset installation receives later additions without restoring o
   runtime=createApp({demo:true,production:false,dataDir:dir});
   let staff=await admin(runtime);
   let list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.equal(list.exercises.length,32);
+  assert.equal(list.exercises.length,34);
   assert(newIds.every(id=>list.exercises.some(e=>e.id===id)));
   assert(!list.exercises.some(e=>e.id==='schulterkreisen'));
   for(const id of newIds) {
@@ -86,6 +86,6 @@ test('an already reset installation receives later additions without restoring o
   runtime=createApp({demo:true,production:false,dataDir:dir});
   staff=await admin(runtime);
   list=(await staff.agent.get('/api/overview').expect(200)).body;
-  assert.equal(list.exercises.length,32);
+  assert.equal(list.exercises.length,34);
   assert.equal(list.exercises.find(e=>e.id===edited.id).title,'Individuell angepasste Kniebeuge');
 });
