@@ -53,7 +53,32 @@ export function publishSeatedNeckRotation(db) {
     const id = 'nacken-drehen';
     db.prepare('DELETE FROM exercise_list_removals WHERE exercise_id=?').run(id);
     const row = db.prepare('SELECT * FROM exercises WHERE id=?').get(id);
-    if (!row) return;
+    if (!row) {
+      const exercise = classifyExercise({
+        id, title: 'Kopfrotation im Sitzen', region: 'Nacken', goal: 'Mobilisation',
+        trainingTypes: ['Mobilisation'], joints: ['Halswirbelsäule'],
+        position: 'Im Sitzen', equipment: 'Stuhl',
+        subtitle: 'Kopfrotation im Sitzen · langsam und kontrolliert',
+        start: 'Aufrecht auf einem stabilen Stuhl sitzen. Beide Füße stehen sicher am Boden. Schultern entspannen und den Blick geradeaus richten.',
+        end: 'Der Kopf ist sanft zur Seite gedreht, während Schultern und Oberkörper nach vorne zeigen.',
+        steps: [
+          'Den Kopf langsam nach links drehen, ohne die Schultern mitzudrehen. Nur so weit bewegen, wie es angenehm möglich ist.',
+          'Den Kopf kontrolliert zur Mitte zurückführen.',
+          'Den Kopf langsam nach rechts drehen und wieder zur Mitte zurückkehren.'
+        ],
+        mistakes: 'Den Kopf nicht ruckartig drehen, nach hinten überstrecken oder mit den Händen weiterdrücken. Bei Schwindel oder zunehmenden Schmerzen abbrechen.',
+        breathing: 'Ruhig und gleichmäßig weiteratmen.',
+        precautions: 'Vor Verwendung individuell therapeutisch prüfen. Bei akuten Halswirbelsäulenbeschwerden, nach Eingriffen oder bei Schwindel nur nach Freigabe.',
+        easier: 'Bewegungsumfang verkleinern.', harder: 'Nur nach therapeutischer Freigabe anpassen.',
+        difficulty: 'Leicht', duration: 3, media: [], demo: false,
+        author: 'Eigene Übungsbeschreibung', reviewer: '', reviewedAt: '',
+        license: 'Eigene schematische Illustration; fachliche Prüfung ausstehend.',
+        licenseUntil: '', transcript: '', tags: ['Nacken', 'Mobilisation', 'Im Sitzen']
+      });
+      db.prepare('INSERT INTO exercises VALUES (?,?,?,?)').run(id,1,'draft','system');
+      db.prepare('INSERT INTO exercise_versions VALUES (?,?,?,?)').run(id,1,JSON.stringify(exercise),iso());
+      return;
+    }
     const current = JSON.parse(db.prepare('SELECT payload FROM exercise_versions WHERE exercise_id=? AND version=?').get(id,row.current_version).payload);
     if (current.title !== 'Kopf behutsam drehen' || current.subtitle === 'Kopfrotation im Sitzen · langsam und kontrolliert') return;
     if (current.start !== 'Aufrecht sitzen und den Blick nach vorn richten.') return;
