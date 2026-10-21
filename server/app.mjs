@@ -951,7 +951,7 @@ export function createApp(options = {}) {
       const exercise = getExercise(req.params.id, version);
       const pose = exercise && resolveReferencePose(exercise);
       if (!pose || pose.atlas !== req.params.atlas) throw fail(404, 'Bild nicht gefunden.');
-      res.sendFile(path.resolve('server/assets/reference', pose.atlas + '.png'));
+      res.sendFile(path.resolve('server/assets/reference', pose.atlas + (pose.atlas === 'reference-neck-rotation-seated' ? '.svg' : '.png')));
     } catch (error) { next(error); }
   });
   app.get("/api/catalog-media/:id/:asset/:file", (req, res, next) => {
