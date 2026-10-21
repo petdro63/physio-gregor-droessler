@@ -46,6 +46,36 @@ export function correctSingleLegBridgeSide(db) {
   });
 }
 
+
+// Update the existing seated neck rotation without duplicating it or overwriting personal edits.
+export function publishSeatedNeckRotation(db) {
+  transaction(db, () => {
+    const id = 'nacken-drehen';
+    db.prepare('DELETE FROM exercise_list_removals WHERE exercise_id=?').run(id);
+    const row = db.prepare('SELECT * FROM exercises WHERE id=?').get(id);
+    if (!row) return;
+    const current = JSON.parse(db.prepare('SELECT payload FROM exercise_versions WHERE exercise_id=? AND version=?').get(id,row.current_version).payload);
+    if (current.title !== 'Kopf behutsam drehen' || current.subtitle === 'Kopfrotation im Sitzen · langsam und kontrolliert') return;
+    if (current.start !== 'Aufrecht sitzen und den Blick nach vorn richten.') return;
+    const updated = { ...current,
+      subtitle: 'Kopfrotation im Sitzen · langsam und kontrolliert',
+      start: 'Aufrecht auf einem stabilen Stuhl sitzen. Beide Füße stehen sicher am Boden. Schultern entspannen und den Blick geradeaus richten.',
+      end: 'Der Kopf ist sanft zur Seite gedreht, während Schultern und Oberkörper nach vorne zeigen.',
+      steps: [
+        'Den Kopf langsam nach links drehen, ohne die Schultern mitzudrehen. Nur so weit bewegen, wie es angenehm möglich ist.',
+        'Den Kopf kontrolliert zur Mitte zurückführen.',
+        'Den Kopf langsam nach rechts drehen und wieder zur Mitte zurückkehren.'
+      ],
+      mistakes: 'Den Kopf nicht ruckartig drehen, nach hinten überstrecken oder mit den Händen weiterdrücken. Bei Schwindel, neuen ausstrahlenden Beschwerden oder zunehmenden Schmerzen die Übung abbrechen.',
+      precautions: 'Demonstrationsinhalt: Eignung und Bewegungsgrenzen therapeutisch prüfen, besonders bei akuten Beschwerden oder nach Eingriffen an der Halswirbelsäule.',
+      breathing: 'Ruhig und gleichmäßig weiteratmen.'
+    };
+    const version = row.current_version + 1;
+    db.prepare('INSERT INTO exercise_versions VALUES (?,?,?,?)').run(id,version,JSON.stringify(updated),iso());
+    db.prepare('UPDATE exercises SET current_version=? WHERE id=?').run(version,id);
+  });
+}
+
 // A title correction creates a new current version; prescribed older versions
 // and individual editorial titles remain intact.
 export function renameWideSquats(db) {
