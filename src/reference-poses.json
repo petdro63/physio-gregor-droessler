@@ -802,5 +802,35 @@
     "frameRows": 1,
     "frameAspectRatio": 1.05,
     "scope": "variant"
+  },
+  {
+    "exerciseIds": [
+      "kopfseitneigung-sitzend"
+    ],
+    "equipment": [
+      "Stuhl"
+    ],
+    "atlas": "reference-neck-tilt-seated",
+    "column": 0,
+    "row": 0,
+    "frameColumns": 2,
+    "frameRows": 1,
+    "frameAspectRatio": 1.05,
+    "scope": "variant"
+  },
+  {
+    "exerciseIds": [
+      "taube-sitzend"
+    ],
+    "equipment": [
+      "Stuhl"
+    ],
+    "atlas": "reference-neck-glide-seated",
+    "column": 0,
+    "row": 0,
+    "frameColumns": 2,
+    "frameRows": 1,
+    "frameAspectRatio": 1.05,
+    "scope": "variant"
   }
 ]
