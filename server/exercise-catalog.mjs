@@ -86,6 +86,49 @@ export function publishSeatedNeckRotation(db) {
   });
 }
 
+
+// Add the two additional seated neck mobility exercises without changing existing edits.
+export function publishAdditionalSeatedNeckExercises(db) {
+  transaction(db, () => {
+    const creator = db.prepare("SELECT id FROM users WHERE role IN ('admin','therapist') ORDER BY CASE role WHEN 'admin' THEN 0 ELSE 1 END, created_at LIMIT 1").get();
+    if (!creator) return;
+    const exercises = [
+      {
+        id: 'kopfseitneigung-sitzend', title: 'Kopfseitneigung im Sitzen',
+        subtitle: 'Kopf sanft zur linken und rechten Schulter neigen',
+        start: 'Aufrecht auf einem stabilen Stuhl sitzen, beide Füße stehen auf dem Boden. Der Blick geht geradeaus; die Schultern bleiben locker.',
+        end: 'Ein Ohr nähert sich langsam der gleichseitigen Schulter, ohne dass die Schulter angehoben oder der Kopf verdreht wird.',
+        steps: ['Den Kopf vorsichtig nach links neigen und dabei weiter geradeaus schauen.', 'Zur Mitte zurückkehren und den Kopf langsam nach rechts neigen.', 'Ohne Schwung zur Mitte zurückkehren und gleichmäßig atmen.'],
+        mistakes: 'Nicht den Kopf drehen, die Schulter hochziehen oder mit der Hand an der Halswirbelsäule ziehen.',
+      },
+      {
+        id: 'taube-sitzend', title: 'Taube im Sitzen – Kopf vor und zurück',
+        subtitle: 'Kopf horizontal vor- und zurückschieben, hinten mit leichtem Doppelkinn',
+        start: 'Seitlich betrachtet aufrecht auf einem stabilen Stuhl sitzen. Rücken und Oberkörper bleiben ruhig, der Blick bleibt waagerecht.',
+        end: 'Der Kopf wird ohne Nicken nach hinten geführt, sodass ein sanftes Doppelkinn entsteht.',
+        steps: ['Den Kopf langsam waagerecht nach vorne schieben, ohne das Kinn anzuheben oder abzusenken.', 'Den Kopf kontrolliert waagerecht nach hinten zurückschieben und dabei ein leichtes Doppelkinn bilden.', 'In die neutrale Position zurückkehren und ruhig weiteratmen.'],
+        mistakes: 'Nicht den ganzen Oberkörper verschieben, den Kopf nach oben oder unten kippen oder die Halswirbelsäule überstrecken.',
+      }
+    ];
+    for (const item of exercises) {
+      if (db.prepare('SELECT 1 FROM exercises WHERE id=?').get(item.id)) continue;
+      const exercise = classifyExercise({
+        ...item, region:'Nacken', goal:'Mobilisation', trainingTypes:['Mobilisation'],
+        joints:['Halswirbelsäule'], position:'Im Sitzen', equipment:'Stuhl',
+        precautions:'Vor Anwendung individuell therapeutisch prüfen. Bei Schwindel, ausstrahlenden Beschwerden oder zunehmenden Schmerzen abbrechen.',
+        breathing:'Gleichmäßig weiteratmen.', easier:'Bewegungsumfang verkleinern.',
+        harder:'Nur nach therapeutischer Freigabe anpassen.',
+        difficulty:'Leicht', duration:3, media:[], demo:false,
+        author:'Eigene Übungsbeschreibung', reviewer:'', reviewedAt:'',
+        license:'Eigene schematische Illustration; fachliche Prüfung ausstehend.',
+        licenseUntil:'', transcript:'', tags:['Nacken','Mobilisation','Im Sitzen']
+      });
+      db.prepare('INSERT INTO exercises VALUES (?,?,?,?)').run(item.id,1,'draft',creator.id);
+      db.prepare('INSERT INTO exercise_versions VALUES (?,?,?,?)').run(item.id,1,JSON.stringify(exercise),iso());
+    }
+  });
+}
+
 // A title correction creates a new current version; prescribed older versions
 // and individual editorial titles remain intact.
 export function renameWideSquats(db) {
