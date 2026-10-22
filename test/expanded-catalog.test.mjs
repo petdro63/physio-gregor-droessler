@@ -51,13 +51,8 @@ test('reference art is explicitly mapped to real families and protected from pat
     assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl','reference-squats','reference-sumo-upright','reference-calf-raises','reference-wall-sit','reference-bridges','reference-single-leg-bridge-right','reference-lunges','reference-side-hip-lift','reference-lateral-lunges','reference-eccentric-step-down','reference-cat-cow','reference-piriformis-stretch','reference-seated-trunk-rotation','reference-planks','reference-pushups','reference-plank-leg-lifts','reference-side-planks','reference-neck-rotation-seated','reference-neck-tilt-seated','reference-neck-glide-seated'].includes(pose.atlas));
     assert(pose.column * 2 + 1 < (pose.frameColumns ?? 4));
     assert(pose.row < (pose.frameRows ?? 3));
-    if (pose.atlas.startsWith('reference-neck-')) {
-      const image = fs.readFileSync(new URL('../server/assets/reference/reference-neck-rotation-seated.svg',import.meta.url),'utf8');
-      assert(image.includes('<svg'));
-    } else {
-      const image = fs.readFileSync(new URL(`../server/assets/reference/${pose.atlas}.png`,import.meta.url));
-      assert.equal(image.subarray(1,4).toString(),'PNG');
-    }
+    const image = fs.readFileSync(new URL(`../server/assets/reference/${pose.atlas}.png`,import.meta.url));
+    assert.equal(image.subarray(1,4).toString(),'PNG');
   }
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'physio-expanded-'));
   const runtime=createApp({demo:true,production:false,dataDir:dir});
@@ -68,6 +63,10 @@ test('reference art is explicitly mapped to real families and protected from pat
   const session=(await staff.get('/api/session')).body;
   await staff.post('/api/demo').set('X-CSRF-Token',session.csrf).send({role:'admin'}).expect(200);
   await staff.get(route).expect(200).expect('Content-Type',/image\/png/);
+  for (const pose of poses.filter(p => p.atlas.startsWith('reference-neck-'))) {
+    const response = await staff.get(`/api/reference-poses/${pose.exerciseIds[0]}/${pose.atlas}?version=1`).expect(200).expect('Content-Type', /image\/png/);
+    assert.equal(response.body.subarray(1,4).toString(), 'PNG');
+  }
   const rdlRoute='/api/reference-poses/einbein-kreuzheben-kurzhanteln/reference-single-leg-rdl?version=1';
   await staff.get(rdlRoute).expect(200).expect('Content-Type',/image\/png/);
   await staff.get(rdlRoute.replace('reference-single-leg-rdl','codex-clipboard-b0213c39-af52-47d1-bc59-4bba02848577')).expect(404);

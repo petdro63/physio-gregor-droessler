@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.21-dev**, Versionsdatum **21.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.22-dev**, Versionsdatum **22.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
