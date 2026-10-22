@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.22-dev**, Versionsdatum **22.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.23-dev**, Versionsdatum **22.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -12,6 +12,8 @@ Voraussetzung: Node.js 24 und npm.
 npm ci
 npm run dev
 ```
+
+`npm run dev` prüft beim Start und alle 60 Sekunden den GitHub-Branch `master`, übernimmt neue Versionen und startet die lokale Vorschau automatisch neu. Danach genügt das Neuladen der Browserseite. Das Terminal muss geöffnet bleiben. Lokale Änderungen oder abweichende Commits pausieren Updates; ohne Netzwerk bleibt die bisherige Version verfügbar. Ohne automatische Updates: `npm run dev:manual`. [Details und einmalige Einrichtung](docs/AUTOMATISCHE-UPDATES.md).
 
 Öffnen: **http://localhost:3180**. Auf der Anmeldeseite „Patientenansicht entdecken“ oder „Praxisansicht öffnen“ wählen. Die Auswahl oben wechselt zwischen Patienten-, Therapie- und Administrationsansicht.
 

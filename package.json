@@ -1,10 +1,11 @@
 {
   "name": "physio-gregor-droessler",
-  "version": "0.1.22-dev",
+  "version": "0.1.23-dev",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node server/index.mjs",
+    "dev": "node scripts/dev-auto-update.mjs",
+    "dev:manual": "node server/index.mjs",
     "build": "tsc --noEmit && vite build",
     "start": "node server/index.mjs --production",
     "test": "node --test test/*.test.mjs",
