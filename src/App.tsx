@@ -135,6 +135,22 @@ function Brand() {
     </div>
   );
 }
+function VersionInfo({
+  session,
+  className = "",
+}: {
+  session: Session;
+  className?: string;
+}) {
+  return (
+    <div className={`app-version ${className}`}>
+      <span>Version {session.version}</span>
+      <span>
+        Versionsdatum <time dateTime={session.date}>{displayDate(session.date)}</time>
+      </span>
+    </div>
+  );
+}
 function App() {
   const [session, setSession] = useState<Session | null>(null),
     [data, setData] = useState<Overview | null>(null),
@@ -286,7 +302,10 @@ function App() {
         <div className="sidebar-scrim" onClick={() => setMobile(false)} />
       )}
       <aside className={"sidebar " + (mobile ? "is-open" : "")}>
-        <Brand />
+        <div className="brand-header">
+          <Brand />
+          <VersionInfo session={session} />
+        </div>
         <div className="workspace-label">
           {staff ? "PRAXISBEREICH" : "IHR PATIENTENBEREICH"}
         </div>
@@ -356,7 +375,10 @@ function App() {
             </button>
             <span>{staff ? "Praxisteam" : "Mein Bereich"}</span>
             <ChevronRight size={14} />
-            <strong>{nav.find((n) => n.id === page)?.label}</strong>
+            <div className="breadcrumb-current">
+              <strong>{nav.find((n) => n.id === page)?.label}</strong>
+              <VersionInfo session={session} className="mobile-version" />
+            </div>
           </div>
           <div className="topbar-right">
             {session.demo && (
@@ -860,7 +882,10 @@ function Auth({
   return (
     <div className="auth-page">
       <section className="auth-story">
-        <Brand />
+        <div className="brand-header">
+          <Brand />
+          <VersionInfo session={session} />
+        </div>
         <div className="auth-story-text">
           <span className="pill light">
             <Leaf size={15} /> Für Ihre Gesundheit in Bewegung

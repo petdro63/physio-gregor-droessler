@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "releases": [
+    {
+      "version": "0.1.24-dev",
+      "version_date": "2026-10-27",
+      "environment": "LOCAL-DEV",
+      "task": "Version und Versionsdatum oben links anzeigen.",
+      "thread_id": "01a17c1e-e272-7782-88cc-8590be3a77b8",
+      "evidence": {
+        "src/App.tsx": "058b2a64fb5357f10bf23441d14d5f6045a413f7a1619d812947a76a3a384653",
+        "src/design.css": "7fd7a7fe1a377244fe51ce19d713900a3774783ccb1f696aebd9f04b67b35106",
+        "server/version.mjs": "62e60e1b9b80d358b48bc96d4046fcbd2f11b7840082eb1f57321c94d2c16420",
+        "package.json": "013167a8c6cdba495c2af274cffe42d9461bca38b403f4612d1ac6d532520c6f",
+        "package-lock.json": "3206720c2a2c6a047b5d4d0d7600b696b76b31f526e9b444266c916ecb480885",
+        "public/sw.js": "665c882ff1459f229817546107dd6c95419ec2118f66f50635af6e50fa3491db",
+        "README.md": "66fae1cf32390b4d7dc75f0d271f57fe1f96697b53792f24cf45ec01217fce19"
+      },
+      "notes": [
+        {
+          "category": "improvement",
+          "summary": "Version und Versionsdatum aus der Serversitzung erscheinen oben links beim Logo auf der Anmeldung und in der Anwendung; bei schmalen Ansichten zusätzlich im Kopfbereich. Sichtbar in der lokalen Demo mit 0.1.24-dev und 27.10.2026 geprüft.",
+          "sources": [
+            "src/App.tsx",
+            "src/design.css"
+          ],
+          "targets": [
+            {
+              "kind": "function",
+              "name": "VersionInfo",
+              "location": "src/App.tsx: VersionInfo",
+              "before": "Nicht vorhanden",
+              "after": "Zeigt session.version und session.date mit den Beschriftungen Version und Versionsdatum sowie einem semantischen time-Element im deutschen Datumsformat."
+            },
+            {
+              "kind": "function",
+              "name": "App",
+              "location": "src/App.tsx: App > sidebar und topbar",
+              "before": "Version und Versionsdatum waren nur über den Dialog Über die App zugänglich.",
+              "after": "Die Seitenleiste zeigt VersionInfo direkt unter Brand; im mobilen Kopfbereich bleibt die Versionsangabe auch bei geschlossenem Menü sichtbar."
+            },
+            {
+              "kind": "function",
+              "name": "Auth",
+              "location": "src/App.tsx: Auth > auth-story",
+              "before": "Die Versionsangabe stand ausschließlich unten im Anmeldeformular.",
+              "after": "Zeigt VersionInfo zusätzlich direkt unter dem Logo oben links."
+            },
+            {
+              "kind": "property",
+              "name": ".app-version / .brand-header / .mobile-version",
+              "location": "src/design.css: Versionsanzeige und Mediaquery max-width:730px",
+              "before": "Nicht vorhanden",
+              "after": "Zweizeilige Versionsanzeige mit passenden Farben für Seitenleiste und Anmeldung; zusätzliche Kopfbereichsanzeige bis 730 Pixel Breite."
+            }
+          ]
+        },
+        {
+          "category": "technical",
+          "summary": "Lokale Entwicklungsversion auf 0.1.24-dev vom 27.10.2026 (Europe/Berlin) aktualisiert. TypeScript/Vite-Build und alle 53 vorhandenen Tests erfolgreich; laufende /api/session und sichtbare Anmeldung, Kopfbereich und Seitenmenü geprüft.",
+          "sources": [
+            "server/version.mjs",
+            "package.json",
+            "package-lock.json",
+            "public/sw.js",
+            "README.md"
+          ],
+          "targets": [
+            {
+              "kind": "field",
+              "name": "VERSION / VERSION_DATE",
+              "location": "server/version.mjs",
+              "before": "0.1.23-dev / 2026-10-22",
+              "after": "0.1.24-dev / 2026-10-27"
+            },
+            {
+              "kind": "property",
+              "name": "version / packages[\"\"].version",
+              "location": "package.json und package-lock.json",
+              "before": "0.1.23-dev",
+              "after": "0.1.24-dev"
+            },
+            {
+              "kind": "field",
+              "name": "CACHE",
+              "location": "public/sw.js",
+              "before": "physio-offline-0.1.21-dev",
+              "after": "physio-offline-0.1.24-dev"
+            },
+            {
+              "kind": "property",
+              "name": "Releaseangaben",
+              "location": "README.md: Einleitung",
+              "before": "Version 0.1.23-dev, Versionsdatum 22.10.2026",
+              "after": "Version 0.1.24-dev, Versionsdatum 27.10.2026"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
