@@ -76,6 +76,11 @@ test('an already reset installation receives later additions without restoring o
   for(const id of newIds) {
     const exercise=list.exercises.find(e=>e.id===id);
     assert.equal(exercise.status,'draft');
+    // Shoulder illustrations are intentionally inline, authored SVGs, not legacy PNG atlas routes.
+    if (id.startsWith('schulter-aussenrotation-')) {
+      assert.equal(resolveReferencePose(exercise),undefined);
+      continue;
+    }
     const atlas=resolveReferencePose(exercise).atlas;
     await staff.agent.get(`/api/reference-poses/${id}/${atlas}?version=1`).expect(200).expect('Content-Type',/image\/png/);
     await staff.agent.get(`/api/reference-poses/${id}/reference-single-leg-rdl?version=1`).expect(404);
