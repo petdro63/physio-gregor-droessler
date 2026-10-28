@@ -7,6 +7,7 @@ const legacy = JSON.parse(fs.readFileSync(new URL("./legacy-exercise-classificat
 export const additionalExercises = JSON.parse(fs.readFileSync(new URL("./additional-exercises.json", import.meta.url), "utf8"));
 export const expandedExercises = JSON.parse(fs.readFileSync(new URL("./expanded-exercises.json", import.meta.url), "utf8"));
 export const illustratedExercises = JSON.parse(fs.readFileSync(new URL("./illustrated-exercises.json", import.meta.url), "utf8"));
+export const shoulderRotationExercises = JSON.parse(fs.readFileSync(new URL("./shoulder-rotation-exercises.json", import.meta.url), "utf8"));
 // Retain the requested collection on first installation as well as upgrades.
 export const collectionExerciseIds = [
   'einbein-kreuzheben-kurzhanteln', 'einbein-kreuzheben-langhantel',
@@ -20,6 +21,7 @@ export const collectionExerciseIds = [
   'seitlicher-ausfallschritt-langhantel', 'quadrizeps-exzentrisch-step-down',
   'katze-kuh-mobilisation', 'piriformisdehnung-rueckenlage',
   'oberkoerperrotation-sitz',
+  'schulter-aussenrotation-stand', 'schulter-aussenrotation-sitz', 'schulter-aussenrotation-u-halte-sitz',
   'unterarmstuetz', 'unterarmstuetz-knie',
   'liegestuetz', 'liegestuetz-knie',
   'unterarmstuetz-beinheben', 'unterarmstuetz-beinheben-knie',
@@ -129,6 +131,24 @@ export function publishAdditionalSeatedNeckExercises(db) {
   });
 }
 
+// Add new shoulder rotation entries to existing practice installations as drafts. Never touch edits or publish.
+export function publishShoulderRotationExercises(db) {
+  transaction(db, () => {
+    const creator = db.prepare("SELECT id FROM users WHERE role IN ('admin','therapist') ORDER BY CASE role WHEN 'admin' THEN 0 ELSE 1 END, created_at LIMIT 1").get();
+    if (!creator) return;
+    for (const entry of shoulderRotationExercises) {
+      if (db.prepare("SELECT 1 FROM exercises WHERE id=?").get(entry.id)) continue;
+      const payload = classifyExercise({
+        ...entry, author:'Eigene Übungsbeschreibung nach Nutzervorgabe',
+        reviewer:'', reviewedAt:'', licenseUntil:'', transcript:'',
+        tags:[...entry.trainingTypes,...entry.joints,entry.position,entry.equipment]
+      });
+      db.prepare("INSERT INTO exercises VALUES (?,?,?,?)").run(entry.id,1,'draft',creator.id);
+      db.prepare("INSERT INTO exercise_versions VALUES (?,?,?,?)").run(entry.id,1,JSON.stringify(payload),iso());
+    }
+  });
+}
+
 // A title correction creates a new current version; prescribed older versions
 // and individual editorial titles remain intact.
 export function renameWideSquats(db) {
@@ -172,7 +192,7 @@ export function classifyExercise(exercise, id = exercise.id) {
 // INSERT OR IGNORE preserves edits and publication decisions across restarts.
 export function seedResearchDrafts(db) {
   transaction(db, () => {
-    for (const entry of [...additionalExercises, ...rehabExercises, ...expandedExercises, ...illustratedExercises]) {
+    for (const entry of [...additionalExercises, ...rehabExercises, ...expandedExercises, ...illustratedExercises, ...shoulderRotationExercises]) {
       if (db.prepare("SELECT 1 FROM exercises WHERE id=?").get(entry.id)) continue;
       const payload = {
         difficulty: "Leicht", duration: 3, breathing: "Ruhig weiteratmen; Bewegungen kontrolliert ausführen.",

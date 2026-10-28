@@ -1,0 +1,150 @@
+[
+  {
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "conditionUses": [],
+    "methodTags": [],
+    "equipment": "Ohne Zusatzgerät",
+    "difficulty": "Leicht",
+    "duration": 3,
+    "breathing": "Ruhig und gleichmäßig weiteratmen; beim Auswärtsdrehen nicht die Luft anhalten.",
+    "mistakes": "Keine Rumpfdrehung, kein Hohlkreuz, keine hochgezogenen Schultern und keine ruckartigen Bewegungen. Nicht in Schmerz oder Blockierung hineindrücken.",
+    "precautions": "Fachlich noch nicht freigegebener Übungsentwurf. Bewegungsbereich und Eignung vor Patienteneinsatz therapeutisch prüfen, insbesondere nach Operationen oder bei instabiler Schulter. Bei neuen oder zunehmenden Schmerzen, Taubheitsgefühl oder Schwindel abbrechen.",
+    "easier": "Kleineren, schmerzarmen Bewegungsweg wählen; Oberarme nach therapeutischer Anleitung unterstützen.",
+    "harder": "Widerstand oder größere Bewegungsamplitude nur nach individueller therapeutischer Freigabe.",
+    "requiresSupervision": true,
+    "author": "Eigene Übungsbeschreibung nach Nutzerangaben",
+    "reviewer": "",
+    "reviewedAt": "",
+    "demo": false,
+    "media": [],
+    "license": "Eigene schematische SVG-Bewegungsillustration nach vom Nutzer bereitgestellter Stilreferenz; keine fremden Originalbilder.",
+    "sourceNote": "Übung nach Vorgabe des Nutzers als schematischer, noch fachlich ungeprüfter Entwurf. Quellen zum allgemeinen Muster, keine Indikations- oder Wirksamkeitsbehauptung.",
+    "sources": [
+      {
+        "title": "AAOS · Rotator cuff and shoulder conditioning program",
+        "url": "https://orthoinfo.aaos.org/en/recovery/rotator-cuff-and-shoulder-conditioning-program/"
+      }
+    ],
+    "id": "schulter-aussenrotation-stand",
+    "familyId": "schulter-aussenrotation",
+    "familyTitle": "Schulteraußenrotation ohne Hilfsmittel",
+    "variantLabel": "Im Stand · Ellenbogen am Körper",
+    "title": "Schulteraußenrotation im Stand",
+    "position": "Im Stand",
+    "subtitle": "Ellenbogen am Körper · Unterarme nach außen drehen",
+    "start": "Aufrecht und hüftbreit stehen. Beide Oberarme liegen locker seitlich am Rumpf, die Ellenbogen sind etwa 90° gebeugt. Unterarme zeigen zunächst vor den Bauch.",
+    "end": "Die Ellenbogen bleiben am Körper und etwa 90° gebeugt; beide Unterarme sind nach außen gedreht, die Schultern bleiben tief und der Oberkörper gerade.",
+    "steps": [
+      "Aufrecht stehen, Schultern locker lassen und beide Ellenbogen seitlich am Oberkörper halten.",
+      "Bei unverändert gebeugten Ellenbogen die Unterarme langsam nach außen bewegen; die Hände wandern seitlich auseinander.",
+      "Nur bis zur individuell schmerzarmen Bewegungsgrenze drehen und langsam zur Ausgangsposition zurückkehren."
+    ]
+  },
+  {
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "conditionUses": [],
+    "methodTags": [],
+    "equipment": "Stuhl",
+    "difficulty": "Leicht",
+    "duration": 3,
+    "breathing": "Ruhig und gleichmäßig weiteratmen; beim Auswärtsdrehen nicht die Luft anhalten.",
+    "mistakes": "Keine Rumpfdrehung, kein Hohlkreuz, keine hochgezogenen Schultern und keine ruckartigen Bewegungen. Nicht in Schmerz oder Blockierung hineindrücken.",
+    "precautions": "Fachlich noch nicht freigegebener Übungsentwurf. Bewegungsbereich und Eignung vor Patienteneinsatz therapeutisch prüfen, insbesondere nach Operationen oder bei instabiler Schulter. Bei neuen oder zunehmenden Schmerzen, Taubheitsgefühl oder Schwindel abbrechen.",
+    "easier": "Kleineren, schmerzarmen Bewegungsweg wählen; Oberarme nach therapeutischer Anleitung unterstützen.",
+    "harder": "Widerstand oder größere Bewegungsamplitude nur nach individueller therapeutischer Freigabe.",
+    "requiresSupervision": true,
+    "author": "Eigene Übungsbeschreibung nach Nutzerangaben",
+    "reviewer": "",
+    "reviewedAt": "",
+    "demo": false,
+    "media": [],
+    "license": "Eigene schematische SVG-Bewegungsillustration nach vom Nutzer bereitgestellter Stilreferenz; keine fremden Originalbilder.",
+    "sourceNote": "Übung nach Vorgabe des Nutzers als schematischer, noch fachlich ungeprüfter Entwurf. Quellen zum allgemeinen Muster, keine Indikations- oder Wirksamkeitsbehauptung.",
+    "sources": [
+      {
+        "title": "AAOS · Rotator cuff and shoulder conditioning program",
+        "url": "https://orthoinfo.aaos.org/en/recovery/rotator-cuff-and-shoulder-conditioning-program/"
+      }
+    ],
+    "id": "schulter-aussenrotation-sitz",
+    "familyId": "schulter-aussenrotation",
+    "familyTitle": "Schulteraußenrotation ohne Hilfsmittel",
+    "variantLabel": "Im Sitzen · Ellenbogen am Körper",
+    "title": "Schulteraußenrotation im Sitzen",
+    "position": "Im Sitzen",
+    "subtitle": "Stabil sitzen · Ellenbogen am Rumpf · nach außen öffnen",
+    "start": "Auf einem stabilen Stuhl aufrecht sitzen, beide Füße flach auf dem Boden. Oberarme liegen seitlich am Körper; die Ellenbogen sind etwa 90° gebeugt, die Unterarme zeigen nach vorn.",
+    "end": "Beide Ellenbogen bleiben am Rumpf und ungefähr 90° gebeugt, während die Unterarme nach außen gedreht sind. Kopf und Brustkorb bleiben ruhig.",
+    "steps": [
+      "Aufrecht sitzen, Füße aufstellen, Schultern entspannen und die gebeugten Ellenbogen am Rumpf halten.",
+      "Die Unterarme langsam nach außen drehen und die Hände voneinander entfernen, ohne die Ellenbogen abzuspreizen.",
+      "Bewegung kontrolliert zurückführen; nicht mit dem Rücken oder den Schultern ausweichen."
+    ]
+  },
+  {
+    "region": "Schulter",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Schultergelenk"
+    ],
+    "strengthMuscles": [],
+    "conditionUses": [],
+    "methodTags": [],
+    "equipment": "Stuhl",
+    "difficulty": "Leicht",
+    "duration": 3,
+    "breathing": "Ruhig und gleichmäßig weiteratmen; beim Auswärtsdrehen nicht die Luft anhalten.",
+    "mistakes": "Ellenbogen in der Ausgangsstellung nicht strecken! Die Hände nicht mit gestreckten Armen nach vorn schieben, die Ellenbogen nicht absenken, nicht ins Hohlkreuz ausweichen oder die Schulter nach oben ziehen.",
+    "precautions": "Fachlich noch nicht freigegebener Übungsentwurf. Die Position auf Schulterhöhe ist für manche Schulterbeschwerden oder postoperative Phasen ungeeignet; nur nach individueller therapeutischer Freigabe und im schmerzarmen Bewegungsausmaß anwenden.",
+    "easier": "Kleineren, schmerzarmen Bewegungsweg wählen; Oberarme nach therapeutischer Anleitung unterstützen.",
+    "harder": "Widerstand oder größere Bewegungsamplitude nur nach individueller therapeutischer Freigabe.",
+    "requiresSupervision": true,
+    "author": "Eigene Übungsbeschreibung nach Nutzerangaben",
+    "reviewer": "",
+    "reviewedAt": "",
+    "demo": false,
+    "media": [],
+    "license": "Eigene schematische SVG-Bewegungsillustration nach vom Nutzer bereitgestellter Stilreferenz; keine fremden Originalbilder.",
+    "sourceNote": "Übung nach Vorgabe des Nutzers als schematischer, noch fachlich ungeprüfter Entwurf. Quellen zum allgemeinen Muster, keine Indikations- oder Wirksamkeitsbehauptung.",
+    "sources": [
+      {
+        "title": "AAOS · Rotator cuff and shoulder conditioning program",
+        "url": "https://orthoinfo.aaos.org/en/recovery/rotator-cuff-and-shoulder-conditioning-program/"
+      }
+    ],
+    "id": "schulter-aussenrotation-u-halte-sitz",
+    "familyId": "schulter-aussenrotation",
+    "familyTitle": "Schulteraußenrotation ohne Hilfsmittel",
+    "variantLabel": "Im Sitzen · 90° Schulterhöhe · U-Halte",
+    "title": "Schulteraußenrotation auf Schulterhöhe zur U-Halte im Sitzen",
+    "position": "Im Sitzen",
+    "subtitle": "Ellenbogen schon zu Beginn 90° gebeugt · Unterarme zeigen nach vorn",
+    "start": "Aufrecht auf einem stabilen Stuhl sitzen. Oberarme seitlich auf Schulterhöhe halten (ca. 90° Abspreizung). Die Ellenbogen sind bereits in der Ausgangsstellung etwa 90° gebeugt; beide Unterarme zeigen von den Ellenbogen aus waagerecht nach vorn, Richtung Blickfeld. Hände sind vor dem Körper, nicht seitlich ausgestreckt.",
+    "end": "Oberarme und Ellenbogen bleiben auf Schulterhöhe und die Ellenbogen bleiben etwa 90° gebeugt. Die Unterarme drehen kontrolliert nach oben und etwas nach hinten bis zur individuellen U-Halte, ohne die Oberarme abzusenken oder den Rücken zu überstrecken.",
+    "steps": [
+      "Aufrecht sitzen; Oberarme seitlich auf Schulterhöhe anheben. Beide Ellenbogen von Beginn an 90° beugen und die Unterarme nach vorn ausrichten.",
+      "Die Ellenbogen auf Schulterhöhe halten und ausschließlich die Schulter nach außen drehen: Unterarme wandern von vorn nach oben/hinten.",
+      "In einer beschwerdearmen U-Halte enden. Die Ellenbogen bleiben dabei gebeugt, die Oberarme waagerecht.",
+      "Die Unterarme langsam wieder nach vorn in die weiterhin gebeugte Ausgangsposition drehen."
+    ]
+  }
+]

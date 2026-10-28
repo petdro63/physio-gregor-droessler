@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.24-dev**, Versionsdatum **27.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.25-dev**, Versionsdatum **28.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -20,6 +20,9 @@ npm run dev
 Die Vorschau nutzt ausschließlich erfundene Personen. Demo- und Praxisdatenbanken liegen getrennt in `data/demo` und `data/practice`. Weder Datenbanken, Sitzungsschlüssel, Backups noch lokale Umgebungsdateien werden in Git gespeichert. Die Demo läuft standardmäßig nur an der lokalen Loopbackadresse.
 
 ## Enthalten
+
+- Drei neue Schulter-Außenrotationen: im Stand, im Sitzen sowie im Sitzen mit Ellenbogen auf Schulterhöhe; bei der U-Halte bleiben die Ellenbogen **bereits in der Ausgangsstellung 90° gebeugt**, die Unterarme zeigen nach vorn. Neu gezeichnete SVG-Start- und Endstellungen im App-Stil; zunächst nur als fachlich ungeprüfte Entwürfe. [Ausführung und Bildherkunft](docs/SCHULTER-AUSSENROTATION.md).
+
 
 - Vier neue Stützübungen mit deutschen Anleitungen und jeweils leichter Kniestütz-Variante; zusätzlich seitliches Hüftheben auf den Knien. Statische Stützübungen werden in Sekunden, dynamische in Wiederholungen dosiert. [Bilder, Prompts und Quellen](docs/PLANK-STUETZVARIANTEN.md).
 - Bereinigte Übungsliste mit 31 Einträgen: Kraftübungen und Varianten sowie Katze–Kuh, Oberkörperrotation im Sitz und Piriformisdehnung in Rückenlage. Frühere entfernte Einträge bleiben ausgeschlossen; vorhandene Pläne und Verläufe bleiben erhalten.
