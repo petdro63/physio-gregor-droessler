@@ -1,9 +1,11 @@
 import path from 'node:path';
 import sharp from 'sharp';
 
-// The source files are narrow, two-frame WebP atlases. Decode each pose only once,
-// upscale it for high-density screens and cache the result; never expose a new
-// public/static media path that bypasses exercise permissions.
+// The source files are only 300x286px for two poses. Preserve every decoded
+// original pixel: upscaling and sharpening cannot restore missing detail, and
+// multiple resize passes make these already soft originals appear even softer.
+// Crop each frame without resampling and re-encode it losslessly. Retain the
+// same exercise/version authorization in the caller. Cache each exact frame.
 const cachedFrames = new Map();
 const validAtlases = new Set([
   'reference-shoulder-rotation-standing',
@@ -26,11 +28,8 @@ export function enhancedShoulderFrame(atlas, frame) {
       const frameWidth = width / 2;
       return sharp(filename)
         .extract({ left: frame * frameWidth, top: 0, width: frameWidth, height })
-        .resize({ width: frameWidth * 4, kernel: 'lanczos3' })
-        // Moderate edge sharpening only. No generative replacement of faces,
-        // clothing or joint geometry; the original illustrated pixels remain the source.
-        .sharpen({ sigma: 1 })
-        // Avoid introducing new WebP compression artefacts after enhancement.
+        // No enlargement, redraw, sharpening halos, or lossy recompression.
+        // Each frame has the exact original resolution and original pose.
         .webp({ lossless: true, effort: 5 })
         .toBuffer();
     })();

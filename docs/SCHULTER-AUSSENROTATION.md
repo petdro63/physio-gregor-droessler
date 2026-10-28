@@ -30,3 +30,11 @@ Die bisherigen Atlanten haben nur 300 × 286 Pixel für **zwei** Posen. Für die
 Auf ausdrücklichen Wunsch werden **keine neu generierten Figuren** eingesetzt. Die drei bestehenden zweiphasigen WebP-Dateien bleiben unverändert. Die serverseitig aus den vorhandenen Originalen abgeleiteten Einzelphasen werden mit Lanczos vergrößert, moderat geschärft und nun *verlustfrei* als WebP ausgegeben (ohne erneute verlustbehaftete Kompression).
 
 Die Übungskarten passen die ganze Figur in die Kartenhöhe ein. In der Detailansicht beträgt die maximale Bildhöhe jetzt **300 CSS-Pixel** statt der bisherigen vollen Spaltenbreite; die beiden Phasen stehen weiterhin nebeneinander. Dies reduziert die wahrgenommene Unschärfe und verhindert übergroße Portraits. Der automatische Test vergleicht auf Pixelbasis die herunterskalierten Ausgaben mit den Originalphasen. Das erzeugt keine nicht vorhandenen anatomischen Details und ersetzt keine fachliche Freigabe.
+
+## Originalgetreue Bildausgabe statt künstlicher Hochskalierung
+
+Die originale WebP-Datei jeder Außenrotationsübung enthält **zwei Phasen auf insgesamt nur 300 × 286 Pixeln**, also **150 × 286 Pixel pro Phase**. Die bisherige vierfache Vergrößerung und Nachschärfung erzeugte keine zusätzlichen Bilddetails und war auf Bildschirmen weiterhin weich. Diese doppelte Interpolation wurde entfernt.
+
+Die vorhandenen sechs Phasen werden jetzt aus den bisherigen Originaldateien **ohne Resampling** ausgeschnitten und als verlustfreies WebP übertragen. In der Detailansicht wird die Darstellung auf 220 CSS-Pixel Höhe begrenzt, damit der Browser keine Vergrößerung über die Originalauflösung erzwingt. Ein Regressionstest verifiziert die identischen Pixeldaten, dimensionsgetreue Wiedergabe und die geschützte Bildroute.
+
+Dies ist die technisch verlustärmste Anzeige der vorhandenen Dateien, **keine echte Hochauflösungsrestauration**. Für sichtbar feinere Gesichter, Hände und Konturen werden **höher aufgelöste Ausgangszeichnungen der exakt selben Figur und Posen** benötigt. Es wurden weder neue Figuren noch neue Bilder erstellt. Die Übungen bleiben fachlich ungeprüfte Entwürfe.
