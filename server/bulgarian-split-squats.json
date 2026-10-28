@@ -1,0 +1,133 @@
+[
+  {
+    "familyId": "bulgarian-split-squat",
+    "familyTitle": "Bulgarische Split Squats",
+    "region": "Knie",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft",
+      "Koordination"
+    ],
+    "joints": [
+      "Kniegelenk",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Großer Gesäßmuskel (M. gluteus maximus)"
+    ],
+    "position": "Im Stand",
+    "conditionUses": [],
+    "methodTags": [],
+    "difficulty": "Anspruchsvoll",
+    "duration": 3,
+    "breathing": "Beim langsamen Absenken ruhig einatmen, beim Hochdrücken durch den vorderen Fuß ausatmen; nicht pressen.",
+    "precautions": "Anspruchsvolle einbeinbetonte Kraft- und Gleichgewichtsübung: Belastbarkeit von Knie und Hüfte, sicheres Gleichgewicht, Bankhöhe und individuellen Bewegungsweg vor dem Einsatz therapeutisch überprüfen. Nach Operationen, bei akuten Beschwerden, Instabilität oder Sturzgefahr nur nach ausdrücklicher Freigabe. Bei zunehmendem Schmerz, Schwindel oder Unsicherheit abbrechen.",
+    "mistakes": "Nicht auf eine rutschende oder kippende Bank stellen. Vorderes Knie nicht nach innen einknicken lassen, vordere Ferse nicht abheben, nicht überstürzt absenken oder den Rücken stark überstrecken. Bank nicht als Schubbein benutzen.",
+    "easier": "Zunächst einen normalen Split Squat mit hinterem Fuß am Boden üben; gegebenenfalls am festen Geländer halten und den Bewegungsweg verkleinern.",
+    "harder": "Zusatzlast nur nach sicher beherrschter Körpergewichtsvariante und fachlicher Freigabe steigern.",
+    "requiresSupervision": true,
+    "author": "Eigenständige deutsche Übungsbeschreibung nach Nutzer-Bewegungsreferenz",
+    "reviewer": "",
+    "reviewedAt": "",
+    "license": "Neue, für die Physio-App generierte und zugeschnittene zweiphasige WebP-Illustration im bisherigen blau-orangen Figurenstil; das eingereichte Fremdbild wird nicht übernommen.",
+    "licenseUntil": "",
+    "transcript": "",
+    "media": [],
+    "demo": false,
+    "defaultSets": 2,
+    "defaultReps": 8,
+    "sourceNote": "Neu illustrierter Entwurf anhand der vom Nutzer bereitgestellten Bewegungsreferenz. Keine Übernahme der Originalbilder, Anatomiegrafiken oder des Wasserzeichens; individuelle Eignung und Dosierung fachlich prüfen.",
+    "sources": [
+      {
+        "title": "NASM · Bulgarian Split Squat",
+        "url": "https://www.nasm.org/resource-center/exercise-library/bulgarian-split-squat"
+      },
+      {
+        "title": "Royal Berkshire NHS · Strength and conditioning exercise class",
+        "url": "https://www.royalberkshire.nhs.uk/media/ljrncq23/strength-and-conditioning-exercise-class_jul25.pdf"
+      }
+    ],
+    "id": "bulgarian-split-squat-ohne-gewicht",
+    "title": "Bulgarischer Split Squat ohne Gewicht",
+    "variantLabel": "Ohne Zusatzgewicht",
+    "equipment": "Ohne Zusatzgerät",
+    "subtitle": "Hinterer Fuß erhöht · vorderes Bein kontrolliert beugen",
+    "start": "Seitlich zur Bildansicht aufrecht vor einer stabilen, rutschfesten Bank stehen. Den Spann des hinteren Fußes auf die Bank legen. Vorderer Fuß bleibt in passendem Abstand vollständig am Boden; Becken zeigt nach vorn, Rumpf bleibt stabil.",
+    "end": "Das vordere Knie und die Hüfte sind kontrolliert gebeugt; das hintere Knie sinkt in Richtung Boden, ohne aufsetzen zu müssen. Der hintere Fuß ruht weiter auf der Bank. Vorderes Knie zeigt in Richtung Zehen, der vordere Fuß bleibt flach aufgestellt.",
+    "steps": [
+      "Sicher vor der stabilen Bank positionieren und erst das Gleichgewicht finden; den hinteren Fuß mit dem Spann auflegen.",
+      "Das Gewicht überwiegend auf den vorderen Fuß bringen; Knie und Hüfte langsam beugen und das Becken senkrecht absenken.",
+      "Nur bis zum individuell kontrollierbaren, beschwerdearmen Tiefpunkt gehen; das hintere Knie nähert sich dem Boden.",
+      "Über den gesamten vorderen Fuß kontrolliert aufrichten. Gewünschte Wiederholungen nach Plan ausführen und dann das Bein wechseln."
+    ],
+    "equipmentNote": "Stabile Bank, hinterer Fuß aufgelegt; keine Zusatzgewichte."
+  },
+  {
+    "familyId": "bulgarian-split-squat",
+    "familyTitle": "Bulgarische Split Squats",
+    "region": "Knie",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft",
+      "Koordination"
+    ],
+    "joints": [
+      "Kniegelenk",
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [
+      "Vorderer Oberschenkel (M. quadriceps femoris)",
+      "Großer Gesäßmuskel (M. gluteus maximus)"
+    ],
+    "position": "Im Stand",
+    "conditionUses": [],
+    "methodTags": [],
+    "difficulty": "Anspruchsvoll",
+    "duration": 3,
+    "breathing": "Beim langsamen Absenken ruhig einatmen, beim Hochdrücken durch den vorderen Fuß ausatmen; nicht pressen.",
+    "precautions": "Anspruchsvolle einbeinbetonte Kraft- und Gleichgewichtsübung: Belastbarkeit von Knie und Hüfte, sicheres Gleichgewicht, Bankhöhe und individuellen Bewegungsweg vor dem Einsatz therapeutisch überprüfen. Nach Operationen, bei akuten Beschwerden, Instabilität oder Sturzgefahr nur nach ausdrücklicher Freigabe. Bei zunehmendem Schmerz, Schwindel oder Unsicherheit abbrechen. Zusatzgewicht ausschließlich nach individuell freigegebener Belastungsstufe; sicherer Stand muss bei beiden Gewichten gewährleistet sein.",
+    "mistakes": "Nicht auf eine rutschende oder kippende Bank stellen. Vorderes Knie nicht nach innen einknicken lassen, vordere Ferse nicht abheben, nicht überstürzt absenken oder den Rücken stark überstrecken. Bank nicht als Schubbein benutzen.",
+    "easier": "Weglassen der Kurzhanteln und kleinere Beugetiefe; bei Bedarf zuerst Split Squat mit hinterem Fuß am Boden.",
+    "harder": "Mehr Last oder größerer Bewegungsweg nur nach individueller Freigabe und nachweislich stabiler Knie- und Rumpfführung.",
+    "requiresSupervision": true,
+    "author": "Eigenständige deutsche Übungsbeschreibung nach Nutzer-Bewegungsreferenz",
+    "reviewer": "",
+    "reviewedAt": "",
+    "license": "Neue, für die Physio-App generierte und zugeschnittene zweiphasige WebP-Illustration im bisherigen blau-orangen Figurenstil; das eingereichte Fremdbild wird nicht übernommen.",
+    "licenseUntil": "",
+    "transcript": "",
+    "media": [],
+    "demo": false,
+    "defaultSets": 2,
+    "defaultReps": 8,
+    "sourceNote": "Neu illustrierter Entwurf anhand der vom Nutzer bereitgestellten Bewegungsreferenz. Keine Übernahme der Originalbilder, Anatomiegrafiken oder des Wasserzeichens; individuelle Eignung und Dosierung fachlich prüfen.",
+    "sources": [
+      {
+        "title": "NASM · Bulgarian Split Squat",
+        "url": "https://www.nasm.org/resource-center/exercise-library/bulgarian-split-squat"
+      },
+      {
+        "title": "Royal Berkshire NHS · Strength and conditioning exercise class",
+        "url": "https://www.royalberkshire.nhs.uk/media/ljrncq23/strength-and-conditioning-exercise-class_jul25.pdf"
+      },
+      {
+        "title": "University of Sussex · Bulgarian Split Squat (dumbbell)",
+        "url": "https://www.sussex.ac.uk/sport/documents/5-bulgarian-split-squat-dumbbell.pdf"
+      }
+    ],
+    "id": "bulgarian-split-squat-kurzhanteln",
+    "title": "Bulgarischer Split Squat mit Kurzhanteln",
+    "variantLabel": "Mit zwei Kurzhanteln",
+    "equipment": "Hanteln",
+    "subtitle": "Zwei Kurzhanteln seitlich halten · Bank hinter dem Körper",
+    "start": "Aufrecht vor einer stabilen, rutschfesten Bank stehen. Den Spann des hinteren Fußes auflegen und den vorderen Fuß fest am Boden platzieren. In jeder Hand eine leichte, individuell freigegebene Kurzhantel neben dem Körper halten, Arme lang und Schultern tief.",
+    "end": "Das vordere Knie ist kontrolliert gebeugt, das hintere Knie nähert sich dem Boden. Beide Kurzhanteln hängen weiterhin seitlich neben den Oberschenkeln; Arme bleiben lang und die Wirbelsäule in natürlicher Stellung. Die vordere Ferse bleibt belastet.",
+    "steps": [
+      "Zunächst die Split-Squat-Bewegung ohne Gewichte sicher beherrschen; dann zwei freigegebene Kurzhanteln neben dem Körper halten.",
+      "Mit dem vorderen Fuß stabil aufstehen, hinteren Fuß auf der Bank ablegen und die Balance sichern.",
+      "Vorderes Knie und Hüfte langsam beugen, das hintere Knie Richtung Boden sinken lassen; Kurzhanteln bleiben ruhig seitlich.",
+      "Über den vorderen Fuß aufrichten, ohne die Gewichte zu schwingen. Nach den geplanten Wiederholungen Seite wechseln."
+    ]
+  }
+]

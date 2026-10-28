@@ -877,5 +877,35 @@
     "frameRows": 1,
     "frameAspectRatio": 0.5244755244755245,
     "scope": "variant"
+  },
+  {
+    "exerciseIds": [
+      "bulgarian-split-squat-ohne-gewicht"
+    ],
+    "equipment": [
+      "Ohne Zusatzgerät"
+    ],
+    "atlas": "reference-bulgarian-ohne-gewicht",
+    "column": 0,
+    "row": 0,
+    "frameColumns": 2,
+    "frameRows": 1,
+    "frameAspectRatio": 1.3541666666666667,
+    "scope": "variant"
+  },
+  {
+    "exerciseIds": [
+      "bulgarian-split-squat-kurzhanteln"
+    ],
+    "equipment": [
+      "Hanteln"
+    ],
+    "atlas": "reference-bulgarian-kurzhanteln",
+    "column": 0,
+    "row": 0,
+    "frameColumns": 2,
+    "frameRows": 1,
+    "frameAspectRatio": 1.3541666666666667,
+    "scope": "variant"
   }
 ]

@@ -26,7 +26,7 @@ import {
   transaction,
   audit,
 } from "./db.mjs";
-import { classifyExercise, seedResearchDrafts, resetExerciseListToDeadlifts, renameWideSquats, correctSingleLegBridgeSide, publishSeatedNeckRotation, publishAdditionalSeatedNeckExercises, publishShoulderRotationExercises, taxonomy } from "./exercise-catalog.mjs";
+import { classifyExercise, seedResearchDrafts, resetExerciseListToDeadlifts, renameWideSquats, correctSingleLegBridgeSide, publishSeatedNeckRotation, publishAdditionalSeatedNeckExercises, publishShoulderRotationExercises, publishBulgarianSplitSquats, taxonomy } from "./exercise-catalog.mjs";
 import { clinicalLibrary, catalogMedia } from "./clinical-content.mjs";
 import { seed, coverage } from "./seed.mjs";
 import { VERSION, VERSION_DATE, TIME_ZONE } from "./version.mjs";
@@ -159,6 +159,7 @@ export function createApp(options = {}) {
   publishSeatedNeckRotation(db);
   publishAdditionalSeatedNeckExercises(db);
   publishShoulderRotationExercises(db);
+  publishBulgarianSplitSquats(db);
   const mediaDir = path.join(dir, "media");
   fs.mkdirSync(mediaDir, { recursive: true });
   const secretFile = path.join(dir, "session-secret");
@@ -954,7 +955,7 @@ export function createApp(options = {}) {
       const exercise = getExercise(req.params.id, version);
       const pose = exercise && resolveReferencePose(exercise);
       if (!pose || pose.atlas !== req.params.atlas) throw fail(404, 'Bild nicht gefunden.');
-      const extension = pose.atlas.startsWith('reference-shoulder-rotation-') ? '.webp' : '.png';
+      const extension = (pose.atlas.startsWith('reference-shoulder-rotation-') || pose.atlas.startsWith('reference-bulgarian-')) ? '.webp' : '.png';
       res.sendFile(path.resolve('server/assets/reference', pose.atlas + extension));
     } catch (error) { next(error); }
   });

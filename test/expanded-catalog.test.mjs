@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import request from 'supertest';
 import { createApp } from '../server/app.mjs';
-import { expandedExercises, additionalExercises, illustratedExercises, shoulderRotationExercises, taxonomy } from '../server/exercise-catalog.mjs';
+import { expandedExercises, additionalExercises, illustratedExercises, shoulderRotationExercises, bulgarianSplitSquats, taxonomy } from '../server/exercise-catalog.mjs';
 import { resolveReferencePose } from '../src/reference-lookup.ts';
 import { findExercises } from '../src/exercise-search.ts';
 import { suggestExercises } from '../src/condition-search.ts';
@@ -46,12 +46,12 @@ test('every variant has usable end instructions, valid classification and no fab
 test('reference art is explicitly mapped to real families and protected from patients and path injection', async t => {
   for (const pose of poses) {
     if (pose.familyId) assert(expandedExercises.some(e=>e.familyId===pose.familyId));
-    if (pose.exerciseIds) assert(pose.exerciseIds.every(id=>['kopfrotation-sitzend','kopfseitneigung-sitzend','taube-sitzend'].includes(id) || [...additionalExercises,...illustratedExercises,...shoulderRotationExercises].some(e=>e.id===id)));
+    if (pose.exerciseIds) assert(pose.exerciseIds.every(id=>['kopfrotation-sitzend','kopfseitneigung-sitzend','taube-sitzend'].includes(id) || [...additionalExercises,...illustratedExercises,...shoulderRotationExercises,...bulgarianSplitSquats].some(e=>e.id===id)));
     assert(pose.column>=0 && pose.column<=1 && pose.row>=0 && pose.row<=2);
-    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl','reference-squats','reference-sumo-upright','reference-calf-raises','reference-wall-sit','reference-bridges','reference-single-leg-bridge-right','reference-lunges','reference-side-hip-lift','reference-lateral-lunges','reference-eccentric-step-down','reference-cat-cow','reference-piriformis-stretch','reference-seated-trunk-rotation','reference-planks','reference-pushups','reference-plank-leg-lifts','reference-side-planks','reference-neck-rotation-seated','reference-neck-tilt-seated','reference-neck-glide-seated','reference-shoulder-rotation-standing','reference-shoulder-rotation-seated','reference-shoulder-rotation-u-hold'].includes(pose.atlas));
+    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl','reference-squats','reference-sumo-upright','reference-calf-raises','reference-wall-sit','reference-bridges','reference-single-leg-bridge-right','reference-lunges','reference-side-hip-lift','reference-lateral-lunges','reference-eccentric-step-down','reference-cat-cow','reference-piriformis-stretch','reference-seated-trunk-rotation','reference-planks','reference-pushups','reference-plank-leg-lifts','reference-side-planks','reference-neck-rotation-seated','reference-neck-tilt-seated','reference-neck-glide-seated','reference-shoulder-rotation-standing','reference-shoulder-rotation-seated','reference-shoulder-rotation-u-hold','reference-bulgarian-ohne-gewicht','reference-bulgarian-kurzhanteln'].includes(pose.atlas));
     assert(pose.column * 2 + 1 < (pose.frameColumns ?? 4));
     assert(pose.row < (pose.frameRows ?? 3));
-    const shoulderAtlas=pose.atlas.startsWith('reference-shoulder-rotation-');
+    const shoulderAtlas=pose.atlas.startsWith('reference-shoulder-rotation-') || pose.atlas.startsWith('reference-bulgarian-');
     const image=fs.readFileSync(new URL(`../server/assets/reference/${pose.atlas}${shoulderAtlas ? '.webp' : '.png'}`,import.meta.url));
     assert.equal(image.subarray(shoulderAtlas ? 0 : 1,4).toString(),shoulderAtlas ? 'RIFF' : 'PNG');
   }
@@ -75,7 +75,7 @@ test('reference art is explicitly mapped to real families and protected from pat
   await staff.get(route.replace('version=1','version=2')).expect(404);
   await staff.get(route.replace('reference-joints','..%2f..%2f.env')).expect(404);
   const overview=(await staff.get('/api/overview')).body;
-  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage','oberkoerperrotation-sitz','schulter-aussenrotation-stand','schulter-aussenrotation-sitz','schulter-aussenrotation-u-halte-sitz','unterarmstuetz','liegestuetz','unterarmstuetz-beinheben','seitstuetz','unterarmstuetz-knie','liegestuetz-knie','unterarmstuetz-beinheben-knie','seitstuetz-knie','seitliches-hueftheben-knie','kopfrotation-sitzend','kopfseitneigung-sitzend','taube-sitzend'].sort());
+  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage','oberkoerperrotation-sitz','schulter-aussenrotation-stand','schulter-aussenrotation-sitz','schulter-aussenrotation-u-halte-sitz','bulgarian-split-squat-ohne-gewicht','bulgarian-split-squat-kurzhanteln','unterarmstuetz','liegestuetz','unterarmstuetz-beinheben','seitstuetz','unterarmstuetz-knie','liegestuetz-knie','unterarmstuetz-beinheben-knie','seitstuetz-knie','seitliches-hueftheben-knie','kopfrotation-sitzend','kopfseitneigung-sitzend','taube-sitzend'].sort());
   assert(overview.exercises.every(e=>e.status==='draft' && e.reviewer===''));
   const patient=request.agent(runtime.app);
   const ps=(await patient.get('/api/session')).body;
