@@ -55,6 +55,26 @@ test('shoulder rotation drafts appear in existing demo collection without publis
       const metadata = await sharp(preview.body).metadata();
       assert(metadata.width >= 600, `expected a high-resolution frame for ${id}`);
       assert(metadata.height >= 1000);
+      // Pixel-level preservation check: downscale the enhanced image and compare
+      // with the exact original frame. This guards against replacing the person
+      // or altering the movements with a different generated illustration.
+      const sourceFile = path.resolve('server/assets/reference', `${pose.atlas}.webp`);
+      const sourceInfo = await sharp(sourceFile).metadata();
+      const width = sourceInfo.width / 2;
+      const height = sourceInfo.height;
+      const sourcePixels = await sharp(sourceFile)
+        .extract({ left: frame * width, top: 0, width, height })
+        .removeAlpha().raw().toBuffer();
+      const enhancedPixels = await sharp(preview.body)
+        .resize(width, height, { kernel: 'lanczos3' })
+        .removeAlpha().raw().toBuffer();
+      assert.equal(enhancedPixels.length, sourcePixels.length);
+      let difference = 0;
+      for (let index = 0; index < sourcePixels.length; index++) {
+        difference += Math.abs(sourcePixels[index] - enhancedPixels[index]);
+      }
+      assert(difference / sourcePixels.length < 18,
+        `enhancement must retain original figure, colour and pose for ${id}, frame ${frame}`);
       enhanced.push(preview.body);
     }
     assert.notDeepEqual(enhanced[0],enhanced[1], 'start and end must be distinct');

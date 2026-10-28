@@ -27,8 +27,11 @@ export function enhancedShoulderFrame(atlas, frame) {
       return sharp(filename)
         .extract({ left: frame * frameWidth, top: 0, width: frameWidth, height })
         .resize({ width: frameWidth * 4, kernel: 'lanczos3' })
-        .sharpen({ sigma: 0.7 })
-        .webp({ quality: 94, effort: 5 })
+        // Moderate edge sharpening only. No generative replacement of faces,
+        // clothing or joint geometry; the original illustrated pixels remain the source.
+        .sharpen({ sigma: 1 })
+        // Avoid introducing new WebP compression artefacts after enhancement.
+        .webp({ lossless: true, effort: 5 })
         .toBuffer();
     })();
     cachedFrames.set(key, work);

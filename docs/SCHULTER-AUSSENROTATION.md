@@ -24,3 +24,9 @@ Die Darstellungen werden nur in den berechtigten Übungsansichten angezeigt; die
 Die bisherigen Atlanten haben nur 300 × 286 Pixel für **zwei** Posen. Für diese drei Übungen liefert die bereits authentifizierte Referenzbild-API nun jede Phase einzeln als WebP aus, mit vierfacher Kantenauflösung (je 600 × 1144 Pixel), hochwertiger Interpolation und moderater Nachschärfung. Der Browser zeigt die Einzelbilder proportionsgetreu mit `object-fit: contain`; das unscharfe CSS-Sprite-Zoomen entfällt. Die vorhandenen Originaldateien und die Zugriffsprüfung bleiben unverändert.
 
 **Grenze:** Das verbessert die Darstellung, rekonstruiert aber keine echten hochauflösenden anatomischen Details. Für vollständig neue Details sind fachlich geprüfte, neu gerenderte Originale erforderlich. Die Entwürfe bleiben ungeprüft.
+
+## Größen- und Qualitätskorrektur (28.10.2026)
+
+Auf ausdrücklichen Wunsch werden **keine neu generierten Figuren** eingesetzt. Die drei bestehenden zweiphasigen WebP-Dateien bleiben unverändert. Die serverseitig aus den vorhandenen Originalen abgeleiteten Einzelphasen werden mit Lanczos vergrößert, moderat geschärft und nun *verlustfrei* als WebP ausgegeben (ohne erneute verlustbehaftete Kompression).
+
+Die Übungskarten passen die ganze Figur in die Kartenhöhe ein. In der Detailansicht beträgt die maximale Bildhöhe jetzt **300 CSS-Pixel** statt der bisherigen vollen Spaltenbreite; die beiden Phasen stehen weiterhin nebeneinander. Dies reduziert die wahrgenommene Unschärfe und verhindert übergroße Portraits. Der automatische Test vergleicht auf Pixelbasis die herunterskalierten Ausgaben mit den Originalphasen. Das erzeugt keine nicht vorhandenen anatomischen Details und ersetzt keine fachliche Freigabe.
