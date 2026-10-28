@@ -1,8 +1,8 @@
 import type { Exercise } from './types';
-import { resolveReferencePose } from './reference-lookup';
+import { resolveReferencePose, type ReferencePoseDefinition } from './reference-lookup';
 import { ShoulderRotationArt, isShoulderRotationExercise } from './ShoulderRotationArt';
 
-export function referencePose(exercise: Exercise) {
+export function referencePose(exercise: Exercise): ReferencePoseDefinition | undefined {
   return resolveReferencePose(exercise) ?? (isShoulderRotationExercise(exercise.id) ? { atlas: "original-shoulder-svg", column: 0, row: 0, scope: "variant" as const } : undefined);
 }
 export function ReferencePose({ exercise, phase = 0 }: { exercise: Exercise; phase?: number }) {
