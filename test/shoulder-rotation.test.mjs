@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import request from 'supertest';
+import sharp from 'sharp';
 import { shoulderRotationExercises, collectionExerciseIds } from '../server/exercise-catalog.mjs';
 import { createApp } from '../server/app.mjs';
 import { resolveReferencePose } from '../src/reference-lookup.ts';
@@ -47,6 +48,16 @@ test('shoulder rotation drafts appear in existing demo collection without publis
     const res=await staff.get(`/api/reference-poses/${id}/${pose.atlas}?version=${entry.version}`).expect(200).expect('Content-Type',/image\/webp/);
     assert.equal(res.body.subarray(0,4).toString(),'RIFF');
     assert.equal(res.body.subarray(8,12).toString(),'WEBP');
+    const enhanced = [];
+    for (const frame of [0, 1]) {
+      const preview = await staff.get(`/api/reference-poses/${id}/${pose.atlas}?version=${entry.version}&frame=${frame}`)
+        .expect(200).expect('Content-Type',/image\/webp/);
+      const metadata = await sharp(preview.body).metadata();
+      assert(metadata.width >= 600, `expected a high-resolution frame for ${id}`);
+      assert(metadata.height >= 1000);
+      enhanced.push(preview.body);
+    }
+    assert.notDeepEqual(enhanced[0],enhanced[1], 'start and end must be distinct');
   }
   const patient=request.agent(runtime.app);
   const session2=(await patient.get('/api/session')).body;
@@ -54,4 +65,6 @@ test('shoulder rotation drafts appear in existing demo collection without publis
   const patientList=(await patient.get('/api/overview').expect(200)).body;
   assert(ids.every(id=>!patientList.exercises.some(e=>e.id===id)));
   await patient.get('/api/reference-poses/schulter-aussenrotation-u-halte-sitz/reference-shoulder-rotation-u-hold?version=1').expect(404);
+  await patient.get('/api/reference-poses/schulter-aussenrotation-u-halte-sitz/reference-shoulder-rotation-u-hold?version=1&frame=0').expect(404);
+  await staff.get('/api/reference-poses/schulter-aussenrotation-u-halte-sitz/reference-shoulder-rotation-u-hold?version=1&frame=2').expect(404);
 });

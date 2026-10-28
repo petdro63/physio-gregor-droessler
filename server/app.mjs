@@ -32,6 +32,7 @@ import { seed, coverage } from "./seed.mjs";
 import { VERSION, VERSION_DATE, TIME_ZONE } from "./version.mjs";
 import { makePlanPdf } from "./pdf.mjs";
 import { resolveReferencePose } from '../src/reference-lookup.ts';
+import { enhancedShoulderFrame } from './reference-image.mjs';
 
 const hash = (value) => createHash("sha256").update(value).digest("hex");
 const text = z.string().trim().max(5000);
@@ -947,7 +948,7 @@ export function createApp(options = {}) {
       next(e);
     }
   });
-  app.get('/api/reference-poses/:id/:atlas', (req, res, next) => {
+  app.get('/api/reference-poses/:id/:atlas', async (req, res, next) => {
     try {
       const version = req.query.version ? Number(req.query.version) : undefined;
       if (version !== undefined && (!Number.isInteger(version) || version < 1)) throw fail(404, 'Bild nicht gefunden.');
@@ -955,6 +956,15 @@ export function createApp(options = {}) {
       const exercise = getExercise(req.params.id, version);
       const pose = exercise && resolveReferencePose(exercise);
       if (!pose || pose.atlas !== req.params.atlas) throw fail(404, 'Bild nicht gefunden.');
+      // The frame route shares the exact same exercise/version authorization.
+      // Other reference images still use their original protected file response.
+      if (req.query.frame !== undefined) {
+        if (!pose.atlas.startsWith('reference-shoulder-rotation-') || !['0', '1'].includes(req.query.frame)) {
+          throw fail(404, 'Bild nicht gefunden.');
+        }
+        res.type('webp');
+        return res.send(await enhancedShoulderFrame(pose.atlas, Number(req.query.frame)));
+      }
       const extension = (pose.atlas.startsWith('reference-shoulder-rotation-') || pose.atlas.startsWith('reference-bulgarian-')) ? '.webp' : '.png';
       res.sendFile(path.resolve('server/assets/reference', pose.atlas + extension));
     } catch (error) { next(error); }

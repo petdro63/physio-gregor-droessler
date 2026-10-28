@@ -18,3 +18,9 @@ Die Darstellungen werden nur in den berechtigten Übungsansichten angezeigt; die
 ## Referenz
 
 [AAOS: Rotator Cuff and Shoulder Conditioning Program](https://orthoinfo.aaos.org/en/recovery/rotator-cuff-and-shoulder-conditioning-program/) als allgemeine Quelle für Schulterübungen; keine automatische Indikationszuordnung oder Wirksamkeitsbehauptung für diese drei Eigenvarianten.
+
+## Schärfere Darstellung (28.10.2026)
+
+Die bisherigen Atlanten haben nur 300 × 286 Pixel für **zwei** Posen. Für diese drei Übungen liefert die bereits authentifizierte Referenzbild-API nun jede Phase einzeln als WebP aus, mit vierfacher Kantenauflösung (je 600 × 1144 Pixel), hochwertiger Interpolation und moderater Nachschärfung. Der Browser zeigt die Einzelbilder proportionsgetreu mit `object-fit: contain`; das unscharfe CSS-Sprite-Zoomen entfällt. Die vorhandenen Originaldateien und die Zugriffsprüfung bleiben unverändert.
+
+**Grenze:** Das verbessert die Darstellung, rekonstruiert aber keine echten hochauflösenden anatomischen Details. Für vollständig neue Details sind fachlich geprüfte, neu gerenderte Originale erforderlich. Die Entwürfe bleiben ungeprüft.

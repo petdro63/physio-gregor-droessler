@@ -136,6 +136,11 @@ input[type='checkbox'] { accent-color: #254ce7; }
 .reference-guide { background: #f6f8fd; padding: 20px; }
 .reference-guide h3 { font-size: 16px; }
 .reference-pose { background-color: white; border-radius: 7px; }
+/* Enhanced, independent image phases: preserve proportions instead of zooming a sprite. */
+.reference-pose-image { display: block; width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; }
+.exercise-art .reference-pose-image { width: 100%; height: 100%; max-width: 240px; object-fit: contain; }
+.reference-pair .reference-pose-image { width: 100%; height: auto; }
+
 .reference-pair figcaption { color: #536583; font-size: 11px; font-weight: 600; }
 .reference-guide p { color: #526581; font-size: 12px; }
 .reference-guide .reference-source-note { color: #718098; font-size: 11px; }
