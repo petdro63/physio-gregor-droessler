@@ -1,12 +1,10 @@
 import type { Exercise } from './types';
 import { resolveReferencePose, type ReferencePoseDefinition } from './reference-lookup';
-import { ShoulderRotationArt, isShoulderRotationExercise } from './ShoulderRotationArt';
 
 export function referencePose(exercise: Exercise): ReferencePoseDefinition | undefined {
-  return resolveReferencePose(exercise) ?? (isShoulderRotationExercise(exercise.id) ? { atlas: "original-shoulder-svg", column: 0, row: 0, scope: "variant" as const } : undefined);
+  return resolveReferencePose(exercise);
 }
 export function ReferencePose({ exercise, phase = 0 }: { exercise: Exercise; phase?: number }) {
-  if (isShoulderRotationExercise(exercise.id)) return <ShoulderRotationArt exercise={exercise} phase={phase} />;
   const pose = referencePose(exercise);
   if (!pose) return null;
   const frame = pose.fixedFrame ?? (pose.reverse ? (phase ? 0 : 1) : (phase ? 1 : 0));

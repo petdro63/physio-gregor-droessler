@@ -9,7 +9,9 @@ Alle drei Übungen sind Mobilisationsentwürfe ohne externen Widerstand. Widerst
 
 ## Illustrationsherkunft
 
-Stilvorlage vom Nutzer: freundliche eigene Comicfigur mit lockigem braunem Haar, blauem Shirt, orangefarbener kurzer Hose und blauen Schuhen. Die Anwendung enthält eine **neu gezeichnete, eigenständige SVG-Darstellung** mit zwei Phasen pro Übung im React-Baustein `src/ShoulderRotationArt.tsx`. Die vom Nutzer eingereichte PNG-Datei wird nicht mit ausgeliefert. Beim Schulterhöhenbild sind die Ellenbogen in beiden Phasen gebeugt: in der Startphase zeigen die Unterarme perspektivisch zum Betrachter, in der Endphase nach oben.
+Stilvorlage vom Nutzer: freundliche eigene Comicfigur mit lockigem braunem Haar, blauem Shirt, orangefarbener kurzer Hose und blauen Schuhen. Die Anwendung enthält eine **neu gerenderte WebP-Illustrationen** mit zwei statischen Bildphasen je Übung unter `server/assets/reference/reference-shoulder-rotation-*.webp`. Die vom Nutzer eingereichte PNG-Datei wird nicht mit ausgeliefert. Beim Schulterhöhenbild sind die Ellenbogen in beiden Phasen gebeugt: in der Startphase zeigen die Unterarme perspektivisch zum Betrachter, in der Endphase nach oben.
+
+Die neuen Bilder ersetzen die alte provisorische SVG-Figur. Das Bild wird aus einem schmalen Zwei-Phasen-Atlas je Übung über die vorhandene authentifizierte Bildroute geladen. Die gerenderten Bilder zeigen die zum Betrachter gerichteten Unterarme in der U-Halte-Ausgangsstellung stark perspektivisch verkürzt; die korrekte Beugestellung ist zusätzlich in Text und Alternativbeschreibung fixiert und muss vor klinischer Freigabe visuell geprüft werden.
 
 Die Darstellungen werden nur in den berechtigten Übungsansichten angezeigt; die bestehende geschützte Medienroute für die bisherigen Übungsbilder wird nicht verändert. Übungen werden in Demo und bestehenden Praxen als Entwürfe erstellt, nie automatisch als freigegeben markiert.
 

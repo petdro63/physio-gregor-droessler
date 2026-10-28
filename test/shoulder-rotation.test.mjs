@@ -6,6 +6,7 @@ import path from 'node:path';
 import request from 'supertest';
 import { shoulderRotationExercises, collectionExerciseIds } from '../server/exercise-catalog.mjs';
 import { createApp } from '../server/app.mjs';
+import { resolveReferencePose } from '../src/reference-lookup.ts';
 const ids = ['schulter-aussenrotation-stand','schulter-aussenrotation-sitz','schulter-aussenrotation-u-halte-sitz'];
 test('three distinct shoulder rotations preserve flexed elbows and raised U-hold geometry', () => {
   assert.deepEqual(shoulderRotationExercises.map(e=>e.id),ids);
@@ -17,6 +18,10 @@ test('three distinct shoulder rotations preserve flexed elbows and raised U-hold
     assert(exercise.start.includes('90°'));
     assert(exercise.steps.length>=3);
     assert(exercise.precautions && exercise.mistakes);
+    const pose=resolveReferencePose(exercise);
+    assert(pose && pose.atlas.startsWith('reference-shoulder-rotation-'));
+    assert.equal(pose.frameColumns,2);
+    assert.equal(pose.frameRows,1);
   }
   const raised=shoulderRotationExercises[2];
   assert(raised.start.includes('bereits in der Ausgangsstellung'));
@@ -38,10 +43,15 @@ test('shoulder rotation drafts appear in existing demo collection without publis
     assert(entry,id);
     assert.equal(entry.status,'draft');
     assert.equal(entry.reviewer,'');
+    const pose=resolveReferencePose(entry);
+    const res=await staff.get(`/api/reference-poses/${id}/${pose.atlas}?version=${entry.version}`).expect(200).expect('Content-Type',/image\/webp/);
+    assert.equal(res.body.subarray(0,4).toString(),'RIFF');
+    assert.equal(res.body.subarray(8,12).toString(),'WEBP');
   }
   const patient=request.agent(runtime.app);
   const session2=(await patient.get('/api/session')).body;
   await patient.post('/api/demo').set('X-CSRF-Token',session2.csrf).send({role:'patient'}).expect(200);
   const patientList=(await patient.get('/api/overview').expect(200)).body;
   assert(ids.every(id=>!patientList.exercises.some(e=>e.id===id)));
+  await patient.get('/api/reference-poses/schulter-aussenrotation-u-halte-sitz/reference-shoulder-rotation-u-hold?version=1').expect(404);
 });
