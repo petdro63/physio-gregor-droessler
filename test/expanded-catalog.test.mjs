@@ -69,7 +69,7 @@ test('reference art is explicitly mapped to real families and protected from pat
     assert.equal(response.body.subarray(1,4).toString(), 'PNG');
   }
   const hipRoute='/api/reference-poses/hueftbeuger-dehnung-kniestand/reference-hip-flexor-stretch?version=1';
-  const hipImage=await staff.get(hipRoute).expect(200).expect('Content-Type',/image\\/webp/);
+  const hipImage=await staff.get(hipRoute).expect(200).expect('Content-Type',/image\/webp/);
   assert.equal(hipImage.body.subarray(0,4).toString(),'RIFF');
   await staff.get(hipRoute.replace('reference-hip-flexor-stretch','reference-piriformis-stretch')).expect(404);
   const rdlRoute='/api/reference-poses/einbein-kreuzheben-kurzhanteln/reference-single-leg-rdl?version=1';
