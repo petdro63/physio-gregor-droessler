@@ -72,7 +72,7 @@ test('reference art is explicitly mapped to real families and protected from pat
   }
   const neckRoute='/api/reference-poses/hws-stabilisation-sitz/reference-hws-stabilisation-sitz?version=1';
   const neckImage=await staff.get(neckRoute).expect(200).expect('Content-Type',/image\/svg\+xml/);
-  assert.match(neckImage.text,/^<svg/);
+  assert.match(Buffer.isBuffer(neckImage.body) ? neckImage.body.toString('utf8') : neckImage.text,/^<svg/);
   await staff.get(neckRoute.replace('reference-hws-stabilisation-sitz','reference-hws-stabilisation-vorlage')).expect(404);
   const hipRoute='/api/reference-poses/hueftbeuger-dehnung-kniestand/reference-hip-flexor-stretch?version=1';
   const hipImage=await staff.get(hipRoute).expect(200).expect('Content-Type',/image\/webp/);
