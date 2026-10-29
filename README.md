@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.27-dev**, Versionsdatum **28.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.28-dev**, Versionsdatum **29.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -20,6 +20,8 @@ npm run dev
 Die Vorschau nutzt ausschließlich erfundene Personen. Demo- und Praxisdatenbanken liegen getrennt in `data/demo` und `data/practice`. Weder Datenbanken, Sitzungsschlüssel, Backups noch lokale Umgebungsdateien werden in Git gespeichert. Die Demo läuft standardmäßig nur an der lokalen Loopbackadresse.
 
 ## Enthalten
+
+- Neue **Hüftbeuger-Dehnung im Kniestand** mit den zwei zuvor erstellten Bildern im App-Stil (Start und Dehnstellung), Sekunden-Haltedauer und Suche über Hüfte/Dehnung. Als fachlich ungeprüfter Entwurf für Demo und bestehende Praxisinstallationen aufgenommen. [Übungsdetails](docs/HUEFTBEUGER-DEHNUNG.md).
 
 - Neue professionell illustrierte bulgarische Split Squats ohne Gewicht und mit zwei Kurzhanteln: Start- und Endstellungen mit erhöhtem hinterem Fuß, geschützter WebP-Auslieferung, getrennten Gewichtsvarianten und therapeutischem Entwurfsstatus. [Hinweise und Bildherkunft](docs/BULGARISCHE-SPLIT-SQUATS.md).
 
@@ -92,7 +94,7 @@ Vier gemeinfreie CDC-Animationen sind als lokale Bilder und MP4 mit deutschen Un
 
 ## Stand der Inhalte
 
-**Die 31 Einträge der aktuellen Sammlung sind Entwürfe und noch nicht für den realen Patienteneinsatz fachlich freigegeben.** Historische technische Beispiele und deren schematische Videos bleiben ebenfalls ungeprüft. Neue Übungen können nach Bedarf wieder in die Sammlung aufgenommen werden; Demoübungen können nicht durch einen bloßen Statuswechsel produktiv freigegeben werden.
+**Die Übungen der aktuellen Sammlung sind Entwürfe und noch nicht für den realen Patienteneinsatz fachlich freigegeben.** Historische technische Beispiele und deren schematische Videos bleiben ebenfalls ungeprüft. Neue Übungen können nach Bedarf wieder in die Sammlung aufgenommen werden; Demoübungen können nicht durch einen bloßen Statuswechsel produktiv freigegeben werden.
 
 Lizenz der schematischen Medien: im Projekt selbst erzeugt, ohne fremde Patientenaufnahmen. Es wurde keine externe Übungsbibliothek übernommen und keine Lizenz bestehender Anbieter vorausgesetzt.
 

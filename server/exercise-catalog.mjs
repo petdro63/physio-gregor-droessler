@@ -20,7 +20,7 @@ export const collectionExerciseIds = [
   'ausfallschritt-langhantel', 'seitliches-hueftheben',
   'seitlicher-ausfallschritt-ohne-gewicht', 'seitlicher-ausfallschritt-kurzhantel',
   'seitlicher-ausfallschritt-langhantel', 'quadrizeps-exzentrisch-step-down',
-  'katze-kuh-mobilisation', 'piriformisdehnung-rueckenlage',
+  'katze-kuh-mobilisation', 'piriformisdehnung-rueckenlage', 'hueftbeuger-dehnung-kniestand',
   'oberkoerperrotation-sitz',
   'schulter-aussenrotation-stand', 'schulter-aussenrotation-sitz', 'schulter-aussenrotation-u-halte-sitz',
   'bulgarian-split-squat-ohne-gewicht', 'bulgarian-split-squat-kurzhanteln',
@@ -148,6 +148,24 @@ export function publishShoulderRotationExercises(db) {
       db.prepare("INSERT INTO exercises VALUES (?,?,?,?)").run(entry.id,1,'draft',creator.id);
       db.prepare("INSERT INTO exercise_versions VALUES (?,?,?,?)").run(entry.id,1,JSON.stringify(payload),iso());
     }
+  });
+}
+
+// Add the new hip flexor stretch to existing practice installations as a draft.
+// Never overwrite locally edited versions or publication decisions.
+export function publishHipFlexorStretch(db) {
+  transaction(db, () => {
+    const entry = illustratedExercises.find(e => e.id === 'hueftbeuger-dehnung-kniestand');
+    if (!entry || db.prepare('SELECT 1 FROM exercises WHERE id=?').get(entry.id)) return;
+    const creator = db.prepare("SELECT id FROM users WHERE role IN ('admin','therapist') ORDER BY CASE role WHEN 'admin' THEN 0 ELSE 1 END, created_at LIMIT 1").get();
+    if (!creator) return;
+    const payload = classifyExercise({
+      ...entry, author:'Eigene Übungsbeschreibung nach Nutzervorgabe',
+      reviewer:'', reviewedAt:'', licenseUntil:'', transcript:'',
+      media:[], demo:false, tags:[...entry.tags,...entry.joints,entry.position,entry.equipment]
+    });
+    db.prepare('INSERT INTO exercises VALUES (?,?,?,?)').run(entry.id,1,'draft',creator.id);
+    db.prepare('INSERT INTO exercise_versions VALUES (?,?,?,?)').run(entry.id,1,JSON.stringify(payload),iso());
   });
 }
 

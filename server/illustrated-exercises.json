@@ -1697,5 +1697,56 @@
         "url": "https://msk-bexley.nhs.uk/conditions/knee-pain/patellofemoral-pain-syndrome-pfps"
       }
     ]
+  },
+  {
+    "id": "hueftbeuger-dehnung-kniestand",
+    "familyId": "hueftbeuger-dehnung",
+    "familyTitle": "Hüftbeuger-Dehnung",
+    "variantLabel": "Halbkniender Ausfallschritt",
+    "title": "Hüftbeuger-Dehnung im Kniestand",
+    "subtitle": "Halbkniender Ausfallschritt · Vorderseite der hinteren Hüfte dehnen",
+    "region": "Hüfte",
+    "goal": "Dehnung",
+    "trainingTypes": [
+      "Dehnung"
+    ],
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 20,
+    "joints": [
+      "Hüftgelenk"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Kniestand",
+    "equipment": "Matte",
+    "difficulty": "Leicht",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "tags": [
+      "Hüftbeuger",
+      "Hüftbeugerdehnung",
+      "M. iliopsoas",
+      "Hüftvorderseite",
+      "Halbkniestand",
+      "Ausfallschritt",
+      "Dehnung",
+      "Beidseits"
+    ],
+    "start": "Auf einer rutschfesten Matte in den halbknienden Ausfallschritt gehen: linker Fuß vorne vollflächig aufgestellt, linkes Knie etwa über dem Sprunggelenk, rechtes Knie weich unterlegt am Boden. Oberkörper aufrichten, beide Hände auf die Hüften legen und das Becken gerade nach vorne ausrichten.",
+    "end": "Das Becken leicht nach hinten kippen und die rechte Gesäßmuskulatur sanft anspannen. Aus dieser Haltung das Becken wenige Zentimeter nach vorne verlagern, ohne den unteren Rücken ins Hohlkreuz zu drücken. Ein angenehmer Dehnzug entsteht an der Vorderseite der rechten Hüfte; der Oberkörper bleibt aufrecht.",
+    "steps": [
+      "Halbkniestand einnehmen: links vorne mit flachem Fuß, rechts mit dem Knie auf der Matte. Hände an die Hüften legen und aufrecht bleiben.",
+      "Das Becken behutsam nach hinten kippen, den rechten Gesäßmuskel leicht anspannen und den Bauchnabel ruhig halten.",
+      "Das Becken langsam etwas nach vorne führen, bis an der rechten Hüftvorderseite ein sanfter Dehnzug entsteht. Nicht ins Hohlkreuz ausweichen oder wippen.",
+      "Die Dehnung für die individuell eingestellten Sekunden ruhig halten, dann kontrolliert lösen. Die Beinposition wechseln und die andere Hüftseite nach Vorgabe dehnen."
+    ],
+    "breathing": "Während der Haltedauer ruhig und gleichmäßig atmen; nicht die Luft anhalten.",
+    "mistakes": "Kein starkes Hohlkreuz, kein Schwungholen, nicht auf dem hinteren Knie wippen und das Becken nicht zur Seite drehen. Keine schmerzhafte Dehnung erzwingen.",
+    "precautions": "Die Übung ist ein fachlich ungeprüfter Entwurf. Vor der Anwendung Bewegungsumfang und Dosierung individuell mit dem Praxisteam abstimmen. Nach Hüftoperationen, bei frischen Verletzungen oder akuten Beschwerden nur nach therapeutischer Freigabe. Bei stechenden Schmerzen, Taubheitsgefühl oder zunehmenden Beschwerden abbrechen.",
+    "easier": "Die Schrittweite verkleinern, das hintere Knie weich polstern, die Beckenvorverlagerung minimieren oder sich neben einer stabilen Stütze sichern.",
+    "harder": "Eine längere Haltedauer oder größere Vorverlagerung nur nach persönlicher therapeutischer Vorgabe wählen; nicht forcieren.",
+    "sourceNote": "Eigene deutsche Anleitung zur sanften Dehnung im halbknienden Ausfallschritt. Keine automatische Diagnosezuordnung und kein klinischer Wirksamkeitsnachweis für diese konkrete Variante.",
+    "license": "Zwei am 29.10.2026 mit integrierter Bildgenerierung neu erstellte Übungsillustrationen im Stil der vom Nutzer bereitgestellten App-Vorlage; als Start-/Endbild weboptimiert. Die Nutzer-Vorlage selbst wird nicht ausgeliefert.",
+    "sources": []
   }
 ]

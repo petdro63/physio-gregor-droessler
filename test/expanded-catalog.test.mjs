@@ -48,10 +48,10 @@ test('reference art is explicitly mapped to real families and protected from pat
     if (pose.familyId) assert(expandedExercises.some(e=>e.familyId===pose.familyId));
     if (pose.exerciseIds) assert(pose.exerciseIds.every(id=>['kopfrotation-sitzend','kopfseitneigung-sitzend','taube-sitzend'].includes(id) || [...additionalExercises,...illustratedExercises,...shoulderRotationExercises,...bulgarianSplitSquats].some(e=>e.id===id)));
     assert(pose.column>=0 && pose.column<=1 && pose.row>=0 && pose.row<=2);
-    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl','reference-squats','reference-sumo-upright','reference-calf-raises','reference-wall-sit','reference-bridges','reference-single-leg-bridge-right','reference-lunges','reference-side-hip-lift','reference-lateral-lunges','reference-eccentric-step-down','reference-cat-cow','reference-piriformis-stretch','reference-seated-trunk-rotation','reference-planks','reference-pushups','reference-plank-leg-lifts','reference-side-planks','reference-neck-rotation-seated','reference-neck-tilt-seated','reference-neck-glide-seated','reference-shoulder-rotation-standing','reference-shoulder-rotation-seated','reference-shoulder-rotation-u-hold','reference-bulgarian-ohne-gewicht','reference-bulgarian-kurzhanteln'].includes(pose.atlas));
+    assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl','reference-squats','reference-sumo-upright','reference-calf-raises','reference-wall-sit','reference-bridges','reference-single-leg-bridge-right','reference-lunges','reference-side-hip-lift','reference-lateral-lunges','reference-eccentric-step-down','reference-cat-cow','reference-piriformis-stretch','reference-hip-flexor-stretch','reference-seated-trunk-rotation','reference-planks','reference-pushups','reference-plank-leg-lifts','reference-side-planks','reference-neck-rotation-seated','reference-neck-tilt-seated','reference-neck-glide-seated','reference-shoulder-rotation-standing','reference-shoulder-rotation-seated','reference-shoulder-rotation-u-hold','reference-bulgarian-ohne-gewicht','reference-bulgarian-kurzhanteln'].includes(pose.atlas));
     assert(pose.column * 2 + 1 < (pose.frameColumns ?? 4));
     assert(pose.row < (pose.frameRows ?? 3));
-    const shoulderAtlas=pose.atlas.startsWith('reference-shoulder-rotation-') || pose.atlas.startsWith('reference-bulgarian-');
+    const shoulderAtlas=pose.atlas.startsWith('reference-shoulder-rotation-') || pose.atlas.startsWith('reference-bulgarian-') || pose.atlas === 'reference-hip-flexor-stretch';
     const image=fs.readFileSync(new URL(`../server/assets/reference/${pose.atlas}${shoulderAtlas ? '.webp' : '.png'}`,import.meta.url));
     assert.equal(image.subarray(shoulderAtlas ? 0 : 1,4).toString(),shoulderAtlas ? 'RIFF' : 'PNG');
   }
@@ -68,6 +68,10 @@ test('reference art is explicitly mapped to real families and protected from pat
     const response = await staff.get(`/api/reference-poses/${pose.exerciseIds[0]}/${pose.atlas}?version=1`).expect(200).expect('Content-Type', /image\/png/);
     assert.equal(response.body.subarray(1,4).toString(), 'PNG');
   }
+  const hipRoute='/api/reference-poses/hueftbeuger-dehnung-kniestand/reference-hip-flexor-stretch?version=1';
+  const hipImage=await staff.get(hipRoute).expect(200).expect('Content-Type',/image\\/webp/);
+  assert.equal(hipImage.body.subarray(0,4).toString(),'RIFF');
+  await staff.get(hipRoute.replace('reference-hip-flexor-stretch','reference-piriformis-stretch')).expect(404);
   const rdlRoute='/api/reference-poses/einbein-kreuzheben-kurzhanteln/reference-single-leg-rdl?version=1';
   await staff.get(rdlRoute).expect(200).expect('Content-Type',/image\/png/);
   await staff.get(rdlRoute.replace('reference-single-leg-rdl','codex-clipboard-b0213c39-af52-47d1-bc59-4bba02848577')).expect(404);
@@ -75,13 +79,14 @@ test('reference art is explicitly mapped to real families and protected from pat
   await staff.get(route.replace('version=1','version=2')).expect(404);
   await staff.get(route.replace('reference-joints','..%2f..%2f.env')).expect(404);
   const overview=(await staff.get('/api/overview')).body;
-  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage','oberkoerperrotation-sitz','schulter-aussenrotation-stand','schulter-aussenrotation-sitz','schulter-aussenrotation-u-halte-sitz','bulgarian-split-squat-ohne-gewicht','bulgarian-split-squat-kurzhanteln','unterarmstuetz','liegestuetz','unterarmstuetz-beinheben','seitstuetz','unterarmstuetz-knie','liegestuetz-knie','unterarmstuetz-beinheben-knie','seitstuetz-knie','seitliches-hueftheben-knie','kopfrotation-sitzend','kopfseitneigung-sitzend','taube-sitzend'].sort());
+  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage','hueftbeuger-dehnung-kniestand','oberkoerperrotation-sitz','schulter-aussenrotation-stand','schulter-aussenrotation-sitz','schulter-aussenrotation-u-halte-sitz','bulgarian-split-squat-ohne-gewicht','bulgarian-split-squat-kurzhanteln','unterarmstuetz','liegestuetz','unterarmstuetz-beinheben','seitstuetz','unterarmstuetz-knie','liegestuetz-knie','unterarmstuetz-beinheben-knie','seitstuetz-knie','seitliches-hueftheben-knie','kopfrotation-sitzend','kopfseitneigung-sitzend','taube-sitzend'].sort());
   assert(overview.exercises.every(e=>e.status==='draft' && e.reviewer===''));
   const patient=request.agent(runtime.app);
   const ps=(await patient.get('/api/session')).body;
   await patient.post('/api/demo').set('X-CSRF-Token',ps.csrf).send({role:'patient'}).expect(200);
   await patient.get(route).expect(404);
   await patient.get(rdlRoute).expect(404);
+  await patient.get(hipRoute).expect(404);
   assert(!(await patient.get('/api/overview')).body.exercises.some(e=>e.id.startsWith('katalog-')));
   const csrf=(await staff.get('/api/session')).body.csrf;
   const exercise=(await staff.get('/api/exercises/katalog-shoulder-flex-stand-aktiv').expect(200)).body;
@@ -218,4 +223,22 @@ test('illustrations match equipment and direction instead of reusing bare-arm ar
     assert(e.start && e.end && e.steps.length && e.requiresSupervision);
     assert(e.strengthMuscles.every(m=>taxonomy.muscles.includes(m)));
   }
+});
+
+test('hip flexor stretch has correct classification, timed hold and the two app-style reference frames',()=>{
+  const e=illustratedExercises.find(e=>e.id==='hueftbeuger-dehnung-kniestand');
+  assert(e);
+  assert.equal(e.goal,'Dehnung');
+  assert.deepEqual(e.trainingTypes,['Dehnung']);
+  assert.deepEqual(e.strengthMuscles,[]);
+  assert.deepEqual(e.joints,['Hüftgelenk']);
+  assert.equal(e.position,'Im Kniestand');
+  assert.equal(e.dosageMode,'hold');
+  assert.equal(e.defaultHoldSeconds,20);
+  assert.equal(e.requiresSupervision,true);
+  assert.equal(e.conditionUses.length,0);
+  assert.equal(resolveReferencePose(e).atlas,'reference-hip-flexor-stretch');
+  assert.equal(resolveReferencePose(e).frameColumns,2);
+  assert.equal(resolveReferencePose(e).frameRows,1);
+  assert(findExercises([e],{trainingType:'Dehnung',joint:'Hüftgelenk',search:'Hüftbeuger'}).some(x=>x.id===e.id));
 });

@@ -907,5 +907,20 @@
     "frameRows": 1,
     "frameAspectRatio": 1.3541666666666667,
     "scope": "variant"
+  },
+  {
+    "exerciseIds": [
+      "hueftbeuger-dehnung-kniestand"
+    ],
+    "equipment": [
+      "Matte"
+    ],
+    "atlas": "reference-hip-flexor-stretch",
+    "column": 0,
+    "row": 0,
+    "frameColumns": 2,
+    "frameRows": 1,
+    "frameAspectRatio": 1,
+    "scope": "variant"
   }
 ]
