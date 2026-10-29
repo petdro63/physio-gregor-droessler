@@ -7,6 +7,7 @@ const legacy = JSON.parse(fs.readFileSync(new URL("./legacy-exercise-classificat
 export const additionalExercises = JSON.parse(fs.readFileSync(new URL("./additional-exercises.json", import.meta.url), "utf8"));
 export const expandedExercises = JSON.parse(fs.readFileSync(new URL("./expanded-exercises.json", import.meta.url), "utf8"));
 export const illustratedExercises = JSON.parse(fs.readFileSync(new URL("./illustrated-exercises.json", import.meta.url), "utf8"));
+export const neckExercises = JSON.parse(fs.readFileSync(new URL("./neck-exercises.json", import.meta.url), "utf8"));
 export const shoulderRotationExercises = JSON.parse(fs.readFileSync(new URL("./shoulder-rotation-exercises.json", import.meta.url), "utf8"));
 export const bulgarianSplitSquats = JSON.parse(fs.readFileSync(new URL("./bulgarian-split-squats.json", import.meta.url), "utf8"));
 // Retain the requested collection on first installation as well as upgrades.
@@ -21,6 +22,7 @@ export const collectionExerciseIds = [
   'seitlicher-ausfallschritt-ohne-gewicht', 'seitlicher-ausfallschritt-kurzhantel',
   'seitlicher-ausfallschritt-langhantel', 'quadrizeps-exzentrisch-step-down',
   'katze-kuh-mobilisation', 'piriformisdehnung-rueckenlage', 'hueftbeuger-dehnung-kniestand',
+  'hws-tiefe-halsbeuger-isometrisch','hws-tiefe-halsbeuger-kopfheben','hws-nackenstrecker-rueckenlage','hws-nackenstrecker-bauchlage','hws-stabilisation-sitz','hws-isometrie-handwiderstand','hws-stabilisation-vorlage','hws-dynamische-kontrolle-sitz',
   'oberkoerperrotation-sitz',
   'schulter-aussenrotation-stand', 'schulter-aussenrotation-sitz', 'schulter-aussenrotation-u-halte-sitz',
   'bulgarian-split-squat-ohne-gewicht', 'bulgarian-split-squat-kurzhanteln',
@@ -169,6 +171,24 @@ export function publishHipFlexorStretch(db) {
   });
 }
 
+// Add new cervical exercises to existing practices without overwriting individual edits.
+export function publishNeckExercises(db) {
+  transaction(db, () => {
+    const creator = db.prepare("SELECT id FROM users WHERE role IN ('admin','therapist') ORDER BY CASE role WHEN 'admin' THEN 0 ELSE 1 END, created_at LIMIT 1").get();
+    if (!creator) return;
+    for (const entry of neckExercises) {
+      if (db.prepare('SELECT 1 FROM exercises WHERE id=?').get(entry.id)) continue;
+      const payload = classifyExercise({
+        ...entry,
+        author: 'Eigene deutschsprachige Beschreibung nach Bewegungsreferenz',
+        reviewer: '', reviewedAt: '', licenseUntil: '', transcript: '', media: [], demo: false
+      });
+      db.prepare('INSERT INTO exercises VALUES (?,?,?,?)').run(entry.id,1,'draft',creator.id);
+      db.prepare('INSERT INTO exercise_versions VALUES (?,?,?,?)').run(entry.id,1,JSON.stringify(payload),iso());
+    }
+  });
+}
+
 // New Bulgarian split squat drafts for already installed practices; do not change existing versions.
 export function publishBulgarianSplitSquats(db) {
   transaction(db, () => {
@@ -226,7 +246,7 @@ export function classifyExercise(exercise, id = exercise.id) {
 // INSERT OR IGNORE preserves edits and publication decisions across restarts.
 export function seedResearchDrafts(db) {
   transaction(db, () => {
-    for (const entry of [...additionalExercises, ...rehabExercises, ...expandedExercises, ...illustratedExercises, ...shoulderRotationExercises, ...bulgarianSplitSquats]) {
+    for (const entry of [...additionalExercises, ...rehabExercises, ...expandedExercises, ...illustratedExercises, ...neckExercises, ...shoulderRotationExercises, ...bulgarianSplitSquats]) {
       if (db.prepare("SELECT 1 FROM exercises WHERE id=?").get(entry.id)) continue;
       const payload = {
         difficulty: "Leicht", duration: 3, breathing: "Ruhig weiteratmen; Bewegungen kontrolliert ausführen.",

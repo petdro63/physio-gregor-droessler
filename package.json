@@ -1,6 +1,6 @@
 {
   "name": "physio-gregor-droessler",
-  "version": "0.1.28-dev",
+  "version": "0.1.29-dev",
   "private": true,
   "type": "module",
   "scripts": {

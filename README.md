@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.28-dev**, Versionsdatum **29.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.29-dev**, Versionsdatum **29.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -20,6 +20,8 @@ npm run dev
 Die Vorschau nutzt ausschließlich erfundene Personen. Demo- und Praxisdatenbanken liegen getrennt in `data/demo` und `data/practice`. Weder Datenbanken, Sitzungsschlüssel, Backups noch lokale Umgebungsdateien werden in Git gespeichert. Die Demo läuft standardmäßig nur an der lokalen Loopbackadresse.
 
 ## Enthalten
+
+- Acht neue HWS-Übungen aus der Hirslanden-Birshof-Bewegungsreferenz, mit eigenen Start-/Endbildern der blau-orangefarbenen App-Figur, deutscher Anleitung und sekundengesteuerter Kräftigung beziehungsweise dynamischer Mobilisation. Entwürfe ohne Patientenfreigabe. [HWS-Übungen und Bilder](docs/HWS-HIRSLANDEN-UEBUNGEN.md).
 
 - Neue **Hüftbeuger-Dehnung im Kniestand** mit den zwei zuvor erstellten Bildern im App-Stil (Start und Dehnstellung), Sekunden-Haltedauer und Suche über Hüfte/Dehnung. Als fachlich ungeprüfter Entwurf für Demo und bestehende Praxisinstallationen aufgenommen. [Übungsdetails](docs/HUEFTBEUGER-DEHNUNG.md).
 
