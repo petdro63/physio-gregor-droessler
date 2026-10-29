@@ -1,0 +1,443 @@
+[
+  {
+    "id": "hws-tiefe-halsbeuger-isometrisch",
+    "familyId": "hws-birshof-uebungen",
+    "familyTitle": "Halswirbelsäule – Aktivierung und Kontrolle",
+    "variantLabel": "Tiefe Halsbeuger aktivieren in Rückenlage",
+    "title": "Tiefe Halsbeuger aktivieren in Rückenlage",
+    "subtitle": "Sanfte Stabilisation ohne Pressatmung",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Tiefe Halsbeuger"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "difficulty": "Leicht",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 10,
+    "tags": [
+      "HWS",
+      "Halswirbelsäule",
+      "Nacken",
+      "Stabilisation",
+      "Tiefe Halsbeuger"
+    ],
+    "start": "Auf einer festen, bequemen Matte in Rückenlage liegen. Knie anstellen, Arme seitlich ablegen, Kopf neutral auf der Unterlage.",
+    "end": "In unveränderter Kopfposition die tiefe Halsmuskulatur sanft anspannen, als würde das Kinn gedanklich zum Hals gezogen. Der Kopf hebt nicht ab.",
+    "steps": [
+      "In Rückenlage die Schultern locker lassen.",
+      "Das Kinn gedanklich sanft in Richtung Hals führen, ohne Kopfbewegung.",
+      "Die leichte Muskelspannung ruhig halten und weiteratmen.",
+      "Vollständig lösen und erst dann wiederholen."
+    ],
+    "mistakes": "Nicht den Kopf anheben oder die Schultern verspannen.",
+    "breathing": "Gleichmäßig weiteratmen, ohne die Luft anzuhalten oder zu pressen.",
+    "precautions": "Fachlich ungeprüfter Entwurf. Die Eignung, Bewegungsgrenzen und Dosierung vor realer Anwendung individuell therapeutisch prüfen. Bei Schwindel, neu auftretender Schwäche, ausstrahlenden Schmerzen, Kribbeln oder Taubheit abbrechen und abklären lassen.",
+    "easier": "Bewegung beziehungsweise Anspannung kleiner ausführen und Haltedauer nach individueller Vorgabe verkürzen.",
+    "harder": "Schwierigkeit oder Dauer nur nach persönlicher therapeutischer Freigabe steigern.",
+    "sourceNote": "Bewegungsmuster nach der Broschüre «Übungen für die Halswirbelsäule» der Hirslanden Klinik Birshof, Seite 2. Eigenständig formulierte Texte; keine Wirksamkeitsbehauptung für eine Einzelübung.",
+    "license": "Neu gezeichnete schematische Bilder im gewählten App-Figurenstil; keine Originalfotos oder Originalgrafiken der Broschüre übernommen.",
+    "sources": [
+      {
+        "title": "Hirslanden Klinik Birshof – Übungen für die Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/%C3%BCbungen-f%C3%BCr-die-halswirbels%C3%A4ule.pdf"
+      }
+    ]
+  },
+  {
+    "id": "hws-tiefe-halsbeuger-kopfheben",
+    "familyId": "hws-birshof-uebungen",
+    "familyTitle": "Halswirbelsäule – Aktivierung und Kontrolle",
+    "variantLabel": "Tiefe Halsbeuger mit kleinem Kopfheben",
+    "title": "Tiefe Halsbeuger mit kleinem Kopfheben",
+    "subtitle": "Sanfte Stabilisation ohne Pressatmung",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Tiefe Halsbeuger"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "difficulty": "Leicht",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 10,
+    "tags": [
+      "HWS",
+      "Halswirbelsäule",
+      "Nacken",
+      "Stabilisation",
+      "Tiefe Halsbeuger"
+    ],
+    "start": "In Rückenlage mit aufgestellten Knien liegen. Der Kopf liegt neutral, die Schultern sind entspannt.",
+    "end": "Kinn leicht einziehen und den Kopf nur wenige Zentimeter anheben. Schultern und Rumpf bleiben auf der Unterlage.",
+    "steps": [
+      "Die Ausgangsstellung einnehmen und ruhig atmen.",
+      "Das Kinn leicht nach hinten nehmen, ohne es kraftvoll zur Brust zu ziehen.",
+      "Den Kopf wenige Zentimeter anheben und sanft halten.",
+      "Kontrolliert ablegen und entspannen."
+    ],
+    "mistakes": "Kopf nicht hochreißen, Schultern nicht hochziehen und nicht pressen.",
+    "breathing": "Gleichmäßig weiteratmen, ohne die Luft anzuhalten oder zu pressen.",
+    "precautions": "Fachlich ungeprüfter Entwurf. Die Eignung, Bewegungsgrenzen und Dosierung vor realer Anwendung individuell therapeutisch prüfen. Bei Schwindel, neu auftretender Schwäche, ausstrahlenden Schmerzen, Kribbeln oder Taubheit abbrechen und abklären lassen.",
+    "easier": "Bewegung beziehungsweise Anspannung kleiner ausführen und Haltedauer nach individueller Vorgabe verkürzen.",
+    "harder": "Schwierigkeit oder Dauer nur nach persönlicher therapeutischer Freigabe steigern.",
+    "sourceNote": "Bewegungsmuster nach der Broschüre «Übungen für die Halswirbelsäule» der Hirslanden Klinik Birshof, Seite 2. Eigenständig formulierte Texte; keine Wirksamkeitsbehauptung für eine Einzelübung.",
+    "license": "Neu gezeichnete schematische Bilder im gewählten App-Figurenstil; keine Originalfotos oder Originalgrafiken der Broschüre übernommen.",
+    "sources": [
+      {
+        "title": "Hirslanden Klinik Birshof – Übungen für die Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/%C3%BCbungen-f%C3%BCr-die-halswirbels%C3%A4ule.pdf"
+      }
+    ]
+  },
+  {
+    "id": "hws-nackenstrecker-rueckenlage",
+    "familyId": "hws-birshof-uebungen",
+    "familyTitle": "Halswirbelsäule – Aktivierung und Kontrolle",
+    "variantLabel": "Hintere Halsmuskulatur in Rückenlage aktivieren",
+    "title": "Hintere Halsmuskulatur in Rückenlage aktivieren",
+    "subtitle": "Sanfte Stabilisation ohne Pressatmung",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Nackenstrecker"
+    ],
+    "position": "In Rückenlage",
+    "equipment": "Matte",
+    "difficulty": "Leicht",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 10,
+    "tags": [
+      "HWS",
+      "Halswirbelsäule",
+      "Nacken",
+      "Stabilisation",
+      "Nackenstrecker"
+    ],
+    "start": "In Rückenlage auf nicht zu weicher Unterlage mit angestellten Beinen liegen. Kopf bleibt neutral aufgelegt.",
+    "end": "Den Blick gedanklich in Richtung Stirn lenken und die hintere Halsmuskulatur leicht aktivieren. Keine sichtbare Bewegung des Kopfes.",
+    "steps": [
+      "Den Kopf bequem und neutral ablegen.",
+      "Die Augen gedanklich in Richtung Stirn führen, ohne den Kopf zu bewegen.",
+      "Eine sanfte Spannung halten, während die Schultern locker bleiben.",
+      "Lösen und ruhig weiteratmen."
+    ],
+    "mistakes": "Kopf nicht überstrecken, Schultern nicht heben und Luft nicht anhalten.",
+    "breathing": "Gleichmäßig weiteratmen, ohne die Luft anzuhalten oder zu pressen.",
+    "precautions": "Fachlich ungeprüfter Entwurf. Die Eignung, Bewegungsgrenzen und Dosierung vor realer Anwendung individuell therapeutisch prüfen. Bei Schwindel, neu auftretender Schwäche, ausstrahlenden Schmerzen, Kribbeln oder Taubheit abbrechen und abklären lassen.",
+    "easier": "Bewegung beziehungsweise Anspannung kleiner ausführen und Haltedauer nach individueller Vorgabe verkürzen.",
+    "harder": "Schwierigkeit oder Dauer nur nach persönlicher therapeutischer Freigabe steigern.",
+    "sourceNote": "Bewegungsmuster nach der Broschüre «Übungen für die Halswirbelsäule» der Hirslanden Klinik Birshof, Seite 3. Eigenständig formulierte Texte; keine Wirksamkeitsbehauptung für eine Einzelübung.",
+    "license": "Neu gezeichnete schematische Bilder im gewählten App-Figurenstil; keine Originalfotos oder Originalgrafiken der Broschüre übernommen.",
+    "sources": [
+      {
+        "title": "Hirslanden Klinik Birshof – Übungen für die Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/%C3%BCbungen-f%C3%BCr-die-halswirbels%C3%A4ule.pdf"
+      }
+    ]
+  },
+  {
+    "id": "hws-nackenstrecker-bauchlage",
+    "familyId": "hws-birshof-uebungen",
+    "familyTitle": "Halswirbelsäule – Aktivierung und Kontrolle",
+    "variantLabel": "Hintere Halsmuskulatur in Bauchlage aktivieren",
+    "title": "Hintere Halsmuskulatur in Bauchlage aktivieren",
+    "subtitle": "Sanfte Stabilisation ohne Pressatmung",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Nackenstrecker"
+    ],
+    "position": "In Bauchlage",
+    "equipment": "Matte",
+    "difficulty": "Leicht",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 10,
+    "tags": [
+      "HWS",
+      "Halswirbelsäule",
+      "Nacken",
+      "Stabilisation",
+      "Nackenstrecker"
+    ],
+    "start": "Auf dem Bauch liegen, die Stirn ruht auf den Handrücken. Hals- und Lendenwirbelsäule neutral halten.",
+    "end": "Den Kopf nur minimal von den Handrücken abheben und weiterhin neutral ausrichten.",
+    "steps": [
+      "Die Stirn auf den locker gestapelten Händen ablegen.",
+      "Schultern entspannen und den Hinterkopf lang lassen.",
+      "Den Kopf wenige Millimeter bis Zentimeter lösen, ohne ins Hohlkreuz zu gehen.",
+      "Sanft ablegen und vollständig entspannen."
+    ],
+    "mistakes": "Kein Hochziehen der Schultern, keine Nackenüberstreckung und kein Hohlkreuz.",
+    "breathing": "Gleichmäßig weiteratmen, ohne die Luft anzuhalten oder zu pressen.",
+    "precautions": "Fachlich ungeprüfter Entwurf. Die Eignung, Bewegungsgrenzen und Dosierung vor realer Anwendung individuell therapeutisch prüfen. Bei Schwindel, neu auftretender Schwäche, ausstrahlenden Schmerzen, Kribbeln oder Taubheit abbrechen und abklären lassen.",
+    "easier": "Bewegung beziehungsweise Anspannung kleiner ausführen und Haltedauer nach individueller Vorgabe verkürzen.",
+    "harder": "Schwierigkeit oder Dauer nur nach persönlicher therapeutischer Freigabe steigern.",
+    "sourceNote": "Bewegungsmuster nach der Broschüre «Übungen für die Halswirbelsäule» der Hirslanden Klinik Birshof, Seite 3. Eigenständig formulierte Texte; keine Wirksamkeitsbehauptung für eine Einzelübung.",
+    "license": "Neu gezeichnete schematische Bilder im gewählten App-Figurenstil; keine Originalfotos oder Originalgrafiken der Broschüre übernommen.",
+    "sources": [
+      {
+        "title": "Hirslanden Klinik Birshof – Übungen für die Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/%C3%BCbungen-f%C3%BCr-die-halswirbels%C3%A4ule.pdf"
+      }
+    ]
+  },
+  {
+    "id": "hws-stabilisation-sitz",
+    "familyId": "hws-birshof-uebungen",
+    "familyTitle": "Halswirbelsäule – Aktivierung und Kontrolle",
+    "variantLabel": "Halswirbelsäule im Sitzen stabilisieren",
+    "title": "Halswirbelsäule im Sitzen stabilisieren",
+    "subtitle": "Sanfte Stabilisation ohne Pressatmung",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Tiefe Halsbeuger"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "difficulty": "Leicht",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 10,
+    "tags": [
+      "HWS",
+      "Halswirbelsäule",
+      "Nacken",
+      "Stabilisation",
+      "Tiefe Halsbeuger"
+    ],
+    "start": "Aufrecht auf einem stabilen Stuhl sitzen. Beide Füße sicher am Boden, Schultern locker, Kopf neutral über dem Rumpf.",
+    "end": "Die tiefe Halsmuskulatur leicht aktivieren und den Kopf ohne sichtbare Bewegung über dem Rumpf halten.",
+    "steps": [
+      "Eine bequeme aufrechte Sitzhaltung einnehmen.",
+      "Das Kinn gedanklich leicht zum Hals ziehen, ohne zu nicken.",
+      "Die aufrechte Haltung einige Sekunden ruhig halten.",
+      "Lösen; Armbewegungen nur nach therapeutischer Einweisung ergänzen."
+    ],
+    "mistakes": "Nicht den Kopf nach vorn schieben oder die Schultern anspannen.",
+    "breathing": "Gleichmäßig weiteratmen, ohne die Luft anzuhalten oder zu pressen.",
+    "precautions": "Fachlich ungeprüfter Entwurf. Die Eignung, Bewegungsgrenzen und Dosierung vor realer Anwendung individuell therapeutisch prüfen. Bei Schwindel, neu auftretender Schwäche, ausstrahlenden Schmerzen, Kribbeln oder Taubheit abbrechen und abklären lassen.",
+    "easier": "Bewegung beziehungsweise Anspannung kleiner ausführen und Haltedauer nach individueller Vorgabe verkürzen.",
+    "harder": "Schwierigkeit oder Dauer nur nach persönlicher therapeutischer Freigabe steigern.",
+    "sourceNote": "Bewegungsmuster nach der Broschüre «Übungen für die Halswirbelsäule» der Hirslanden Klinik Birshof, Seite 4. Eigenständig formulierte Texte; keine Wirksamkeitsbehauptung für eine Einzelübung.",
+    "license": "Neu gezeichnete schematische Bilder im gewählten App-Figurenstil; keine Originalfotos oder Originalgrafiken der Broschüre übernommen.",
+    "sources": [
+      {
+        "title": "Hirslanden Klinik Birshof – Übungen für die Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/%C3%BCbungen-f%C3%BCr-die-halswirbels%C3%A4ule.pdf"
+      }
+    ]
+  },
+  {
+    "id": "hws-isometrie-handwiderstand",
+    "familyId": "hws-birshof-uebungen",
+    "familyTitle": "Halswirbelsäule – Aktivierung und Kontrolle",
+    "variantLabel": "Halswirbelsäule gegen Handwiderstand stabilisieren",
+    "title": "Halswirbelsäule gegen Handwiderstand stabilisieren",
+    "subtitle": "Sanfte Stabilisation ohne Pressatmung",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Tiefe Halsbeuger",
+      "Nackenstrecker"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "difficulty": "Leicht",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 10,
+    "tags": [
+      "HWS",
+      "Halswirbelsäule",
+      "Nacken",
+      "Stabilisation",
+      "Tiefe Halsbeuger",
+      "Nackenstrecker"
+    ],
+    "start": "Aufrecht sitzen, die Schultern entspannen und Kopf und Hals neutral ausrichten.",
+    "end": "Eine Hand an die Stirn oder seitlich an die Schläfe legen. Mit minimaler Kraft in die Hand drücken, ohne dass der Kopf sich bewegt.",
+    "steps": [
+      "Aufrecht und ruhig sitzen.",
+      "Eine Hand locker vor die Stirn legen und den Kopf ganz leicht gegen die Hand anspannen.",
+      "Die Position ohne Ausweichbewegung halten; normal weiteratmen.",
+      "Entspannen; eine seitliche Richtung nur nach persönlicher Einweisung ergänzen."
+    ],
+    "mistakes": "Keinen starken Druck ausüben, nicht den Kopf drehen und nicht pressen.",
+    "breathing": "Gleichmäßig weiteratmen, ohne die Luft anzuhalten oder zu pressen.",
+    "precautions": "Fachlich ungeprüfter Entwurf. Die Eignung, Bewegungsgrenzen und Dosierung vor realer Anwendung individuell therapeutisch prüfen. Bei Schwindel, neu auftretender Schwäche, ausstrahlenden Schmerzen, Kribbeln oder Taubheit abbrechen und abklären lassen.",
+    "easier": "Bewegung beziehungsweise Anspannung kleiner ausführen und Haltedauer nach individueller Vorgabe verkürzen.",
+    "harder": "Schwierigkeit oder Dauer nur nach persönlicher therapeutischer Freigabe steigern.",
+    "sourceNote": "Bewegungsmuster nach der Broschüre «Übungen für die Halswirbelsäule» der Hirslanden Klinik Birshof, Seite 4. Eigenständig formulierte Texte; keine Wirksamkeitsbehauptung für eine Einzelübung.",
+    "license": "Neu gezeichnete schematische Bilder im gewählten App-Figurenstil; keine Originalfotos oder Originalgrafiken der Broschüre übernommen.",
+    "sources": [
+      {
+        "title": "Hirslanden Klinik Birshof – Übungen für die Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/%C3%BCbungen-f%C3%BCr-die-halswirbels%C3%A4ule.pdf"
+      }
+    ]
+  },
+  {
+    "id": "hws-stabilisation-vorlage",
+    "familyId": "hws-birshof-uebungen",
+    "familyTitle": "Halswirbelsäule – Aktivierung und Kontrolle",
+    "variantLabel": "Halswirbelsäule in leichter Rumpfvorlage stabilisieren",
+    "title": "Halswirbelsäule in leichter Rumpfvorlage stabilisieren",
+    "subtitle": "Sanfte Stabilisation ohne Pressatmung",
+    "region": "Nacken",
+    "goal": "Kräftigung",
+    "trainingTypes": [
+      "Kraft"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [
+      "Tiefe Halsbeuger",
+      "Nackenstrecker"
+    ],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "difficulty": "Leicht",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "dosageMode": "hold",
+    "defaultHoldSeconds": 10,
+    "tags": [
+      "HWS",
+      "Halswirbelsäule",
+      "Nacken",
+      "Stabilisation",
+      "Tiefe Halsbeuger",
+      "Nackenstrecker"
+    ],
+    "start": "Aufrecht sitzen, Füße parallel am Boden, Kopf und Wirbelsäule neutral.",
+    "end": "Aus den Hüftgelenken mit stabilem Rumpf leicht nach vorne neigen, während der Kopf in Verlängerung des Rückens bleibt.",
+    "steps": [
+      "Eine sichere aufrechte Sitzhaltung einnehmen.",
+      "Die Halswirbelsäule in Neutralstellung sanft stabilisieren.",
+      "Den Oberkörper als Einheit aus der Hüfte etwas nach vorne führen.",
+      "Kurz halten und kontrolliert aufrichten."
+    ],
+    "mistakes": "Rücken nicht zusammensinken lassen und Kopf nicht nach vorn fallen lassen.",
+    "breathing": "Gleichmäßig weiteratmen, ohne die Luft anzuhalten oder zu pressen.",
+    "precautions": "Fachlich ungeprüfter Entwurf. Die Eignung, Bewegungsgrenzen und Dosierung vor realer Anwendung individuell therapeutisch prüfen. Bei Schwindel, neu auftretender Schwäche, ausstrahlenden Schmerzen, Kribbeln oder Taubheit abbrechen und abklären lassen.",
+    "easier": "Bewegung beziehungsweise Anspannung kleiner ausführen und Haltedauer nach individueller Vorgabe verkürzen.",
+    "harder": "Schwierigkeit oder Dauer nur nach persönlicher therapeutischer Freigabe steigern.",
+    "sourceNote": "Bewegungsmuster nach der Broschüre «Übungen für die Halswirbelsäule» der Hirslanden Klinik Birshof, Seite 5. Eigenständig formulierte Texte; keine Wirksamkeitsbehauptung für eine Einzelübung.",
+    "license": "Neu gezeichnete schematische Bilder im gewählten App-Figurenstil; keine Originalfotos oder Originalgrafiken der Broschüre übernommen.",
+    "sources": [
+      {
+        "title": "Hirslanden Klinik Birshof – Übungen für die Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/%C3%BCbungen-f%C3%BCr-die-halswirbels%C3%A4ule.pdf"
+      }
+    ]
+  },
+  {
+    "id": "hws-dynamische-kontrolle-sitz",
+    "familyId": "hws-birshof-uebungen",
+    "familyTitle": "Halswirbelsäule – Aktivierung und Kontrolle",
+    "variantLabel": "Halswirbelsäule kontrolliert bewegen im Sitzen",
+    "title": "Halswirbelsäule kontrolliert bewegen im Sitzen",
+    "subtitle": "Langsame, kontrollierte Halsbewegung",
+    "region": "Nacken",
+    "goal": "Mobilisation",
+    "trainingTypes": [
+      "Mobilisation"
+    ],
+    "joints": [
+      "Halswirbelsäule"
+    ],
+    "strengthMuscles": [],
+    "position": "Im Sitzen",
+    "equipment": "Stuhl",
+    "difficulty": "Leicht",
+    "duration": 3,
+    "requiresSupervision": true,
+    "conditionUses": [],
+    "dosageMode": "repetitions",
+    "defaultHoldSeconds": 10,
+    "tags": [
+      "HWS",
+      "Halswirbelsäule",
+      "Nacken",
+      "Stabilisation"
+    ],
+    "start": "Aufrecht auf einem stabilen Stuhl sitzen. Schultern locker, Blick nach vorne, Füße fest auf dem Boden.",
+    "end": "Den Kopf langsam ein kleines Stück nach vorne neigen und anschließend ohne Schwung in die neutrale Position zurückführen.",
+    "steps": [
+      "Eine bequeme aufrechte Sitzhaltung einnehmen.",
+      "Den Kopf langsam und sanft nach vorne neigen.",
+      "Kontrolliert zur neutralen Kopfposition zurückführen.",
+      "Seitliche Drehung oder Neigung nur nach individueller Freigabe ergänzen."
+    ],
+    "mistakes": "Nicht ruckartig bewegen, den Rumpf mitdrehen oder Schmerzen provozieren.",
+    "breathing": "Gleichmäßig weiteratmen, ohne die Luft anzuhalten oder zu pressen.",
+    "precautions": "Fachlich ungeprüfter Entwurf. Die Eignung, Bewegungsgrenzen und Dosierung vor realer Anwendung individuell therapeutisch prüfen. Bei Schwindel, neu auftretender Schwäche, ausstrahlenden Schmerzen, Kribbeln oder Taubheit abbrechen und abklären lassen.",
+    "easier": "Bewegung beziehungsweise Anspannung kleiner ausführen und Haltedauer nach individueller Vorgabe verkürzen.",
+    "harder": "Schwierigkeit oder Dauer nur nach persönlicher therapeutischer Freigabe steigern.",
+    "sourceNote": "Bewegungsmuster nach der Broschüre «Übungen für die Halswirbelsäule» der Hirslanden Klinik Birshof, Seite 5. Eigenständig formulierte Texte; keine Wirksamkeitsbehauptung für eine Einzelübung.",
+    "license": "Neu gezeichnete schematische Bilder im gewählten App-Figurenstil; keine Originalfotos oder Originalgrafiken der Broschüre übernommen.",
+    "sources": [
+      {
+        "title": "Hirslanden Klinik Birshof – Übungen für die Halswirbelsäule",
+        "url": "https://www.hirslanden.ch/content/dam/klinik-birshof/downloads/de/brochures1/%C3%BCbungen-f%C3%BCr-die-halswirbels%C3%A4ule.pdf"
+      }
+    ]
+  }
+]
