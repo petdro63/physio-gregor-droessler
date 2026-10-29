@@ -2,6 +2,161 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "0.1.30-dev",
+      "version_date": "2026-10-29",
+      "environment": "LOCAL-TEST",
+      "task": "Die bisherige Demo zur Ansicht für die passwortgeschützte Internetbereitstellung unter training.physio-lfd.de vorbereiten und den vorhandenen Domainzugang prüfen.",
+      "thread_id": "01a1870b-b329-7840-8d83-338d835806cf",
+      "evidence": {
+        "server/hosted-demo.mjs": "0132d04b5ea4d582cfaed764d3d0a60e0574df081aa957a1952aec098aa1a649",
+        "server/app.mjs": "514d61ff4b188ed99f050a39cae6c973f2546aa7fef4ee6d8736c56dd7117827",
+        "test/hosted-demo.test.mjs": "da2e91a887fc6730ff6299bba36254b89d3a393e80d854ae4184fe957121516e",
+        "test/plank-variants.test.mjs": "993ee6fcacde85158e0b5fd50f2ddb421cfe3b500e0f68d8ea728f05256650e8",
+        "Dockerfile": "5d0812690b8da61d8172de52d8cb8824a48a7cb06601e457090b53b284145aca",
+        ".env.example": "4e7f05226a898d3d9874258bfa95f8348f92d86618eca27239b87f9543b74699",
+        "deploy/Caddyfile.example": "925a4ef20ac91360082273c036044f6a953975b28ee057b69a82756e9aa44a71",
+        "docs/BETRIEB.md": "35892a7c2419aa8493e392e56f02ea3c1f396ea9d0fa87a41718af0973b40037",
+        "README.md": "64d0682aa18eaea5ec1bc9fc9f6b72179e4910d4dbdc7bc7010b768ef880ed9d",
+        "server/version.mjs": "865a19d5782932778a25b7991ebd3db817b5c819e4d934598efe5bb688b0442c",
+        "package.json": "6a506bd5cdde7077e4ce4fc67462519d1121af1884b439dcc58f4dde57b80832",
+        "package-lock.json": "cb649c8b9c3b79565413e8d5469427b89b1b585bdbad155a868fa5de51c7b72b",
+        "public/sw.js": "a588bc4bd17905f6bde7aaed5b06059d5c8be144bf9649c61352f14101f8b244"
+      },
+      "notes": [
+        {
+          "category": "improvement",
+          "summary": "Ausdrücklich aktivierbarer Internet-Demobetrieb mit eigenem Passwortschutz vor HTML, API und Medien. Nur lokal geprüft; keine Netcup-Bereitstellung erfolgt.",
+          "sources": [
+            "server/hosted-demo.mjs",
+            "server/app.mjs",
+            "test/hosted-demo.test.mjs"
+          ],
+          "targets": [
+            {
+              "kind": "function",
+              "name": "createHostedDemoAccess / hostedDemoAccess",
+              "location": "server/hosted-demo.mjs",
+              "before": "Nicht vorhanden",
+              "after": "Validiert Benutzername, bcrypt-Hash mit Kosten 10–15 und HTTPS-Origin; verlangt HTTP Basic Auth vor Sitzungserstellung, begrenzt Fehlversuche auf 30 je 15 Minuten/IP und merkt erfolgreiche Anmeldungen ausschließlich als pro Prozess geheimen HMAC."
+            },
+            {
+              "kind": "function",
+              "name": "createApp",
+              "location": "server/app.mjs: Produktionsprüfung und Middleware vor express.json / session",
+              "before": "Produktionsbetrieb mit Demo war immer gesperrt.",
+              "after": "Erlaubt Demo ausschließlich bei zusätzlichem HOSTED_DEMO=true und vollständiger Zugangskonfiguration. Sichere Produktionscookies und CSRF bleiben aktiv. HOSTED_DEMO in Praxis- oder Entwicklungsmodus und jedes DATA_DIR werden abgewiesen; die Demo verwendet ausschließlich data/demo."
+            }
+          ]
+        },
+        {
+          "category": "technical",
+          "summary": "Alle 63 Tests und TypeScript/Vite-Build erfolgreich. Isolierter lokaler Produktionsmodus mit HTTPS-Proxyheader und vorgesehenen Zugangsdaten geprüft: ohne Authentifizierung HTTP 401; mit Authentifizierung Frontend, Demo-Adminanmeldung, 48 sichtbare Demoübungen, geschütztes PNG und PDF jeweils HTTP 200. Keine echten Patientendaten und keine lokalen Bestandsdaten übertragen.",
+          "sources": [
+            "test/hosted-demo.test.mjs",
+            "test/plank-variants.test.mjs"
+          ],
+          "targets": [
+            {
+              "kind": "function",
+              "name": "hosted demo HTTP integration tests",
+              "location": "test/hosted-demo.test.mjs",
+              "before": "Nicht vorhanden",
+              "after": "Prüfen Startverweigerung bei ungültiger Konfiguration, Schutz aller Pfade ohne Sitzungserstellung, falsche Kennwörter nach erfolgreicher Anmeldung, Rate Limit, getrennte Demodaten, Secure-Cookies, CSRF, Origin, Anmeldung sowie Version/Datum."
+            },
+            {
+              "kind": "property",
+              "name": "collectionExerciseIds.length",
+              "location": "test/plank-variants.test.mjs: existing dynamic side hip lift gains a knee option",
+              "before": "Veraltete Erwartung 36 führte beim aktuellen Katalog mit 45 IDs zum Testfehler.",
+              "after": "Erwartet die bereits vorhandenen 45 Katalog-IDs; Anwendungsinhalte unverändert."
+            }
+          ]
+        },
+        {
+          "category": "technical",
+          "summary": "Zieldomain und dokumentierte Hostingvoraussetzungen aktualisiert. DNS, gültiges HTTPS, HTTP-Weiterleitung und vorhandenen Passwortschutz der Netcup-Platzhalterseite geprüft; Anwendung online noch nicht installiert. FTPES-Anmeldung gelang, passive Datenverbindung und Port 22 waren aus diesem Netz nicht erreichbar. Node.js-Verfügbarkeit auf dem Zielhost ist ungeprüft.",
+          "sources": [
+            "Dockerfile",
+            ".env.example",
+            "deploy/Caddyfile.example",
+            "docs/BETRIEB.md",
+            "README.md"
+          ],
+          "targets": [
+            {
+              "kind": "property",
+              "name": "DATA_DIR default",
+              "location": "Dockerfile: ENV",
+              "before": "Setzt DATA_DIR zwingend auf /app/data/practice.",
+              "after": "Lässt DATA_DIR ungesetzt; die App verwendet je nach explizitem Modus ihren getrennten Standardpfad."
+            },
+            {
+              "kind": "field",
+              "name": "HOSTED_DEMO / DEMO_ACCESS_USER / DEMO_ACCESS_PASSWORD_HASH",
+              "location": ".env.example",
+              "before": "Nicht vorhanden",
+              "after": "Dokumentiert deaktivierte Internetdemo und leere Zugangsdaten-Platzhalter; echte Werte ausschließlich in ungetrackter Hostkonfiguration."
+            },
+            {
+              "kind": "property",
+              "name": "Caddy site address",
+              "location": "deploy/Caddyfile.example",
+              "before": "physio.vitalcoaching.eu",
+              "after": "training.physio-lfd.de"
+            },
+            {
+              "kind": "property",
+              "name": "Internetdemo-Ziel und Bereitstellungsstatus",
+              "location": "docs/BETRIEB.md / README.md",
+              "before": "Bisherige Zieldomain physio.vitalcoaching.eu, keine Internetdemo-Konfiguration.",
+              "after": "Beschreibt training.physio-lfd.de, bestätigten Domainschutz, offene Hostingbereitstellung und die explizite, vom Praxisbetrieb getrennte Demokonfiguration ohne Geheimnisse."
+            }
+          ]
+        },
+        {
+          "category": "technical",
+          "summary": "Anwendungsversion 0.1.30-dev mit Versionsdatum 29.10.2026 (Europe/Berlin). /api/session im isolierten lokalen Produktions-Demobetrieb bestätigt Version und Datum; keine Liveversion behauptet.",
+          "sources": [
+            "server/version.mjs",
+            "package.json",
+            "package-lock.json",
+            "public/sw.js",
+            "README.md"
+          ],
+          "targets": [
+            {
+              "kind": "field",
+              "name": "VERSION / VERSION_DATE",
+              "location": "server/version.mjs",
+              "before": "0.1.29-dev / 2026-10-29",
+              "after": "0.1.30-dev / 2026-10-29"
+            },
+            {
+              "kind": "property",
+              "name": "version / packages[\"\"].version",
+              "location": "package.json / package-lock.json",
+              "before": "0.1.29-dev",
+              "after": "0.1.30-dev"
+            },
+            {
+              "kind": "field",
+              "name": "CACHE",
+              "location": "public/sw.js",
+              "before": "physio-offline-0.1.29-dev",
+              "after": "physio-offline-0.1.30-dev"
+            },
+            {
+              "kind": "property",
+              "name": "Releaseangaben",
+              "location": "README.md: Einleitung",
+              "before": "0.1.29-dev vom 29.10.2026",
+              "after": "0.1.30-dev vom 29.10.2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "version": "0.1.24-dev",
       "version_date": "2026-10-27",
       "environment": "LOCAL-DEV",

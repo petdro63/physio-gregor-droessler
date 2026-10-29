@@ -1,4 +1,4 @@
-physio.vitalcoaching.eu {
+training.physio-lfd.de {
     encode zstd gzip
     reverse_proxy 127.0.0.1:3180
 }

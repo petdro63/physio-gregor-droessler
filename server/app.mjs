@@ -33,6 +33,7 @@ import { VERSION, VERSION_DATE, TIME_ZONE } from "./version.mjs";
 import { makePlanPdf } from "./pdf.mjs";
 import { resolveReferencePose } from '../src/reference-lookup.ts';
 import { enhancedShoulderFrame } from './reference-image.mjs';
+import { createHostedDemoAccess } from './hosted-demo.mjs';
 
 const hash = (value) => createHash("sha256").update(value).digest("hex");
 const text = z.string().trim().max(5000);
@@ -141,8 +142,18 @@ export function createApp(options = {}) {
   const demo = options.demo ?? process.env.DEMO_MODE !== "false";
   const production =
     options.production ?? process.env.NODE_ENV === "production";
-  if (production && demo)
+  const hostedDemo = process.env.HOSTED_DEMO === 'true';
+  if (hostedDemo && (!production || !demo))
+    throw new Error('HOSTED_DEMO erfordert Produktionsmodus und DEMO_MODE=true.');
+  if (production && demo && !hostedDemo)
     throw new Error("Produktionsbetrieb erfordert DEMO_MODE=false.");
+  const demoAccess = hostedDemo ? createHostedDemoAccess({
+    username: process.env.DEMO_ACCESS_USER,
+    passwordHash: process.env.DEMO_ACCESS_PASSWORD_HASH,
+    origin: process.env.APP_ORIGIN,
+  }) : null;
+  if (hostedDemo && (options.dataDir || process.env.DATA_DIR))
+    throw new Error('HOSTED_DEMO verwendet ausschließlich data/demo; DATA_DIR darf nicht gesetzt sein.');
   const dir =
     options.dataDir ||
     process.env.DATA_DIR ||
@@ -221,6 +232,7 @@ export function createApp(options = {}) {
         : false,
     }),
   );
+  if (demoAccess) app.use(demoAccess);
   app.use(express.json({ limit: "150kb" }));
   app.use(
     session({

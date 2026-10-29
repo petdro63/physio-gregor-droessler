@@ -50,5 +50,5 @@ test('existing dynamic side hip lift gains a knee option without becoming a stat
   assert.equal(resolveReferencePose(standard).atlas,'reference-side-hip-lift');
   assert(knee.start.includes('90 Grad') && knee.end.includes('Knie bleiben auf der Matte'));
   assert(collectionExerciseIds.includes(knee.id));
-  assert.equal(collectionExerciseIds.length,36);
+  assert.equal(collectionExerciseIds.length,45);
 });

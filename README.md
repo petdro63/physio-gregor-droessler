@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.29-dev**, Versionsdatum **29.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.30-dev**, Versionsdatum **29.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -100,4 +100,4 @@ Vier gemeinfreie CDC-Animationen sind als lokale Bilder und MP4 mit deutschen Un
 
 Lizenz der schematischen Medien: im Projekt selbst erzeugt, ohne fremde Patientenaufnahmen. Es wurde keine externe Übungsbibliothek übernommen und keine Lizenz bestehender Anbieter vorausgesetzt.
 
-Die Anwendung ist lokal lauffähig. Eine Veröffentlichung auf `physio.vitalcoaching.eu` wurde noch nicht vorgenommen. Der Produktivbetrieb benötigt die in der Betriebsdokumentation genannten Betreiberangaben, Freigaben und Infrastrukturkonfigurationen.
+Die Anwendung ist lokal lauffähig. Ziel für die passwortgeschützte Internetdemo ist `https://training.physio-lfd.de`. DNS, HTTPS und der vorgeschaltete Passwortschutz wurden am 29.10.2026 geprüft; dahinter liegt bisher die Netcup-Platzhalterseite. Die Anwendung wurde noch nicht auf dem Webspace bereitgestellt. Die Demo benötigt Node.js 24 und den ausdrücklich aktivierten, zusätzlich in der App geschützten [Internet-Demobetrieb](docs/BETRIEB.md#passwortgeschützte-internetdemo). Der Produktivbetrieb mit echten Patientendaten benötigt die in der Betriebsdokumentation genannten Betreiberangaben, Freigaben und Infrastrukturkonfigurationen.

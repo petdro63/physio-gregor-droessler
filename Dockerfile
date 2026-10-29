@@ -5,7 +5,7 @@ RUN npm ci --no-fund --no-audit
 COPY . .
 RUN npm run build
 FROM node:24-bookworm-slim
-ENV NODE_ENV=production DEMO_MODE=false HOST=0.0.0.0 PORT=3180 DATA_DIR=/app/data/practice
+ENV NODE_ENV=production DEMO_MODE=false HOST=0.0.0.0 PORT=3180
 WORKDIR /app
 COPY --from=build /app/package*.json ./
 RUN npm ci --omit=dev --no-fund --no-audit && mkdir -p /app/data && chown node:node /app/data
