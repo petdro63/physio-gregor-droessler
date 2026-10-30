@@ -44,6 +44,8 @@ try {
     console.log(`Synthetic demo seed: ${catalogIds.length} exercises, ${Buffer.byteLength(json)} bytes; no existing data read.`);
   } else {
   const publicDir=path.resolve('output/firebase-public');
+  // Recreate the public staging directory to avoid shipping assets from prior releases.
+  fs.rmSync(publicDir,{recursive:true,force:true});
   fs.mkdirSync(publicDir,{recursive:true});
   for(const name of fs.readdirSync('public'))if(name!=='demo-assets'&&!name.startsWith('.'))fs.cpSync(path.join('public',name),path.join(publicDir,name),{recursive:true});
   const assets = path.join(publicDir,'demo-assets');
