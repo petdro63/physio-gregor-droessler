@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import request from 'supertest';
 import { createApp } from '../server/app.mjs';
-import { expandedExercises, additionalExercises, illustratedExercises, neckExercises, shoulderRotationExercises, bulgarianSplitSquats, taxonomy } from '../server/exercise-catalog.mjs';
+import { expandedExercises, additionalExercises, illustratedExercises, bulgarianSplitSquats, taxonomy } from '../server/exercise-catalog.mjs';
 import { resolveReferencePose } from '../src/reference-lookup.ts';
 import { findExercises } from '../src/exercise-search.ts';
 import { suggestExercises } from '../src/condition-search.ts';
@@ -46,7 +46,7 @@ test('every variant has usable end instructions, valid classification and no fab
 test('reference art is explicitly mapped to real families and protected from patients and path injection', async t => {
   for (const pose of poses) {
     if (pose.familyId) assert(expandedExercises.some(e=>e.familyId===pose.familyId));
-    if (pose.exerciseIds) assert(pose.exerciseIds.every(id=>['kopfrotation-sitzend','kopfseitneigung-sitzend','taube-sitzend'].includes(id) || [...additionalExercises,...illustratedExercises,...neckExercises,...shoulderRotationExercises,...bulgarianSplitSquats].some(e=>e.id===id)));
+    if (pose.exerciseIds) assert(pose.exerciseIds.every(id=>['kopfrotation-sitzend','kopfseitneigung-sitzend','taube-sitzend'].includes(id) || [...additionalExercises,...illustratedExercises,...bulgarianSplitSquats].some(e=>e.id===id)));
     assert(pose.column>=0 && pose.column<=1 && pose.row>=0 && pose.row<=2);
     assert(['reference-joints','reference-ball','reference-equipment','reference-lower-equipment','reference-single-leg-rdl','reference-squats','reference-sumo-upright','reference-calf-raises','reference-wall-sit','reference-bridges','reference-single-leg-bridge-right','reference-lunges','reference-side-hip-lift','reference-lateral-lunges','reference-eccentric-step-down','reference-cat-cow','reference-piriformis-stretch','reference-hip-flexor-stretch','reference-hws-tiefe-halsbeuger-isometrisch','reference-hws-tiefe-halsbeuger-kopfheben','reference-hws-nackenstrecker-rueckenlage','reference-hws-nackenstrecker-bauchlage','reference-hws-stabilisation-sitz','reference-hws-isometrie-handwiderstand','reference-hws-stabilisation-vorlage','reference-hws-dynamische-kontrolle-sitz','reference-seated-trunk-rotation','reference-planks','reference-pushups','reference-plank-leg-lifts','reference-side-planks','reference-neck-rotation-seated','reference-neck-tilt-seated','reference-neck-glide-seated','reference-shoulder-rotation-standing','reference-shoulder-rotation-seated','reference-shoulder-rotation-u-hold','reference-bulgarian-ohne-gewicht','reference-bulgarian-kurzhanteln'].includes(pose.atlas));
     assert(pose.column * 2 + 1 < (pose.frameColumns ?? 4));
@@ -70,10 +70,6 @@ test('reference art is explicitly mapped to real families and protected from pat
     const response = await staff.get(`/api/reference-poses/${pose.exerciseIds[0]}/${pose.atlas}?version=1`).expect(200).expect('Content-Type', /image\/png/);
     assert.equal(response.body.subarray(1,4).toString(), 'PNG');
   }
-  const neckRoute='/api/reference-poses/hws-stabilisation-sitz/reference-hws-stabilisation-sitz?version=1';
-  const neckImage=await staff.get(neckRoute).expect(200).expect('Content-Type',/image\/svg\+xml/);
-  assert.match(Buffer.isBuffer(neckImage.body) ? neckImage.body.toString('utf8') : neckImage.text,/^<svg/);
-  await staff.get(neckRoute.replace('reference-hws-stabilisation-sitz','reference-hws-stabilisation-vorlage')).expect(404);
   const hipRoute='/api/reference-poses/hueftbeuger-dehnung-kniestand/reference-hip-flexor-stretch?version=1';
   const hipImage=await staff.get(hipRoute).expect(200).expect('Content-Type',/image\/webp/);
   assert.equal(hipImage.body.subarray(0,4).toString(),'RIFF');
@@ -85,7 +81,7 @@ test('reference art is explicitly mapped to real families and protected from pat
   await staff.get(route.replace('version=1','version=2')).expect(404);
   await staff.get(route.replace('reference-joints','..%2f..%2f.env')).expect(404);
   const overview=(await staff.get('/api/overview')).body;
-  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage','hueftbeuger-dehnung-kniestand','hws-tiefe-halsbeuger-isometrisch','hws-tiefe-halsbeuger-kopfheben','hws-nackenstrecker-rueckenlage','hws-nackenstrecker-bauchlage','hws-stabilisation-sitz','hws-isometrie-handwiderstand','hws-stabilisation-vorlage','hws-dynamische-kontrolle-sitz','oberkoerperrotation-sitz','schulter-aussenrotation-stand','schulter-aussenrotation-sitz','schulter-aussenrotation-u-halte-sitz','bulgarian-split-squat-ohne-gewicht','bulgarian-split-squat-kurzhanteln','unterarmstuetz','liegestuetz','unterarmstuetz-beinheben','seitstuetz','unterarmstuetz-knie','liegestuetz-knie','unterarmstuetz-beinheben-knie','seitstuetz-knie','seitliches-hueftheben-knie','kopfrotation-sitzend','kopfseitneigung-sitzend','taube-sitzend'].sort());
+  assert.deepEqual(overview.exercises.map(e=>e.id).sort(),['einbein-kreuzheben-kurzhanteln','einbein-kreuzheben-langhantel','kniebeuge-ohne-gewicht','kniebeuge-zusatzgewicht','sumo-kreuzheben-ohne-gewicht','sumo-kreuzheben-zusatzgewicht','wadenheben-ohne-gewicht','wadenheben-zusatzgewicht','wandsitz','bruecke-rueckenlage','bruecke-einbeinig','ausfallschritt-ohne-gewicht','ausfallschritt-kurzhanteln','ausfallschritt-langhantel','seitliches-hueftheben','seitlicher-ausfallschritt-ohne-gewicht','seitlicher-ausfallschritt-kurzhantel','seitlicher-ausfallschritt-langhantel','quadrizeps-exzentrisch-step-down','katze-kuh-mobilisation','piriformisdehnung-rueckenlage','hueftbeuger-dehnung-kniestand','oberkoerperrotation-sitz','bulgarian-split-squat-ohne-gewicht','bulgarian-split-squat-kurzhanteln','unterarmstuetz','liegestuetz','unterarmstuetz-beinheben','seitstuetz','unterarmstuetz-knie','liegestuetz-knie','unterarmstuetz-beinheben-knie','seitstuetz-knie','seitliches-hueftheben-knie','kopfrotation-sitzend','kopfseitneigung-sitzend','taube-sitzend'].sort());
   assert(overview.exercises.every(e=>e.status==='draft' && e.reviewer===''));
   const patient=request.agent(runtime.app);
   const ps=(await patient.get('/api/session')).body;
@@ -93,7 +89,6 @@ test('reference art is explicitly mapped to real families and protected from pat
   await patient.get(route).expect(404);
   await patient.get(rdlRoute).expect(404);
   await patient.get(hipRoute).expect(404);
-  await patient.get(neckRoute).expect(404);
   assert(!(await patient.get('/api/overview')).body.exercises.some(e=>e.id.startsWith('katalog-')));
   const csrf=(await staff.get('/api/session')).body.csrf;
   const exercise=(await staff.get('/api/exercises/katalog-shoulder-flex-stand-aktiv').expect(200)).body;
@@ -250,22 +245,15 @@ test('hip flexor stretch has correct classification, timed hold and the two app-
   assert(findExercises([e],{trainingType:'Dehnung',joint:'Hüftgelenk',search:'Hüftbeuger'}).some(x=>x.id===e.id));
 });
 
-test('eight HWS exercises use protected original two-frame SVG art and appropriate classifications', () => {
-  assert.equal(neckExercises.length, 8);
-  const ids=new Set(neckExercises.map(e=>e.id));
-  assert.equal(ids.size,8);
-  for (const e of neckExercises) {
-    const ref=resolveReferencePose(e);
-    assert.equal(ref.atlas,'reference-'+e.id);
-    assert.equal(ref.frameColumns,2);
-    assert.equal(ref.frameRows,1);
-    assert.equal(e.requiresSupervision,true);
-    assert.equal(e.conditionUses.length,0);
-    assert(e.steps.length>=3);
-    assert(e.trainingTypes.every(t=>taxonomy.trainingTypes.includes(t)));
-    assert(e.strengthMuscles.every(m=>taxonomy.muscles.includes(m)));
-    assert(findExercises([e],{joint:'Halswirbelsäule',trainingType:e.trainingTypes[0],search:'HWS'}).some(x=>x.id===e.id));
-    if(e.trainingTypes.includes('Kraft')) {assert.equal(e.dosageMode,'hold');assert.equal(e.defaultHoldSeconds,10);assert(e.strengthMuscles.length>0);}
-    else {assert.equal(e.trainingTypes[0],'Mobilisation');assert.equal(e.dosageMode,'repetitions');assert.equal(e.strengthMuscles.length,0);}
+
+test('retired HWS and shoulder rotation illustrations are no longer in the current registry',()=>{
+  const retired=['hws-tiefe-halsbeuger-isometrisch','hws-tiefe-halsbeuger-kopfheben',
+    'hws-nackenstrecker-rueckenlage','hws-nackenstrecker-bauchlage',
+    'hws-stabilisation-sitz','hws-isometrie-handwiderstand',
+    'hws-stabilisation-vorlage','hws-dynamische-kontrolle-sitz',
+    'schulter-aussenrotation-stand','schulter-aussenrotation-sitz','schulter-aussenrotation-u-halte-sitz'];
+  for (const id of retired) {
+    assert(!poses.some(p=>p.exerciseIds?.includes(id)),id);
+    assert(!illustratedExercises.some(e=>e.id===id),id);
   }
 });

@@ -4,7 +4,6 @@ import path from 'node:path';
 import { createApp } from '../server/app.mjs';
 import { classifyExercise } from '../server/exercise-catalog.mjs';
 import { coverage } from '../server/seed.mjs';
-import { enhancedShoulderFrame } from '../server/reference-image.mjs';
 
 if(!process.argv.includes('--seed-only')) {
   if(fs.existsSync('.env.firebase'))process.loadEnvFile('.env.firebase');
@@ -49,9 +48,6 @@ try {
   for(const name of fs.readdirSync('public'))if(name!=='demo-assets'&&!name.startsWith('.'))fs.cpSync(path.join('public',name),path.join(publicDir,name),{recursive:true});
   const assets = path.join(publicDir,'demo-assets');
   fs.cpSync(path.resolve('server/assets'),assets,{recursive:true});
-  for (const atlas of ['reference-shoulder-rotation-standing','reference-shoulder-rotation-seated','reference-shoulder-rotation-u-hold']) {
-    for (const frame of [0,1]) fs.writeFileSync(path.join(assets,'reference',`${atlas}-frame${frame}.webp`),await enhancedShoulderFrame(atlas,frame));
-  }
   console.log(`Synthetic demo: ${users.length} people, ${catalogIds.length} catalog exercises, ${Buffer.byteLength(json)} bytes. No accounts, passwords, sessions or local data exported.`);
   }
 } finally {

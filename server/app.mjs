@@ -26,7 +26,7 @@ import {
   transaction,
   audit,
 } from "./db.mjs";
-import { classifyExercise, seedResearchDrafts, resetExerciseListToDeadlifts, renameWideSquats, correctSingleLegBridgeSide, publishSeatedNeckRotation, publishAdditionalSeatedNeckExercises, publishShoulderRotationExercises, publishBulgarianSplitSquats, publishHipFlexorStretch, publishNeckExercises, taxonomy } from "./exercise-catalog.mjs";
+import { classifyExercise, seedResearchDrafts, resetExerciseListToDeadlifts, renameWideSquats, correctSingleLegBridgeSide, publishSeatedNeckRotation, publishAdditionalSeatedNeckExercises, publishBulgarianSplitSquats, publishHipFlexorStretch, retireRequestedExercises, taxonomy } from "./exercise-catalog.mjs";
 import { clinicalLibrary, catalogMedia } from "./clinical-content.mjs";
 import { seed, coverage } from "./seed.mjs";
 import { VERSION, VERSION_DATE, TIME_ZONE } from "./version.mjs";
@@ -84,10 +84,9 @@ export function createApp(options = {}) {
   correctSingleLegBridgeSide(db);
   publishSeatedNeckRotation(db);
   publishAdditionalSeatedNeckExercises(db);
-  publishShoulderRotationExercises(db);
   publishBulgarianSplitSquats(db);
   publishHipFlexorStretch(db);
-  publishNeckExercises(db);
+  retireRequestedExercises(db);
   const mediaDir = path.join(dir, "media");
   fs.mkdirSync(mediaDir, { recursive: true });
   const secretFile = path.join(dir, "session-secret");

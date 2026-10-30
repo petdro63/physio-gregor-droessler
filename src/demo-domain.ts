@@ -1,6 +1,8 @@
 import { z } from 'zod';
 import { birthDate, exerciseSchema, planSchema, text } from './domain-validation.ts';
 import catalogMedia from './catalog-media.json' with {type:'json'};
+import retiredExerciseIds from './retired-exercise-ids.json' with {type:'json'};
+const retiredExercises = new Set<string>(retiredExerciseIds);
 import type { User } from './types.ts';
 
 // This model intentionally represents one password-protected SYNTHETIC demo.
@@ -28,6 +30,7 @@ export function demoExercise(state:DemoState,exerciseId:string,version?:number) 
 }
 export const demoPlans = (state:DemoState,patientId:string) => Object.values(state.plans).map(last).filter(p=>p?.patientId===patientId);
 export function demoCanExercise(state:DemoState,user:User,exerciseId:string,version?:number,now=new Date()) {
+  if (retiredExercises.has(exerciseId)) return false;
   const e=demoExercise(state,exerciseId,version);
   if (!e) return false;
   if (user.role!=='patient') return true;

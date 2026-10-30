@@ -1,6 +1,6 @@
 # Betrieb der Firebase-Trainingsdemo
 
-Version **0.1.31-dev**, Versionsdatum **30.10.2026**, Zeitzone Europe/Berlin.
+Stand des Quellcodes **0.1.32-dev** (Online-Bereitstellung separat prüfen), Versionsdatum **30.10.2026**, Zeitzone Europe/Berlin.
 
 ## Bereitgestellte Umgebung
 
@@ -73,3 +73,8 @@ Geprüft wurden 69 Anwendungs-/Domain-Tests und sechs Gruppen von Firestore-Emul
 Browserprüfung auf Firebase: falsches Passwort abgewiesen, richtiger Zugang akzeptiert, Übungsbilder geladen, Beispieländerung nach Neuladen erhalten und zurückgesetzt, Bild-Upload mit privaten Firestore-Teilen und anschließender Testbereinigung sowie PDF-Download erfolgreich. Version und Datum werden auf Anmeldung und im App-Menü angezeigt. Hosting liefert HTTPS, restriktive Content-Security-Policy, Frame-Schutz und `no-store`. Abhängigkeiten wurden ohne gemeldete npm-Sicherheitslücken geprüft.
 
 Die Wunschdomain bleibt bis zur DNS-Umstellung ausdrücklich ungeprüft. [DNS-Auftrag für den Administrator](DNS-TRAINING.md). Nach Umstellung Anmeldung, PDF, Bilder sowie sichtbare Version und Datum auch auf dieser Domain kontrollieren.
+
+
+## Katalogänderung vom 30.10.2026 (Quellcode 0.1.32-dev)
+
+Die acht HWS-Broschürenentwürfe und drei Schulteraußenrotationen wurden aus der aktiven Sammlung genommen. Ein neu aufgebauter Demostand enthält jetzt 37 statt 48 sichtbare Übungen. Die Browser-App filtert diese elf IDs auch aus bereits bestehenden Cloud-Demoständen und verhindert deren weitere Nutzung. Die bisherigen Firestore-Daten werden dabei nicht automatisch gelöscht; vorhandene Bearbeitungen und Verlaufsdaten bleiben erhalten. Die elf Bilddateien werden nicht mehr in das Firebase-Hosting-Paket kopiert. Die Änderung erscheint auf der Online-Seite erst nach einem erneuten `npm run deploy:firebase` aus einer berechtigten Firebase-CLI-Sitzung. Der GitHub-Push allein veröffentlicht sie **nicht**.

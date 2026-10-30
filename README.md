@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.31-dev**, Versionsdatum **30.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.32-dev**, Versionsdatum **30.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -29,14 +29,14 @@ Die Vorschau nutzt ausschließlich erfundene Personen. Demo- und Praxisdatenbank
 
 ## Enthalten
 
-- Acht neue HWS-Übungen aus der Hirslanden-Birshof-Bewegungsreferenz, mit eigenen Start-/Endbildern der blau-orangefarbenen App-Figur, deutscher Anleitung und sekundengesteuerter Kräftigung beziehungsweise dynamischer Mobilisation. Entwürfe ohne Patientenfreigabe. [HWS-Übungen und Bilder](docs/HWS-HIRSLANDEN-UEBUNGEN.md).
+- Auf Wunsch wurden die **acht HWS-Broschürenübungen** und die **drei Schulteraußenrotationen** aus der Übungssammlung entfernt. Alte lokale Übungsversionen und Trainingsverläufe bleiben erhalten, die betreffenden Übungen werden archiviert und nicht erneut angelegt. Die übrigen Nackenübungen und die Hüftbeuger-Dehnung bleiben bestehen. [Änderungsdetails](docs/ENTFERNTE-HWS-SCHULTER-2026-10-30.md).
+
 
 - Neue **Hüftbeuger-Dehnung im Kniestand** mit den zwei zuvor erstellten Bildern im App-Stil (Start und Dehnstellung), Sekunden-Haltedauer und Suche über Hüfte/Dehnung. Als fachlich ungeprüfter Entwurf für Demo und bestehende Praxisinstallationen aufgenommen. [Übungsdetails](docs/HUEFTBEUGER-DEHNUNG.md).
 
 - Neue professionell illustrierte bulgarische Split Squats ohne Gewicht und mit zwei Kurzhanteln: Start- und Endstellungen mit erhöhtem hinterem Fuß, geschützter WebP-Auslieferung, getrennten Gewichtsvarianten und therapeutischem Entwurfsstatus. [Hinweise und Bildherkunft](docs/BULGARISCHE-SPLIT-SQUATS.md).
 
 
-- Drei neue Schulter-Außenrotationen: im Stand, im Sitzen sowie im Sitzen mit Ellenbogen auf Schulterhöhe; bei der U-Halte bleiben die Ellenbogen **bereits in der Ausgangsstellung 90° gebeugt**, die Unterarme zeigen nach vorn. Neu gerenderte Bilddateien mit getrennten Start- und Endstellungen im App-Stil; zunächst nur als fachlich ungeprüfte Entwürfe. [Ausführung und Bildherkunft](docs/SCHULTER-AUSSENROTATION.md).
 
 
 - Vier neue Stützübungen mit deutschen Anleitungen und jeweils leichter Kniestütz-Variante; zusätzlich seitliches Hüftheben auf den Knien. Statische Stützübungen werden in Sekunden, dynamische in Wiederholungen dosiert. [Bilder, Prompts und Quellen](docs/PLANK-STUETZVARIANTEN.md).
