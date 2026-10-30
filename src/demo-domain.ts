@@ -2,8 +2,8 @@ import { z } from 'zod';
 import { birthDate, exerciseSchema, planSchema, text } from './domain-validation.ts';
 import catalogMedia from './catalog-media.json' with {type:'json'};
 import retiredExerciseIds from './retired-exercise-ids.json' with {type:'json'};
-const retiredExercises = new Set<string>(retiredExerciseIds);
 import type { User } from './types.ts';
+const retiredExercises = new Set<string>(retiredExerciseIds);
 
 // This model intentionally represents one password-protected SYNTHETIC demo.
 // Firebase owns the outer identity; selecting a demo role is a simulation.
