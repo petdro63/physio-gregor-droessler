@@ -1,5 +1,6 @@
 import type { Exercise } from './types';
 import { resolveReferencePose, type ReferencePoseDefinition } from './reference-lookup';
+import { resourceUrl } from './resources';
 
 export function referencePose(exercise: Exercise): ReferencePoseDefinition | undefined {
   return resolveReferencePose(exercise);
@@ -14,9 +15,9 @@ export function ReferencePose({ exercise, phase = 0 }: { exercise: Exercise; pha
   const label = `${exercise.familyTitle || exercise.title}: ${phase ? 'Endstellung' : 'Ausgangsstellung'}, Illustrationsentwurf mit ${exercise.equipment}`;
   if (pose.atlas.startsWith('reference-shoulder-rotation-')) {
     // A dedicated, enhanced frame avoids scaling a very narrow CSS sprite.
-    return <img className="reference-pose reference-pose-image" src={`${url}&frame=${frame}`} alt={label} loading="lazy" decoding="async"/>;
+    return <img className="reference-pose reference-pose-image" src={resourceUrl(`${url}&frame=${frame}`)} alt={label} loading="lazy" decoding="async"/>;
   }
-  return <div className="reference-pose" role="img" aria-label={label} style={{backgroundImage:`url("${url}")`,backgroundSize:`${columns * 100}% ${rows * 100}%`,backgroundPosition:`${columns > 1 ? column * 100 / (columns - 1) : 0}% ${rows > 1 ? pose.row * 100 / (rows - 1) : 0}%`,aspectRatio:pose.frameAspectRatio ?? 1.125,height:pose.frameAspectRatio ? 'auto' : undefined}} />;
+  return <div className="reference-pose" role="img" aria-label={label} style={{backgroundImage:`url("${resourceUrl(url)}")`,backgroundSize:`${columns * 100}% ${rows * 100}%`,backgroundPosition:`${columns > 1 ? column * 100 / (columns - 1) : 0}% ${rows > 1 ? pose.row * 100 / (rows - 1) : 0}%`,aspectRatio:pose.frameAspectRatio ?? 1.125,height:pose.frameAspectRatio ? 'auto' : undefined}} />;
 }
 export function ReferencePositions({ exercise }: { exercise: Exercise }) {
   const pose = referencePose(exercise);

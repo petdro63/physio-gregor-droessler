@@ -204,3 +204,15 @@ input[type='checkbox'] { accent-color: #254ce7; }
   .auth-story-text h1 { font-size: 42px; }
 }
 @media(max-width:420px) { .exercise-grid { grid-template-columns: 1fr; } .exercise-art { height: 230px; } .page-heading { flex-wrap: wrap; } }
+.firebase-gate { min-height:100vh; display:grid; grid-template-columns:minmax(320px,1.1fr) minmax(340px,1fr); background:#f3f6fa; }
+.firebase-gate-story { background:#172237; color:white; padding:clamp(32px,8vw,112px); display:flex; flex-direction:column; justify-content:center; gap:20px; }
+.firebase-gate-story h1 { color:white; font-size:clamp(40px,5vw,72px); line-height:1.05; max-width:650px; margin:0; }
+.firebase-gate-story small { color:#b9c5da; }
+.firebase-gate-form { max-width:460px; width:100%; margin:auto; padding:40px; display:grid; gap:20px; }
+.firebase-gate-form h2 { font-size:30px; margin:0; }.firebase-gate-form p { line-height:1.6; color:#647084; }
+.firebase-gate-form label { display:grid; gap:8px; font-weight:600; }.firebase-gate-form input { width:100%; padding:13px; border:1px solid #cbd4e0; border-radius:10px; background:white; color:#172237; }
+.firebase-gate-form small { line-height:1.6; color:#647084; }.firebase-gate-error { color:#b42318!important; font-size:14px; }
+.firebase-demo-bar { position:relative; z-index:90; min-height:44px; padding:8px 20px; display:flex; align-items:center; justify-content:space-between; gap:16px; background:#eaf1ff; color:#213a68; font-size:12px; }
+.firebase-demo-bar button { background:white; border:1px solid #cbd4e0; border-radius:7px; padding:5px 10px; font-size:12px; cursor:pointer; }
+.firebase-demo .sidebar { top:44px; height:calc(100vh - 44px); }
+@media(max-width:730px){.firebase-gate{grid-template-columns:1fr}.firebase-gate-story{padding:32px;gap:12px}.firebase-gate-story h1{font-size:38px}.firebase-gate-form{padding:30px 24px}.firebase-demo-bar{position:relative;flex-wrap:wrap;padding:8px 12px}.firebase-demo .sidebar{top:0;height:100vh}}

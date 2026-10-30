@@ -1,12 +1,20 @@
 # Betrieb und Hosting
 
+## Aktueller Stand vom 30.10.2026
+
+Die bisherige Demo mit erfundenen Personen ist auf Firebase unter **https://physio-lfd-training.web.app/** bereitgestellt: Version **0.1.31-dev**, Versionsdatum **30.10.2026**. Firebase Hosting, Authentication und die neue Firestore-Datenbank `demo` in Frankfurt gehören zum getrennten Projekt `physio-lfd-training`; KontaktWerk wurde nicht geändert. Der gemeinsame Zugang wird über eine Firebase-Anmeldeseite geprüft. Eine HTTP-Basic-Abfrage vor allen statischen Dateien gehört ausschließlich zur weiter unten beschriebenen Node-Alternative.
+
+Laut Rückmeldung des Nutzers steht im vorhandenen Netcup-Tarif kein Node.js zur Verfügung. Deshalb wird dort kein Express-Server installiert. Für `training.physio-lfd.de` fehlt die DNS-Umstellung auf Firebase durch den Domainadministrator. Die bisherige Netcup-Platzhalterseite ist keine laufende Trainingsanwendung. [Konkrete DNS-Einträge](DNS-TRAINING.md) und [Firebase-Betriebsanleitung mit Grenzen der gemeinsamen Demo](FIREBASE-DEMO.md).
+
+Die folgenden Node-/SQLite-Anweisungen bleiben für eine spätere Praxisinstallation beziehungsweise einen geeigneten eigenen Server gültig. Sie beschreiben nicht das aktuell veröffentlichte Firebase-Backend. Die Firebase-Demo verwendet keine lokalen Praxisdatenbanken, Node-Sitzungen oder SQLite-Backups.
+
 ## Festgestellter Bestand
 
 Am 18.10.2026 wurde das vom Nutzer benannte Projekt `LP-WebSeite` unter `U:\LP` gelesen. Es beschreibt KontaktWerk mit Firebase Hosting (`kontaktwerk-45210`), Firestore in `europe-west3` (Frankfurt), Tarif Spark, und einem separaten Cloudflare-Worker mit R2-Dateispeicher. Eine Hostingzuordnung oder ein Tarif für `vitalcoaching.eu` ist dort nicht dokumentiert. DNS-Abfragen zeigten INWX-Nameserver; daraus lässt sich kein Webhostingtarif ableiten.
 
 KontaktWerk und seine produktiven Ressourcen wurden nicht verändert. GitHub ist Quellcodeverwaltung und CI, kein Ersatz für den geschützten Anwendungsserver. GitHub Pages ist für dieses Backend ungeeignet.
 
-## Vorgeschlagene Zielarchitektur
+## Node-Zielarchitektur für eine Praxisinstallation
 
 Die neue App auf einem eigenen Server oder Containerhost in Deutschland/EU betreiben und `training.physio-lfd.de` dorthin routen. Node.js 24, persistenter Speicher, TLS-Reverse-Proxy und verschlüsselte externe Backups werden benötigt. Eine statische Ablage im bestehenden Firebase-Hosting reicht für diese serverseitige Architektur nicht aus. Eine spätere Portierung auf verwaltete Firebase-/Cloudflare-Dienste erfordert ein eigenes Projekt und eine Prüfung der Datenverarbeitung; bestehende KontaktWerk-Ressourcen werden nicht wiederverwendet.
 
@@ -31,7 +39,7 @@ Passwörter werden mit bcrypt verarbeitet. Sitzungen werden serverseitig verwalt
 
 Auftrag vom 29.10.2026: die bisherige Demo mit erfundenen Personen unter `https://training.physio-lfd.de` zeigen. DNS löst auf Netcup auf; HTTPS leitet korrekt weiter. Ohne Zugangsdaten antworten Startseite und API mit HTTP 401. Die übermittelten Zugangsdaten öffnen derzeit eine Netcup-Platzhalterseite, `/api/session` ist dort noch nicht vorhanden (HTTP 404). Diese Prüfung bestätigt den bestehenden Domainschutz, keine Anwendungsbereitstellung.
 
-Die FTPES-Anmeldung am Netcup-Server gelang mit gültigem TLS-Zertifikat. Passive FTP-Datenverbindungen und SSH-Port 22 waren aus dem verwendeten Netz nicht erreichbar. Die Node.js-Verfügbarkeit und der tatsächliche Dokumentenstamm müssen noch in der Hostingverwaltung geprüft werden. Ein reiner FTP-Upload von `dist/` genügt nicht: Die Demo benötigt das Express-/SQLite-Backend.
+Die FTPES-Anmeldung am Netcup-Server gelang mit gültigem TLS-Zertifikat. Passive FTP-Datenverbindungen und SSH-Port 22 waren aus dem verwendeten Netz nicht erreichbar. Am 30.10.2026 teilte der Nutzer mit, dass der Tarif kein Node.js enthält. Die folgende Node-Demo-Alternative ist dort deshalb nicht einsetzbar; die veröffentlichte Demo verwendet stattdessen das getrennte Firebase-Projekt.
 
 Für den ausdrücklich freigegebenen Demobetrieb folgende Werte ausschließlich als geheime Host-Umgebungsvariablen oder in einer ungetrackten `.env` im Anwendungsstamm setzen:
 

@@ -6,6 +6,7 @@ const date = new Intl.DateTimeFormat("sv-SE", {
   timeZone: "Europe/Berlin",
 }).format(new Date());
 const pkg = JSON.parse(fs.readFileSync("package.json", "utf8"));
+fs.writeFileSync('src/app-version.json', JSON.stringify({version,date})+'\n');
 const old = pkg.version;
 pkg.version = version;
 fs.writeFileSync("package.json", JSON.stringify(pkg, null, 2) + "\n");

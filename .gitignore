@@ -7,4 +7,9 @@ data/
 output/
 tmp/
 *.log
+.firebase/
+firebase-debug.*
+firestore-debug.*
+ui-debug.*
+public/demo-assets/
 .npm-cache/

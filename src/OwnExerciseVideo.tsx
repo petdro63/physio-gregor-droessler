@@ -1,4 +1,5 @@
 import { UserRound, Volume2 } from "lucide-react";
+import { resourceUrl } from './resources';
 
 export const OWN_KNEE_TRANSCRIPT =
   "Setzen Sie sich aufrecht hin. Strecken Sie ein Knie langsam nach vorn. Senken Sie das Bein anschließend kontrolliert wieder ab. Atmen Sie ruhig weiter.";
@@ -16,13 +17,13 @@ export function OwnExerciseVideo() {
         controls
         playsInline
         preload="metadata"
-        poster={base + "knie-avatar-de-poster.jpg"}
+        poster={resourceUrl(base + "knie-avatar-de-poster.jpg")}
         aria-label="Knie im Sitzen strecken – eigene 3D-Animation mit deutscher Erklärung"
       >
-        <source src={base + "knie-avatar-de.mp4"} type="video/mp4" />
+        <source src={resourceUrl(base + "knie-avatar-de.mp4")} type="video/mp4" />
         <track
           kind="captions"
-          src={base + "knie-avatar-de.vtt"}
+          src={resourceUrl(base + "knie-avatar-de.vtt")}
           srcLang="de"
           label="Deutsch"
           default

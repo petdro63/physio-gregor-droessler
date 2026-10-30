@@ -252,6 +252,270 @@
           ]
         }
       ]
+    },
+    {
+      "version": "0.1.31-dev",
+      "version_date": "2026-10-30",
+      "task": "Bisherige Trainingsdemo wie KontaktWerk auf Firebase anpassen, in einem neuen getrennten Projekt mit Datenbank in Frankfurt bereitstellen und training.physio-lfd.de vorbereiten.",
+      "thread_id": "01a1870b-b329-7840-8d83-338d835806cf",
+      "environment": "LOCAL-TEST",
+      "evidence": {
+        "src/main.tsx": "7435fc12fb8bb935993172a301d9c3da8d1966635a82f8288dafe02a29e967fb",
+        "src/api.ts": "333b220e7da7f3f6ba09a98720fded5af61577965edb1ade515ac814e56bc2ce",
+        "src/firebase-api.ts": "9885e7d141697352329c2f648a77bbe340453aee251c293dec3b43bcf3444a8e",
+        "src/demo-domain.ts": "918d86b990520732fee8225c266844403a9f94468b43f107ebee4cf406de3e28",
+        "src/domain-validation.ts": "acddd56520a6ac1e6f6f973fc7c73a242a8edda8f2c762f007bc16409172f40d",
+        "server/app.mjs": "4aa0de5112b4104e0f6ff65570b9037bd0acb33d769ebb95a4ed5351754d107e",
+        "scripts/build-firebase-demo.mjs": "31a63b7688c47c5d6701e3d04cbd75592bcd01005fafabb06f71b77605f3cf0e",
+        "scripts/prepare-public.mjs": "424616cec2e12868c339b4a80f23079ab071fe6fd19487be0b611a47738f1623",
+        "vite.config.ts": "b0a43079ea17b06c801576e4684c943795b93dd43264d40fc339cbf8fc66a035",
+        "src/DownloadLink.tsx": "7bd90ad938a92e14592ae9735e7c29e3428a7b723ef2df92c9488373bcfaab11",
+        "src/plan-pdf.ts": "e2c8ebd34fdd905a36b22792b21dfbb6a6da0241cce2611342b37786401147d8",
+        "src/resources.ts": "f82afca2dc0479b6dd2e65b2e76de5d0e2d82856cd71516e109f38376673d09a",
+        "src/App.tsx": "7e350653f338afd3b476cf9ca3f8d23f6c36d6cdbd9231e511c9b1991bbf74c2",
+        "src/ReferencePositions.tsx": "92f49f40662a1ced70fa5a241a22cedb01b5505fe6fe749963e0e3b7d0b86790",
+        "src/LicensedMedia.tsx": "8ce7de95c44b423f17acf55fb6511e3970c5e07f35f1fa2e7ffe14138ad17efb",
+        "src/OwnExerciseVideo.tsx": "c69f88a511bfd8f877408d58af1391f4e93806b876d653cc924aa93781294715",
+        "package.json": "7c0c1fc2cd88eecfef7ce8f3ddaeace57a5deb184cb521500af7ba2e95317560",
+        "package-lock.json": "b146676886137633cabea425bfa2fa2bf9a02614600d7672a5479f95ffb65028",
+        "server/version.mjs": "c16f94265f3c1ce765c17307830fe1ce0091b09d4be599e3426a0f1db2f4ea28",
+        "src/app-version.json": "58353637771b6855c0ad836027f19600894be5232e5e611819c470c4514d8947",
+        "public/sw.js": "fd4225800ca89a28504124fe5e5f0354768f2fe671d4a2383c215d1012cc737f",
+        "scripts/release.mjs": "9997cae30e95074ae5a9453ca6f70c6def0ae7d6002e744ceb14604fb8bd1e11",
+        "test/firebase-domain.test.mjs": "66dd8aabf5476a20db1f05966f24a095a42d8e16d43b926c8d2318410b81ccf0",
+        "test/firebase-rules.integration.mjs": "d83fb3ec3a8a314e934ee9f71a1d4f0637b8be6a32b698989b3d3da649baead2",
+        "scripts/test-firebase-rules.mjs": "036df9e988289b6a88421320713a4c6cefa21b472e22f37e0e8be6ded9c22267",
+        "scripts/hide-test-windows.cjs": "b0805227e0ad27c0d7b6a156e182114efba89a67d95d0f03086faa9ea500754f",
+        ".github/workflows/check.yml": "62dafdcbe75ad4922832806ca94a307a2e5487406fc9f16ea545c0c655dbb40b",
+        "README.md": "8d2b36d8bcd76eb2999e82b25264eddb3cdd4da3627a600a03dbb449fa947e11"
+      },
+      "notes": [
+        {
+          "category": "improvement",
+          "summary": "Die bisherige synthetische Demo kann als statische Firebase-Anwendung mit zentral gespeicherten Beispieldaten betrieben werden. Die Node-Praxisinstallation bleibt erhalten; lokale Praxisdaten werden nicht exportiert.",
+          "sources": [
+            "src/main.tsx",
+            "src/api.ts",
+            "src/firebase-api.ts",
+            "src/demo-domain.ts",
+            "src/domain-validation.ts",
+            "server/app.mjs",
+            "scripts/build-firebase-demo.mjs",
+            "scripts/prepare-public.mjs",
+            "vite.config.ts"
+          ],
+          "targets": [
+            {
+              "kind": "function",
+              "name": "firebaseApi / handleDemoRequest",
+              "location": "src/firebase-api.ts / src/demo-domain.ts",
+              "before": "Alle Geschäftsabläufe benötigten das Express-/SQLite-Backend.",
+              "after": "Optionaler Firebase-Adapter liest den privaten JSON-Demostand und speichert Änderungen transaktional mit fortlaufender Revision; simuliert Rollenwahl, Einladungen, Übungs-/Planversionen und Training."
+            },
+            {
+              "kind": "function",
+              "name": "exerciseSchema / planSchema / birthDate",
+              "location": "src/domain-validation.ts / server/app.mjs",
+              "before": "Zod-Schemas waren ausschließlich in server/app.mjs definiert.",
+              "after": "Gemeinsame browserfähige Schemas validieren Node- und Firebase-Demoabläufe; bestehende Node-Zugriffsregeln bleiben serverseitig."
+            },
+            {
+              "kind": "property",
+              "name": "Vite publicDir / build.outDir",
+              "location": "vite.config.ts / scripts/prepare-public.mjs",
+              "before": "Ein einzelner Build nach dist mit public als Eingangsverzeichnis.",
+              "after": "Getrennte Firebase-Verzeichnisse output/firebase-public und output/firebase-dist; Node-Produktionsbuild filtert generierte Demoassets aus, Entwicklung verwendet public."
+            },
+            {
+              "kind": "function",
+              "name": "synthetischer Export aus createApp",
+              "location": "scripts/build-firebase-demo.mjs",
+              "before": "Nicht vorhanden",
+              "after": "Exportiert 48 sichtbare Übungen, vier erfundene Personen und einen Beispielplan ausschließlich aus einer frisch erstellten temporären Datenbank; keine vorhandenen Daten, Passworthashes oder Sitzungen."
+            }
+          ]
+        },
+        {
+          "category": "improvement",
+          "summary": "PDF/JSON-Downloads, vorhandene Bibliotheksmedien und private Bild-/Video-Uploads funktionieren auch ohne eigenen Node-Webserver.",
+          "sources": [
+            "src/DownloadLink.tsx",
+            "src/plan-pdf.ts",
+            "src/resources.ts",
+            "src/firebase-api.ts",
+            "src/App.tsx",
+            "src/ReferencePositions.tsx",
+            "src/LicensedMedia.tsx",
+            "src/OwnExerciseVideo.tsx"
+          ],
+          "targets": [
+            {
+              "kind": "function",
+              "name": "DownloadLink / firebaseDownload / createBrowserPlanPdf",
+              "location": "src/DownloadLink.tsx / src/firebase-api.ts / src/plan-pdf.ts",
+              "before": "Download-Links erwarteten serverseitige PDF- und JSON-Antworten.",
+              "after": "Erzeugt PDF und JSON nach Berechtigungsprüfung im Browser; PDF mit Versionsdatum und Demohinweis, vorhandene Referenzbilder werden entsprechend dem gewählten Atlas-Ausschnitt eingebettet."
+            },
+            {
+              "kind": "function",
+              "name": "resourceUrl / mediaFetch",
+              "location": "src/resources.ts",
+              "before": "Medienadressen erwarteten Express-API-Routen.",
+              "after": "Ordnet allgemeine Programmmedien statischen Demoassets und private Uploads authentifizierten Blob-URLs zu; bestehende Node-Adressen bleiben erhalten."
+            },
+            {
+              "kind": "function",
+              "name": "upload / inspectFile / clearFirebaseDemoMemory",
+              "location": "src/firebase-api.ts",
+              "before": "Nicht vorhanden",
+              "after": "Prüft Uploadsignaturen und Bilddecodierung, optimiert Bilder und speichert bis 50 MiB in begrenzten privaten Teilanfragen; registriert nur vollständige Uploads und entfernt temporäre URLs/Rollenwahl beim äußeren Abmelden."
+            }
+          ]
+        },
+        {
+          "category": "technical",
+          "summary": "Version 0.1.31-dev vom 30.10.2026 (Europe/Berlin). Node- und Firebase-Build erfolgreich, 69 Anwendungstests und sechs Firestore-Regeltestgruppen bestanden; npm audit ohne Befund. Der Windows-Emulator öffnet keine zusätzliche Java-Konsole und hinterlässt keinen eigenen Testprozess.",
+          "sources": [
+            "package.json",
+            "package-lock.json",
+            "server/version.mjs",
+            "src/app-version.json",
+            "public/sw.js",
+            "scripts/release.mjs",
+            "test/firebase-domain.test.mjs",
+            "test/firebase-rules.integration.mjs",
+            "scripts/test-firebase-rules.mjs",
+            "scripts/hide-test-windows.cjs",
+            ".github/workflows/check.yml",
+            "README.md"
+          ],
+          "targets": [
+            {
+              "kind": "field",
+              "name": "VERSION / VERSION_DATE / version / date / CACHE",
+              "location": "server/version.mjs / src/app-version.json / package.json / package-lock.json / public/sw.js",
+              "before": "0.1.30-dev / 2026-10-29",
+              "after": "0.1.31-dev / 2026-10-30; release.mjs aktualisiert zusätzlich die browserlesbare Versionsdatei."
+            },
+            {
+              "kind": "property",
+              "name": "test / build:firebase / test:firebase-rules / deploy:firebase",
+              "location": "package.json / .github/workflows/check.yml",
+              "before": "Keine Firebase-Demo- und Regelprüfungen vorhanden.",
+              "after": "Reproduzierbare Demoerzeugung und sechs Domain-Tests ergänzen 63 bestehende Tests; separater Java-21-Regeltestjob prüft tatsächliche erlaubte und abgewiesene Firestore-Zugriffe."
+            },
+            {
+              "kind": "function",
+              "name": "Emulatorstarter mit windowsHide und gezielter Bereinigung",
+              "location": "scripts/test-firebase-rules.mjs / scripts/hide-test-windows.cjs",
+              "before": "Java-Testprozesse konnten zusätzliche sichtbare Konsolen und einen eigenen Restprozess hinterlassen.",
+              "after": "Unterdrückt unter Windows neue Konsolen und beendet ausschließlich Java-Emulatoren mit dem eigenen Testprojektnamen und dem exakten Regelpfad dieses Checkouts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "version": "0.1.31-dev",
+      "version_date": "2026-10-30",
+      "task": "Bisherige Trainingsdemo wie KontaktWerk auf Firebase anpassen, in einem neuen getrennten Projekt mit Datenbank in Frankfurt bereitstellen und training.physio-lfd.de vorbereiten.",
+      "thread_id": "01a1870b-b329-7840-8d83-338d835806cf",
+      "environment": "FIREBASE-DEMO",
+      "evidence": {
+        ".firebaserc": "59ae30955386bffbb8e9e11f5e2eca59857a0c7e925337cd520abe70dd35cebe",
+        "firebase.json": "4fe79222db8c2041965e44a5af4ce1a095b6551dadb79e9337b58a5d278ab427",
+        "firestore.indexes.json": "02040af729e3fe3eeeb8a5b6e8c357f65b97078a14f884106377d7af7869dff0",
+        "firestore.rules": "798e9295afddb6dd9119b231e6c92a2393ec8674ab9ddeddc6b1e46511bc28bb",
+        "src/firebase.ts": "44e37d27923b94e94f16809d8056d8744a560936057c19c3b8622ffa4d960cce",
+        "src/FirebaseGate.tsx": "1cc7a2ede769620773dcd8a9678338136b1afc9e16a84e205a454c8edc3c0f69",
+        "src/firebase-api.ts": "9885e7d141697352329c2f648a77bbe340453aee251c293dec3b43bcf3444a8e",
+        "src/demo-domain.ts": "918d86b990520732fee8225c266844403a9f94468b43f107ebee4cf406de3e28",
+        "src/design.css": "12d233fb0b7f07e6056629d697a91b801d9224fdbc344469e7794815a04a65f0",
+        "scripts/seed-firebase-demo.mjs": "b95787c96c74ef46fa29a836a27352a5e058dbd67298255a30ea34bf715e3cab",
+        "docs/FIREBASE-DEMO.md": "c155af3a4499a651969ea842af2fff291688a810de54e6bbcf4761ae36de2852",
+        "docs/DNS-TRAINING.md": "13c035fc0b094a300c0ab930c4543956a904106174eafa2ced23e8048fd8e340",
+        "docs/BETRIEB.md": "537c9923d47559679cec35e5de3fd36de50e148bc177daf92c0cdbf1285b552e",
+        "README.md": "8d2b36d8bcd76eb2999e82b25264eddb3cdd4da3627a600a03dbb449fa947e11",
+        ".env.example": "6ee72c43bbe97bb05039e8be60c59ab2024e078505c5841415dcb409fc9e7c6a",
+        ".gitignore": "1843d503828d6934d061e9873689fef0d3acc7ca907c0744a9b09d372c42ce30"
+      },
+      "notes": [
+        {
+          "category": "improvement",
+          "summary": "Getrennte Firebase-Demo unter https://physio-lfd-training.web.app/ bereitgestellt und im Browser geprüft. KontaktWerk blieb unverändert. Gemeinsamer Zugang mit erfundenen Personen, kein produktiver Patientenbetrieb.",
+          "sources": [
+            ".firebaserc",
+            "firebase.json",
+            "firestore.indexes.json",
+            "firestore.rules",
+            "src/firebase.ts",
+            "src/FirebaseGate.tsx",
+            "src/firebase-api.ts",
+            "src/demo-domain.ts",
+            "src/design.css",
+            "scripts/seed-firebase-demo.mjs",
+            "docs/FIREBASE-DEMO.md"
+          ],
+          "targets": [
+            {
+              "kind": "property",
+              "name": "Firebase-Projekt / Hosting-Site / Firestore-Datenbank",
+              "location": "firebase.json / .firebaserc / docs/FIREBASE-DEMO.md",
+              "before": "Trainingsanwendung nicht online installiert; Netcup-Tarif ohne Node.js.",
+              "after": "Neues Projekt physio-lfd-training mit Hosting, Authentication und Firestore-Datenbank demo in europe-west3 (Frankfurt), native Firestore-Schnittstelle und Echtzeit; Spark ohne aktivierte Abrechnung."
+            },
+            {
+              "kind": "function",
+              "name": "FirebaseGate / requireDemoIdentity / mayUse / isValidUser / isValidMedia / isValidChunk",
+              "location": "src/FirebaseGate.tsx / src/firebase.ts / firestore.rules",
+              "before": "Kein separater Firebase-Zugang für die Trainingsdemo.",
+              "after": "Bestehender gemeinsamer Zugang wurde als Firebase-Konto freigeschaltet; Datenzugriff benötigt signierten trainingDemo-Claim und passenden Eigentümer. Regeln schützen Schema, Revisionen, Zeitstempel und private Medien; alle anderen Pfade verweigert."
+            },
+            {
+              "kind": "function",
+              "name": "einmalige Anlage des Demostands",
+              "location": "scripts/seed-firebase-demo.mjs",
+              "before": "Keine getrennte Cloud-Demo vorhanden.",
+              "after": "Synthetische Ausgangsdaten hinter Anmeldung eingerichtet; Seedskript erhält Passwort nur über stdin und überschreibt keinen vorhandenen Stand. Browserprüfung bestätigte Speicherung und Wiederladen einer zurückgesetzten Beispieländerung sowie privaten Testupload mit Bereinigung."
+            },
+            {
+              "kind": "property",
+              "name": "Hosting-Sicherheitsheader und sichtbare Releaseangaben",
+              "location": "firebase.json / src/FirebaseGate.tsx / src/App.tsx",
+              "before": "Trainingsprogramm unter Firebase noch nicht veröffentlicht.",
+              "after": "HTTPS 200, no-store, CSP, Frame-Schutz und weitere Header live geprüft; Anmeldung, Abmeldung, Patienten- und Praxisansicht, Trainingsdialog und PDF funktionieren; sichtbar Version 0.1.31-dev / 30.10.2026. Hosting-Version 3d768ea94d5c5735."
+            }
+          ]
+        },
+        {
+          "category": "technical",
+          "summary": "Wunschdomain bei Firebase vorbereitet; tatsächliche DNS-Auflösung zeigt weiterhin Netcup. Keine Bereitstellung oder Zertifikatsprüfung auf training.physio-lfd.de behauptet. Konkrete Einträge für den Domainadministrator dokumentiert.",
+          "sources": [
+            "docs/DNS-TRAINING.md",
+            "docs/FIREBASE-DEMO.md",
+            "docs/BETRIEB.md",
+            "README.md",
+            ".env.example",
+            ".gitignore"
+          ],
+          "targets": [
+            {
+              "kind": "property",
+              "name": "Custom Domain training.physio-lfd.de",
+              "location": "docs/DNS-TRAINING.md",
+              "before": "Netcup-A-/AAAA-Einträge und Platzhalterseite.",
+              "after": "Firebase-Domainzuordnung angelegt; HOST_MISMATCH / OWNERSHIP_MISSING / CERT_VALIDATING am 30.10.2026. Administrator muss alte A-/AAAA-Einträge durch CNAME auf physio-lfd-training.web.app und aktuellen ACME-TXT-Nachweis ersetzen. DNS-Schaltung steht aus."
+            },
+            {
+              "kind": "property",
+              "name": "Betriebsgrenzen der Firebase-Demo",
+              "location": "docs/FIREBASE-DEMO.md / README.md / docs/BETRIEB.md",
+              "before": "Dokumentation beschrieb nur einen eigenen Node-Webserver.",
+              "after": "Beschreibt getrennten Firebase-Build, gemeinsame simulierte Rollen ohne echtes Mitarbeiter-TOTP, private Cloud-Beispieldaten/Uploads, öffentliche allgemeine Übungsdateien, Größen-/Kontingentgrenzen und ausstehende DNS-Prüfung. Keine Passwörter oder lokalen Daten versioniert."
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,82 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // DEMO ONLY. Each Firebase identity owns one synthetic demo workspace.
+    // Selecting a patient/therapist/admin inside it is a simulation, not an
+    // authorization boundary. No production patient records belong here.
+    // demoStates/{uid}: schemaVersion:int=1; ownerUid:string (immutable);
+    // revision:int 1..1e9; payload:opaque JSON string <=850000 characters;
+    // createdAt:timestamp (immutable), updatedAt:timestamp (request time).
+    // demoStates/{uid}/media/{uuid}: ownerUid, mediaId:string (immutable);
+    // mime:enum, size:int 1..50MiB, chunks:int 1..100, createdAt:timestamp.
+    // .../chunks/{index}: ownerUid,mediaId:string; index:int 0..99;
+    // data:base64 string <=800000 characters; createdAt:timestamp. Immutable.
+    function isAuthenticated() { return request.auth != null; }
+    function isOwner(uid) { return isAuthenticated() && request.auth.uid == uid; }
+    function isDemoAccount() {
+      return isAuthenticated() && 'trainingDemo' in request.auth.token
+        && request.auth.token.trainingDemo == true;
+    }
+    function mayUse(uid) { return isOwner(uid) && isDemoAccount(); }
+    function uidUnchanged() { return request.resource.data.ownerUid == resource.data.ownerUid; }
+    function uidNotModified() { return !request.resource.data.diff(resource.data).affectedKeys().hasAny(['ownerUid']); }
+    function isValidUser(data, uid) {
+      return data.keys().hasAll(['schemaVersion','ownerUid','revision','payload','createdAt','updatedAt'])
+        && data.keys().hasOnly(['schemaVersion','ownerUid','revision','payload','createdAt','updatedAt'])
+        && data.schemaVersion == 1 && data.schemaVersion is int
+        && data.ownerUid is string && data.ownerUid.size() > 0 && data.ownerUid.size() <= 128 && data.ownerUid == uid
+        && data.revision is int && data.revision >= 1 && data.revision <= 1000000000
+        && data.payload is string && data.payload.size() >= 2 && data.payload.size() <= 850000
+        && data.createdAt is timestamp && data.createdAt <= request.time
+        && data.updatedAt is timestamp && data.updatedAt == request.time;
+    }
+    function workspaceExists(uid) { return exists(/databases/$(database)/documents/demoStates/$(uid)); }
+    function validUuid(value) { return value is string && value.size() == 36 && value.matches('^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$'); }
+    function isValidMedia(data,uid,mediaId) {
+      return data.keys().hasAll(['ownerUid','mediaId','mime','size','chunks','createdAt'])
+        && data.keys().hasOnly(['ownerUid','mediaId','mime','size','chunks','createdAt'])
+        && data.ownerUid == uid && data.ownerUid is string && data.ownerUid.size() <= 128
+        && data.mediaId == mediaId && validUuid(data.mediaId)
+        && data.mime in ['image/jpeg','image/png','image/webp','video/mp4','video/webm','text/vtt']
+        && data.size is int && data.size > 0 && data.size <= 52428800
+        && data.chunks is int && data.chunks >= 1 && data.chunks <= 100
+        && data.createdAt is timestamp && data.createdAt == request.time;
+    }
+    function isValidChunk(data,uid,mediaId,chunkId) {
+      let media = getAfter(/databases/$(database)/documents/demoStates/$(uid)/media/$(mediaId)).data;
+      return data.keys().hasAll(['ownerUid','mediaId','index','data','createdAt'])
+        && data.keys().hasOnly(['ownerUid','mediaId','index','data','createdAt'])
+        && data.ownerUid == uid && data.ownerUid is string && data.ownerUid.size() <= 128
+        && data.mediaId == mediaId && validUuid(data.mediaId)
+        && data.index is int && data.index >= 0 && data.index < media.chunks && data.index < 100
+        && chunkId == string(data.index)
+        && data.data is string && data.data.size() > 0 && data.data.size() <= 800000
+        && data.data.size() % 4 == 0 && data.data.matches('^[A-Za-z0-9+/]+={0,2}$')
+        && data.createdAt is timestamp && data.createdAt == request.time;
+    }
+    match /demoStates/{uid} {
+      allow read: if mayUse(uid);
+      allow create: if mayUse(uid) && isValidUser(request.resource.data,uid)
+        && request.resource.data.revision == 1 && request.resource.data.createdAt == request.time;
+      allow update: if mayUse(uid) && isValidUser(request.resource.data,uid)
+        && uidUnchanged() && uidNotModified()
+        && request.resource.data.createdAt == resource.data.createdAt
+        && request.resource.data.revision == resource.data.revision + 1;
+      allow delete: if false;
+      match /media/{mediaId} {
+        allow read: if mayUse(uid) && workspaceExists(uid);
+        allow create: if mayUse(uid) && workspaceExists(uid) && isValidMedia(request.resource.data,uid,mediaId);
+        allow update: if false;
+        allow delete: if mayUse(uid) && workspaceExists(uid);
+        match /chunks/{chunkId} {
+          allow read: if mayUse(uid) && workspaceExists(uid)
+            && exists(/databases/$(database)/documents/demoStates/$(uid)/media/$(mediaId));
+          allow create: if mayUse(uid) && workspaceExists(uid) && isValidChunk(request.resource.data,uid,mediaId,chunkId);
+          allow update: if false;
+          allow delete: if mayUse(uid) && workspaceExists(uid);
+        }
+      }
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

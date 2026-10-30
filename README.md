@@ -1,8 +1,16 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.30-dev**, Versionsdatum **29.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.31-dev**, Versionsdatum **30.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
+
+## Online ausprobieren
+
+Die geschützte Trainingsdemo läuft unter **https://physio-lfd-training.web.app/**. Anmeldung mit dem separat mitgeteilten Demo-Zugang; anschließend Patienten-, Therapie- oder Administrationsansicht auswählen. Änderungen an den erfundenen Beispieldaten werden zentral gespeichert und sind für alle Personen mit diesem gemeinsamen Zugang sichtbar. Keine echten Patientendaten verwenden.
+
+Das neue, getrennte Firebase-Projekt `physio-lfd-training` verwendet Firebase Hosting, Firebase Authentication und die Firestore-Datenbank `demo` in Frankfurt (`europe-west3`). Auf dem Webhost wird kein Node.js benötigt. KontaktWerk bleibt unverändert. Für **training.physio-lfd.de** ist die Domain bei Firebase vorbereitet; die DNS-Umstellung durch den Domainadministrator steht noch aus. [DNS-Anleitung](docs/DNS-TRAINING.md) · [Betrieb der Firebase-Demo](docs/FIREBASE-DEMO.md).
+
+Die Firebase-Fassung ist eine gemeinsame Vorführumgebung. Die innere Rollenwahl simuliert Praxisabläufe; echte getrennte Patienten- und Mitarbeiterzugänge mit serverseitiger Rollenprüfung und TOTP gehören zur unten beschriebenen Node-Praxisinstallation. Die allgemeinen Übungsillustrationen sind öffentliche Programmdateien; Beispieldaten und eigene Uploads benötigen die freigeschaltete Firebase-Anmeldung.
 
 ## Lokal ausprobieren
 
@@ -59,7 +67,7 @@ Die Vorschau nutzt ausschließlich erfundene Personen. Demo- und Praxisdatenbank
 - Verschlüsselte Backups einschließlich Datenbank und Medien sowie getestete Wiederherstellung.
 - GitHub Actions für Build und Zugriffstests.
 
-## Architektur
+## Architektur der Node-Praxisinstallation
 
 React/TypeScript und Vite für die Oberfläche; Express für die serverseitige Geschäftslogik; SQLite mit versioniertem SQL-Schema für relationale Daten. Medien liegen außerhalb des öffentlichen Webverzeichnisses. Express-Session verwendet einen eigenen SQLite-Store. bcryptjs, OTPAuth, Helmet, express-rate-limit und Zod übernehmen etablierte Authentifizierungs- und Schutzbausteine.
 
@@ -72,9 +80,15 @@ Die erste Fassung ist für eine einzelne Praxis ausgelegt. Die aktuelle Node-SQL
 ```powershell
 npm run build
 npm test
+# Zusätzlich für die Firebase-Demo: Java 21 oder neuer erforderlich
+npm run test:firebase-rules
+# Mit ungetrackter .env.firebase:
+npm run build:firebase
 ```
 
 Die Integrationstests prüfen tatsächliche HTTP-Zugriffe auf isolierte temporäre Datenbanken: Patiententrennung, Rollen, CSRF, Sperrung, abgelaufene Zugänge, Einladungen, TOTP inklusive Wiederverwendungsschutz, Medienprüfung, Freigabesperren, Planhistorie, PDF und Backup/Wiederherstellung.
+
+Zusätzlich prüfen Domain-Tests die Firebase-Demoabläufe und Emulator-Tests die Firestore-Regeln gegen unberechtigte Konten, fremde Eigentümer, manipulierte Felder, fehlende Pflichtfelder, Revisionsfehler und unzulässige Medienzugriffe. Die erwarteten Ablehnungen dieser Angriffstests können Warnungen im Emulatorprotokoll erzeugen; maßgeblich ist das Testergebnis.
 
 ## Dokumentation
 

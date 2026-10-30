@@ -1,9 +1,10 @@
 import { useState } from "react";
-import media from "./catalog-media.json";
+import media from "./catalog-media.json" with {type:'json'};
 import type { Exercise } from "./types";
+import { resourceUrl } from './resources';
 
 export const catalogMediaUrl = (exercise: Exercise, asset: string, file: string) =>
-  `/api/catalog-media/${encodeURIComponent(exercise.id)}/${encodeURIComponent(asset)}/${encodeURIComponent(file)}?version=${exercise.version}`;
+  resourceUrl(`/api/catalog-media/${encodeURIComponent(exercise.id)}/${encodeURIComponent(asset)}/${encodeURIComponent(file)}?version=${exercise.version}`);
 
 export function LicensedMedia({ exercise }: { exercise: Exercise }) {
   const [video, setVideo] = useState(false);

@@ -7,6 +7,10 @@ export async function api<T = any>(
   method = "GET",
   body?: unknown,
 ): Promise<T> {
+  if (import.meta.env.VITE_BACKEND === 'firebase') {
+    const { firebaseApi } = await import('./firebase-api');
+    return firebaseApi<T>(url, method, body);
+  }
   const isFile = body instanceof FormData;
   const res = await fetch("/api" + url, {
     method,

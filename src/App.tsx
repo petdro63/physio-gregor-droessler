@@ -31,7 +31,7 @@ import {
   Users,
   X,
 } from "lucide-react";
-import taxonomy from "./exercise-taxonomy.json";
+import taxonomy from "./exercise-taxonomy.json" with {type:'json'};
 import { defaultPlanDosage, dosageLabel } from './dosage';
 import rehabLibrary from "./rehab-evidence.json" with { type: "json" };
 import { ConditionLibrary, RelaxationPage, ClinicalAssignmentFields, EvidenceCard } from "./ClinicalLibrary";
@@ -39,6 +39,8 @@ import { LicensedMedia, catalogMediaUrl } from "./LicensedMedia";
 import { findExercises } from "./exercise-search";
 import { ReferencePose, ReferencePositions, referencePose } from './ReferencePositions';
 import { api, setCsrf } from "./api";
+import { DownloadLink } from './DownloadLink';
+import { mediaFetch, resourceUrl } from './resources';
 import { Illustration } from "./Illustration";
 import { RealPersonVideo, REAL_PERSON_EXAMPLE } from "./RealPersonVideo";
 import { OwnExerciseVideo, OWN_KNEE_TRANSCRIPT } from "./OwnExerciseVideo";
@@ -587,12 +589,12 @@ function App() {
                             Individuell für Sie zusammengestellt
                           </p>
                         </div>
-                        <a
+                        <DownloadLink
                           className="text-button"
                           href={`/api/plans/${plan.id}/pdf`}
                         >
                           <Download size={16} /> Plan als PDF
-                        </a>
+                        </DownloadLink>
                       </div>
                       <section className="panel" aria-label="Zufällige Übungen">
                         <button className="button primary" type="button" onClick={chooseRandomExercises}>
@@ -1027,7 +1029,7 @@ function Auth({
           )}
           {session.demo && !token && (
             <div className="demo-entry">
-              <span>LOKALE VORSCHAU</span>
+              <span>{import.meta.env.VITE_BACKEND==='firebase'?'GESCHÜTZTE ONLINE-DEMO':'LOKALE VORSCHAU'}</span>
               <p>
                 Entdecken Sie die App mit erfundenen Beispieldaten. Die Inhalte
                 sind nicht zur Behandlung freigegeben.
@@ -1075,7 +1077,7 @@ function ExerciseCard({
         ) : e.mediaDetails?.some((m) => m.kind === "image") ? (
           <img
             src={
-              "/api/media/" + e.mediaDetails.find((m) => m.kind === "image")!.id
+              resourceUrl("/api/media/" + e.mediaDetails.find((m) => m.kind === "image")!.id)
             }
             alt={e.title}
           />
@@ -1378,7 +1380,7 @@ function ExerciseDetail({
     if (e.media.length)
       Promise.all(
         e.media.map(async (id) => {
-          const r = await fetch("/api/media/" + id, { method: "HEAD" });
+          const r = await mediaFetch("/api/media/" + id, { method: "HEAD" });
           return {
             id,
             kind: r.headers.get("Content-Type")?.startsWith("video")
@@ -1418,11 +1420,11 @@ function ExerciseDetail({
                   controls
                   loop
                   playsInline
-                  src={`/api/demo-media/${e.id}/movement.mp4`}
+                  src={resourceUrl(`/api/demo-media/${e.id}/movement.mp4`)}
                 >
                   <track
                     kind="captions"
-                    src={`/api/demo-media/${e.id}/captions.vtt`}
+                    src={resourceUrl(`/api/demo-media/${e.id}/captions.vtt`)}
                     srcLang="de"
                     label="Deutsch"
                     default
@@ -1434,14 +1436,14 @@ function ExerciseDetail({
                   controls
                   loop
                   playsInline
-                  src={"/api/media/" + actualVideo.id}
+                  src={resourceUrl("/api/media/" + actualVideo.id)}
                 >
                   {mediaInfo.some((m) => m.kind === "captions") && (
                     <track
                       kind="captions"
                       src={
-                        "/api/media/" +
-                        mediaInfo.find((m) => m.kind === "captions")!.id
+                        resourceUrl("/api/media/" +
+                        mediaInfo.find((m) => m.kind === "captions")!.id)
                       }
                       srcLang="de"
                       label="Deutsch"
@@ -1457,10 +1459,10 @@ function ExerciseDetail({
             ) : mediaInfo.filter((m) => m.kind === "image").length ? (
               <img
                 src={
-                  "/api/media/" +
+                  resourceUrl("/api/media/" +
                   mediaInfo.filter((m) => m.kind === "image")[
                     phase % mediaInfo.filter((m) => m.kind === "image").length
-                  ].id
+                  ].id)
                 }
                 alt={e.title}
               />
@@ -2563,13 +2565,13 @@ function ExerciseEditor({
               <div className="media-links">
                 {form.media.map((id) => (
                   <div key={id}>
-                    <a
+                    <DownloadLink
                       href={"/api/media/" + id}
                       target="_blank"
                       rel="noreferrer"
                     >
                       Medium ansehen
-                    </a>
+                    </DownloadLink>
                     <button
                       type="button"
                       className="icon-button"
@@ -2676,14 +2678,14 @@ function Help({ practice: p, user }: { practice: Practice; user: User }) {
       </div>
       <section className="panel legal-panel">
         <h3>Meine Daten & rechtliche Angaben</h3>
-        <a
+        <DownloadLink
           className="button secondary"
           href={`/api/patients/${user.id}/export`}
           hidden={user.role !== "patient"}
         >
           <ArrowDownToLine size={17} />
           Meine Daten herunterladen
-        </a>
+        </DownloadLink>
         <details>
           <summary>Impressum</summary>
           <p className="preserve-lines">

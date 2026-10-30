@@ -1,14 +1,18 @@
 {
   "name": "physio-gregor-droessler",
-  "version": "0.1.30-dev",
+  "version": "0.1.31-dev",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "node scripts/dev-auto-update.mjs",
     "dev:manual": "node server/index.mjs",
-    "build": "tsc --noEmit && vite build",
+    "build": "node scripts/prepare-public.mjs && tsc --noEmit && vite build",
     "start": "node server/index.mjs --production",
-    "test": "node --test test/*.test.mjs",
+    "test": "node scripts/build-firebase-demo.mjs --seed-only && node --test test/*.test.mjs",
+    "build:firebase": "node scripts/build-firebase-demo.mjs && tsc --noEmit && vite build --mode firebase",
+    "test:firebase-rules": "node scripts/test-firebase-rules.mjs",
+    "deploy:firebase": "npm run build:firebase && npx -y firebase-tools@latest deploy --only hosting,firestore,auth --project physio-lfd-training",
+    "seed:firebase": "node scripts/seed-firebase-demo.mjs",
     "backup": "node scripts/backup.mjs",
     "restore": "node scripts/backup.mjs --restore",
     "setup": "node scripts/setup.mjs",
@@ -20,6 +24,7 @@
     "express-rate-limit": "^8.1.0",
     "express-session": "^1.18.2",
     "file-type": "^21.0.0",
+    "firebase": "^13.1.0",
     "helmet": "^8.1.0",
     "lucide-react": "^0.539.0",
     "multer": "^2.0.2",
@@ -32,6 +37,8 @@
     "zod": "^4.0.17"
   },
   "devDependencies": {
+    "@firebase/rules-unit-testing": "^6.0.0",
+    "@types/qrcode": "^1.5.6",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.1",
     "@vitejs/plugin-react": "^5.0.0",
@@ -39,5 +46,8 @@
     "three": "^0.186.1",
     "typescript": "~5.9.3",
     "vite": "^7.1.2"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "^1.13.6"
   }
 }
