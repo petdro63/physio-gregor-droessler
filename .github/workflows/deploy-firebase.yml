@@ -1,0 +1,79 @@
+name: Firebase-Trainingsdemo automatisch veroeffentlichen
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: physio-lfd-training-live
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build und Firebase Hosting
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      VITE_BACKEND: firebase
+      VITE_FIREBASE_CONFIG: ${{ secrets.VITE_FIREBASE_CONFIG }}
+      VITE_FIRESTORE_DATABASE: demo
+      VITE_DEMO_LOGIN_NAME: ${{ secrets.VITE_DEMO_LOGIN_NAME }}
+      VITE_DEMO_LOGIN_EMAIL: ${{ secrets.VITE_DEMO_LOGIN_EMAIL }}
+    steps:
+      - name: Quellcode abrufen
+        uses: actions/checkout@v4
+
+      - name: Node.js 24 einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Firebase-Zugang sicher pruefen
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+        run: |
+          node --input-type=module <<'NODE'
+          const names = ['VITE_FIREBASE_CONFIG','VITE_DEMO_LOGIN_NAME','VITE_DEMO_LOGIN_EMAIL','FIREBASE_SERVICE_ACCOUNT_JSON'];
+          const missing = names.filter(name => !process.env[name]?.trim());
+          if (missing.length) {
+            console.error('Einmalige Einrichtung erforderlich: GitHub > Settings > Secrets and variables > Actions. Fehlend: ' + missing.join(', '));
+            process.exit(1);
+          }
+          let config, serviceAccount;
+          try {
+            config = JSON.parse(process.env.VITE_FIREBASE_CONFIG);
+            serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_JSON);
+          } catch {
+            console.error('Firebase-Konfiguration oder Service-Account-JSON ist ungueltig.');
+            process.exit(1);
+          }
+          if (config?.projectId !== 'physio-lfd-training' || !config?.apiKey || !config?.appId ||
+              serviceAccount?.project_id !== 'physio-lfd-training' || serviceAccount?.type !== 'service_account') {
+            console.error('Sicherheitspruefung fehlgeschlagen: Konfiguration muss zum Trainingsprojekt physio-lfd-training gehoeren.');
+            process.exit(1);
+          }
+          NODE
+
+      - name: Abhaengigkeiten installieren
+        run: npm ci
+
+      - name: Tests ausfuehren
+        run: npm test
+
+      - name: Firebase-Webseite bauen
+        run: npm run build:firebase
+
+      - name: Nur Hosting auf Firebase veroeffentlichen
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+          projectId: physio-lfd-training
+          channelId: live
+
+      - name: Ergebnis
+        run: echo "Hosting-Release bereitgestellt unter https://physio-lfd-training.web.app/"
