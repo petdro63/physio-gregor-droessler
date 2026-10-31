@@ -1,6 +1,6 @@
 # Betrieb der Firebase-Trainingsdemo
 
-Stand des Quellcodes **0.1.32-dev** (Online-Bereitstellung separat prüfen), Versionsdatum **30.10.2026**, Zeitzone Europe/Berlin.
+Stand des Quellcodes **0.1.33-dev** (Online-Bereitstellung separat prüfen), Versionsdatum **31.10.2026**, Zeitzone Europe/Berlin.
 
 ## Bereitgestellte Umgebung
 
@@ -78,3 +78,8 @@ Die Wunschdomain bleibt bis zur DNS-Umstellung ausdrücklich ungeprüft. [DNS-Au
 ## Katalogänderung vom 30.10.2026 (Quellcode 0.1.32-dev)
 
 Die acht HWS-Broschürenentwürfe und drei Schulteraußenrotationen wurden aus der aktiven Sammlung genommen. Ein neu aufgebauter Demostand enthält jetzt 37 statt 48 sichtbare Übungen. Die Browser-App filtert diese elf IDs auch aus bereits bestehenden Cloud-Demoständen und verhindert deren weitere Nutzung. Die bisherigen Firestore-Daten werden dabei nicht automatisch gelöscht; vorhandene Bearbeitungen und Verlaufsdaten bleiben erhalten. Die elf Bilddateien werden nicht mehr in das Firebase-Hosting-Paket kopiert. Die Änderung erscheint auf der Online-Seite erst nach einem erneuten `npm run deploy:firebase` aus einer berechtigten Firebase-CLI-Sitzung. Der GitHub-Push allein veröffentlicht sie **nicht**.
+
+
+## Automatische Hosting-Veröffentlichung (ab 0.1.33-dev)
+
+Der Workflow `.github/workflows/deploy-firebase.yml` baut und testet die Anwendung bei jedem `master`-Push und veröffentlicht nur **Firebase Hosting**. Voraussetzung sind vier einmalig eingerichtete GitHub Actions Secrets. Anders als der bisherige lokale Befehl benötigt dieser Workflow keine lokale `.env.firebase` und verändert weder Cloud-Benutzer noch Firestore-Daten. Beim ersten Mal wird der Workflow nach dem Setzen der Secrets unter Actions → Run workflow manuell gestartet; anschließend erfolgt die Veröffentlichung automatisch. Ohne Secrets bleibt die Online-Demo unverändert. [Anleitung](AUTOMATISCHE-VEROEFFENTLICHUNG.md).

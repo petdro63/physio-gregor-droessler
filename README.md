@@ -1,6 +1,6 @@
 # Physio Gregor Drößler – Mein Übungsplan
 
-Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.32-dev**, Versionsdatum **30.10.2026**, Zeitzone **Europe/Berlin**.
+Erste funktionsfähige Entwicklungsfassung für die Physiopraxis Gregor Drößler in Leinefelde. Version **0.1.33-dev**, Versionsdatum **31.10.2026**, Zeitzone **Europe/Berlin**.
 
 Privates GitHub-Repository: https://github.com/petdro63/physio-gregor-droessler
 
@@ -11,6 +11,18 @@ Die geschützte Trainingsdemo läuft unter **https://physio-lfd-training.web.app
 Das neue, getrennte Firebase-Projekt `physio-lfd-training` verwendet Firebase Hosting, Firebase Authentication und die Firestore-Datenbank `demo` in Frankfurt (`europe-west3`). Auf dem Webhost wird kein Node.js benötigt. KontaktWerk bleibt unverändert. Für **training.physio-lfd.de** ist die Domain bei Firebase vorbereitet; die DNS-Umstellung durch den Domainadministrator steht noch aus. [DNS-Anleitung](docs/DNS-TRAINING.md) · [Betrieb der Firebase-Demo](docs/FIREBASE-DEMO.md).
 
 Die Firebase-Fassung ist eine gemeinsame Vorführumgebung. Die innere Rollenwahl simuliert Praxisabläufe; echte getrennte Patienten- und Mitarbeiterzugänge mit serverseitiger Rollenprüfung und TOTP gehören zur unten beschriebenen Node-Praxisinstallation. Die allgemeinen Übungsillustrationen sind öffentliche Programmdateien; Beispieldaten und eigene Uploads benötigen die freigeschaltete Firebase-Anmeldung.
+
+## Automatische Veröffentlichung aus GitHub
+
+Nach **einmaliger** Einrichtung der vier geschützten GitHub-Actions-Secrets
+baut und veröffentlicht der Workflow
+[`deploy-firebase.yml`](.github/workflows/deploy-firebase.yml) jeden Push
+auf `master` automatisch nach Firebase Hosting, ohne lokale PowerShell.
+Zum Anzeigen der veröffentlichten Änderungen reicht anschließend
+**Strg + F5** auf https://physio-lfd-training.web.app/.
+Strg+F5 selbst löst kein Deployment aus. Die Einrichtung ist noch erforderlich:
+[Schritte ohne PowerShell](docs/AUTOMATISCHE-VEROEFFENTLICHUNG.md).
+Firestore, Auth und bestehende Demodaten werden nicht überschrieben.
 
 ## Lokal ausprobieren
 
